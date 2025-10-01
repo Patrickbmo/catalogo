@@ -4,117 +4,125 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catálogo de Productos - Wilson</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="container">
-      <div class="logo">WILSON</div>
+      <div class="logo"><img src="img/logo/logo.png" alt="Wilson"></div>
       <nav>
         <ul>
-          <li><a href="#" class="active">Inicio</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="index.html"class="active">Inicio</a></li>
+          <li><a href="catalogo.html" >Catálogo</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
-      <div class="search-bar">
-        <input type="text" placeholder="Buscar productos..." />
-        <button>🔍</button>
+      <div class="header-actions">
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Buscar productos..." />
+          <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <button class="distribuidor-btn" id="openDistribuidorForm">
+          Quiero ser Distribuidor
+        </button>
       </div>
     </div>
   </header>
 
-  <main class="container">
-    <h1>Catálogo de Productos</h1>
 
-    <div class="catalog-container">
-      <aside class="filters">
-        <h3>Filtros</h3>
 
-        <div class="filter-group">
-          <h4>Categoría</h4>
-          <label><input type="checkbox" class="filtro-categoria" value="Brochas"> Brochas</label>
-          <label><input type="checkbox" class="filtro-categoria" value="Baldes"> Baldes</label>
-          <label><input type="checkbox" class="filtro-categoria" value="Canecas"> Canecas</label>
-          <label><input type="checkbox" class="filtro-categoria" value="Cepillos"> Cepillos</label>
-          <label><input type="checkbox" class="filtro-categoria" value="Escobas"> Escobas</label>
-          <label><input type="checkbox" class="filtro-categoria" value="Espátulas"> Espátulas</label>
-          <label><input type="checkbox" class="filtro-categoria" value="Recogedores"> Recogedores</label>
-          <label><input type="checkbox" class="filtro-categoria" value="Trapeadores"> Trapeadores</label>
-        </div>
+  <!-- hero -->
 
-        <div class="filter-group" id="tamanos-filters" style="display: none;">
-          <h4>Tamaños (Brochas)</h4>
-        </div>
-
-        <div class="price-range">
-          <h4>Precio</h4>
-          <input type="range" min="5" max="900" value="500" id="priceSlider" />
-          <div class="price-values">
-            <span id="minPrice">$5.00</span>
-            <span id="maxPrice">$900.00</span>
+  <!-- Popup Modal para Formulario de Distribuidor -->
+  <div id="distribuidorModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Únete como Distribuidor Wilson</h2>
+      <p class="modal-subtitle">Completa el formulario y nos pondremos en contacto contigo</p>
+      
+      <form id="distribuidorForm" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Reemplaza este access_key con el tuyo de web3forms.com -->
+        <input type="hidden" name="access_key" value="8b13d186-6255-4c31-bf11-115ac53e5681">
+        <input type="hidden" name="subject" value="Nueva Solicitud de Distribuidor Wilson">
+        <input type="hidden" name="from_name" value="Formulario Distribuidor Wilson">
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa">
           </div>
         </div>
 
-        <div class="filter-buttons">
-          <button class="apply-btn">Aplicar Filtros</button>
-          <button class="clear-btn">Limpiar Filtros</button>
-        </div>
-      </aside>
-
-      <section class="products">
-        <div class="product-controls">
-          <div class="sort-options">
-            <label>Ordenar por:</label>
-            <select>
-              <option>Precio: Bajo a Alto</option>
-              <option>Precio: Alto a Bajo</option>
-              <option>Más Vendidos</option>
-            </select>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" name="email" required>
           </div>
-          <div class="view-toggle">
-            <label>Grid view</label>
-            <input type="checkbox" id="gridToggle" checked />
+          
+          <div class="form-group">
+            <label for="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono" required>
           </div>
         </div>
 
-        <div class="product-grid"></div>
+        <div class="form-group">
+          <label for="ciudad">Ciudad *</label>
+          <input type="text" id="ciudad" name="ciudad" required>
+        </div>
 
-        <div class="pagination">
-          <span>Mostrando 1-12 de 50</span>
-          <button class="page active">1</button>
-          <button class="page">2</button>
-          <button class="page">3</button>
-          <span>...</span>
-          <button class="next">Siguiente →</button>
+        <div class="form-group">
+          <label for="tipo_negocio">Tipo de negocio *</label>
+          <select id="tipo_negocio" name="tipo_negocio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="ferreteria">Ferretería</option>
+            <option value="pintureria">Pinturería</option>
+            <option value="construccion">Materiales de Construcción</option>
+            <option value="limpieza">Productos de Limpieza</option>
+            <option value="mayorista">Mayorista</option>
+            <option value="otro">Otro</option>
+          </select>
         </div>
-      </section>
-    </div>
 
-    <section class="featured-collections">
-      <h2>Colecciones Destacadas</h2>
-      <div class="collections-grid">
-        <div class="collection-card">
-          <img src="https://via.placeholder.com/150x100?text=Kit+Profesional" alt="Kit Profesional" />
-          <h3>Kit Profesional</h3>
-          <p>Brochas, baldes y más</p>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre tu negocio..."></textarea>
         </div>
-        <div class="collection-card">
-          <img src="https://via.placeholder.com/150x100?text=Limpieza+Completa" alt="Limpieza Completa" />
-          <h3>Limpieza Completa</h3>
-          <p>Escobas, trapeadores, recogedores</p>
+
+        <div class="form-checkbox">
+          <input type="checkbox" id="acepto" name="acepto_terminos" required>
+          <label for="acepto">Acepto la política de privacidad y términos de uso</label>
         </div>
-        <div class="collection-card">
-          <img src="https://via.placeholder.com/150x100?text=Herramientas+Pintor" alt="Herramientas Pintor" />
-          <h3>Herramientas Pintor</h3>
-          <p>Brochas, espátulas, canecas</p>
-        </div>
+
+        <button type="submit" class="submit-btn">Enviar Solicitud</button>
+      </form>
+
+      <div id="formSuccess" class="form-message success" style="display: none;">
+        <p>✅ ¡Solicitud enviada exitosamente! Nos pondremos en contacto contigo pronto.</p>
       </div>
-    </section>
+
+      <div id="formError" class="form-message error" style="display: none;">
+        <p>❌ Hubo un error al enviar el formulario. Por favor intenta nuevamente.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenido Principal -->
+
+
+     
+    
+    
   </main>
 
+  <!-- Scripts (orden importante) -->
   <script src="js/data.js"></script>
   <script src="js/script.js"></script>
 </body>
