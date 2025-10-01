@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Productos - Wilson</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">WILSON</div>
+      <nav>
+        <ul>
+          <li><a href="#" class="active">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar productos..." />
+        <button>🔍</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Catálogo de Productos</h1>
+
+    <div class="catalog-container">
+      <aside class="filters">
+        <h3>Filtros</h3>
+
+        <div class="filter-group">
+          <h4>Categoría</h4>
+          <label><input type="checkbox" class="filtro-categoria" value="Brochas"> Brochas</label>
+          <label><input type="checkbox" class="filtro-categoria" value="Baldes"> Baldes</label>
+          <label><input type="checkbox" class="filtro-categoria" value="Canecas"> Canecas</label>
+          <label><input type="checkbox" class="filtro-categoria" value="Cepillos"> Cepillos</label>
+          <label><input type="checkbox" class="filtro-categoria" value="Escobas"> Escobas</label>
+          <label><input type="checkbox" class="filtro-categoria" value="Espátulas"> Espátulas</label>
+          <label><input type="checkbox" class="filtro-categoria" value="Recogedores"> Recogedores</label>
+          <label><input type="checkbox" class="filtro-categoria" value="Trapeadores"> Trapeadores</label>
+        </div>
+
+        <div class="filter-group" id="tamanos-filters" style="display: none;">
+          <h4>Tamaños (Brochas)</h4>
+        </div>
+
+        <div class="price-range">
+          <h4>Precio</h4>
+          <input type="range" min="5" max="900" value="500" id="priceSlider" />
+          <div class="price-values">
+            <span id="minPrice">$5.00</span>
+            <span id="maxPrice">$900.00</span>
+          </div>
+        </div>
+
+        <div class="filter-buttons">
+          <button class="apply-btn">Aplicar Filtros</button>
+          <button class="clear-btn">Limpiar Filtros</button>
+        </div>
+      </aside>
+
+      <section class="products">
+        <div class="product-controls">
+          <div class="sort-options">
+            <label>Ordenar por:</label>
+            <select>
+              <option>Precio: Bajo a Alto</option>
+              <option>Precio: Alto a Bajo</option>
+              <option>Más Vendidos</option>
+            </select>
+          </div>
+          <div class="view-toggle">
+            <label>Grid view</label>
+            <input type="checkbox" id="gridToggle" checked />
+          </div>
+        </div>
+
+        <div class="product-grid"></div>
+
+        <div class="pagination">
+          <span>Mostrando 1-12 de 50</span>
+          <button class="page active">1</button>
+          <button class="page">2</button>
+          <button class="page">3</button>
+          <span>...</span>
+          <button class="next">Siguiente →</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="featured-collections">
+      <h2>Colecciones Destacadas</h2>
+      <div class="collections-grid">
+        <div class="collection-card">
+          <img src="https://via.placeholder.com/150x100?text=Kit+Profesional" alt="Kit Profesional" />
+          <h3>Kit Profesional</h3>
+          <p>Brochas, baldes y más</p>
+        </div>
+        <div class="collection-card">
+          <img src="https://via.placeholder.com/150x100?text=Limpieza+Completa" alt="Limpieza Completa" />
+          <h3>Limpieza Completa</h3>
+          <p>Escobas, trapeadores, recogedores</p>
+        </div>
+        <div class="collection-card">
+          <img src="https://via.placeholder.com/150x100?text=Herramientas+Pintor" alt="Herramientas Pintor" />
+          <h3>Herramientas Pintor</h3>
+          <p>Brochas, espátulas, canecas</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
