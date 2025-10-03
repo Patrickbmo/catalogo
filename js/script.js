@@ -3,62 +3,86 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let productosFiltrados = [...productos];
 
-  // Renderizar checkboxes de tamaños
+  // ========== FUNCIONES DE URL ==========
+  function obtenerParametrosURL() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+      categoria: params.get('categoria'),
+      search: params.get('search')
+    };
+  }
+
+  function aplicarFiltrosIniciales() {
+    const { categoria, search } = obtenerParametrosURL();
+
+    if (categoria) {
+      const checkbox = document.querySelector(`.filtro-categoria[value="${categoria}"]`);
+      if (checkbox) {
+        checkbox.checked = true;
+        if (categoria === 'Brochas') {
+          toggleFiltrosTamanos(true);
+        }
+      }
+    }
+
+    if (search) {
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) {
+        searchInput.value = search;
+      }
+    }
+
+    if (categoria || search) {
+      aplicarFiltros();
+    }
+  }
+
+  // ========== FUNCIONES DE FILTROS ==========
   function renderizarFiltrosTamanos() {
     const container = document.getElementById('tamanos-filters');
     if (!container) return;
 
     let html = '<h4>Tamaños</h4>';
     TAMANOS_BROCHAS.forEach(tamano => {
-      // Mostrar solo el número y comillas en la etiqueta visual
       const displayLabel = tamano.replace(' pulgadas', '"').replace(' pulgada', '"');
       html += `<label><input type="checkbox" class="filtro-tamano" value="${tamano}"> ${displayLabel}</label>`;
     });
     container.innerHTML = html;
 
-    // Agregar eventos a los nuevos checkboxes
     document.querySelectorAll('.filtro-tamano').forEach(cb => {
       cb.addEventListener('change', aplicarFiltros);
     });
   }
 
-  // Mostrar/ocultar filtros de tamaño
   function toggleFiltrosTamanos(mostrar) {
     const container = document.getElementById('tamanos-filters');
     if (container) {
       container.style.display = mostrar ? 'block' : 'none';
       if (!mostrar) {
-        // Limpiar tamaños seleccionados cuando se oculta
         document.querySelectorAll('.filtro-tamano').forEach(cb => cb.checked = false);
       }
     }
   }
 
-  // Aplicar todos los filtros
   function aplicarFiltros() {
-    // Obtener categorías seleccionadas
     const categoriasSeleccionadas = Array.from(
       document.querySelectorAll('.filtro-categoria:checked')
     ).map(cb => cb.value);
 
-    // Obtener tamaños seleccionados
     const tamanosSeleccionados = Array.from(
       document.querySelectorAll('.filtro-tamano:checked')
     ).map(cb => cb.value);
 
-    // Obtener término de búsqueda
     const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
 
     let resultado = [...productos];
 
-    // 1. Filtrar por categoría
     if (categoriasSeleccionadas.length > 0) {
       resultado = resultado.filter(producto =>
         categoriasSeleccionadas.includes(producto.categoria)
       );
     }
 
-    // 2. Filtrar por tamaño (solo si hay tamaños seleccionados)
     if (tamanosSeleccionados.length > 0) {
       resultado = resultado.filter(producto => {
         if (!producto.tamano) return false;
@@ -66,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // 3. Filtrar por búsqueda
     if (searchTerm) {
       resultado = resultado.filter(producto =>
         producto.nombre.toLowerCase().includes(searchTerm) ||
@@ -80,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     actualizarContador(resultado.length);
   }
 
-  // Actualizar contador de resultados
   function actualizarContador(cantidad) {
     const counter = document.getElementById('resultsCount');
     if (counter) {
@@ -92,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Renderizar productos
   function renderizarProductos(lista) {
     const grid = document.querySelector('.product-grid');
     const noResults = document.querySelector('.no-results');
@@ -112,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     lista.forEach(p => {
       const marcaBadge = p.marca ? `<span class="marca-badge">${p.marca}</span>` : '';
-      // Mostrar tamaño con comillas para mejor visualización
       const tamanoDisplay = p.tamano ? p.tamano.replace(' pulgadas', '"').replace(' pulgada', '"') : '';
       const tamanoBadge = tamanoDisplay ? `<span class="tamano-badge">${tamanoDisplay}</span>` : '';
 
@@ -137,7 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Ordenar productos
   function ordenarProductos(criterio) {
     let ordenados = [...productosFiltrados];
 
@@ -149,40 +168,31 @@ document.addEventListener('DOMContentLoaded', () => {
         ordenados.sort((a, b) => b.nombre.localeCompare(a.nombre));
         break;
       default:
-        // Por defecto (como están en data.js)
         break;
     }
 
     renderizarProductos(ordenados);
   }
 
-  // Limpiar todos los filtros
   function limpiarFiltros() {
-    // Desmarcar todos los checkboxes
     document.querySelectorAll('.filtro-categoria, .filtro-tamano').forEach(cb => {
       cb.checked = false;
     });
 
-    // Ocultar filtros de tamaño
     toggleFiltrosTamanos(false);
 
-    // Limpiar búsqueda
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.value = '';
 
-    // Resetear ordenamiento
     const sortSelect = document.getElementById('sortSelect');
     if (sortSelect) sortSelect.value = 'default';
 
-    // Mostrar todos los productos
     productosFiltrados = [...productos];
     renderizarProductos(productos);
     actualizarContador(productos.length);
   }
 
-  // Inicializar eventos
   function inicializarEventos() {
-    // Eventos de categorías
     document.querySelectorAll('.filtro-categoria').forEach(cb => {
       cb.addEventListener('change', () => {
         const brochasChecked = document.querySelector('.filtro-categoria[value="Brochas"]:checked');
@@ -191,12 +201,10 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Botones de limpiar
     document.querySelectorAll('.clear-btn').forEach(btn => {
       btn.addEventListener('click', limpiarFiltros);
     });
 
-    // Búsqueda
     const searchInput = document.getElementById('searchInput');
     const searchBtn = document.getElementById('searchBtn');
     
@@ -208,7 +216,6 @@ document.addEventListener('DOMContentLoaded', () => {
       searchBtn.addEventListener('click', aplicarFiltros);
     }
 
-    // Ordenamiento
     const sortSelect = document.getElementById('sortSelect');
     if (sortSelect) {
       sortSelect.addEventListener('change', (e) => {
@@ -217,25 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Inicialización
-  renderizarFiltrosTamanos();
-  renderizarProductos(productos);
-  actualizarContador(productos.length);
-  inicializarEventos();
-});
-
-// Función global para ver detalle (puedes implementarla después)
-function verDetalle(id) {
-  const producto = productos.find(p => p.id === id);
-  if (producto) {
-    alert(`Ver detalles de: ${producto.nombre}\n\nEsta funcionalidad se implementará en producto.html`);
-    // Aquí puedes redirigir a producto.html?id=X
-    // window.location.href = `producto.html?id=${id}`;
-  }
-}
-
-// ========== MODAL DISTRIBUIDOR ==========
-document.addEventListener('DOMContentLoaded', () => {
+  // ========== MODAL DISTRIBUIDOR ==========
   const modal = document.getElementById('distribuidorModal');
   const openBtn = document.getElementById('openDistribuidorForm');
   const closeBtn = document.querySelector('.close-modal');
@@ -243,42 +232,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const successMsg = document.getElementById('formSuccess');
   const errorMsg = document.getElementById('formError');
 
-  // Abrir modal
   if (openBtn) {
     openBtn.addEventListener('click', () => {
       modal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevenir scroll
+      document.body.style.overflow = 'hidden';
     });
   }
 
-  // Cerrar modal
   function cerrarModal() {
     modal.classList.remove('active');
-    document.body.style.overflow = ''; // Restaurar scroll
-    // Limpiar mensajes
-    successMsg.style.display = 'none';
-    errorMsg.style.display = 'none';
+    document.body.style.overflow = '';
+    if (successMsg) successMsg.style.display = 'none';
+    if (errorMsg) errorMsg.style.display = 'none';
   }
 
   if (closeBtn) {
     closeBtn.addEventListener('click', cerrarModal);
   }
 
-  // Cerrar al hacer clic fuera del modal
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      cerrarModal();
-    }
-  });
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        cerrarModal();
+      }
+    });
+  }
 
-  // Cerrar con tecla ESC
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
       cerrarModal();
     }
   });
 
-  // Manejar envío del formulario
   if (form) {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -286,13 +271,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const submitBtn = form.querySelector('.submit-btn');
       const originalText = submitBtn.textContent;
       
-      // Deshabilitar botón y mostrar loading
       submitBtn.disabled = true;
       submitBtn.textContent = 'Enviando...';
       
-      // Ocultar mensajes previos
-      successMsg.style.display = 'none';
-      errorMsg.style.display = 'none';
+      if (successMsg) successMsg.style.display = 'none';
+      if (errorMsg) errorMsg.style.display = 'none';
 
       try {
         const formData = new FormData(form);
@@ -305,11 +288,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = await response.json();
 
         if (data.success) {
-          // Mostrar mensaje de éxito
-          successMsg.style.display = 'block';
+          if (successMsg) successMsg.style.display = 'block';
           form.reset();
           
-          // Cerrar modal después de 3 segundos
           setTimeout(() => {
             cerrarModal();
           }, 3000);
@@ -317,14 +298,32 @@ document.addEventListener('DOMContentLoaded', () => {
           throw new Error('Error en el envío');
         }
       } catch (error) {
-        // Mostrar mensaje de error
-        errorMsg.style.display = 'block';
+        if (errorMsg) errorMsg.style.display = 'block';
         console.error('Error:', error);
       } finally {
-        // Restaurar botón
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
       }
     });
   }
+
+  // ========== INICIALIZACIÓN ==========
+  renderizarFiltrosTamanos();
+  inicializarEventos();
+  
+  const urlParams = obtenerParametrosURL();
+  if (urlParams.categoria || urlParams.search) {
+    aplicarFiltrosIniciales();
+  } else {
+    renderizarProductos(productos);
+    actualizarContador(productos.length);
+  }
 });
+
+// Función global para ver detalle
+function verDetalle(id) {
+  const producto = productos.find(p => p.id === id);
+  if (producto) {
+    alert(`Ver detalles de: ${producto.nombre}\n\nEsta funcionalidad se implementará en producto.html`);
+  }
+}

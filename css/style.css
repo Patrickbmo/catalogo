@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
@@ -117,24 +117,24 @@ nav a.active {
 .hero {
   background: #f5f5f5;
   padding: 80px 0;
-  min-height: calc(100vh - 100px);
+  height: 500px;
   display: flex;
   align-items: center;
 }
 
 .hero-container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  display: flex;
   align-items: center;
 }
 
+
+
 .hero-content h1 {
-  font-size: 3.5em;
-  font-weight: 900;
+  font-size: 52px;
+  font-weight: 700;
   color: #000;
   line-height: 1.2;
   margin-bottom: 40px;
@@ -144,8 +144,9 @@ nav a.active {
   display: inline-block;
   background: #d32f2f;
   color: white;
-  padding: 16px 40px;
-  border-radius: 30px;
+  padding: 9px 15px;
+  border-radius: 20px;
+  
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1em;
@@ -168,7 +169,7 @@ nav a.active {
 
 .hero-image img {
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   height: auto;
   object-fit: contain;
   animation: float 3s ease-in-out infinite;
@@ -182,6 +183,101 @@ nav a.active {
     transform: translateY(-20px);
   }
 }
+
+
+/* ========== CATEGORÍAS ========== */
+.categorias {
+  padding: 80px 0;
+  background: white;
+}
+
+.categorias .container {
+  max-width: 1440px;
+}
+
+.categorias h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 60px;
+}
+
+.categorias-grid {
+  display: flex;
+  gap: 18px;
+
+}
+
+.categoria-item {
+  width: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.categoria-item:hover {
+  transform: translateY(-8px);
+}
+
+.categoria-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: solid 1px;
+  
+  border-color: #b5b5b5;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.categoria-item:hover .categoria-circle {
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+.categoria-circle img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.categoria-item:hover .categoria-circle img {
+  transform: scale(1.1);
+}
+
+.categoria-item p {
+  color: #333;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Estilo especial para Ofertas con fondo rosa */
+.categoria-item.ofertas .categoria-circle {
+  background: linear-gradient(135deg, #ff6b9d 0%, #ff3366 100%);
+}
+
+.categoria-item.ofertas:hover .categoria-circle {
+  background: linear-gradient(135deg, #ff5285 0%, #ff1f52 100%);
+}
+
+.categoria-item.ofertas p {
+  color: #ff3366;
+  font-weight: 600;
+}
+
+
 
 /* Main */
 main h1 {
@@ -501,7 +597,7 @@ main h1 {
   }
 
   .product-grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax( 1fr));
   }
 
   nav ul {
@@ -732,6 +828,7 @@ main h1 {
     font-size: 1.5em;
   }
 }
+/* ========== RESPONSIVE ========== */
 
 @media (max-width: 768px) {
   header .container {
@@ -759,11 +856,17 @@ main h1 {
   }
 
   .hero {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 
   .hero-content h1 {
-    font-size: 2em;
+    font-size: 1.5em;
+    
+  }
+
+  .hero-image img {
+    width: 350px;
+    height: auto;
   }
 
   .btn-primary {
@@ -773,6 +876,53 @@ main h1 {
 
   .form-row {
     grid-template-columns: 1fr;
+  }
+  .hero-container {
+    flex-direction: column-reverse ;
+    text-align: center;
+    gap: 30px;
+  }
+
+   .categorias {
+    padding: 50px 0;
+  }
+
+  .categorias h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+ .categorias-grid {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 10px 20px;
+    margin: 0 -20px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+  }
+
+  /* Ocultar scrollbar en móvil pero mantener funcionalidad */
+  .categorias-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+  }
+  .categoria-item {
+    flex: 0 0 auto;
+    width: 110px;
+    scroll-snap-align: start;
+  }
+
+  .categoria-circle {
+    width: 110px;
+    height: 110px;
+  }
+
+  .categoria-item p {
+    font-size: 0.85em;
   }
 
   .modal-content {
