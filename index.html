@@ -123,6 +123,102 @@
   </section>
 
 
+  <!--Section Brochas-->
+  <!-- Sección de Líneas de Brochas -->
+<section class="lineas-brochas">
+  <div class="container">
+    <h2>Nuestras Líneas de Brochas</h2>
+    
+    <div class="lineas-grid">
+      <!-- Card Premier -->
+      <div class="linea-card" onclick="mostrarDetalles('premier')">
+        <div class="linea-image">
+          <img src="https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp" alt="Brocha Premier">
+        </div>
+        <div class="linea-info">
+          <h3>Brocha Premier</h3>
+          <p>Acabado Superior y Durabilidad Extrema</p>
+          <button class="btn-ver-detalles">Ver Detalles</button>
+        </div>
+      </div>
+
+      <!-- Card Futura -->
+      <div class="linea-card" onclick="mostrarDetalles('futura')">
+        <div class="linea-image">
+          <img src="https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp" alt="Brocha Futura">
+        </div>
+        <div class="linea-info">
+          <h3>Brocha Futura</h3>
+          <p>Acabado Superior y Durabilidad Extrema</p>
+          <button class="btn-ver-detalles">Ver Detalles</button>
+        </div>
+      </div>
+
+      <!-- Card Prima -->
+      <div class="linea-card" onclick="mostrarDetalles('prima')">
+        <div class="linea-image">
+          <img src="https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp" alt="Brocha Prima">
+        </div>
+        <div class="linea-info">
+          <h3>Brocha Prima</h3>
+          <p>Acabado Superior y Durabilidad Extrema</p>
+          <button class="btn-ver-detalles">Ver Detalles</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel de Detalles (div normal siempre visible) -->
+    <div id="panelDetalles" class="panel-detalles">
+      
+      <div class="panel-content">
+        <!-- Columna Izquierda: Imágenes -->
+        <div class="panel-images">
+          <img id="imagenPrincipal" src="" alt="Brocha" class="imagen-principal">
+          <div class="thumbnails-horizontal">
+            <img class="thumbnail active" data-index="0" onclick="cambiarImagenPrincipal(0)">
+            <img class="thumbnail" data-index="1" onclick="cambiarImagenPrincipal(1)">
+            <img class="thumbnail" data-index="2" onclick="cambiarImagenPrincipal(2)">
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Información -->
+        <div class="panel-info">
+          <h2 id="detallesTitulo">Brocha Premier</h2>
+          
+          <div class="caracteristicas">
+            <div class="caracteristica">
+              <i class="fas fa-droplet"></i>
+              <div>
+                <h4>Durabilidad</h4>
+                <p>Construcción robusta que garantiza años de uso profesional</p>
+              </div>
+            </div>
+            
+            <div class="caracteristica">
+              <i class="fas fa-shield-halved"></i>
+              <div>
+                <h4>Calidad de acabado</h4>
+                <p>Cerdas premium para un acabado suave y uniforme</p>
+              </div>
+            </div>
+            
+            <div class="caracteristica">
+              <i class="fas fa-hand"></i>
+              <div>
+                <h4>Ergonomía Superior</h4>
+                <p>Diseño ergonómico que reduce la fatiga durante largas jornadas</p>
+              </div>
+            </div>
+          </div>
+
+          <a id="btnVerMasPanel" href="#" class="btn-ver-mas-panel">Ver Más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <!-- Popup Modal para Formulario de Distribuidor -->
   <div id="distribuidorModal" class="modal">
     <div class="modal-content">

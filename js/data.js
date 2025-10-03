@@ -519,3 +519,105 @@ const productos = [
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
   }
 ];
+
+
+// Datos de las líneas de brochas
+const lineasData = {
+  premier: {
+    titulo: 'Brocha Premier',
+    imagenes: [
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp',
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp',
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp'
+    ],
+    url: 'catalogo.html?categoria=Brochas&marca=Premier'
+  },
+  futura: {
+    titulo: 'Brocha Futura',
+    imagenes: [
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp',
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp',
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp'
+    ],
+    url: 'catalogo.html?categoria=Brochas&marca=Futura'
+  },
+  prima: {
+    titulo: 'Brocha Prima',
+    imagenes: [
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp',
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp',
+      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp'
+    ],
+    url: 'catalogo.html?categoria=Brochas&marca=Prima'
+  }
+};
+
+let lineaActual = null;
+
+function mostrarDetalles(linea) {
+  lineaActual = lineasData[linea];
+  const panel = document.getElementById('panelDetalles');
+  
+  // Actualizar título
+  document.getElementById('detallesTitulo').textContent = lineaActual.titulo;
+  
+  // Actualizar imagen principal
+  const imagenPrincipal = document.getElementById('imagenPrincipal');
+  imagenPrincipal.src = lineaActual.imagenes[0];
+  
+  // Actualizar thumbnails
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  thumbnails.forEach((thumb, index) => {
+    if (lineaActual.imagenes[index]) {
+      thumb.src = lineaActual.imagenes[index];
+      thumb.style.display = 'block';
+    } else {
+      thumb.style.display = 'none';
+    }
+  });
+  
+  // Marcar primer thumbnail como activo
+  thumbnails.forEach(t => t.classList.remove('active'));
+  thumbnails[0].classList.add('active');
+  
+  // Actualizar botón Ver Más
+  document.getElementById('btnVerMasPanel').href = lineaActual.url;
+  
+  // Remover clase active de todas las cards
+  document.querySelectorAll('.linea-card').forEach(card => {
+    card.classList.remove('active');
+  });
+  
+  // Agregar clase active a la card seleccionada
+  event.currentTarget.classList.add('active');
+  
+  // Mostrar panel con animación
+  panel.classList.add('active');
+  
+  // Scroll suave hacia el panel
+  setTimeout(() => {
+    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, 100);
+}
+
+function cerrarDetalles() {
+  const panel = document.getElementById('panelDetalles');
+  panel.classList.remove('active');
+  
+  // Remover clase active de todas las cards
+  document.querySelectorAll('.linea-card').forEach(card => {
+    card.classList.remove('active');
+  });
+}
+
+function cambiarImagenPrincipal(index) {
+  if (!lineaActual) return;
+  
+  const imagenPrincipal = document.getElementById('imagenPrincipal');
+  imagenPrincipal.src = lineaActual.imagenes[index];
+  
+  // Actualizar thumbnails activos
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  thumbnails.forEach(t => t.classList.remove('active'));
+  thumbnails[index].classList.add('active');
+}
