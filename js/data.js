@@ -521,6 +521,7 @@ const productos = [
 ];
 
 
+
 // Datos de las líneas de brochas
 const lineasData = {
   premier: {
@@ -554,56 +555,81 @@ const lineasData = {
 
 let lineaActual = null;
 
-function mostrarDetalles(linea) {
+function mostrarDetalles(linea, element = null) {
   lineaActual = lineasData[linea];
-  const panel = document.getElementById('panelDetalles');
   
-  // Actualizar título
-  document.getElementById('detallesTitulo').textContent = lineaActual.titulo;
-  
-  // Actualizar imagen principal
-  const imagenPrincipal = document.getElementById('imagenPrincipal');
-  imagenPrincipal.src = lineaActual.imagenes[0];
-  
-  // Actualizar thumbnails
-  const thumbnails = document.querySelectorAll('.thumbnail');
-  thumbnails.forEach((thumb, index) => {
-    if (lineaActual.imagenes[index]) {
-      thumb.src = lineaActual.imagenes[index];
-      thumb.style.display = 'block';
+  // DESKTOP: Actualizar panel principal
+  if (window.innerWidth > 768) {
+    const panel = document.getElementById('panelDetalles');
+    
+    // Actualizar título
+    document.getElementById('detallesTitulo').textContent = lineaActual.titulo;
+    
+    // Actualizar imagen principal
+    const imagenPrincipal = document.getElementById('imagenPrincipal');
+    imagenPrincipal.src = lineaActual.imagenes[0];
+    
+    // Actualizar thumbnails
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach((thumb, index) => {
+      if (lineaActual.imagenes[index]) {
+        thumb.src = lineaActual.imagenes[index];
+        thumb.style.display = 'block';
+      } else {
+        thumb.style.display = 'none';
+      }
+    });
+    
+    // Marcar primer thumbnail como activo
+    thumbnails.forEach(t => t.classList.remove('active'));
+    thumbnails[0].classList.add('active');
+    
+    // Actualizar botón Ver Más
+    document.getElementById('btnVerMasPanel').href = lineaActual.url;
+    
+    // Remover clase active de todas las cards
+    document.querySelectorAll('.linea-card').forEach(card => {
+      card.classList.remove('active');
+    });
+    
+    // Agregar clase active a la card seleccionada
+    if (element) {
+      element.classList.add('active');
+      
+      // Scroll suave hacia el panel
+      setTimeout(() => {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
     } else {
-      thumb.style.display = 'none';
+      // Si no hay elemento (carga inicial), marcar la primera card
+      const primerCard = document.querySelector('.linea-card');
+      if (primerCard) {
+        primerCard.classList.add('active');
+      }
     }
-  });
-  
-  // Marcar primer thumbnail como activo
-  thumbnails.forEach(t => t.classList.remove('active'));
-  thumbnails[0].classList.add('active');
-  
-  // Actualizar botón Ver Más
-  document.getElementById('btnVerMasPanel').href = lineaActual.url;
-  
-  // Remover clase active de todas las cards
-  document.querySelectorAll('.linea-card').forEach(card => {
-    card.classList.remove('active');
-  });
-  
-  // Agregar clase active a la card seleccionada
-  event.currentTarget.classList.add('active');
-  
-  // Mostrar panel con animación
-  panel.classList.add('active');
-  
-  // Scroll suave hacia el panel
-  setTimeout(() => {
-    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }, 100);
+  } 
+  // MOBILE: Toggle panel colapsable dentro de la card
+  else {
+    if (element) {
+      // Cerrar todas las otras cards
+      document.querySelectorAll('.linea-card').forEach(card => {
+        if (card !== element) {
+          card.classList.remove('active');
+        }
+      });
+      
+      // Toggle la card actual
+      element.classList.toggle('active');
+    }
+  }
 }
 
+// Inicializar el panel con la primera línea al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+  mostrarDetalles('premier');
+});
+
 function cerrarDetalles() {
-  const panel = document.getElementById('panelDetalles');
-  panel.classList.remove('active');
-  
   // Remover clase active de todas las cards
   document.querySelectorAll('.linea-card').forEach(card => {
     card.classList.remove('active');
