@@ -276,6 +276,8 @@ nav a.active {
   color: #ff3366;
   font-weight: 600;
 }
+
+
 /* ========== LÍNEAS DE BROCHAS ========== */
 .lineas-brochas {
   padding: 80px 0;
@@ -377,8 +379,49 @@ nav a.active {
   color: white;
 }
 
-/* ========== PANEL DE DETALLES ========== */
+/* PANEL MÓVIL (Solo visible en móvil) */
+.panel-mobile {
+  display: none !important; /* NUNCA se muestra en desktop */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 25px;
+  background: #f9f9f9;
+}
+
+.imagen-mobile {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 25px;
+  display: block;
+}
+
+.btn-ver-mas-mobile {
+  display: block;
+  width: 100%;
+  background: #d32f2f;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  transition: all 0.3s;
+  margin-top: 20px;
+}
+
+.btn-ver-mas-mobile:hover {
+  background: #b71c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(211, 47, 47, 0.4);
+}
+
+/*  PANEL DESKTOP (Solo visible en desktop)  */
 .panel-detalles {
+  display: block; /* Visible en desktop */
   background: white;
   border-radius: 16px;
   border: 1px solid #e0e0e0;
@@ -386,11 +429,6 @@ nav a.active {
   margin-top: 30px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-}
-
-/* Panel móvil - OCULTO por defecto en desktop */
-.panel-mobile {
-  display: none;
 }
 
 .panel-content {
@@ -520,7 +558,8 @@ nav a.active {
 }
 
 
-/* Main */
+
+/*=========== Main ==============*/
 main h1 {
   margin: 25px 0 15px;
   font-size: 2.2em;
@@ -1101,10 +1140,6 @@ main h1 {
     width: 75px;
     height: 75px;
   }
-
-  .panel-detalles.active {
-    max-height: 1000px;
-  }
 }
 @media (max-width: 768px) {
   header .container {
@@ -1160,7 +1195,7 @@ main h1 {
   }
 
    .categorias {
-    padding: 50px 0;
+    padding: 10px 0;
   }
 
   .categorias h2 {
@@ -1210,7 +1245,8 @@ main h1 {
     font-size: 1.5em;
   }
 
- .lineas-brochas {
+/*================= linea brochas ==============*/
+.lineas-brochas {
     padding: 50px 0;
   }
 
@@ -1237,27 +1273,24 @@ main h1 {
     font-size: 1.3em;
   }
 
-  .panel-content {
-    padding: 25px 20px;
-    gap: 25px;
+  /* MOBILE: Ocultar panel desktop y mostrar panel mobile */
+  .panel-detalles {
+    display: none !important; /* Oculto completamente en móvil */
   }
 
-  .imagen-principal {
-    height: 240px;
+  .panel-mobile {
+    display: none !important; /* Por defecto oculto */
   }
 
-  .thumbnails-horizontal {
-    gap: 8px;
+  .linea-card.active .panel-mobile {
+    display: block !important; /* Visible cuando la card está activa */
+    max-height: 1200px;
+    padding: 25px;
   }
 
-  .thumbnail {
-    width: 65px;
-    height: 65px;
-  }
-
-  .panel-info h2 {
-    font-size: 1.7em;
-    margin-bottom: 25px;
+  .imagen-mobile {
+    max-width: 250px;
+    margin-bottom: 20px;
   }
 
   .caracteristicas {
@@ -1283,22 +1316,9 @@ main h1 {
     font-size: 0.95em;
   }
 
-  .btn-ver-mas-panel {
-    width: 100%;
+  .btn-ver-mas-mobile {
     padding: 14px 30px;
     font-size: 1em;
   }
-
-  .btn-cerrar-panel {
-    right: 15px;
-    top: 15px;
-    font-size: 28px;
-    width: 35px;
-    height: 35px;
-  }
-
-  .panel-detalles.active {
-    max-height: 1200px;
-  }
-
+ 
 }
