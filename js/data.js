@@ -647,3 +647,21 @@ function cambiarImagenPrincipal(index) {
   thumbnails.forEach(t => t.classList.remove('active'));
   thumbnails[index].classList.add('active');
 }
+
+// SECTION BALDES
+// Función para cambiar la imagen principal al hacer clic en un thumbnail
+    function cambiarImagenBalde(element, event) {
+      // Remover clase active de todos los thumbnails
+      document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.classList.remove('active');
+      });
+      
+      // Agregar clase active al thumbnail clickeado
+      element.classList.add('active');
+      
+      // Cambiar la imagen principal
+      const imagenPrincipal = document.getElementById('imagenPrincipalBalde');
+      if (imagenPrincipal) {
+        imagenPrincipal.src = element.src;
+      }
+    }
