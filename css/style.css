@@ -774,10 +774,10 @@ nav a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #4a90a4 0%, #5fa3b8 100%);
+  background-image: url('img/bannerspro/imagen_2.webp');
   padding: 40px;
   border-radius: 16px;
-  min-height: 400px;
+  min-height: 344px;
   position: relative;
   text-decoration: none;
   color: inherit;
