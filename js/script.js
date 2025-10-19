@@ -327,3 +327,20 @@ function verDetalle(id) {
     alert(`Ver detalles de: ${producto.nombre}\n\nEsta funcionalidad se implementará en producto.html`);
   }
 }
+
+
+// Script para el formulario de newsletter
+document.getElementById('newsletterForm')?.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const email = this.querySelector('input[type="email"]').value;
+  
+  // Aquí puedes agregar tu lógica de envío (API, servicio de email, etc.)
+  console.log('Email suscrito:', email);
+  
+  // Mostrar mensaje de éxito
+  alert('¡Gracias por suscribirte! Recibirás nuestras mejores ofertas.');
+  
+  // Limpiar formulario
+  this.reset();
+});
