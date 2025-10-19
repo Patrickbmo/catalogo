@@ -344,3 +344,68 @@ document.getElementById('newsletterForm')?.addEventListener('submit', function(e
   // Limpiar formulario
   this.reset();
 });
+
+// Script específico para el formulario de contacto
+    document.getElementById('contactoForm')?.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const submitBtn = this.querySelector('.btn-enviar');
+      const originalText = submitBtn.textContent;
+      const mensajeExito = document.getElementById('mensajeExito');
+      const mensajeError = document.getElementById('mensajeError');
+      
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+      
+      mensajeExito.style.display = 'none';
+      mensajeError.style.display = 'none';
+
+      try {
+        const formData = new FormData(this);
+        
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          mensajeExito.style.display = 'block';
+          this.reset();
+          
+          setTimeout(() => {
+            mensajeExito.style.display = 'none';
+          }, 5000);
+        } else {
+          throw new Error('Error en el envío');
+        }
+      } catch (error) {
+        mensajeError.style.display = 'block';
+        console.error('Error:', error);
+        
+        setTimeout(() => {
+          mensajeError.style.display = 'none';
+        }, 5000);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+
+    // Funcionalidad para el buscador en el header
+    document.getElementById('searchBtn')?.addEventListener('click', function() {
+      const searchTerm = document.getElementById('searchInput').value;
+      if (searchTerm.trim()) {
+        window.location.href = `catalogo.html?search=${encodeURIComponent(searchTerm)}`;
+      }
+    });
+
+    document.getElementById('searchInput')?.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        const searchTerm = this.value;
+        if (searchTerm.trim()) {
+          window.location.href = `catalogo.html?search=${encodeURIComponent(searchTerm)}`;
+        }
+      }
+    });
