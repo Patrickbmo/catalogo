@@ -562,7 +562,7 @@ nav a.active {
 /* ========== SECTION BALDES ========== */
 /* ========== SECCIÓN BALDES ========== */
 .lineas-baldes {
-  padding: 80px 0;
+  padding: 20px 0;
   background: white;
 }
 
@@ -570,7 +570,7 @@ nav a.active {
 .superior-baldes {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .balde-gal {
@@ -676,7 +676,7 @@ nav a.active {
 /* Parte Inferior - Cards e Imagen */
 .inferior-baldes {
   max-width: 1440px;
-  margin: 60px auto 0;
+  margin: 2px auto 0;
   padding: 0 20px;
 }
 
@@ -689,8 +689,9 @@ nav a.active {
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 240px);
   gap: 20px;
+  justify-content: center;
 }
 
 .balde-card {
@@ -700,12 +701,12 @@ nav a.active {
   padding: 0;
   transition: all 0.3s;
   cursor: pointer;
-  text-align: center;
+  text-align: start;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 290px;
+  width: 240px;
   overflow: hidden;
-  position: relative;
   text-decoration: none;
   color: inherit;
 }
@@ -727,13 +728,13 @@ nav a.active {
 
 .balde-card-image {
   width: 100%;
-  height: 280px;
+  height: 197px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f9f9f9;
   padding: 20px;
-  position: relative;
+  flex-shrink: 0;
 }
 
 .balde-card-image img {
@@ -748,39 +749,44 @@ nav a.active {
 }
 
 .balde-card-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 70%, transparent 100%);
-  padding: 50px 15px 20px;
-  z-index: 2;
+  background: white;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 }
 
 .balde-card h3 {
-  font-size: 1.1em;
+  font-size: 20px;
   font-weight: 600;
-  color: white;
-  margin-bottom: 8px;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
 }
 
 .balde-card p {
-  font-size: 0.85em;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.5;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
 }
+
 
 .imagen-derecha {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('img/bannerspro/imagen_2.webp');
+  background-image: url('../img/bannerspro/resistentes.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 40px;
   border-radius: 16px;
   min-height: 344px;
   position: relative;
-  text-decoration: none;
-  color: inherit;
+  cursor: pointer;
   transition: all 0.3s;
 }
 
@@ -789,17 +795,6 @@ nav a.active {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
-.imagen-derecha img {
-  width: 100%;
-  max-width: 450px;
-  height: auto;
-  object-fit: contain;
-  transition: transform 0.3s;
-}
-
-.imagen-derecha:hover img {
-  transform: scale(1.05);
-}
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1024px) {
