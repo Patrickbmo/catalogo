@@ -1,7 +1,231 @@
+// ==========================================
+// PLANTILLAS DE BROCHAS POR MARCA
+// Estas plantillas contienen la información común
+// que comparten todas las brochas de cada línea
+// ==========================================
+
+const plantillasBrochas = {
+  Premier: {
+    subtitulo: "Máximo Rendimiento Profesional",
+    descripcionCompleta: "La Brocha Premier representa la excelencia en herramientas de pintura profesional. Diseñada con cerdas premium de alta calidad y un mango ergonómico, garantiza resultados superiores en cada aplicación. Ideal para pinturas acrílicas, óleos y acabados profesionales. Su diseño ergonómico reduce la fatiga durante largas jornadas de trabajo.",
+    
+    caracteristicas: [
+      {
+        icono: "fa-brush",
+        titulo: "Cerdas Premium",
+        descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
+      },
+      {
+        icono: "fa-hand",
+        titulo: "Mango Ergonómico",
+        descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
+      },
+      {
+        icono: "fa-layer-group",
+        titulo: "Distribución Uniforme",
+        descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
+      },
+      {
+        icono: "fa-star",
+        titulo: "Acabado Superior",
+        descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
+      }
+    ],
+    
+    especificaciones: {
+      "Material de Cerdas": "Premium de alta densidad",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Sintética premium",
+      "Forma": "Plana rectangular",
+      "Tipo de Acabado": "Profesional",
+      "Vida Útil Estimada": "Hasta 300,000 pinceladas",
+      "Compatible con": "Pinturas acrílicas, látex, óleos, esmaltes"
+    },
+    
+    usos: [
+      {
+        icono: "fa-home",
+        titulo: "Pintura de Interiores",
+        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
+      },
+      {
+        icono: "fa-bullseye",
+        titulo: "Trabajos de Precisión",
+        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
+      },
+      {
+        icono: "fa-star",
+        titulo: "Acabados Profesionales",
+        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza Después del Uso",
+        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
+      },
+      {
+        titulo: "Secado Adecuado",
+        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
+      },
+      {
+        titulo: "Almacenamiento Correcto",
+        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
+      }
+    ]
+  },
+
+  Futura: {
+    subtitulo: "Tecnología y Rendimiento Profesional",
+    descripcionCompleta: "La Brocha Futura es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso y nivelado. Recoge y mantiene muy bien la pintura, ofreciendo un rendimiento excepcional en cada aplicación. Su diseño ergonómico reduce la fatiga durante largas jornadas de trabajo.",
+    
+    caracteristicas: [
+      {
+        icono: "fa-brush",
+        titulo: "Cerdas Premium",
+        descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
+      },
+      {
+        icono: "fa-hand",
+        titulo: "Mango Ergonómico",
+        descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
+      },
+      {
+        icono: "fa-layer-group",
+        titulo: "Distribución Uniforme",
+        descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
+      },
+      {
+        icono: "fa-star",
+        titulo: "Acabado Superior",
+        descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
+      }
+    ],
+    
+    especificaciones: {
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Plana rectangular",
+      "Tipo de Acabado": "Liso y nivelado",
+      "Vida Útil Estimada": "Hasta 300,000 pinceladas",
+      "Compatible con": "Metales, maderas, paredes, superficies rugosas"
+    },
+    
+    usos: [
+      {
+        icono: "fa-home",
+        titulo: "Pintura de Interiores",
+        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
+      },
+      {
+        icono: "fa-bullseye",
+        titulo: "Trabajos de Precisión",
+        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
+      },
+      {
+        icono: "fa-star",
+        titulo: "Acabados Profesionales",
+        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza Después del Uso",
+        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
+      },
+      {
+        titulo: "Secado Adecuado",
+        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
+      },
+      {
+        titulo: "Almacenamiento Correcto",
+        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
+      }
+    ]
+  },
+
+  Prima: {
+    subtitulo: "Precisión y Acabados Finos",
+    descripcionCompleta: "La Brocha Prima es ideal para un acabado delicado, uniforme y fino. Perfecta para la aplicación de lacas, tintes y pinturas no muy espesas. Su diseño especializado permite trabajos de precisión en superficies que requieren un toque delicado y acabados de alta calidad.",
+    
+    caracteristicas: [
+      {
+        icono: "fa-brush",
+        titulo: "Cerdas Premium",
+        descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
+      },
+      {
+        icono: "fa-hand",
+        titulo: "Mango Ergonómico",
+        descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
+      },
+      {
+        icono: "fa-layer-group",
+        titulo: "Distribución Uniforme",
+        descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
+      },
+      {
+        icono: "fa-star",
+        titulo: "Acabado Superior",
+        descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
+      }
+    ],
+    
+    especificaciones: {
+      "Material de Cerdas": "Sintéticas finas de alta calidad",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Fina y suave para acabados delicados",
+      "Forma": "Plana rectangular",
+      "Tipo de Acabado": "Delicado y uniforme",
+      "Vida Útil Estimada": "Hasta 300,000 pinceladas",
+      "Compatible con": "Lacas, tintes, pinturas ligeras, acabados finos"
+    },
+    
+    usos: [
+      {
+        icono: "fa-home",
+        titulo: "Pintura de Interiores",
+        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
+      },
+      {
+        icono: "fa-bullseye",
+        titulo: "Trabajos de Precisión",
+        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
+      },
+      {
+        icono: "fa-star",
+        titulo: "Acabados Profesionales",
+        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza Después del Uso",
+        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
+      },
+      {
+        titulo: "Secado Adecuado",
+        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
+      },
+      {
+        titulo: "Almacenamiento Correcto",
+        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
+      }
+    ]
+  }
+};
+
+
+
 // Base de datos de productos Wilson - Importado desde WooCommerce
 // Total de productos: 67
 
 const productos = [
+  // ===== BROCHAS PREMIER =====
   {
     id: 54,
     nombre: "BROCHA PREMIER 1 PULGADA",
@@ -9,7 +233,16 @@ const productos = [
     marca: "Premier",
     tamano: "1 pulgada",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp",
-    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
+    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
+    
+    // ===== NUEVOS CAMPOS =====
+    codigo: "BPR-01",
+    cantidadPorCaja: 24,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp", // Repetir si no hay más
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp"
+    ]
   },
   {
     id: 56,
@@ -18,7 +251,15 @@ const productos = [
     marca: "Premier",
     tamano: "2 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
-    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
+    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
+    
+    codigo: "BPR-02",
+    cantidadPorCaja: 24,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp"
+    ]
   },
   {
     id: 57,
@@ -27,7 +268,15 @@ const productos = [
     marca: "Premier",
     tamano: "2.5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
-    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
+    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
+    
+    codigo: "BPR-2.5",
+    cantidadPorCaja: 20,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp"
+    ]
   },
   {
     id: 58,
@@ -36,7 +285,15 @@ const productos = [
     marca: "Premier",
     tamano: "3 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
-    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
+    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
+    
+    codigo: "BPR-03",
+    cantidadPorCaja: 20,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp"
+    ]
   },
   {
     id: 60,
@@ -45,7 +302,15 @@ const productos = [
     marca: "Premier",
     tamano: "4 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
-    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
+    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
+    
+    codigo: "BPR-04",
+    cantidadPorCaja: 16,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp"
+    ]
   },
   {
     id: 61,
@@ -54,8 +319,18 @@ const productos = [
     marca: "Premier",
     tamano: "5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
-    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
+    descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
+    
+    codigo: "BPR-05",
+    cantidadPorCaja: 12,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp"
+    ]
   },
+
+  // ===== BROCHAS PRIMA =====
   {
     id: 62,
     nombre: "BROCHA PRIMA 1 PULGADA",
@@ -63,7 +338,15 @@ const productos = [
     marca: "Prima",
     tamano: "1 pulgada",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
-    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas."
+    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
+    
+    codigo: "BPM-01",
+    cantidadPorCaja: 24,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp"
+    ]
   },
   {
     id: 63,
@@ -72,7 +355,15 @@ const productos = [
     marca: "Prima",
     tamano: "2 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
-    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas."
+    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
+    
+    codigo: "BPM-02",
+    cantidadPorCaja: 24,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp"
+    ]
   },
   {
     id: 64,
@@ -81,7 +372,15 @@ const productos = [
     marca: "Prima",
     tamano: "2.5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
-    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas."
+    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
+    
+    codigo: "BPM-2.5",
+    cantidadPorCaja: 20,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp"
+    ]
   },
   {
     id: 65,
@@ -90,7 +389,15 @@ const productos = [
     marca: "Prima",
     tamano: "3 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
-    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas."
+    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
+    
+    codigo: "BPM-03",
+    cantidadPorCaja: 20,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp"
+    ]
   },
   {
     id: 66,
@@ -99,7 +406,15 @@ const productos = [
     marca: "Prima",
     tamano: "4 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
-    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas."
+    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
+    
+    codigo: "BPM-04",
+    cantidadPorCaja: 16,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp"
+    ]
   },
   {
     id: 68,
@@ -108,8 +423,18 @@ const productos = [
     marca: "Prima",
     tamano: "5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
-    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas."
+    descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
+    
+    codigo: "BPM-05",
+    cantidadPorCaja: 12,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp"
+    ]
   },
+
+  // ===== BROCHAS FUTURA =====
   {
     id: 69,
     nombre: "BROCHA FUTURA 1 PULGADA",
@@ -117,7 +442,15 @@ const productos = [
     marca: "Futura",
     tamano: "1 pulgada",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
-    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura."
+    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
+    
+    codigo: "BFT-01",
+    cantidadPorCaja: 24,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp"
+    ]
   },
   {
     id: 70,
@@ -126,7 +459,15 @@ const productos = [
     marca: "Futura",
     tamano: "2 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
-    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura."
+    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
+    
+    codigo: "BFT-02",
+    cantidadPorCaja: 24,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp"
+    ]
   },
   {
     id: 71,
@@ -135,7 +476,15 @@ const productos = [
     marca: "Futura",
     tamano: "3 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
-    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura."
+    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
+    
+    codigo: "BFT-03",
+    cantidadPorCaja: 20,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp"
+    ]
   },
   {
     id: 72,
@@ -144,7 +493,15 @@ const productos = [
     marca: "Futura",
     tamano: "4 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
-    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura."
+    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
+    
+    codigo: "BFT-04",
+    cantidadPorCaja: 16,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp"
+    ]
   },
   {
     id: 73,
@@ -153,7 +510,15 @@ const productos = [
     marca: "Futura",
     tamano: "2.5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
-    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura."
+    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
+    
+    codigo: "BFT-2.5",
+    cantidadPorCaja: 20,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp"
+    ]
   },
   {
     id: 75,
@@ -162,15 +527,31 @@ const productos = [
     marca: "Futura",
     tamano: "5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
-    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura."
+    descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
+    
+    codigo: "BFT-05",
+    cantidadPorCaja: 12,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp"
+    ]
   },
   {
     id: 121,
     nombre: "BROCHA FUTURA ANGULAR",
     categoria: "Brochas",
     marca: "Futura",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/angular.webp",
-    descripcion: "Son hechas con fibras largas de poliéster que retienen una gran cantidad de pintura para trabajo rápido y con poco esfuerzo. Mango ergonómico de polipropileno de primera calidad."
+    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
+    descripcion: "Son hechas con fibras largas de poliéster que retienen una gran cantidad de pintura para trabajo rápido y con poco esfuerzo. Mango ergonómico de polipropileno de primera calidad.",
+    
+    codigo: "BFT-ANG",
+    cantidadPorCaja: 20,
+    imagenes: [
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp"
+    ]
   },
   {
     id: 76,

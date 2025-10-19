@@ -322,10 +322,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Función global para ver detalle
 function verDetalle(id) {
-  const producto = productos.find(p => p.id === id);
-  if (producto) {
-    alert(`Ver detalles de: ${producto.nombre}\n\nEsta funcionalidad se implementará en producto.html`);
-  }
+  // Redirigir a la página de producto con el ID
+  window.location.href = `producto.html?id=${id}`;
 }
 
 
@@ -410,8 +408,18 @@ document.getElementById('newsletterForm')?.addEventListener('submit', function(e
       }
     });
 
-    let lineaActual = null;
+    // ==========================================
+// FUNCIONES PARA INDEX.HTML
+// Agregar al final de script.js
+// ==========================================
 
+// Variable global para trackear la línea actual
+let lineaActual = null;
+
+/**
+ * Muestra los detalles de una línea de brocha (Premier, Futura, Prima)
+ * Usado en index.html para el panel de líneas de brochas
+ */
 function mostrarDetalles(linea, element = null) {
   lineaActual = lineasData[linea];
   
@@ -419,12 +427,15 @@ function mostrarDetalles(linea, element = null) {
   if (window.innerWidth > 768) {
     const panel = document.getElementById('panelDetalles');
     
+    if (!panel) return; // Si no existe el panel, salir
+    
     // Actualizar título
-    document.getElementById('detallesTitulo').textContent = lineaActual.titulo;
+    const titulo = document.getElementById('detallesTitulo');
+    if (titulo) titulo.textContent = lineaActual.titulo;
     
     // Actualizar imagen principal
     const imagenPrincipal = document.getElementById('imagenPrincipal');
-    imagenPrincipal.src = lineaActual.imagenes[0];
+    if (imagenPrincipal) imagenPrincipal.src = lineaActual.imagenes[0];
     
     // Actualizar thumbnails
     const thumbnails = document.querySelectorAll('.thumbnail');
@@ -439,10 +450,11 @@ function mostrarDetalles(linea, element = null) {
     
     // Marcar primer thumbnail como activo
     thumbnails.forEach(t => t.classList.remove('active'));
-    thumbnails[0].classList.add('active');
+    if (thumbnails[0]) thumbnails[0].classList.add('active');
     
     // Actualizar botón Ver Más
-    document.getElementById('btnVerMasPanel').href = lineaActual.url;
+    const btnVerMas = document.getElementById('btnVerMasPanel');
+    if (btnVerMas) btnVerMas.href = lineaActual.url;
     
     // Remover clase active de todas las cards
     document.querySelectorAll('.linea-card').forEach(card => {
@@ -481,56 +493,53 @@ function mostrarDetalles(linea, element = null) {
   }
 }
 
-// Inicializar el panel con la primera línea al cargar la página
-document.addEventListener('DOMContentLoaded', () => {
-  mostrarDetalles('premier');
-});
-
-function cerrarDetalles() {
-  // Remover clase active de todas las cards
-  document.querySelectorAll('.linea-card').forEach(card => {
-    card.classList.remove('active');
-  });
-}
-
+/**
+ * Cambia la imagen principal del panel de brochas
+ */
 function cambiarImagenPrincipal(index) {
   if (!lineaActual) return;
   
   const imagenPrincipal = document.getElementById('imagenPrincipal');
+  if (!imagenPrincipal) return;
+  
   imagenPrincipal.src = lineaActual.imagenes[index];
   
   // Actualizar thumbnails activos
   const thumbnails = document.querySelectorAll('.thumbnail');
   thumbnails.forEach(t => t.classList.remove('active'));
-  thumbnails[index].classList.add('active');
+  if (thumbnails[index]) thumbnails[index].classList.add('active');
 }
 
-// SECTION BALDES
-// Función para cambiar la imagen principal al hacer clic en un thumbnail
-    function cambiarImagenBalde(element, event) {
-      // Remover clase active de todos los thumbnails
-      document.querySelectorAll('.thumbnail').forEach(thumb => {
-        thumb.classList.remove('active');
-      });
-      
-      // Agregar clase active al thumbnail clickeado
-      element.classList.add('active');
-      
-      // Cambiar la imagen principal
-      const imagenPrincipal = document.getElementById('imagenPrincipalBalde');
-      if (imagenPrincipal) {
-        imagenPrincipal.src = element.src;
-      }
-    }
-
-    // SECTION CANECAS
-// Función para cambiar la imagen principal de canecas al hacer clic en un thumbnail
-function cambiarImagenCaneca(element, event) {
-  // Remover clase active de todos los thumbnails en la sección de canecas
-  const canecaThumbnails = element.closest('.superior-canecas').querySelectorAll('.thumbnail-caneca');
-  canecaThumbnails.forEach(thumb => {
+/**
+ * Cambia la imagen principal de la sección de baldes
+ */
+function cambiarImagenBalde(element, event) {
+  // Remover clase active de todos los thumbnails
+  document.querySelectorAll('.thumbnail').forEach(thumb => {
     thumb.classList.remove('active');
   });
+  
+  // Agregar clase active al thumbnail clickeado
+  element.classList.add('active');
+  
+  // Cambiar la imagen principal
+  const imagenPrincipal = document.getElementById('imagenPrincipalBalde');
+  if (imagenPrincipal) {
+    imagenPrincipal.src = element.src;
+  }
+}
+
+/**
+ * Cambia la imagen principal de la sección de canecas
+ */
+function cambiarImagenCaneca(element, event) {
+  // Remover clase active de todos los thumbnails en la sección de canecas
+  const canecaThumbnails = element.closest('.superior-canecas')?.querySelectorAll('.thumbnail-caneca');
+  if (canecaThumbnails) {
+    canecaThumbnails.forEach(thumb => {
+      thumb.classList.remove('active');
+    });
+  }
   
   // Agregar clase active al thumbnail clickeado
   element.classList.add('active');
@@ -541,3 +550,26 @@ function cambiarImagenCaneca(element, event) {
     imagenPrincipal.src = element.src;
   }
 }
+
+/**
+ * Cierra los detalles de las líneas de brochas
+ */
+function cerrarDetalles() {
+  // Remover clase active de todas las cards
+  document.querySelectorAll('.linea-card').forEach(card => {
+    card.classList.remove('active');
+  });
+}
+
+// ===== INICIALIZACIÓN PARA INDEX.HTML =====
+// Solo ejecutar si estamos en index.html
+if (window.location.pathname.includes('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/')) {
+  document.addEventListener('DOMContentLoaded', () => {
+    // Inicializar el panel con la primera línea al cargar la página
+    if (typeof lineasData !== 'undefined' && lineasData.premier) {
+      mostrarDetalles('premier');
+    }
+  });
+}
+
+    

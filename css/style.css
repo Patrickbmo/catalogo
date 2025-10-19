@@ -1893,6 +1893,8 @@ main h1 {
       border: 1px solid #e57373;
     }
 
+
+    
 /* ========================================
    RESPONSIVE MEDIA QUERIES
    ======================================== */
@@ -2010,6 +2012,8 @@ main h1 {
     margin: 0 auto 20px;
   }
 }
+
+
 
 /* MÓVIL (768px) */
 @media (max-width: 768px) {
@@ -2668,6 +2672,9 @@ main h1 {
         height: 45px;
       }
 }
+
+
+
 
 /* LANDSCAPE MÓVIL */
 @media (max-width: 768px) and (orientation: landscape) {
