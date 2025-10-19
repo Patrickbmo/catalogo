@@ -409,3 +409,135 @@ document.getElementById('newsletterForm')?.addEventListener('submit', function(e
         }
       }
     });
+
+    let lineaActual = null;
+
+function mostrarDetalles(linea, element = null) {
+  lineaActual = lineasData[linea];
+  
+  // DESKTOP: Actualizar panel principal
+  if (window.innerWidth > 768) {
+    const panel = document.getElementById('panelDetalles');
+    
+    // Actualizar título
+    document.getElementById('detallesTitulo').textContent = lineaActual.titulo;
+    
+    // Actualizar imagen principal
+    const imagenPrincipal = document.getElementById('imagenPrincipal');
+    imagenPrincipal.src = lineaActual.imagenes[0];
+    
+    // Actualizar thumbnails
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach((thumb, index) => {
+      if (lineaActual.imagenes[index]) {
+        thumb.src = lineaActual.imagenes[index];
+        thumb.style.display = 'block';
+      } else {
+        thumb.style.display = 'none';
+      }
+    });
+    
+    // Marcar primer thumbnail como activo
+    thumbnails.forEach(t => t.classList.remove('active'));
+    thumbnails[0].classList.add('active');
+    
+    // Actualizar botón Ver Más
+    document.getElementById('btnVerMasPanel').href = lineaActual.url;
+    
+    // Remover clase active de todas las cards
+    document.querySelectorAll('.linea-card').forEach(card => {
+      card.classList.remove('active');
+    });
+    
+    // Agregar clase active a la card seleccionada
+    if (element) {
+      element.classList.add('active');
+      
+      // Scroll suave hacia el panel
+      setTimeout(() => {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 100);
+    } else {
+      // Si no hay elemento (carga inicial), marcar la primera card
+      const primerCard = document.querySelector('.linea-card');
+      if (primerCard) {
+        primerCard.classList.add('active');
+      }
+    }
+  } 
+  // MOBILE: Toggle panel colapsable dentro de la card
+  else {
+    if (element) {
+      // Cerrar todas las otras cards
+      document.querySelectorAll('.linea-card').forEach(card => {
+        if (card !== element) {
+          card.classList.remove('active');
+        }
+      });
+      
+      // Toggle la card actual
+      element.classList.toggle('active');
+    }
+  }
+}
+
+// Inicializar el panel con la primera línea al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+  mostrarDetalles('premier');
+});
+
+function cerrarDetalles() {
+  // Remover clase active de todas las cards
+  document.querySelectorAll('.linea-card').forEach(card => {
+    card.classList.remove('active');
+  });
+}
+
+function cambiarImagenPrincipal(index) {
+  if (!lineaActual) return;
+  
+  const imagenPrincipal = document.getElementById('imagenPrincipal');
+  imagenPrincipal.src = lineaActual.imagenes[index];
+  
+  // Actualizar thumbnails activos
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  thumbnails.forEach(t => t.classList.remove('active'));
+  thumbnails[index].classList.add('active');
+}
+
+// SECTION BALDES
+// Función para cambiar la imagen principal al hacer clic en un thumbnail
+    function cambiarImagenBalde(element, event) {
+      // Remover clase active de todos los thumbnails
+      document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.classList.remove('active');
+      });
+      
+      // Agregar clase active al thumbnail clickeado
+      element.classList.add('active');
+      
+      // Cambiar la imagen principal
+      const imagenPrincipal = document.getElementById('imagenPrincipalBalde');
+      if (imagenPrincipal) {
+        imagenPrincipal.src = element.src;
+      }
+    }
+
+    // SECTION CANECAS
+// Función para cambiar la imagen principal de canecas al hacer clic en un thumbnail
+function cambiarImagenCaneca(element, event) {
+  // Remover clase active de todos los thumbnails en la sección de canecas
+  const canecaThumbnails = element.closest('.superior-canecas').querySelectorAll('.thumbnail-caneca');
+  canecaThumbnails.forEach(thumb => {
+    thumb.classList.remove('active');
+  });
+  
+  // Agregar clase active al thumbnail clickeado
+  element.classList.add('active');
+  
+  // Cambiar la imagen principal
+  const imagenPrincipal = document.getElementById('imagenPrincipalCaneca');
+  if (imagenPrincipal) {
+    imagenPrincipal.src = element.src;
+  }
+}
