@@ -926,6 +926,314 @@ nav a.active {
   }
 }
 
+/* ========== SECCIÓN CANECAS ========== */
+.lineas-canecas {
+  padding: 20px 0;
+  background: white;
+}
+
+/* Parte Superior */
+.superior-canecas {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.caneca-gal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.img-caneca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.img-caneca img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.img-caneca img:hover {
+  transform: scale(1.05);
+}
+
+.infor-caneca {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.infor-caneca h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* Thumbnails para Canecas */
+.thumbnails-canecas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnail-caneca {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 3px solid #e0e0e0;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 8px;
+}
+
+.thumbnail-caneca:hover {
+  border-color: #d32f2f;
+  transform: scale(1.05);
+}
+
+.thumbnail-caneca.active {
+  border-color: #d32f2f;
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+/* Parte Inferior - Imagen e Cards */
+.inferior-canecas {
+  max-width: 1440px;
+  margin: 2px auto 0;
+  padding: 0 20px;
+}
+
+.contenido-inferior-canecas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.cards-container-canecas {
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.caneca-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 0;
+  transition: all 0.3s;
+  cursor: pointer;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  height: 290px;
+  width: 240px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.caneca-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #d32f2f;
+}
+
+.caneca-card.destacado {
+  border-color: #0066cc;
+  border-width: 3px;
+}
+
+.caneca-card.destacado:hover {
+  border-color: #0052a3;
+}
+
+.caneca-card-image {
+  width: 100%;
+  height: 197px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  padding: 20px;
+  flex-shrink: 0;
+}
+
+.caneca-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.caneca-card:hover .caneca-card-image img {
+  transform: scale(1.1);
+}
+
+.caneca-card-content {
+  background: white;
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.caneca-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.caneca-card p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.imagen-izquierda-canecas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/bannerspro/CANECAS.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 16px;
+  min-height: 344px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.imagen-izquierda-canecas:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ========== RESPONSIVE CANECAS ========== */
+@media (max-width: 1024px) {
+  .caneca-gal,
+  .contenido-inferior-canecas {
+    gap: 30px;
+  }
+
+  .img-caneca,
+  .imagen-izquierda-canecas {
+    padding: 30px;
+  }
+
+  .infor-caneca h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .lineas-canecas {
+    padding: 50px 0;
+  }
+
+  .caneca-gal,
+  .contenido-inferior-canecas {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .img-caneca,
+  .imagen-izquierda-canecas {
+    padding: 25px;
+  }
+
+  .img-caneca img {
+    max-width: 300px;
+  }
+
+  .infor-caneca h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .thumbnails-canecas {
+    flex-wrap: wrap;
+  }
+
+  .thumbnail-caneca {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cards-container-canecas {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .caneca-card-image {
+    height: 220px;
+  }
+
+  .caneca-card-content {
+    padding: 15px;
+  }
+
+  .caneca-card h3 {
+    font-size: 1em;
+  }
+
+  .caneca-card p {
+    font-size: 0.8em;
+  }
+
+  .inferior-canecas {
+    margin-top: 40px;
+  }
+
+  .inferior-canecas h2 {
+    font-size: 1.8em !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+
+  /* Orden: primero imagen, luego cards */
+  .contenido-inferior-canecas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagen-izquierda-canecas {
+    order: 1;
+    min-height: 300px;
+    padding: 30px 20px;
+  }
+
+  .cards-container-canecas {
+    order: 2;
+  }
+}
+
+
+
+
 /*=========== Main ==============*/
 main h1 {
   margin: 25px 0 15px;

@@ -665,3 +665,22 @@ function cambiarImagenPrincipal(index) {
         imagenPrincipal.src = element.src;
       }
     }
+
+    // SECTION CANECAS
+// Función para cambiar la imagen principal de canecas al hacer clic en un thumbnail
+function cambiarImagenCaneca(element, event) {
+  // Remover clase active de todos los thumbnails en la sección de canecas
+  const canecaThumbnails = element.closest('.superior-canecas').querySelectorAll('.thumbnail-caneca');
+  canecaThumbnails.forEach(thumb => {
+    thumb.classList.remove('active');
+  });
+  
+  // Agregar clase active al thumbnail clickeado
+  element.classList.add('active');
+  
+  // Cambiar la imagen principal
+  const imagenPrincipal = document.getElementById('imagenPrincipalCaneca');
+  if (imagenPrincipal) {
+    imagenPrincipal.src = element.src;
+  }
+}

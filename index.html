@@ -346,6 +346,8 @@
                 <p>Diseño ergonómico que reduce la fatiga durante largas jornadas</p>
               </div>
             </div>
+
+            <a id="btnVerMasPanel" href="catalogo.html?categoria=Baldes" class="btn-ver-mas-panel">Ver Más</a>
           </div>
         </div>
         
@@ -414,9 +416,117 @@
   </section>
 
 
+<!-- SECCIÓN CANECAS -->
+<section class="lineas-canecas">
+  
+  <!-- Parte Superior -->
+  <div class="superior-canecas">
+    
+    <!-- Información y Detalles -->
+    <div class="caneca-gal">
+      
+      <!-- Información Izquierda (50%) -->
+      <div class="infor-caneca">
+        <h2>Canecas</h2>
+        
+        <div class="caracteristicas">
+          <div class="caracteristica">
+            <i class="fas fa-droplet"></i>
+            <div>
+              <h4>Plástico de Alta Resistencia</h4>
+              <p>Fabricadas con polipropileno de grado industrial para máxima durabilidad</p>
+            </div>
+          </div>
+          
+          <div class="caracteristica">
+            <i class="fas fa-shield-halved"></i>
+            <div>
+              <h4>Capacidad Optimizada</h4>
+              <p>Disponibles en múltiples tamaños desde 5L hasta 20L para cada necesidad</p>
+            </div>
+          </div>
+          
+          <div class="caracteristica">
+            <i class="fas fa-hand"></i>
+            <div>
+              <h4>Agarre Ergonómico</h4>
+              <p>Asa reforzada con diseño antideslizante para transporte seguro</p>
+            </div>
+          </div>
+        </div>
+        
+        <a href="catalogo.html?categoria=Canecas" class="btn-ver-mas-panel">Ver Más</a>
+      </div>
+      
+      <!-- Imagen Derecha (50%) -->
+      <div class="img-caneca">
+        <img id="imagenPrincipalCaneca" src="https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp" alt="Caneca Wilson">
+      </div>
+      
+    </div>
+    
+    <!-- Thumbnails -->
+    <div class="thumbnails-canecas">
+      <img class="thumbnail-caneca active" src="https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp" alt="Caneca frente" onclick="cambiarImagenCaneca(this, event)">
+      <img class="thumbnail-caneca" src="https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp" alt="Caneca 1 galón" onclick="cambiarImagenCaneca(this, event)">
+      <img class="thumbnail-caneca" src="https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp" alt="Envase americano" onclick="cambiarImagenCaneca(this, event)">
+    </div>
+    
+  </div>
+  
+  <!-- Parte Inferior - Imagen e Cards -->
+  <div class="inferior-canecas">
+    
+    <div class="contenido-inferior-canecas">
+      
+      <!-- Imagen Izquierda (50%) -->
+      <div class="imagen-izquierda-canecas" onclick="window.location.href='catalogo.html?categoria=Canecas'">
+        <div style="position: absolute; bottom: 20px; left: 20px; background: rgba(211, 47, 47, 0.9); color: white; padding: 15px 25px; border-radius: 8px; z-index: 2;">
+          <h3 style="font-size: 1.5em; font-weight: 700; margin: 0;">Canecas Resistentes</h3>
+        </div>
+      </div>
+      
+      <!-- Cards Derecha (50%) -->
+      <div class="cards-container-canecas">
+        
+        <a href="catalogo.html?categoria=Canecas" class="caneca-card">
+          <div class="caneca-card-image">
+            <img src="https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp" alt="Caneca 5 galones">
+          </div>
+          <div class="caneca-card-content">
+            <h3>Caneca 5 galones</h3>
+            <p>Acabado Superior y Durabilidad Extrema</p>
+          </div>
+        </a>
+        
+        <a href="catalogo.html?categoria=Canecas" class="caneca-card destacado">
+          <div class="caneca-card-image">
+            <img src="https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp" alt="Caneca 1 galón">
+          </div>
+          <div class="caneca-card-content">
+            <h3>Caneca 1 galón</h3>
+            <p>Acabado Superior y Durabilidad Extrema</p>
+          </div>
+        </a>
+
+        <a href="catalogo.html?categoria=Canecas" class="caneca-card">
+          <div class="caneca-card-image">
+            <img src="https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp" alt="Envase americano 1 litro">
+          </div>
+          <div class="caneca-card-content">
+            <h3>Envase americano 1 litro</h3>
+            <p>Acabado Superior y Durabilidad Extrema</p>
+          </div>
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</section>
+
      
-
-
 
   <!-- Popup Modal para Formulario de Distribuidor -->
   <div id="distribuidorModal" class="modal">
