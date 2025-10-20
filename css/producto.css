@@ -358,6 +358,7 @@
   margin-bottom: 60px;
 }
 
+/* ===== DESKTOP: TABS HORIZONTALES ===== */
 .tabs-header {
   display: flex;
   gap: 10px;
@@ -394,6 +395,11 @@
   right: 0;
   height: 3px;
   background: #d32f2f;
+}
+
+/* Ocultar chevron en desktop */
+.tab-btn::before {
+  display: none;
 }
 
 .tabs-content {
@@ -532,6 +538,7 @@
   margin: 0;
 }
 
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .producto-hero {
@@ -550,6 +557,10 @@
 
   .usos-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tabs-content {
+    padding: 30px;
   }
 }
 
@@ -610,5 +621,167 @@
   .btn-favorito {
     width: 100%;
     height: 50px;
+  }
+
+  /* Reorganizar en columna con Grid */
+  .producto-tabs-section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Ocultar el header tradicional */
+  .tabs-header {
+    display: contents; /* Los hijos se convierten en grid items */
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  /* Convertir tabs-content en grid */
+  .tabs-content {
+    display: contents; /* Los hijos se convierten en grid items */
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+  
+  /* Cada botón */
+  .tab-btn {
+    width: 100%;
+    text-align: left;
+    padding: 18px 20px;
+    background: white;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    order: calc(var(--order) * 2); /* Botones en posiciones pares */
+  }
+  
+  .tab-btn:first-child {
+    border-top: 1px solid #e0e0e0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .tab-btn:hover {
+    background: #f9f9f9;
+  }
+  
+  .tab-btn.active {
+    color: #f0f0f0;
+    background: #E53E3E;
+  }
+  
+  /* Remover underline de desktop */
+  .tab-btn.active::after {
+    display: none;
+  }
+  
+  /* Mostrar chevron en mobile */
+  .tab-btn::before {
+    display: block;
+    content: '\f078'; /* chevron-down */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 0.85em;
+    color: #666;
+    transition: transform 0.35s ease, color 0.35s ease;
+  }
+  
+  .tab-btn.active::before {
+    transform: rotate(180deg);
+    color: #f0f0f0;
+  }
+  
+  /* Cada panel aparece después de su botón */
+  .tab-panel {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background: white;
+    border-bottom: 1px solid #e0e0e0;
+    transition: max-height 0.35s ease-in-out,
+                opacity 0.35s ease-in-out,
+                padding 0.35s ease-in-out;
+    padding: 0 20px;
+    order: calc(var(--order) * 2 + 1); /* Paneles en posiciones impares */
+  }
+  
+  .tab-panel.active {
+    max-height: 3000px;
+    opacity: 1;
+    padding: 25px 20px;
+  }
+  
+  .tab-panel:last-child {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  
+  /* Asignar orden a cada par botón-panel */
+  .tab-btn[data-tab="especificaciones"] { --order: 0; }
+  .tab-panel[data-tab="especificaciones"] { --order: 0; }
+  
+  .tab-btn[data-tab="usos"] { --order: 1; }
+  .tab-panel[data-tab="usos"] { --order: 1; }
+  
+  .tab-btn[data-tab="cuidados"] { --order: 2; }
+  .tab-panel[data-tab="cuidados"] { --order: 2; }
+  
+  /* Ajustes de contenido */
+  .tab-panel h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .especificaciones-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .especificacion-item {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .especificacion-value {
+    text-align: left;
+  }
+  
+  .usos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .cuidados-lista {
+    gap: 15px;
+  }
+  
+  .cuidado-item {
+    padding: 20px;
+  }
+ 
+
+}
+
+/* Móvil pequeño - ajustes adicionales */
+@media (max-width: 480px) {
+ .tab-btn {
+    padding: 15px;
+    font-size: 0.95em;
+  }
+  
+  .tab-panel.active {
+    padding: 20px 15px;
+  }
+  
+  .tab-panel h3 {
+    font-size: 1.3em;
   }
 }

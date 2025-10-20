@@ -368,26 +368,74 @@ function inicializarGaleria() {
 /**
  * Inicializa el sistema de tabs
  */
+/**
+ * Inicializa el sistema de tabs (Desktop) / Accordion (Mobile)
+ */
 function inicializarTabs() {
   const tabButtons = document.querySelectorAll('.tab-btn');
   const tabPanels = document.querySelectorAll('.tab-panel');
   
+  // Detectar si estamos en mobile
+  const isMobile = () => window.innerWidth <= 768;
+  
   tabButtons.forEach(button => {
     button.addEventListener('click', () => {
       const targetTab = button.dataset.tab;
-      
-      // Remover active de todos
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabPanels.forEach(panel => panel.classList.remove('active'));
-      
-      // Activar el seleccionado
-      button.classList.add('active');
       const targetPanel = document.getElementById(`tab-${targetTab}`);
-      if (targetPanel) {
+      
+      if (!targetPanel) return;
+      
+      // MOBILE: Accordion behavior (múltiples paneles abiertos)
+      if (isMobile()) {
+        // Toggle el panel clickeado
+        const isActive = button.classList.contains('active');
+        
+        button.classList.toggle('active');
+        targetPanel.classList.toggle('active');
+        
+      } 
+      // DESKTOP: Tabs behavior (solo uno activo)
+      else {
+        // Remover active de todos
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabPanels.forEach(panel => panel.classList.remove('active'));
+        
+        // Activar el seleccionado
+        button.classList.add('active');
         targetPanel.classList.add('active');
       }
     });
   });
+  
+  // Ajustar comportamiento al cambiar tamaño de ventana
+  let previousWidth = window.innerWidth;
+  
+  window.addEventListener('resize', () => {
+    const currentWidth = window.innerWidth;
+    
+    // Si cambiamos de mobile a desktop o viceversa
+    if ((previousWidth <= 768 && currentWidth > 768) || 
+        (previousWidth > 768 && currentWidth <= 768)) {
+      
+      // Reset: cerrar todos los paneles
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      tabPanels.forEach(panel => panel.classList.remove('active'));
+      
+      // En desktop, activar el primero
+      if (currentWidth > 768) {
+        if (tabButtons[0]) tabButtons[0].classList.add('active');
+        if (tabPanels[0]) tabPanels[0].classList.add('active');
+      }
+    }
+    
+    previousWidth = currentWidth;
+  });
+  
+  // Inicialización: En desktop activar el primero, en mobile todos cerrados
+  if (!isMobile()) {
+    if (tabButtons[0]) tabButtons[0].classList.add('active');
+    if (tabPanels[0]) tabPanels[0].classList.add('active');
+  }
 }
 
 /**
