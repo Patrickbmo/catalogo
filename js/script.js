@@ -148,9 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <button class="details-btn" onclick="verDetalle(${p.id})">Ver Detalles</button>
         <div class="actions">
-          <span title="Agregar a favoritos">❤️</span>
-          <span title="Calificar">⭐</span>
-          <span title="Agregar al carrito">🛒</span>
+          <span title="Agregar a favoritos" onclick="event.stopPropagation()">❤️</span>
+          <span title="Calificar" onclick="event.stopPropagation()">⭐</span>
+          <span title="Agregar a cotización" onclick="event.stopPropagation(); agregarACotizacion(${p.id}); return false;">🛒</span>
         </div>
       `;
       grid.appendChild(card);

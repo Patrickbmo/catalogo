@@ -444,16 +444,17 @@ function inicializarTabs() {
 function inicializarBotones() {
   // Botón de cotización
   const btnCotizar = document.querySelector('.btn-cotizar');
-  if (btnCotizar) {
-    btnCotizar.addEventListener('click', () => {
-      const productId = obtenerIdDeURL();
-      const producto = obtenerDatosCompletos(productId);
-      
-      if (producto) {
-        alert(`Producto añadido a la cotización:\n${producto.nombre}\n\nEsta funcionalidad se implementará en el sistema de cotización.`);
-      }
-    });
-  }
+if (btnCotizar) {
+  btnCotizar.addEventListener('click', () => {
+    const productId = obtenerIdDeURL();
+    const cantidad = parseInt(document.getElementById('cantidadProducto')?.value || 1);
+    
+    if (agregarACotizacion(productId, cantidad)) {
+      // Opcional: Abrir el modal de cotización
+      // setTimeout(() => abrirCotizacion(), 500);
+    }
+  });
+}
   
   // Botón de favorito
   const btnFavorito = document.querySelector('.btn-favorito');
@@ -474,3 +475,48 @@ function inicializarBotones() {
     });
   }
 }
+
+// ===== FUNCIONES DE CANTIDAD =====
+
+function ajustarCantidadProducto(cambio) {
+  const input = document.getElementById('cantidadProducto');
+  if (!input) return;
+  
+  let valor = parseInt(input.value) + cambio;
+  valor = Math.max(1, Math.min(999, valor));
+  input.value = valor;
+  actualizarInfoUnidades();
+}
+
+function validarCantidadProducto() {
+  const input = document.getElementById('cantidadProducto');
+  if (!input) return;
+  
+  let valor = parseInt(input.value) || 1;
+  valor = Math.max(1, Math.min(999, valor));
+  input.value = valor;
+  actualizarInfoUnidades();
+}
+
+function actualizarInfoUnidades() {
+  const productId = obtenerIdDeURL();
+  const producto = obtenerDatosCompletos(productId);
+  const cantidad = parseInt(document.getElementById('cantidadProducto')?.value || 1);
+  const infoElement = document.getElementById('infoUnidades');
+  
+  if (!producto || !infoElement) return;
+  
+  if (typeof producto.cantidadPorCaja === 'number') {
+    const unidadesTotales = producto.cantidadPorCaja * cantidad;
+    infoElement.textContent = `${cantidad} ${cantidad === 1 ? 'caja' : 'cajas'} = ${unidadesTotales} unidades`;
+  } else {
+    infoElement.textContent = `${cantidad} ${cantidad === 1 ? 'caja' : 'cajas'}`;
+  }
+}
+
+// Inicializar al cargar
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.getElementById('cantidadProducto')) {
+    actualizarInfoUnidades();
+  }
+});
