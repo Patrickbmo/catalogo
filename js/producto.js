@@ -1,6 +1,5 @@
 // ==========================================
-// FUNCIONES AUXILIARES PARA PRODUCTO.JS
-// AGREGAR AL INICIO (línea 3) - ANTES de document.addEventListener
+// PRODUCTO.JS - VERSIÓN CORREGIDA
 // ==========================================
 
 /**
@@ -39,8 +38,20 @@ function obtenerDatosCompletos(id) {
     };
   }
   
-  // Para productos no-brochas, retornar tal cual
-  return producto;
+  // Para productos no-brochas, agregar información básica
+  return {
+    ...producto,
+    subtitulo: producto.descripcion || '',
+    descripcionCompleta: producto.descripcion || '',
+    imagenes: producto.imagenes || [producto.imagen, producto.imagen, producto.imagen],
+    caracteristicas: [],
+    especificaciones: {
+      "Categoría": producto.categoria,
+      "Código": producto.codigo || 'N/A'
+    },
+    usos: [],
+    cuidados: []
+  };
 }
 
 /**
@@ -51,10 +62,7 @@ function tieneInformacionCompleta(producto) {
     producto &&
     producto.nombre &&
     producto.imagenes &&
-    producto.imagenes.length > 0 &&
-    producto.caracteristicas &&
-    producto.usos &&
-    producto.cuidados
+    producto.imagenes.length > 0
   );
 }
 
@@ -68,15 +76,7 @@ function redirigirACatalogo() {
   }, 2000);
 }
 
-// ===== NO AGREGAR MÁS CÓDIGO AQUÍ =====
-// El document.addEventListener ya existe más abajo en tu archivo
 // ===== INICIALIZACIÓN =====
-
-document.addEventListener('DOMContentLoaded', () => {
-  inicializarPaginaProducto();
-});
-
-// ... AQUÍ CONTINÚA TU CÓDIGO EXISTENTE (inicializarPaginaProducto, etc.)
 document.addEventListener('DOMContentLoaded', () => {
   inicializarPaginaProducto();
 });
@@ -101,10 +101,11 @@ function inicializarPaginaProducto() {
     return;
   }
   
+  console.log('Producto cargado:', producto); // Debug
+  
   // Verificar información completa
   if (!tieneInformacionCompleta(producto)) {
     console.warn('Producto sin información completa:', producto.nombre);
-    // Aún así renderizar lo que tengamos
   }
   
   // Renderizar todo el producto
@@ -120,49 +121,96 @@ function inicializarPaginaProducto() {
  * Renderiza todos los datos del producto en el HTML
  */
 function renderizarProducto(producto) {
-  // ===== TÍTULO Y META =====
-  document.getElementById('page-title').textContent = `${producto.nombre} - Wilson`;
-  document.getElementById('breadcrumb-product').textContent = producto.nombre;
-  
-  // ===== INFORMACIÓN PRINCIPAL =====
-  document.getElementById('productoNombre').textContent = producto.nombre;
-  document.getElementById('productoSubtitulo').textContent = producto.subtitulo || '';
-  document.getElementById('productoDescripcionCorta').innerHTML = `<p>${producto.descripcionCompleta || producto.descripcion}</p>`;
-  
-  // ===== BADGES =====
-  document.getElementById('badgeCategoria').textContent = producto.categoria;
-  
-  if (producto.marca) {
-    const badgeMarca = document.getElementById('badgeMarca');
-    badgeMarca.textContent = producto.marca;
-    badgeMarca.style.display = 'inline-block';
-  }
-  
-  // ===== META INFO =====
-  document.getElementById('productoCodigo').textContent = producto.codigo || 'N/A';
-  document.getElementById('productoCantidadCaja').textContent = producto.cantidadPorCaja || 'N/A';
-  
-  // ===== GALERÍA DE IMÁGENES =====
-  renderizarGaleria(producto.imagenes || [producto.imagen]);
-  
-  // ===== CARACTERÍSTICAS =====
-  if (producto.caracteristicas && producto.caracteristicas.length > 0) {
-    renderizarCaracteristicas(producto.caracteristicas);
-  }
-  
-  // ===== ESPECIFICACIONES =====
-  if (producto.especificaciones) {
-    renderizarEspecificaciones(producto.especificaciones);
-  }
-  
-  // ===== USOS =====
-  if (producto.usos && producto.usos.length > 0) {
-    renderizarUsos(producto.usos);
-  }
-  
-  // ===== CUIDADOS =====
-  if (producto.cuidados && producto.cuidados.length > 0) {
-    renderizarCuidados(producto.cuidados);
+  try {
+    // ===== TÍTULO DE LA PÁGINA =====
+    document.title = `${producto.nombre} - Wilson`;
+    
+    // ===== BREADCRUMB =====
+    const breadcrumb = document.getElementById('breadcrumb-product');
+    if (breadcrumb) {
+      breadcrumb.textContent = producto.nombre;
+    }
+    
+    // ===== INFORMACIÓN PRINCIPAL =====
+    const nombreElement = document.getElementById('productoNombre');
+    if (nombreElement) {
+      nombreElement.textContent = producto.nombre;
+    }
+    
+    const subtituloElement = document.getElementById('productoSubtitulo');
+    if (subtituloElement) {
+      subtituloElement.textContent = producto.subtitulo || '';
+    }
+    
+    const descripcionElement = document.getElementById('productoDescripcionCorta');
+    if (descripcionElement) {
+      descripcionElement.innerHTML = `<p>${producto.descripcionCompleta || producto.descripcion}</p>`;
+    }
+    
+    // ===== BADGES =====
+    const badgeCategoria = document.getElementById('badgeCategoria');
+    if (badgeCategoria) {
+      badgeCategoria.textContent = producto.categoria;
+    }
+    
+    if (producto.marca) {
+      const badgeMarca = document.getElementById('badgeMarca');
+      if (badgeMarca) {
+        badgeMarca.textContent = producto.marca;
+        badgeMarca.style.display = 'inline-block';
+      }
+    }
+    
+    // ===== META INFO =====
+    const codigoElement = document.getElementById('productoCodigo');
+    if (codigoElement) {
+      codigoElement.textContent = producto.codigo || 'N/A';
+    }
+    
+    const cantidadElement = document.getElementById('productoCantidadCaja');
+    if (cantidadElement) {
+      cantidadElement.textContent = producto.cantidadPorCaja || 'N/A';
+    }
+    
+    // ===== GALERÍA DE IMÁGENES =====
+    renderizarGaleria(producto.imagenes || [producto.imagen]);
+    
+    // ===== CARACTERÍSTICAS =====
+    if (producto.caracteristicas && producto.caracteristicas.length > 0) {
+      renderizarCaracteristicas(producto.caracteristicas);
+    } else {
+      // Ocultar sección si no hay características
+      const seccion = document.querySelector('.caracteristicas-destacadas');
+      if (seccion) seccion.style.display = 'none';
+    }
+    
+    // ===== ESPECIFICACIONES =====
+    if (producto.especificaciones) {
+      renderizarEspecificaciones(producto.especificaciones);
+    }
+    
+    // ===== USOS =====
+    if (producto.usos && producto.usos.length > 0) {
+      renderizarUsos(producto.usos);
+    } else {
+      // Ocultar tab de usos si no hay
+      const tabBtn = document.querySelector('[data-tab="usos"]');
+      if (tabBtn) tabBtn.style.display = 'none';
+    }
+    
+    // ===== CUIDADOS =====
+    if (producto.cuidados && producto.cuidados.length > 0) {
+      renderizarCuidados(producto.cuidados);
+    } else {
+      // Ocultar tab de cuidados si no hay
+      const tabBtn = document.querySelector('[data-tab="cuidados"]');
+      if (tabBtn) tabBtn.style.display = 'none';
+    }
+    
+    console.log('Producto renderizado correctamente'); // Debug
+    
+  } catch (error) {
+    console.error('Error al renderizar producto:', error);
   }
 }
 
@@ -172,6 +220,11 @@ function renderizarProducto(producto) {
 function renderizarGaleria(imagenes) {
   const imagenPrincipal = document.getElementById('imagenPrincipalProducto');
   const thumbnailsContainer = document.querySelector('.thumbnails-galeria');
+  
+  if (!imagenPrincipal || !thumbnailsContainer) {
+    console.error('Elementos de galería no encontrados');
+    return;
+  }
   
   // Imagen principal
   imagenPrincipal.src = imagenes[0];
@@ -200,7 +253,9 @@ function cambiarImagenPrincipalProducto(index) {
   
   // Cambiar imagen principal
   const imagenPrincipal = document.getElementById('imagenPrincipalProducto');
-  imagenPrincipal.src = imagenes[index];
+  if (imagenPrincipal) {
+    imagenPrincipal.src = imagenes[index];
+  }
   
   // Actualizar thumbnails activos
   document.querySelectorAll('.thumbnail-producto').forEach((thumb, i) => {
@@ -213,6 +268,8 @@ function cambiarImagenPrincipalProducto(index) {
  */
 function renderizarCaracteristicas(caracteristicas) {
   const grid = document.getElementById('caracteristicasGrid');
+  if (!grid) return;
+  
   grid.innerHTML = '';
   
   caracteristicas.forEach(caract => {
@@ -234,6 +291,8 @@ function renderizarCaracteristicas(caracteristicas) {
  */
 function renderizarEspecificaciones(especificaciones) {
   const grid = document.getElementById('especificacionesGrid');
+  if (!grid) return;
+  
   grid.innerHTML = '';
   
   Object.entries(especificaciones).forEach(([label, value]) => {
@@ -252,6 +311,8 @@ function renderizarEspecificaciones(especificaciones) {
  */
 function renderizarUsos(usos) {
   const grid = document.getElementById('usosGrid');
+  if (!grid) return;
+  
   grid.innerHTML = '';
   
   usos.forEach(uso => {
@@ -273,6 +334,8 @@ function renderizarUsos(usos) {
  */
 function renderizarCuidados(cuidados) {
   const lista = document.getElementById('cuidadosLista');
+  if (!lista) return;
+  
   lista.innerHTML = '';
   
   cuidados.forEach(cuidado => {
@@ -295,8 +358,9 @@ function inicializarGaleria() {
   if (btnZoom) {
     btnZoom.addEventListener('click', () => {
       const img = document.getElementById('imagenPrincipalProducto');
-      // Abrir imagen en modal o ventana nueva
-      window.open(img.src, '_blank');
+      if (img) {
+        window.open(img.src, '_blank');
+      }
     });
   }
 }
@@ -318,7 +382,10 @@ function inicializarTabs() {
       
       // Activar el seleccionado
       button.classList.add('active');
-      document.getElementById(`tab-${targetTab}`).classList.add('active');
+      const targetPanel = document.getElementById(`tab-${targetTab}`);
+      if (targetPanel) {
+        targetPanel.classList.add('active');
+      }
     });
   });
 }
@@ -334,10 +401,9 @@ function inicializarBotones() {
       const productId = obtenerIdDeURL();
       const producto = obtenerDatosCompletos(productId);
       
-      alert(`Producto añadido a la cotización:\n${producto.nombre}\n\nEsta funcionalidad se implementará en el sistema de cotización.`);
-      
-      // Aquí irá la lógica real de añadir a cotización
-      // Por ahora solo mostramos un alert
+      if (producto) {
+        alert(`Producto añadido a la cotización:\n${producto.nombre}\n\nEsta funcionalidad se implementará en el sistema de cotización.`);
+      }
     });
   }
   
@@ -357,17 +423,6 @@ function inicializarBotones() {
         icon.classList.add('far');
         alert('Producto removido de favoritos');
       }
-      
-      // Aquí irá la lógica real de favoritos
     });
   }
-}
-
-/**
- * Redirige al catálogo
- */
-function redirigirACatalogo() {
-  setTimeout(() => {
-    window.location.href = 'catalogo.html';
-  }, 2000);
 }
