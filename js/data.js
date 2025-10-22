@@ -6,29 +6,29 @@
 
 const plantillasBrochas = {
   Premier: {
-    subtitulo: "Máximo Rendimiento Profesional",
-    descripcionCompleta: "La Brocha Premier representa la excelencia en herramientas de pintura profesional. Diseñada con cerdas premium de alta calidad y un mango ergonómico, garantiza resultados superiores en cada aplicación. Ideal para pinturas acrílicas, óleos y acabados profesionales. Su diseño ergonómico reduce la fatiga durante largas jornadas de trabajo.",
+    subtitulo: "",
+    descripcionCompleta: "La brocha Wilson Premier es una opción de alto desempeño para quienes quieren un acabado parejo, sin rayas y con menos pasadas, incluso sobre paredes con textura donde otras suelen dejar marcas. Sus filamentos sintéticos cónicos cargan la pintura justa y la distribuyen de forma controlada para un acabado uniforme y sin marcas en interiores y exteriores, ya sea en muros lisos o con textura, así como en madera y metal. El mango ergonómico proporciona un agarre cómodo y un control firme durante jornadas extensas, mientras su estructura resistente conserva la forma y ayuda a disminuir goteos y salpicaduras, perfecta para obra, mantenimiento o proyectos en el hogar.",
     
     caracteristicas: [
       {
-        icono: "fa-brush",
+        icono: "img/icons/CERDAS.svg",
         titulo: "Cerdas Premium",
-        descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
+        descripcion: "La mezcla y largo de los filamentos elevan la carga de pintura y mejoran el nivelado del trazo, logrando aplicación pareja, bordes definidos y menos retoques."
       },
       {
-        icono: "fa-hand",
+        icono: "img/icons/MANGO.svg",
         titulo: "Mango Ergonómico",
-        descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
+        descripcion: "Su diseño se adapta a la mano, reduce la fatiga y brinda precisión en cortes, bordes y superficies amplias. Así mantienes un pulso estable y un acabado consistente durante toda la jornada."
       },
       {
-        icono: "fa-layer-group",
-        titulo: "Distribución Uniforme",
-        descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
+        icono: "img/icons/todot.svg",
+        titulo: "Todo Terreno",
+        descripcion: "Rinde excelente con pintura de agua (látex/acrílica) y esmalte en muros lisos o con textura, madera y metal, tanto en interior como en exterior. Una sola brocha para múltiples trabajos sin perder calidad."
       },
       {
-        icono: "fa-star",
-        titulo: "Acabado Superior",
-        descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
+        icono: "img/icons/goteo.svg",
+        titulo: "Menos goteo, más rendimineto",
+        descripcion: "Los filamentos cónicos entregan la pintura de manera controlada, evitando chorreos y salpicaduras. Aprovechas mejor cada carga y avanzas con menos pasadas."
       }
     ],
     
@@ -148,12 +148,12 @@ const plantillasBrochas = {
   },
 
   Prima: {
-    subtitulo: "Precisión y Acabados Finos",
-    descripcionCompleta: "La Brocha Prima es ideal para un acabado delicado, uniforme y fino. Perfecta para la aplicación de lacas, tintes y pinturas no muy espesas. Su diseño especializado permite trabajos de precisión en superficies que requieren un toque delicado y acabados de alta calidad.",
+    subtitulo: "",
+    descripcionCompleta: "La Brocha Wilson Angular está pensada para recortar con precisión donde una brocha recta no llega: bordes, esquinas, marcos de puertas y ventanas, rodapiés/guardapolvos y contornos de interruptores. Su cabeza en ángulo y las cerdas sintéticas con punta cónica cargan bien la pintura y la distribuyen parejo, logrando líneas limpias con menos pasadas. El mango plástico ergonómico da control cómodo en trabajos largos, y su desempeño es confiable tanto en interiores como en exteriores con látex/acrílico, esmalte o barniz.",
     
     caracteristicas: [
       {
-        icono: "fa-brush",
+        icono: "img/icons/cerdas.svg",
         titulo: "Cerdas Premium",
         descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
       },

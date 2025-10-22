@@ -1,5 +1,5 @@
 // ==========================================
-// PRODUCTO.JS - VERSIÓN CORREGIDA
+// PRODUCTO.JS - VERSIÓN CON ICONOS SVG
 // ==========================================
 
 /**
@@ -264,7 +264,7 @@ function cambiarImagenPrincipalProducto(index) {
 }
 
 /**
- * Renderiza las características destacadas
+ * Renderiza las características destacadas - CON ICONOS SVG
  */
 function renderizarCaracteristicas(caracteristicas) {
   const grid = document.getElementById('caracteristicasGrid');
@@ -277,7 +277,7 @@ function renderizarCaracteristicas(caracteristicas) {
     card.className = 'caracteristica-card';
     card.innerHTML = `
       <div class="caracteristica-icon">
-        <i class="fas ${caract.icono}"></i>
+        <img src="${caract.icono}" alt="${caract.titulo}" class="icono-svg">
       </div>
       <h4>${caract.titulo}</h4>
       <p>${caract.descripcion}</p>
@@ -307,7 +307,7 @@ function renderizarEspecificaciones(especificaciones) {
 }
 
 /**
- * Renderiza los usos recomendados
+ * Renderiza los usos recomendados - CON ICONOS SVG
  */
 function renderizarUsos(usos) {
   const grid = document.getElementById('usosGrid');
@@ -320,7 +320,7 @@ function renderizarUsos(usos) {
     card.className = 'uso-card';
     card.innerHTML = `
       <div class="uso-icon">
-        <i class="fas ${uso.icono}"></i>
+        <img src="${uso.icono}" alt="${uso.titulo}" class="icono-svg">
       </div>
       <h4>${uso.titulo}</h4>
       <p>${uso.descripcion}</p>
@@ -366,9 +366,6 @@ function inicializarGaleria() {
 }
 
 /**
- * Inicializa el sistema de tabs
- */
-/**
  * Inicializa el sistema de tabs (Desktop) / Accordion (Mobile)
  */
 function inicializarTabs() {
@@ -388,8 +385,6 @@ function inicializarTabs() {
       // MOBILE: Accordion behavior (múltiples paneles abiertos)
       if (isMobile()) {
         // Toggle el panel clickeado
-        const isActive = button.classList.contains('active');
-        
         button.classList.toggle('active');
         targetPanel.classList.toggle('active');
         
@@ -444,17 +439,17 @@ function inicializarTabs() {
 function inicializarBotones() {
   // Botón de cotización
   const btnCotizar = document.querySelector('.btn-cotizar');
-if (btnCotizar) {
-  btnCotizar.addEventListener('click', () => {
-    const productId = obtenerIdDeURL();
-    const cantidad = parseInt(document.getElementById('cantidadProducto')?.value || 1);
-    
-    if (agregarACotizacion(productId, cantidad)) {
-      // Opcional: Abrir el modal de cotización
-      // setTimeout(() => abrirCotizacion(), 500);
-    }
-  });
-}
+  if (btnCotizar) {
+    btnCotizar.addEventListener('click', () => {
+      const productId = obtenerIdDeURL();
+      const cantidad = parseInt(document.getElementById('cantidadProducto')?.value || 1);
+      
+      if (agregarACotizacion(productId, cantidad)) {
+        // Opcional: Abrir el modal de cotización
+        // setTimeout(() => abrirCotizacion(), 500);
+      }
+    });
+  }
   
   // Botón de favorito
   const btnFavorito = document.querySelector('.btn-favorito');
