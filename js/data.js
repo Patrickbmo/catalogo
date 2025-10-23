@@ -33,7 +33,7 @@ const plantillasBrochas = {
     ],
     
     especificaciones: {
-      "Material de Cerdas": "Premium de alta densidad",
+      "medidas": "productoNombre", //*este se llena según el producto seleccionado
       "Material de Mango": "Polipropileno ergonómico",
       "Tipo de Cerda": "Sintética premium",
       "Forma": "Plana rectangular",
@@ -236,8 +236,8 @@ const productos = [
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
     // ===== NUEVOS CAMPOS =====
-    codigo: "BPR-01",
-    cantidadPorCaja: 24,
+    codigo: "12320",
+    cantidadPorCaja: 48,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp", // Repetir si no hay más
@@ -253,7 +253,7 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
-    codigo: "BPR-02",
+    codigo: "12322",
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
@@ -270,8 +270,8 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
-    codigo: "BPR-2.5",
-    cantidadPorCaja: 20,
+    codigo: "12323",
+    cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
@@ -287,8 +287,8 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
-    codigo: "BPR-03",
-    cantidadPorCaja: 20,
+    codigo: "12324",
+    cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
@@ -304,8 +304,8 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
-    codigo: "BPR-04",
-    cantidadPorCaja: 16,
+    codigo: "12325",
+    cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
@@ -321,7 +321,7 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
-    codigo: "BPR-05",
+    codigo: "12326",
     cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
