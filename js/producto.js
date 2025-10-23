@@ -288,6 +288,7 @@ function renderizarCaracteristicas(caracteristicas) {
 
 /**
  * Renderiza las especificaciones técnicas
+ * Formato simple: label: valor
  */
 function renderizarEspecificaciones(especificaciones) {
   const grid = document.getElementById('especificacionesGrid');
@@ -295,12 +296,20 @@ function renderizarEspecificaciones(especificaciones) {
   
   grid.innerHTML = '';
   
-  Object.entries(especificaciones).forEach(([label, value]) => {
+  // Si no hay especificaciones, mostrar mensaje
+  if (!especificaciones || Object.keys(especificaciones).length === 0) {
+    grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #666;">No hay especificaciones disponibles para este producto.</p>';
+    return;
+  }
+  
+  // Renderizar cada especificación
+  Object.entries(especificaciones).forEach(([label, valor]) => {
     const item = document.createElement('div');
     item.className = 'especificacion-item';
+    
     item.innerHTML = `
       <span class="especificacion-label">${label}:</span>
-      <span class="especificacion-value">${value}</span>
+      <span class="especificacion-value">${valor}</span>
     `;
     grid.appendChild(item);
   });

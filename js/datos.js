@@ -1,225 +1,10 @@
 // ==========================================
-// PLANTILLAS DE BROCHAS POR MARCA
-// Estas plantillas contienen la información común
-// que comparten todas las brochas de cada línea
+// PRODUCTOS CON ESPECIFICACIONES ACTUALIZADAS
 // ==========================================
-
-const plantillasBrochas = {
-  Premier: {
-    subtitulo: "",
-    descripcionCompleta: "La brocha Wilson Premier es una opción de alto desempeño para quienes quieren un acabado parejo, sin rayas y con menos pasadas, incluso sobre paredes con textura donde otras suelen dejar marcas. Sus filamentos sintéticos cónicos cargan la pintura justa y la distribuyen de forma controlada para un acabado uniforme y sin marcas en interiores y exteriores, ya sea en muros lisos o con textura, así como en madera y metal. El mango ergonómico proporciona un agarre cómodo y un control firme durante jornadas extensas, mientras su estructura resistente conserva la forma y ayuda a disminuir goteos y salpicaduras, perfecta para obra, mantenimiento o proyectos en el hogar.",
-    
-    caracteristicas: [
-      {
-        icono: "img/icons/CERDAS.svg",
-        titulo: "Cerdas Premium",
-        descripcion: "La mezcla y largo de los filamentos elevan la carga de pintura y mejoran el nivelado del trazo, logrando aplicación pareja, bordes definidos y menos retoques."
-      },
-      {
-        icono: "img/icons/MANGO.svg",
-        titulo: "Mango Ergonómico",
-        descripcion: "Su diseño se adapta a la mano, reduce la fatiga y brinda precisión en cortes, bordes y superficies amplias. Así mantienes un pulso estable y un acabado consistente durante toda la jornada."
-      },
-      {
-        icono: "img/icons/todot.svg",
-        titulo: "Todo Terreno",
-        descripcion: "Rinde excelente con pintura de agua (látex/acrílica) y esmalte en muros lisos o con textura, madera y metal, tanto en interior como en exterior. Una sola brocha para múltiples trabajos sin perder calidad."
-      },
-      {
-        icono: "img/icons/goteo.svg",
-        titulo: "Menos goteo, más rendimineto",
-        descripcion: "Los filamentos cónicos entregan la pintura de manera controlada, evitando chorreos y salpicaduras. Aprovechas mejor cada carga y avanzas con menos pasadas."
-      }
-    ],
-    
-    
-    
-    usos: [
-      {
-        icono: "fa-home",
-        titulo: "Pintura de Interiores",
-        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
-      },
-      {
-        icono: "fa-bullseye",
-        titulo: "Trabajos de Precisión",
-        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
-      },
-      {
-        icono: "fa-star",
-        titulo: "Acabados Profesionales",
-        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
-      }
-    ],
-    
-    cuidados: [
-      {
-        titulo: "Limpieza Después del Uso",
-        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
-      },
-      {
-        titulo: "Secado Adecuado",
-        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
-      },
-      {
-        titulo: "Almacenamiento Correcto",
-        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
-      }
-    ]
-  },
-
-  Futura: {
-    subtitulo: "Tecnología y Rendimiento Profesional",
-    descripcionCompleta: "La Brocha Futura es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso y nivelado. Recoge y mantiene muy bien la pintura, ofreciendo un rendimiento excepcional en cada aplicación. Su diseño ergonómico reduce la fatiga durante largas jornadas de trabajo.",
-    
-    caracteristicas: [
-      {
-        icono: "fa-brush",
-        titulo: "Cerdas Premium",
-        descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
-      },
-      {
-        icono: "fa-hand",
-        titulo: "Mango Ergonómico",
-        descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
-      },
-      {
-        icono: "fa-layer-group",
-        titulo: "Distribución Uniforme",
-        descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
-      },
-      {
-        icono: "fa-star",
-        titulo: "Acabado Superior",
-        descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
-      }
-    ],
-    
-    especificaciones: {
-      "Material de Cerdas": "Poliéster de fibras largas",
-      "Material de Mango": "Polipropileno de primera calidad",
-      "Tipo de Cerda": "Sintética con puntas horquilladas",
-      "Forma": "Plana rectangular",
-      "Tipo de Acabado": "Liso y nivelado",
-      "Vida Útil Estimada": "Hasta 300,000 pinceladas",
-      "Compatible con": "Metales, maderas, paredes, superficies rugosas"
-    },
-    
-    usos: [
-      {
-        icono: "fa-home",
-        titulo: "Pintura de Interiores",
-        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
-      },
-      {
-        icono: "fa-bullseye",
-        titulo: "Trabajos de Precisión",
-        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
-      },
-      {
-        icono: "fa-star",
-        titulo: "Acabados Profesionales",
-        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
-      }
-    ],
-    
-    cuidados: [
-      {
-        titulo: "Limpieza Después del Uso",
-        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
-      },
-      {
-        titulo: "Secado Adecuado",
-        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
-      },
-      {
-        titulo: "Almacenamiento Correcto",
-        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
-      }
-    ]
-  },
-
-  Prima: {
-    subtitulo: "",
-    descripcionCompleta: "La Brocha Wilson Angular está pensada para recortar con precisión donde una brocha recta no llega: bordes, esquinas, marcos de puertas y ventanas, rodapiés/guardapolvos y contornos de interruptores. Su cabeza en ángulo y las cerdas sintéticas con punta cónica cargan bien la pintura y la distribuyen parejo, logrando líneas limpias con menos pasadas. El mango plástico ergonómico da control cómodo en trabajos largos, y su desempeño es confiable tanto en interiores como en exteriores con látex/acrílico, esmalte o barniz.",
-    
-    caracteristicas: [
-      {
-        icono: "img/icons/cerdas.svg",
-        titulo: "Cerdas Premium",
-        descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
-      },
-      {
-        icono: "fa-hand",
-        titulo: "Mango Ergonómico",
-        descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
-      },
-      {
-        icono: "fa-layer-group",
-        titulo: "Distribución Uniforme",
-        descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
-      },
-      {
-        icono: "fa-star",
-        titulo: "Acabado Superior",
-        descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
-      }
-    ],
-    
-    especificaciones: {
-      "Material de Cerdas": "Sintéticas finas de alta calidad",
-      "Material de Mango": "Polipropileno ergonómico",
-      "Tipo de Cerda": "Fina y suave para acabados delicados",
-      "Forma": "Plana rectangular",
-      "Tipo de Acabado": "Delicado y uniforme",
-      "Vida Útil Estimada": "Hasta 300,000 pinceladas",
-      "Compatible con": "Lacas, tintes, pinturas ligeras, acabados finos"
-    },
-    
-    usos: [
-      {
-        icono: "fa-home",
-        titulo: "Pintura de Interiores",
-        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
-      },
-      {
-        icono: "fa-bullseye",
-        titulo: "Trabajos de Precisión",
-        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
-      },
-      {
-        icono: "fa-star",
-        titulo: "Acabados Profesionales",
-        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
-      }
-    ],
-    
-    cuidados: [
-      {
-        titulo: "Limpieza Después del Uso",
-        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
-      },
-      {
-        titulo: "Secado Adecuado",
-        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
-      },
-      {
-        titulo: "Almacenamiento Correcto",
-        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
-      }
-    ]
-  }
-};
-
-
-
-// Base de datos de productos Wilson - Importado desde WooCommerce
-// Total de productos: 67
 
 const productos = [
   // ===== BROCHAS PREMIER =====
-  
-    {
+  {
     id: 54,
     nombre: "BROCHA PREMIER 1 PULGADA",
     categoria: "Brochas",
@@ -238,15 +23,19 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "1 pulgada",
-      "Largo de filamentos":  "45 mm",
-      "Grosor": "10 mm",
+      "Largo de filamentos": "60 mm",
+      "Grosor": "13 mm",
       "Material de Cerdas": "Poliéster",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Sintética premium",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "48 unidades",
-      "Código": "12320"
+      "Unidades por caja": "24 unidades",
+      "Código": "12233"
     }
   },
+  
   {
     id: 56,
     nombre: "BROCHA PREMIER 2 PULGADAS",
@@ -255,7 +44,6 @@ const productos = [
     tamano: "2 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
-    
     codigo: "12322",
     cantidadPorCaja: 24,
     imagenes: [
@@ -263,18 +51,22 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "2 pulgadas",
-      "Largo de filamentos":  "55 mm",
-      "Grosor": "11 mm",
+      "Largo de filamentos": "60 mm",
+      "Grosor": "13 mm",
       "Material de Cerdas": "Poliéster",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Sintética premium",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "24 unidades",
       "Código": "12322"
     }
   },
+
   {
     id: 57,
     nombre: "BROCHA PREMIER 2,5 PULGADAS",
@@ -283,7 +75,6 @@ const productos = [
     tamano: "2.5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
-    
     codigo: "12323",
     cantidadPorCaja: 24,
     imagenes: [
@@ -291,18 +82,22 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
-      "Medida": "2,5 pulgadas",
-      "Largo de filamentos":  "60 mm",
-      "Grosor": "11 mm",
+      "Medida": "2.5 pulgadas",
+      "Largo de filamentos": "65 mm",
+      "Grosor": "14 mm",
       "Material de Cerdas": "Poliéster",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Sintética premium",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "24 unidades",
       "Código": "12323"
     }
   },
+
   {
     id: 58,
     nombre: "BROCHA PREMIER 3 PULGADAS",
@@ -311,7 +106,6 @@ const productos = [
     tamano: "3 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
-    
     codigo: "12324",
     cantidadPorCaja: 24,
     imagenes: [
@@ -319,18 +113,22 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "3 pulgadas",
-      "Largo de filamentos":  "60 mm",
-      "Grosor": "13 mm",
+      "Largo de filamentos": "70 mm",
+      "Grosor": "15 mm",
       "Material de Cerdas": "Poliéster",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Sintética premium",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "24 unidades",
       "Código": "12324"
     }
   },
+
   {
     id: 60,
     nombre: "BROCHA PREMIER 4 PULGADAS",
@@ -339,7 +137,6 @@ const productos = [
     tamano: "4 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
-    
     codigo: "12325",
     cantidadPorCaja: 12,
     imagenes: [
@@ -347,18 +144,22 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
-      "Grosor": "13 mm",
+      "Largo de filamentos": "75 mm",
+      "Grosor": "16 mm",
       "Material de Cerdas": "Poliéster",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Sintética premium",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "12 unidades",
-      "Código": "12324"
+      "Código": "12325"
     }
   },
+
   {
     id: 61,
     nombre: "BROCHA PREMIER 5 PULGADAS",
@@ -367,7 +168,6 @@ const productos = [
     tamano: "5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
-    
     codigo: "12326",
     cantidadPorCaja: 12,
     imagenes: [
@@ -375,16 +175,19 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
-      "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
-      "Grosor": "18 mm",
+      "Medida": "5 pulgadas",
+      "Largo de filamentos": "80 mm",
+      "Grosor": "17 mm",
       "Material de Cerdas": "Poliéster",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Sintética premium",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "12 unidades",
-      "Código": "12324"
+      "Código": "12326"
     }
   },
 
@@ -397,27 +200,29 @@ const productos = [
     tamano: "1 pulgada",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
-    
-    codigo: "12420",
+    codigo: "BPM-01",
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "1 pulgada",
-      "Largo de filamentos":  "45 mm",
-      "Grosor": "10 mm",
-      "Material de Cerdas": "Poliéster",
-      "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
+      "Largo de filamentos": "40 mm",
+      "Grosor": "8 mm",
+      "Material de Cerdas": "Sintéticas finas",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Fina y suave",
+      "Forma": "Plana rectangular",
+      "Tipo de Recubrimiento": "Lacas, tintes, pinturas ligeras",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "48 unidades",
-      "Código": "12420"
+      "Unidades por caja": "24 unidades",
+      "Código": "BPM-01"
     }
   },
+
   {
     id: 63,
     nombre: "BROCHA PRIMA 2 PULGADAS",
@@ -426,27 +231,29 @@ const productos = [
     tamano: "2 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
-    
-    codigo: "12422",
+    codigo: "BPM-02",
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "2 pulgadas",
-      "Largo de filamentos":  "55 mm",
+      "Largo de filamentos": "50 mm",
       "Grosor": "10 mm",
-      "Material de Cerdas": "Poliéster",
-      "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
+      "Material de Cerdas": "Sintéticas finas",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Fina y suave",
+      "Forma": "Plana rectangular",
+      "Tipo de Recubrimiento": "Lacas, tintes, pinturas ligeras",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "24 unidades",
-      "Código": "12422"
+      "Código": "BPM-02"
     }
   },
+
   {
     id: 64,
     nombre: "BROCHA PRIMA 2,5 PULGADAS",
@@ -455,27 +262,29 @@ const productos = [
     tamano: "2.5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
-    
-    codigo: "12427",
+    codigo: "BPM-2.5",
     cantidadPorCaja: 20,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "2.5 pulgadas",
-      "Largo de filamentos":  "60 mm",
+      "Largo de filamentos": "55 mm",
       "Grosor": "11 mm",
-      "Material de Cerdas": "Poliéster",
-      "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
+      "Material de Cerdas": "Sintéticas finas",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Fina y suave",
+      "Forma": "Plana rectangular",
+      "Tipo de Recubrimiento": "Lacas, tintes, pinturas ligeras",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "24 unidades",
-      "Código": "12427"
+      "Unidades por caja": "20 unidades",
+      "Código": "BPM-2.5"
     }
   },
+
   {
     id: 65,
     nombre: "BROCHA PRIMA 3 PULGADAS",
@@ -484,7 +293,6 @@ const productos = [
     tamano: "3 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
-    
     codigo: "BPM-03",
     cantidadPorCaja: 20,
     imagenes: [
@@ -492,19 +300,22 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "3 pulgadas",
-      "Largo de filamentos":  "60 mm",
-      "Grosor": "11 mm",
-      "Material de Cerdas": "Poliéster",
-      "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
+      "Largo de filamentos": "60 mm",
+      "Grosor": "12 mm",
+      "Material de Cerdas": "Sintéticas finas",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Fina y suave",
+      "Forma": "Plana rectangular",
+      "Tipo de Recubrimiento": "Lacas, tintes, pinturas ligeras",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "24 unidades",
-      "Código": "12428"
+      "Unidades por caja": "20 unidades",
+      "Código": "BPM-03"
     }
   },
+
   {
     id: 66,
     nombre: "BROCHA PRIMA 4 PULGADAS",
@@ -513,7 +324,6 @@ const productos = [
     tamano: "4 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
-    
     codigo: "BPM-04",
     cantidadPorCaja: 16,
     imagenes: [
@@ -521,19 +331,22 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
-      "Grosor": "11 mm",
-      "Material de Cerdas": "Poliéster",
-      "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
+      "Largo de filamentos": "65 mm",
+      "Grosor": "13 mm",
+      "Material de Cerdas": "Sintéticas finas",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Fina y suave",
+      "Forma": "Plana rectangular",
+      "Tipo de Recubrimiento": "Lacas, tintes, pinturas ligeras",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "12 unidades",
-      "Código": "12425"
+      "Unidades por caja": "16 unidades",
+      "Código": "BPM-04"
     }
   },
+
   {
     id: 68,
     nombre: "BROCHA PRIMA 5 PULGADAS",
@@ -542,25 +355,26 @@ const productos = [
     tamano: "5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
-    
-    codigo: "12426",
+    codigo: "BPM-05",
     cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "5 pulgadas",
-      "Largo de filamentos":  "65 mm",
-      "Grosor": "17 mm",
-      "Material de Cerdas": "Poliéster",
-      "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
+      "Largo de filamentos": "70 mm",
+      "Grosor": "14 mm",
+      "Material de Cerdas": "Sintéticas finas",
+      "Material de Mango": "Polipropileno ergonómico",
+      "Tipo de Cerda": "Fina y suave",
+      "Forma": "Plana rectangular",
+      "Tipo de Recubrimiento": "Lacas, tintes, pinturas ligeras",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "12 unidades",
-      "Código": "12426"
+      "Código": "BPM-05"
     }
   },
 
@@ -573,27 +387,29 @@ const productos = [
     tamano: "1 pulgada",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
-    
-    codigo: "12219",
+    codigo: "BFT-01",
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
-      "Medida": "1 pulgadas",
-      "Largo de filamentos":  "45 mm",
+      "Medida": "1 pulgada",
+      "Largo de filamentos": "45 mm",
       "Grosor": "10 mm",
-      "Material de Cerdas": "Poliéster",
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "48 unidades",
-      "Código": "12219"
+      "Unidades por caja": "24 unidades",
+      "Código": "BFT-01"
     }
   },
+
   {
     id: 70,
     nombre: "BROCHA FUTURA 2 PULGADAS",
@@ -602,27 +418,29 @@ const productos = [
     tamano: "2 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
-    
-    codigo: "12213",
+    codigo: "BFT-02",
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "2 pulgadas",
-      "Largo de filamentos":  "55 mm",
-      "Grosor": "11 mm",
-      "Material de Cerdas": "Poliéster",
+      "Largo de filamentos": "55 mm",
+      "Grosor": "12 mm",
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
       "Tipo de Pegamento": "Epoxi",
       "Unidades por caja": "24 unidades",
-      "Código": "12213"
+      "Código": "BFT-02"
     }
   },
+
   {
     id: 71,
     nombre: "BROCHA FUTURA 3 PULGADAS",
@@ -631,27 +449,29 @@ const productos = [
     tamano: "3 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
-    
-    codigo: "12220",
+    codigo: "BFT-03",
     cantidadPorCaja: 20,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "3 pulgadas",
-      "Largo de filamentos":  "60 mm",
-      "Grosor": "12 mm",
-      "Material de Cerdas": "Poliéster",
+      "Largo de filamentos": "65 mm",
+      "Grosor": "14 mm",
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "24 unidades",
-      "Código": "12220"
+      "Unidades por caja": "20 unidades",
+      "Código": "BFT-03"
     }
   },
+
   {
     id: 72,
     nombre: "BROCHA FUTURA 4 PULGADAS",
@@ -660,26 +480,29 @@ const productos = [
     tamano: "4 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
-    
-    codigo: "12216",
+    codigo: "BFT-04",
     cantidadPorCaja: 16,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
+      "Largo de filamentos": "72 mm",
       "Grosor": "15 mm",
-      "Material de Cerdas": "Poliéster",
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
-      "Tipo de Pegamento": "12 unidades",
-      "Código": "12216"
+      "Tipo de Pegamento": "Epoxi",
+      "Unidades por caja": "16 unidades",
+      "Código": "BFT-04"
     }
   },
+
   {
     id: 73,
     nombre: "BROCHA FUTURA 2,5 PULGADAS",
@@ -688,27 +511,29 @@ const productos = [
     tamano: "2.5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
-    
-    codigo: "12222",
+    codigo: "BFT-2.5",
     cantidadPorCaja: 20,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
-      "Medida": "2,5 pulgadass",
-      "Largo de filamentos":  "60 mm",
-      "Grosor": "11 mm",
-      "Material de Cerdas": "Poliéster",
+      "Medida": "2.5 pulgadas",
+      "Largo de filamentos": "60 mm",
+      "Grosor": "13 mm",
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "24 unidades",
-      "Código": "12222"
+      "Unidades por caja": "20 unidades",
+      "Código": "BFT-2.5"
     }
   },
+
   {
     id: 75,
     nombre: "BROCHA FUTURA 5 PULGADAS",
@@ -717,35 +542,36 @@ const productos = [
     tamano: "5 pulgadas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
-    
-    codigo: "12217",
+    codigo: "BFT-05",
     cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
       "Medida": "5 pulgadas",
-      "Largo de filamentos":  "65 mm",
-      "Grosor": "17 mm",
-      "Material de Cerdas": "Poliéster",
+      "Largo de filamentos": "78 mm",
+      "Grosor": "16 mm",
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Plana rectangular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "24 unidades",
-      "Código": "12217"
+      "Unidades por caja": "12 unidades",
+      "Código": "BFT-05"
     }
   },
+
   {
     id: 121,
     nombre: "BROCHA FUTURA ANGULAR",
     categoria: "Brochas",
     marca: "Futura",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
-    descripcion: "Es la brocha hecha para los recortes finos donde una brocha recta no llega con la misma precisión: esquinas, uniones pared-techo, marcos de puertas y ventanas, molduras y alrededor de interruptores. Su cabezal en ángulo guía el trazo y te permite trabajar más rápido y con menos cinta, mientras sus cerdas sintéticas cónicas de poliéster cargan la pintura justa y la liberan de forma pareja, evitando goteos y brochazos marcados. El mango ergonómico ofrece agarre cómodo y control estable en jornadas largas. Funciona de maravilla con látex/acrílica y selladores al agua, tanto en interior como en exterior, manteniendo la forma uso tras uso para un acabado limpio y profesional.",
-    
+    descripcion: "Son hechas con fibras largas de poliéster que retienen una gran cantidad de pintura para trabajo rápido y con poco esfuerzo. Mango ergonómico de polipropileno de primera calidad.",
     codigo: "BFT-ANG",
     cantidadPorCaja: 20,
     imagenes: [
@@ -753,19 +579,23 @@ const productos = [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp"
     ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
+    
     especificaciones: {
-      "Medida": "2 pulgadas",
-      "Largo de filamentos":  "65 mm",
-      "Grosor": "13 mm",
-      "Material de Cerdas": "Poliéster",
+      "Medida": "2 pulgadas angular",
+      "Largo de filamentos": "50 mm",
+      "Grosor": "11 mm",
+      "Material de Cerdas": "Poliéster de fibras largas",
+      "Material de Mango": "Polipropileno de primera calidad",
+      "Tipo de Cerda": "Sintética con puntas horquilladas",
+      "Forma": "Angular",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
       "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "24 unidades",
-      "Código": "12213"
+      "Unidades por caja": "20 unidades",
+      "Código": "BFT-ANG"
     }
   },
+
+  // ===== RESTO DE PRODUCTOS (BALDES, CANECAS, ETC) =====
   {
     id: 76,
     nombre: "BALDE 16 LITROS",
@@ -1113,37 +943,3 @@ const productos = [
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil."
   }
 ];
-
-
-
-// Datos de las líneas de brochas
-const lineasData = {
-  premier: {
-    titulo: 'Brocha Premier',
-    imagenes: [
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp'
-    ],
-    url: 'catalogo.html?categoria=Brochas&marca=Premier'
-  },
-  futura: {
-    titulo: 'Brocha Futura',
-    imagenes: [
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp'
-    ],
-    url: 'catalogo.html?categoria=Brochas&marca=Futura'
-  },
-  prima: {
-    titulo: 'Brocha Prima',
-    imagenes: [
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp'
-    ],
-    url: 'catalogo.html?categoria=Brochas&marca=Prima'
-  }
-};
-
