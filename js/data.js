@@ -739,33 +739,32 @@ const productos = [
     }
   },
   {
-    id: 121,
-    nombre: "BROCHA FUTURA ANGULAR",
-    categoria: "Brochas",
-    marca: "Futura",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
-    descripcion: "Es la brocha hecha para los recortes finos donde una brocha recta no llega con la misma precisión: esquinas, uniones pared-techo, marcos de puertas y ventanas, molduras y alrededor de interruptores. Su cabezal en ángulo guía el trazo y te permite trabajar más rápido y con menos cinta, mientras sus cerdas sintéticas cónicas de poliéster cargan la pintura justa y la liberan de forma pareja, evitando goteos y brochazos marcados. El mango ergonómico ofrece agarre cómodo y control estable en jornadas largas. Funciona de maravilla con látex/acrílica y selladores al agua, tanto en interior como en exterior, manteniendo la forma uso tras uso para un acabado limpio y profesional.",
-    
-    codigo: "BFT-ANG",
-    cantidadPorCaja: 20,
-    imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp"
-    ],
-    // ===== ESPECIFICACIONES ACTUALIZADAS =====
-    especificaciones: {
-      "Medida": "2 pulgadas",
-      "Largo de filamentos":  "65 mm",
-      "Grosor": "13 mm",
-      "Material de Cerdas": "Poliéster",
-      "Tipo de Recubrimiento": "Todo tipo de pintura",
-      "Superficies ": "Paredes, madera y metal",
-      "Tipo de Pegamento": "Epoxi",
-      "Unidades por caja": "24 unidades",
-      "Código": "12213"
-    }
-  },
+  id: 121,
+  nombre: "BROCHA FUTURA ANGULAR",
+  categoria: "Brochas",
+  marca: "Futura",
+  tamano: "Angular",  // ← AGREGAR ESTA LÍNEA
+  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
+  descripcion: "Es la brocha hecha para los recortes finos donde una brocha recta no llega con la misma precisión...",
+  codigo: "BFT-ANG",
+  cantidadPorCaja: 20,
+  imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp"
+  ],
+  especificaciones: {
+    "Medida": "2 pulgadas",
+    "Largo de filamentos": "65 mm",
+    "Grosor": "13 mm",
+    "Material de Cerdas": "Poliéster",
+    "Tipo de Recubrimiento": "Todo tipo de pintura",
+    "Superficies ": "Paredes, madera y metal",
+    "Tipo de Pegamento": "Epoxi",
+    "Unidades por caja": "24 unidades",
+    "Código": "12213"
+  }
+},
   {
     id: 76,
     nombre: "BALDE 16 LITROS",
@@ -1043,12 +1042,12 @@ const productos = [
     descripcion: "Mopas de 100% algodón de alta duración y absorción, fácil de usar y de lavar, biodegradable. Base ultraresistente."
   },
   {
-    id: 150,
-    nombre: "RECOGEDOR PREMIER DE MANO",
-    categoria: "Recogedores",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/pala-recogedora-de-mano.webp",
-    descripcion: "Diseño ergonómico, para recoger suciedad, polvo y residuos sólidos o líquidos."
-  },
+  id: 150,
+  nombre: "RECOGEDOR PREMIER DE MANO",
+  categorias: ["Recogedores", "Ofertas"],  // ← Array en lugar de string
+  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/pala-recogedora-de-mano.webp",
+  descripcion: "Diseño ergonómico, para recoger suciedad, polvo y residuos sólidos o líquidos."
+},
   {
     id: 153,
     nombre: "TRAPEADOR SUPERFIBRA BLANCO",

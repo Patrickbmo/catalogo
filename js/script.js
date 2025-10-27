@@ -12,30 +12,64 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  function aplicarFiltrosIniciales() {
-    const { categoria, search } = obtenerParametrosURL();
+  function aplicarFiltros() {
+  const categoriasSeleccionadas = Array.from(
+    document.querySelectorAll('.filtro-categoria:checked')
+  ).map(cb => cb.value);
 
-    if (categoria) {
-      const checkbox = document.querySelector(`.filtro-categoria[value="${categoria}"]`);
-      if (checkbox) {
-        checkbox.checked = true;
-        if (categoria === 'Brochas') {
-          toggleFiltrosTamanos(true);
-        }
+  const tamanosSeleccionados = Array.from(
+    document.querySelectorAll('.filtro-tamano:checked')
+  ).map(cb => cb.value);
+
+  const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
+
+  let resultado = [...productos];
+
+  // ✅ FILTRO DE CATEGORÍAS (soporta string y array)
+  if (categoriasSeleccionadas.length > 0) {
+    resultado = resultado.filter(producto => {
+      // Si el producto tiene array de categorías
+      if (Array.isArray(producto.categorias)) {
+        return producto.categorias.some(cat => categoriasSeleccionadas.includes(cat));
       }
-    }
-
-    if (search) {
-      const searchInput = document.getElementById('searchInput');
-      if (searchInput) {
-        searchInput.value = search;
+      // Si el producto tiene categoría string (backward compatible)
+      if (producto.categoria) {
+        return categoriasSeleccionadas.includes(producto.categoria);
       }
-    }
-
-    if (categoria || search) {
-      aplicarFiltros();
-    }
+      return false;
+    });
   }
+
+  if (tamanosSeleccionados.length > 0) {
+    resultado = resultado.filter(producto => {
+      if (!producto.tamano) return false;
+      return tamanosSeleccionados.includes(producto.tamano);
+    });
+  }
+
+  if (searchTerm) {
+    resultado = resultado.filter(producto => {
+      const nombre = producto.nombre.toLowerCase();
+      const marca = (producto.marca || '').toLowerCase();
+      
+      // Buscar en todas las categorías
+      let categoriasTexto = '';
+      if (Array.isArray(producto.categorias)) {
+        categoriasTexto = producto.categorias.join(' ').toLowerCase();
+      } else if (producto.categoria) {
+        categoriasTexto = producto.categoria.toLowerCase();
+      }
+      
+      return nombre.includes(searchTerm) || 
+             marca.includes(searchTerm) || 
+             categoriasTexto.includes(searchTerm);
+    });
+  }
+
+  productosFiltrados = resultado;
+  renderizarProductos(resultado);
+  actualizarContador(resultado.length);
+}
 
   // ========== FUNCIONES DE FILTROS ==========
   function renderizarFiltrosTamanos() {
@@ -68,43 +102,63 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function aplicarFiltros() {
-    const categoriasSeleccionadas = Array.from(
-      document.querySelectorAll('.filtro-categoria:checked')
-    ).map(cb => cb.value);
+  const categoriasSeleccionadas = Array.from(
+    document.querySelectorAll('.filtro-categoria:checked')
+  ).map(cb => cb.value);
 
-    const tamanosSeleccionados = Array.from(
-      document.querySelectorAll('.filtro-tamano:checked')
-    ).map(cb => cb.value);
+  const tamanosSeleccionados = Array.from(
+    document.querySelectorAll('.filtro-tamano:checked')
+  ).map(cb => cb.value);
 
-    const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
+  const searchTerm = document.getElementById('searchInput')?.value.toLowerCase() || '';
 
-    let resultado = [...productos];
+  let resultado = [...productos];
 
-    if (categoriasSeleccionadas.length > 0) {
-      resultado = resultado.filter(producto =>
-        categoriasSeleccionadas.includes(producto.categoria)
-      );
-    }
-
-    if (tamanosSeleccionados.length > 0) {
-      resultado = resultado.filter(producto => {
-        if (!producto.tamano) return false;
-        return tamanosSeleccionados.includes(producto.tamano);
-      });
-    }
-
-    if (searchTerm) {
-      resultado = resultado.filter(producto =>
-        producto.nombre.toLowerCase().includes(searchTerm) ||
-        producto.categoria.toLowerCase().includes(searchTerm) ||
-        (producto.marca && producto.marca.toLowerCase().includes(searchTerm))
-      );
-    }
-
-    productosFiltrados = resultado;
-    renderizarProductos(resultado);
-    actualizarContador(resultado.length);
+  // ✅ FILTRO DE CATEGORÍAS (soporta string y array)
+  if (categoriasSeleccionadas.length > 0) {
+    resultado = resultado.filter(producto => {
+      // Si el producto tiene array de categorías
+      if (Array.isArray(producto.categorias)) {
+        return producto.categorias.some(cat => categoriasSeleccionadas.includes(cat));
+      }
+      // Si el producto tiene categoría string (backward compatible)
+      if (producto.categoria) {
+        return categoriasSeleccionadas.includes(producto.categoria);
+      }
+      return false;
+    });
   }
+
+  if (tamanosSeleccionados.length > 0) {
+    resultado = resultado.filter(producto => {
+      if (!producto.tamano) return false;
+      return tamanosSeleccionados.includes(producto.tamano);
+    });
+  }
+
+  if (searchTerm) {
+    resultado = resultado.filter(producto => {
+      const nombre = producto.nombre.toLowerCase();
+      const marca = (producto.marca || '').toLowerCase();
+      
+      // Buscar en todas las categorías
+      let categoriasTexto = '';
+      if (Array.isArray(producto.categorias)) {
+        categoriasTexto = producto.categorias.join(' ').toLowerCase();
+      } else if (producto.categoria) {
+        categoriasTexto = producto.categoria.toLowerCase();
+      }
+      
+      return nombre.includes(searchTerm) || 
+             marca.includes(searchTerm) || 
+             categoriasTexto.includes(searchTerm);
+    });
+  }
+
+  productosFiltrados = resultado;
+  renderizarProductos(resultado);
+  actualizarContador(resultado.length);
+}
 
   function actualizarContador(cantidad) {
     const counter = document.getElementById('resultsCount');
@@ -118,47 +172,55 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderizarProductos(lista) {
-    const grid = document.querySelector('.product-grid');
-    const noResults = document.querySelector('.no-results');
+  const grid = document.querySelector('.product-grid');
+  const noResults = document.querySelector('.no-results');
+  
+  if (!grid) return;
+
+  grid.innerHTML = '';
+
+  if (lista.length === 0) {
+    grid.style.display = 'none';
+    if (noResults) noResults.style.display = 'block';
+    return;
+  }
+
+  grid.style.display = 'grid';
+  if (noResults) noResults.style.display = 'none';
+
+  lista.forEach(p => {
+    const marcaBadge = p.marca ? `<span class="marca-badge">${p.marca}</span>` : '';
+    const tamanoDisplay = p.tamano ? p.tamano.replace(' pulgadas', '"').replace(' pulgada', '"') : '';
+    const tamanoBadge = tamanoDisplay ? `<span class="tamano-badge">${tamanoDisplay}</span>` : '';
     
-    if (!grid) return;
-
-    grid.innerHTML = '';
-
-    if (lista.length === 0) {
-      grid.style.display = 'none';
-      if (noResults) noResults.style.display = 'block';
-      return;
+    // ✅ Mostrar todas las categorías o solo una
+    let categoriaTexto = '';
+    if (Array.isArray(p.categorias)) {
+      categoriaTexto = p.categorias[0]; // Mostrar solo la primera en la card
+    } else {
+      categoriaTexto = p.categoria || '';
     }
 
-    grid.style.display = 'grid';
-    if (noResults) noResults.style.display = 'none';
-
-    lista.forEach(p => {
-      const marcaBadge = p.marca ? `<span class="marca-badge">${p.marca}</span>` : '';
-      const tamanoDisplay = p.tamano ? p.tamano.replace(' pulgadas', '"').replace(' pulgada', '"') : '';
-      const tamanoBadge = tamanoDisplay ? `<span class="tamano-badge">${tamanoDisplay}</span>` : '';
-
-      const card = document.createElement('div');
-      card.className = 'product-card';
-      card.innerHTML = `
-        <img src="${p.imagen}" alt="${p.nombre}" onerror="this.src='https://via.placeholder.com/240x200?text=Sin+Imagen'">
-        <div class="product-info">
-          <div>${marcaBadge}${tamanoBadge}</div>
-          <h3>${p.nombre}</h3>
-          <p>${p.categoria}</p>
-          <p style="font-size: 0.8em; color: #888; margin-top: 5px;">${p.descripcion ? p.descripcion.substring(0, 80) + '...' : ''}</p>
-        </div>
-        <button class="details-btn" onclick="verDetalle(${p.id})">Ver Detalles</button>
-        <div class="actions">
-          <span title="Agregar a favoritos" onclick="event.stopPropagation()">❤️</span>
-          <span title="Calificar" onclick="event.stopPropagation()">⭐</span>
-          <span title="Agregar a cotización" onclick="event.stopPropagation(); agregarACotizacion(${p.id}); return false;">🛒</span>
-        </div>
-      `;
-      grid.appendChild(card);
-    });
-  }
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+      <img src="${p.imagen}" alt="${p.nombre}" onerror="this.src='https://via.placeholder.com/240x200?text=Sin+Imagen'">
+      <div class="product-info">
+        <div>${marcaBadge}${tamanoBadge}</div>
+        <h3>${p.nombre}</h3>
+        <p>${categoriaTexto}</p>
+        <p style="font-size: 0.8em; color: #888; margin-top: 5px;">${p.descripcion ? p.descripcion.substring(0, 80) + '...' : ''}</p>
+      </div>
+      <button class="details-btn" onclick="verDetalle(${p.id})">Ver Detalles</button>
+      <div class="actions">
+        <span title="Agregar a favoritos" onclick="event.stopPropagation()">❤️</span>
+        <span title="Calificar" onclick="event.stopPropagation()">⭐</span>
+        <span title="Agregar a cotización" onclick="event.stopPropagation(); agregarACotizacion(${p.id}); return false;">🛒</span>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+}
 
   function ordenarProductos(criterio) {
     let ordenados = [...productosFiltrados];
