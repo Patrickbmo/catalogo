@@ -970,29 +970,29 @@ const productos = [
     descripcion: "Mango multiuso para escobas, trapeadores y cepillos. Fabricado con metal laminado en 29 micras con forro en color gris."
   },
   {
-    id: 140,
-    nombre: "ESPÁTULA 2 PULGADAS",
-    categoria: "Espatulas",
-    tamano: "2 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas.webp",
-    descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
-  },
-  {
-    id: 141,
-    nombre: "ESPÁTULA 3 PULGADAS",
-    categoria: "Espatulas",
-    tamano: "3 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
-    descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
-  },
-  {
-    id: 142,
-    nombre: "ESPÁTULA 4 PULGADAS",
-    categoria: "Espatulas",
-    tamano: "4 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
-    descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
-  },
+  id: 140,
+  nombre: "ESPÁTULA 2 PULGADAS",
+  categoria: "Espátulas",  // ← AGREGADA TILDE
+  tamano: "2 pulgadas",
+  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas.webp",
+  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
+},
+{
+  id: 141,
+  nombre: "ESPÁTULA 3 PULGADAS",
+  categoria: "Espátulas",  // ← AGREGADA TILDE
+  tamano: "3 pulgadas",
+  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
+  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
+},
+{
+  id: 142,
+  nombre: "ESPÁTULA 4 PULGADAS",
+  categoria: "Espátulas",  // ← AGREGADA TILDE
+  tamano: "4 pulgadas",
+  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
+  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
+},
   {
     id: 151,
     nombre: "RECOGEDOR CON ESCOBILLA",
@@ -1045,7 +1045,7 @@ const productos = [
   {
     id: 150,
     nombre: "RECOGEDOR PREMIER DE MANO",
-    categoria: "Ofertas",
+    categoria: "Recogedores",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/pala-recogedora-de-mano.webp",
     descripcion: "Diseño ergonómico, para recoger suciedad, polvo y residuos sólidos o líquidos."
   },
