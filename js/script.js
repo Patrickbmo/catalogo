@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const TAMANOS_BROCHAS = ['1 pulgada', '1.5 pulgadas', '2 pulgadas', '2.5 pulgadas', '3 pulgadas', '4 pulgadas', '5 pulgadas', '6 pulgadas'];
+  const TAMANOS_BROCHAS = ['1 pulgada', '2 pulgadas', '2.5 pulgadas', '3 pulgadas', '4 pulgadas', '5 pulgadas', '6 pulgadas','Angular'];
 
   let productosFiltrados = [...productos];
 
@@ -39,20 +39,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ========== FUNCIONES DE FILTROS ==========
   function renderizarFiltrosTamanos() {
-    const container = document.getElementById('tamanos-filters');
-    if (!container) return;
+  const container = document.getElementById('tamanos-filters');
+  if (!container) return;
 
-    let html = '<h4>Tamaños</h4>';
-    TAMANOS_BROCHAS.forEach(tamano => {
-      const displayLabel = tamano.replace(' pulgadas', '"').replace(' pulgada', '"');
-      html += `<label><input type="checkbox" class="filtro-tamano" value="${tamano}"> ${displayLabel}</label>`;
-    });
-    container.innerHTML = html;
+  let html = '<h4>Tamaños</h4>';
+  TAMANOS_BROCHAS.forEach(tamano => {
+    // Si es Angular, no convertir a pulgadas
+    const displayLabel = tamano === 'Angular' 
+      ? 'Angular' 
+      : tamano.replace(' pulgadas', '"').replace(' pulgada', '"');
+    html += `<label><input type="checkbox" class="filtro-tamano" value="${tamano}"> ${displayLabel}</label>`;
+  });
+  container.innerHTML = html;
 
-    document.querySelectorAll('.filtro-tamano').forEach(cb => {
-      cb.addEventListener('change', aplicarFiltros);
-    });
-  }
+  document.querySelectorAll('.filtro-tamano').forEach(cb => {
+    cb.addEventListener('change', aplicarFiltros);
+  });
+}
 
   function toggleFiltrosTamanos(mostrar) {
     const container = document.getElementById('tamanos-filters');
