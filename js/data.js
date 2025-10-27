@@ -211,6 +211,91 @@ const plantillasBrochas = {
   }
 };
 
+const informacionProductos = {
+  // ===== BALDES =====
+  76: { // BALDE 16 LITROS
+    descripcionCompleta: "El Balde Wilson de 16 litros está hecho para tareas intensivas de limpieza y traslado de líquidos en casa, negocio u obra ligera. Incorpora pico vertedor para vaciar o regar sin derrames y agarradera metálica que se siente firme incluso lleno. Su cuerpo de plástico (polietileno, PE) 100% virgen, grado alimenticio y compatible con norma FDA, es higiénico, no transfiere olor ni sabor y resiste golpes y uso diario. El borde reforzado ayuda al vaciado, la base amplia mejora la estabilidad y el interior liso se lava rapidito. Ideal para preparar soluciones, acarrear agua, regar o contener derrames con menos viajes y más control.",
+    caracteristicas: [
+      {
+        icono: "img/icons/shield.svg",
+        titulo: "Plástico Resistente",
+        descripcion: "Fabricado en plástico 100% virgen que soporta golpes, caídas y el uso diario sin deformarse ni perder color. Conserva el brillo por más tiempo y resiste detergentes comunes sin agrietarse."
+      },
+      {
+        icono: "img/icons/resistente.svg",
+        titulo: "Asa ergonómica",
+        descripcion: "Agarradera sólida y cómoda que distribuye mejor el peso para mover el balde con estabilidad, incluso cuando está lleno. Facilita el traslado y el vaciado con más control y menos tensión en la mano."
+      },
+      {
+        icono: "img/icons/baldes.svg",
+        titulo: "Gran capacidad",
+        descripcion: "Espacio amplio y boca ancha para preparar mezclas de limpieza y enjuagar la mopa con comodidad. La apertura facilita el llenado sin derrames y acelera la rutina de aseo en casa o negocio."
+      }
+      
+    ],
+    especificaciones: {
+      
+      "Capacidad": "16 litros",
+      "Material del cuerpo y escurridor":  "Polietileno (PE) 100% virgen",
+      "Peso ": "535 gramos",
+      "Altura": "34.2 cm",
+      "Ancho": "29.5 cm",
+      "Asa": "Metálica de alta resistencia",
+      "color": "azul",
+      "Unidades": "12 unidades por caja",
+      "Código": "12320"
+    
+    },
+    usos: [
+      {
+        icono: "img/icons/baldelim.svg",
+        titulo: "Limpieza del hogar",
+        descripcion: "Su gran capacidad permite trabajar por más tiempo sin recargar, y el pico vertedor facilita vaciar baldes o mopas con precisión, evitando salpicaduras y derrames."
+      },
+      {
+        icono: "img/icons/riego.svg",
+        titulo: "Jardinería y riego",
+        descripcion: "Ideal para regar macetas y plantas en balcones, patios o jardines. Permite trasladar agua fácilmente a zonas de difícil acceso y mantener tus espacios verdes bien cuidados"
+      },
+      {
+        icono: "fa-star",
+        titulo: "Manipulación de agua y alimentos",
+        descripcion: "Gracias a su material grado alimenticio, sirve para lavar frutas/verduras o transportar hielo y agua en tareas domésticas."
+      }
+    ],
+    cuidados: [
+      {
+        titulo: "Limpieza Después del Uso",
+        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
+      },
+      {
+        titulo: "Secado Adecuado",
+        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
+      },
+      {
+        titulo: "Almacenamiento Correcto",
+        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
+      }
+    ]
+  },
+  
+  77: { // BALDE 6 LITROS
+    // ...
+  },
+  
+  698: { // BALDE ESCURRIDOR
+    // ...
+  },
+  
+  149: { // CANECA 5 GALONES
+    // ...
+  }
+  
+  // ... etc
+};
+
+
+
 
 
 // Base de datos de productos Wilson - Importado desde WooCommerce

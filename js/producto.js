@@ -24,21 +24,29 @@ function obtenerDatosCompletos(id) {
     return null;
   }
   
-  // Si es brocha con marca, combinar con plantilla
+  // 1️⃣ Si es brocha con marca, usar plantilla de brochas
   if (producto.categoria === "Brochas" && producto.marca && plantillasBrochas[producto.marca]) {
     const plantilla = plantillasBrochas[producto.marca];
     
     return {
-      // Primero los datos de la plantilla
       ...plantilla,
-      // Luego los datos específicos del producto (sobrescriben)
       ...producto,
-      // Asegurar que imagenes[] existe
       imagenes: producto.imagenes || [producto.imagen, producto.imagen, producto.imagen]
     };
   }
   
-  // Para productos no-brochas, agregar información básica
+  // 2️⃣ Si tiene información detallada por ID, usarla
+  if (informacionProductos[id]) {
+    const infoDetallada = informacionProductos[id];
+    
+    return {
+      ...infoDetallada,
+      ...producto,
+      imagenes: producto.imagenes || [producto.imagen, producto.imagen, producto.imagen]
+    };
+  }
+  
+  // 3️⃣ Para productos sin información detallada, retornar básico
   return {
     ...producto,
     subtitulo: producto.descripcion || '',
