@@ -242,7 +242,7 @@ const informacionProductos = {
       "Ancho": "29.5 cm",
       "Asa": "Metálica de alta resistencia",
       "color": "azul",
-      "Unidades": "12 unidades por caja",
+      "Unidades por caja ": "12 unidades",
       "Código": "12320"
     
     },
@@ -265,26 +265,156 @@ const informacionProductos = {
     ],
     cuidados: [
       {
-        titulo: "Limpieza Después del Uso",
-        descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado."
+        titulo: "Limpia y seca después de usar",
+        descripcion: "Enjuaga el balde y el pico vertedor con agua tibia y un detergente suave para retirar restos de suciedad y jabón. Frota con una esponja no abrasiva, aclara bien y deja escurrir. Sécalo por fuera y por dentro para evitar acumulación de residuos, malos olores y manchas de humedad"
       },
       {
-        titulo: "Secado Adecuado",
-        descripcion: "Después de limpiar, cuelgue la brocha o colóquela horizontalmente para que se seque completamente con las cerdas hacia abajo."
+        titulo: "Evita químicos agresivos y los golpes",
+        descripcion: "No utilices solventes fuertes, clorados concentrados, thinner ni abrasivos que puedan opacar o cuartear el plástico. Procura no dejar caer el balde ni usarlo como asiento o banquito. Cárgalo siempre por el asa y apóyalo sobre superficies planas para prolongar su vida útil."
       },
       {
         titulo: "Almacenamiento Correcto",
-        descripcion: "Guarde en posición horizontal o colgada para mantener la forma de las cerdas. Evite almacenar con las cerdas hacia arriba."
+        descripcion: "Guarda a la sombra, en un lugar seco y sin peso encima para prevenir deformaciones y preservar el color."
       }
     ]
   },
   
-  77: { // BALDE 6 LITROS
-    // ...
+  76: { // BALDE 6 LITROS
+    descripcionCompleta: "El Balde Flor de Liz de 6 litros es tu aliado compacto para las tareas diarias del hogar. Su tamaño mediano lo hace fácil de manipular, almacenar y llenar en lavabos o fregaderos. El acabado exterior incorpora un diseño decorativo que mejora el agarre. Está fabricado en polipropileno (PP) 100% virgen, grado alimenticio, por lo que es higiénico, más resistente a golpes y no absorbe olores. Ligero, estable y duradero: perfecto para limpiar, ordenar y llevar líquidos con comodidad.",
+    caracteristicas: [
+      {
+        icono: "img/icons/shield.svg",
+        titulo: "Plástico Resistente",
+        descripcion: "Fabricado en plástico 100% virgen que soporta golpes, caídas y el uso diario sin deformarse ni perder color. Conserva el brillo por más tiempo y resiste detergentes comunes sin agrietarse."
+      },
+      {
+        icono: "img/icons/resistente.svg",
+        titulo: "Asa ergonómica",
+        descripcion: "Agarradera sólida y cómoda que distribuye mejor el peso para mover el balde con estabilidad, incluso cuando está lleno. Facilita el traslado y el vaciado con más control y menos tensión en la mano."
+      },
+      {
+        icono: "img/icons/baldes.svg",
+        titulo: "Tamaño Compacto",
+        descripcion: "Cabe sin problema en lavabos y fregaderos, se guarda fácil bajo el mesón y es cómodo de manipular. La capacidad justa para las tareas diarias sin cargar de más."
+      }
+      
+    ],
+    especificaciones: {
+      
+      "Capacidad": "6 litros",
+      "Material del cuerpo y escurridor":  "Polietileno (PE) 100% virgen",
+      "Peso ": "317 gramos",
+      "Altura": "22 cm",
+      "Ancho": "26.5 cm",
+      "Asa": "Metálica de alta resistencia",
+      "color": "azul , rojo",
+      "Unidades por caja": "12 unidades",
+      "Código": "12320"
+    
+    },
+    usos: [
+      {
+        icono: "img/icons/baldelim.svg",
+        titulo: "Limpieza del hogar",
+        descripcion: "Su gran capacidad permite trabajar por más tiempo sin recargar, y el pico vertedor facilita vaciar baldes o mopas con precisión, evitando salpicaduras y derrames."
+      },
+      {
+        icono: "img/icons/riego.svg",
+        titulo: "Jardinería y riego",
+        descripcion: "Ideal para regar macetas y plantas en balcones, patios o jardines. Permite trasladar agua fácilmente a zonas de difícil acceso y mantener tus espacios verdes bien cuidados"
+      },
+      {
+        icono: "fa-star",
+        titulo: "Manipulación de agua y alimentos",
+        descripcion: "Gracias a su material grado alimenticio, sirve para lavar frutas/verduras o transportar hielo y agua en tareas domésticas."
+      }
+    ],
+    cuidados: [
+      {
+        titulo: "Limpia y seca después de usar",
+        descripcion: "Enjuaga el balde y el pico vertedor con agua tibia y un detergente suave para retirar restos de suciedad y jabón. Frota con una esponja no abrasiva, aclara bien y deja escurrir. Sécalo por fuera y por dentro para evitar acumulación de residuos, malos olores y manchas de humedad"
+      },
+      {
+        titulo: "Evita químicos agresivos y los golpes",
+        descripcion: "No utilices solventes fuertes, clorados concentrados, thinner ni abrasivos que puedan opacar o cuartear el plástico. Procura no dejar caer el balde ni usarlo como asiento o banquito. Cárgalo siempre por el asa y apóyalo sobre superficies planas para prolongar su vida útil."
+      },
+      {
+        titulo: "Almacenamiento Correcto",
+        descripcion: "Guarda a la sombra, en un lugar seco y sin peso encima para prevenir deformaciones y preservar el color."
+      }
+    ]
   },
   
   698: { // BALDE ESCURRIDOR
-    // ...
+     descripcionCompleta: "El balde escurridor Wilson es la solución práctica y resistente para tu rutina de limpieza diaria. Su diseño integra un escurridor superior que facilita retirar el exceso de agua de las mopas/trapeadores Wilson sin mojarte las manos, mientras que su agarradera plástica reforzada permite transportarlo con seguridad y comodidad. Fabricado en plástico 100% virgen, ofrece alta durabilidad, buena rigidez y un acabado higiénico que no absorbe olores. Su interior amplio admite suficiente agua para limpiar superficies extensas sin necesidad de recargas constantes, y la base estable ayuda a prevenir vuelcos durante el uso.",
+    caracteristicas: [
+      {
+        icono: "img/icons/gotas.svg",
+        titulo: "Escurrido rápido",
+        descripcion: "Escurridor integrado que extrae el exceso de agua de la mopa de forma pareja, con menos esfuerzo y sin salpicaduras. Te permite seguir fregando con la humedad justa para un secado más rápido."
+      },
+      
+      {
+        icono: "img/icons/shield.svg",
+        titulo: "Plástico Resistente",
+        descripcion: "Fabricado en plástico 100% virgen que soporta golpes, caídas y el uso diario sin deformarse ni perder color. Conserva el brillo por más tiempo y resiste detergentes comunes sin agrietarse."
+      },
+      {
+        icono: "img/icons/resistente.svg",
+        titulo: "Asa ergonómica",
+        descripcion: "Agarradera sólida y cómoda que distribuye mejor el peso para mover el balde con estabilidad, incluso cuando está lleno. Facilita el traslado y el vaciado con más control y menos tensión en la mano."
+      },
+      {
+        icono: "img/icons/baldes.svg",
+        titulo: "Tamaño Compacto",
+        descripcion: "Cabe sin problema en lavabos y fregaderos, se guarda fácil bajo el mesón y es cómodo de manipular. La capacidad justa para las tareas diarias sin cargar de más."
+      }
+      
+    ],
+    especificaciones: {
+      
+      "Capacidad": "16 litros",
+      "Material del cuerpo y escurridor":  "Polietileno (PE) 100% virgen",
+      "Peso ": "750 gramos",
+      "Altura": "29 cm",
+      "Ancho": "40 cm",
+      "Typo de escurridor": "integrado de presión manual",
+      "color": "azul , rojo",
+      "Unidades por caja": "12 unidades",
+      "Código": "13320/13321"
+    
+    },
+    usos: [
+      {
+        icono: "img/icons/baldelim.svg",
+        titulo: "Limpieza del hogar",
+        descripcion: "Su gran capacidad permite trabajar por más tiempo sin recargar, y el pico vertedor facilita vaciar baldes o mopas con precisión, evitando salpicaduras y derrames."
+      },
+      {
+        icono: "img/icons/casa.svg",
+        titulo: "Rutinas de aseo en el hogar",
+        descripcion: "Perfecto para cocina, dormitorios y baños: prepara tu solución de limpieza, enjuaga y escurre sin mojarte."
+      },
+      {
+        icono: "img/icons/negocio.svg",
+        titulo: "ManipulacMantenimiento en comercios y talleres",
+        descripcion: "Su material resistente tolera jornadas intensivas de limpieza y movimientos constantes entre áreas."
+      }
+    ],
+    cuidados: [
+      {
+        titulo: "Limpia y seca después de usar",
+        descripcion: "Enjuaga el balde y el pico vertedor con agua tibia y un detergente suave para retirar restos de suciedad y jabón. Frota con una esponja no abrasiva, aclara bien y deja escurrir. Sécalo por fuera y por dentro para evitar acumulación de residuos, malos olores y manchas de humedad"
+      },
+      {
+        titulo: "Evita químicos agresivos y los golpes",
+        descripcion: "No utilices solventes fuertes, clorados concentrados, thinner ni abrasivos que puedan opacar o cuartear el plástico. Procura no dejar caer el balde ni usarlo como asiento o banquito. Cárgalo siempre por el asa y apóyalo sobre superficies planas para prolongar su vida útil."
+      },
+      {
+        titulo: "Almacenamiento Correcto",
+        descripcion: "Guarda a la sombra, en un lugar seco y sin peso encima para prevenir deformaciones y preservar el color."
+      }
+    ]
   },
   
   149: { // CANECA 5 GALONES
