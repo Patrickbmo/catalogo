@@ -243,7 +243,7 @@ const informacionProductos = {
       "Asa": "Metálica de alta resistencia",
       "color": "azul",
       "Unidades por caja ": "12 unidades",
-      "Código": "12320"
+      "Código": "13355"
     
     },
     usos: [
@@ -309,7 +309,7 @@ const informacionProductos = {
       "Asa": "Metálica de alta resistencia",
       "color": "azul , rojo",
       "Unidades por caja": "12 unidades",
-      "Código": "12320"
+      "Código": "13361"
     
     },
     usos: [
@@ -381,7 +381,7 @@ const informacionProductos = {
       "Typo de escurridor": "integrado de presión manual",
       "color": "azul , rojo",
       "Unidades por caja": "12 unidades",
-      "Código": "13320/13321"
+      "Código": "13320"
     
     },
     usos: [
@@ -980,26 +980,49 @@ const productos = [
     "Código": "12213"
   }
 },
+
   {
     id: 76,
     nombre: "BALDE 16 LITROS",
     categoria: "Baldes",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp",
-    descripcion: "Diseño ergonómico con agarradera de metal resistente, ideal para trabajos de limpieza. Cumple con las normas FDA para alimentos."
+    descripcion: "Diseño ergonómico con agarradera de metal resistente, ideal para trabajos de limpieza. Cumple con las normas FDA para alimentos.",
+    codigo: "13355",
+  cantidadPorCaja: 20,
+  imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp"
+  ],
   },
+
   {
     id: 77,
     nombre: "BALDE 6 LITROS",
     categoria: "Baldes",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
-    descripcion: "Diseño ergonómico, polietileno resistente con hojas de maple y agarradera de metal resistente. Cumple con las normas FDA para alimentos."
+    descripcion: "Diseño ergonómico, polietileno resistente con hojas de maple y agarradera de metal resistente. Cumple con las normas FDA para alimentos.",
+    codigo: "13361",
+  cantidadPorCaja: 12,
+  imagenes: [
+    "https://https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp"
+  ],
   },
   {
     id: 698,
     nombre: "BALDE ESCURRIDOR 16 LITROS",
     categoria: "Baldes",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
-    descripcion: "Balde ultraresistente con escurridor y agarradera que facilita la tarea del hogar"
+    descripcion: "Balde ultraresistente con escurridor y agarradera que facilita la tarea del hogar",
+    codigo: "13320",
+  cantidadPorCaja: 12,
+  imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
+  ],
+
   },
   {
     id: 149,
