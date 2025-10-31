@@ -279,7 +279,7 @@ const informacionProductos = {
     ]
   },
   
-  76: { // BALDE 6 LITROS
+  77: { // BALDE 6 LITROS
     descripcionCompleta: "El Balde Flor de Liz de 6 litros es tu aliado compacto para las tareas diarias del hogar. Su tamaño mediano lo hace fácil de manipular, almacenar y llenar en lavabos o fregaderos. El acabado exterior incorpora un diseño decorativo que mejora el agarre. Está fabricado en polipropileno (PP) 100% virgen, grado alimenticio, por lo que es higiénico, más resistente a golpes y no absorbe olores. Ligero, estable y duradero: perfecto para limpiar, ordenar y llevar líquidos con comodidad.",
     caracteristicas: [
       {
