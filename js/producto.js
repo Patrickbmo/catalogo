@@ -298,30 +298,82 @@ function renderizarCaracteristicas(caracteristicas) {
  * Renderiza las especificaciones técnicas
  * Formato simple: label: valor
  */
+// Función para renderizar especificaciones (incluyendo colores)
 function renderizarEspecificaciones(especificaciones) {
   const grid = document.getElementById('especificacionesGrid');
   if (!grid) return;
   
   grid.innerHTML = '';
+
+  for (const [key, value] of Object.entries(especificaciones)) {
+    // Si es el campo de colores, renderizar solo bolitas
+    if (key === 'colores' && Array.isArray(value)) {
+      const especItem = document.createElement('div');
+      especItem.className = 'especificacion-item';
+      
+      especItem.innerHTML = `
+        <span class="especificacion-label">Colores:</span>
+        <div class="colores-disponibles">
+          ${value.map((color, index) => `
+            <div class="color-option" 
+                 onclick="seleccionarColor(${index}, '${color.codigo}', '${color.nombre}')"
+                 title="${color.nombre} - Cód: ${color.codigo}">
+              <div class="color-circle ${index === 0 ? 'selected' : ''}" 
+                   style="background-color: ${color.hex};"
+                   data-color-index="${index}">
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      
+      grid.appendChild(especItem);
+    } else {
+      // Renderizar especificaciones normales
+      const label = key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ');
+      const especItem = document.createElement('div');
+      especItem.className = 'especificacion-item';
+      
+      especItem.innerHTML = `
+        <span class="especificacion-label">${label}:</span>
+        <span class="especificacion-value">${value}</span>
+      `;
+      
+      grid.appendChild(especItem);
+    }
+  }
+}
+
+// Función para seleccionar color
+function seleccionarColor(index, codigo, nombreColor) {
+  // Remover selección anterior
+  document.querySelectorAll('.color-circle').forEach(circle => {
+    circle.classList.remove('selected');
+  });
   
-  // Si no hay especificaciones, mostrar mensaje
-  if (!especificaciones || Object.keys(especificaciones).length === 0) {
-    grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #666;">No hay especificaciones disponibles para este producto.</p>';
-    return;
+  // Agregar selección al color clickeado
+  const circleSeleccionado = document.querySelector(`.color-circle[data-color-index="${index}"]`);
+  if (circleSeleccionado) {
+    circleSeleccionado.classList.add('selected');
   }
   
-  // Renderizar cada especificación
-  Object.entries(especificaciones).forEach(([label, valor]) => {
-    const item = document.createElement('div');
-    item.className = 'especificacion-item';
-    
-    item.innerHTML = `
-      <span class="especificacion-label">${label}:</span>
-      <span class="especificacion-value">${valor}</span>
-    `;
-    grid.appendChild(item);
-  });
+  // Actualizar el código del producto en la UI
+  const productoCodigo = document.getElementById('productoCodigo');
+  if (productoCodigo) {
+    productoCodigo.textContent = codigo;
+  }
+  
+  // Guardar la selección para cuando se agregue al carrito
+  if (window.productoActual) {
+    window.productoActual.codigoSeleccionado = codigo;
+    window.productoActual.colorSeleccionado = nombreColor;
+  }
+  
+  console.log(`Color seleccionado: ${nombreColor} - Código: ${codigo}`);
 }
+
+// Asegúrate de que la función esté disponible globalmente
+window.seleccionarColor = seleccionarColor;
 
 /**
  * Renderiza los usos recomendados - CON ICONOS SVG

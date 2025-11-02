@@ -558,6 +558,53 @@
   line-height: 1.7;
   margin: 0;
 }
+/* ===== SELECTOR DE COLORES - VERSIÓN SIMPLE ===== */
+.colores-disponibles {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.color-option {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-option:hover {
+  transform: scale(1.15);
+}
+
+.color-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 3px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.color-option:hover .color-circle {
+  border-color: #d32f2f;
+  box-shadow: 0 3px 10px rgba(211, 47, 47, 0.4);
+}
+
+.color-circle.selected {
+  border-color: #d32f2f;
+  border-width: 4px;
+  box-shadow: 0 3px 12px rgba(211, 47, 47, 0.5);
+}
+
+/* Responsive para colores */
+@media (max-width: 768px) {
+  .colores-disponibles {
+    gap: 10px;
+  }
+  
+  .color-circle {
+    width: 25px;
+    height: 25px;
+  }
+}
 
 
 /* ===== RESPONSIVE ===== */

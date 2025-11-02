@@ -307,9 +307,12 @@ const informacionProductos = {
       "Altura": "22 cm",
       "Ancho": "26.5 cm",
       "Asa": "Metálica de alta resistencia",
-      "color": "azul , rojo",
+      colores: [
+      { nombre: "Azul", hex: "#0066cc", codigo: "13361" },
+      { nombre: "Rojo", hex: "#dc3545", codigo: "13362" }
+    ],
       "Unidades por caja": "12 unidades",
-      "Código": "13361"
+      "Código": "13361-13362"
     
     },
     usos: [
@@ -379,7 +382,10 @@ const informacionProductos = {
       "Altura": "29 cm",
       "Ancho": "40 cm",
       "Typo de escurridor": "integrado de presión manual",
-      "color": "azul , rojo",
+      colores: [
+      { nombre: "Azul", hex: "#0066cc", codigo: "13320" },
+      { nombre: "Rojo", hex: "#dc3545", codigo: "13321" }
+    ],
       "Unidades por caja": "12 unidades",
       "Código": "13320"
     
@@ -418,8 +424,77 @@ const informacionProductos = {
   },
   
   149: { // CANECA 5 GALONES
-    // ...
-  }
+  descripcionCompleta: "La caneca de 5 galones (≈18,9 L) está hecha para trabajo pesado: apta para alimentos y bebidas, y también para insumos de limpieza, agrícolas e industriales gracias a sus paredes gruesas y resistencia a golpes. Fabricada en polietileno (PE) 100% virgen, grado alimenticio y compatible con FDA, es higiénica, no transfiere olor ni sabor y soporta uso diario. La tapa a presión sella parejo para mantener el contenido protegido sin derrames, el mango rígido facilita moverla llena con control y su geometría estable permite apilar en bodega o camión. Funciona igual de bien en planta, tienda, campo o frente de obra: desde agua para concreto y aditivos no corrosivos hasta granos, harinas o detergentes diluidos. Se limpia rápido y queda lista para el siguiente turno.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/candado.svg",
+      titulo: "Tapa a presión segura",
+      descripcion: "Tapa a presión con sellado que evita derrames en traslados, entregas y apilado en bodega. Facilita la preparación de pedidos y conserva el contenido intacto y sin contaminación."
+    },
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Plástico resistente",
+      descripcion: "Fabricada en plástico PE 100% virgen, apto para contacto con alimentos según estándares FDA. No transfiere olor ni sabor; las paredes gruesas resisten golpes y el interior liso se limpia rápido entre usos."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Manejo y apilado fácil",
+      descripcion: "Mango rígido para moverla llena con control y menor esfuerzo. Aro y base estables que permiten apilar de forma segura y optimizar espacio en bodega o camión."
+    }
+  ],
+  
+  especificaciones: {
+    "Capacidad": "5 galones (≈ 18,9 litros)",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Peso": "1 kg",
+    "Altura": "33 cm",
+    "Ancho": "32 cm",
+    "Capacidad total": "18925 cc",
+    "Sistema de cierre": "Tapa a presión con sello perimetral anti fugas",
+    "Colores": "Blanco",
+    "Unidades por caja": "20 unidades",
+    "Código": "3372"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/alimentos.svg",
+      titulo: "Alimentos y bebidas",
+      descripcion: "Agua, hielo, jugos en proceso, granos, azúcar o harinas: el material de grado alimenticio cuida la seguridad alimentaria."
+    },
+    {
+      icono: "img/icons/construccion.svg",
+      titulo: "Obra y construcción",
+      descripcion: "Apto para llevar agua de mezcla, dosificar aditivos no corrosivos, mover arena fina y organizar herramientas o residuos livianos. Resistente a impactos y de fácil lavado."
+    },
+    {
+      icono: "img/icons/limpieza.svg",
+      titulo: "Limpieza profesional",
+      descripcion: "Detergentes, jabones líquidos, desengrasantes y materias primas no corrosivas."
+    },
+    {
+      icono: "img/icons/planta.svg",
+      titulo: "Jardinería y plantas",
+      descripcion: "Ideal para regar, trasladar agua o tierra, plantar y transportar flores frescas o recortes. La tapa a presión mantiene el contenido protegido."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza después de usar",
+      descripcion: "Lava con detergente neutro y esponja suave, enjuaga bien y deja secar boca abajo. Para olores, usa agua tibia con un poco de bicarbonato o cloro diluido."
+    },
+    {
+      titulo: "Químicos agresivos y altas temperaturas",
+      descripcion: "Evita solventes, hidrocarburos y ácidos/bases concentrados; pueden dañar el plástico. No superes 60 °C ni viertas líquidos hirviendo."
+    },
+    {
+      titulo: "Almacenamiento y manejo",
+      descripcion: "Guarda a la sombra, en lugar seco y nivelado. Transporta en posición vertical con la tapa bien presionada; no te sientes ni te pares sobre la caneca ni la golpees."
+    }
+  ]
+}
   
   // ... etc
 };
@@ -1002,10 +1077,10 @@ const productos = [
     categoria: "Baldes",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
     descripcion: "Diseño ergonómico, polietileno resistente con hojas de maple y agarradera de metal resistente. Cumple con las normas FDA para alimentos.",
-    codigo: "13361",
+    codigo: "13361-13362",
   cantidadPorCaja: 12,
   imagenes: [
-    "https://https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
     "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
     "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp"
   ],
@@ -1016,7 +1091,7 @@ const productos = [
     categoria: "Baldes",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
     descripcion: "Balde ultraresistente con escurridor y agarradera que facilita la tarea del hogar",
-    codigo: "13320",
+    codigo: "13320 - 13321",
   cantidadPorCaja: 12,
   imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
