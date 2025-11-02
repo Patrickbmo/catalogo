@@ -452,6 +452,79 @@ const informacionProductos = {
     "Ancho": "32 cm",
     "Capacidad total": "18925 cc",
     "Sistema de cierre": "Tapa a presión con sello perimetral anti fugas",
+    "Color" : "Blanco",
+    "Unidades por caja": "20 unidades",
+    "Código": "3372"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/alimentos.svg",
+      titulo: "Alimentos y bebidas",
+      descripcion: "Agua, hielo, jugos en proceso, granos, azúcar o harinas: el material de grado alimenticio cuida la seguridad alimentaria."
+    },
+    {
+      icono: "img/icons/construccion.svg",
+      titulo: "Obra y construcción",
+      descripcion: "Apto para llevar agua de mezcla, dosificar aditivos no corrosivos, mover arena fina y organizar herramientas o residuos livianos. Resistente a impactos y de fácil lavado."
+    },
+    {
+      icono: "img/icons/limpieza.svg",
+      titulo: "Limpieza profesional",
+      descripcion: "Detergentes, jabones líquidos, desengrasantes y materias primas no corrosivas."
+    },
+    {
+      icono: "img/icons/planta.svg",
+      titulo: "Jardinería y plantas",
+      descripcion: "Ideal para regar, trasladar agua o tierra, plantar y transportar flores frescas o recortes. La tapa a presión mantiene el contenido protegido."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza después de usar",
+      descripcion: "Lava con detergente neutro y esponja suave, enjuaga bien y deja secar boca abajo. Para olores, usa agua tibia con un poco de bicarbonato o cloro diluido."
+    },
+    {
+      titulo: "Químicos agresivos y altas temperaturas",
+      descripcion: "Evita solventes, hidrocarburos y ácidos/bases concentrados; pueden dañar el plástico. No superes 60 °C ni viertas líquidos hirviendo."
+    },
+    {
+      titulo: "Almacenamiento y manejo",
+      descripcion: "Guarda a la sombra, en lugar seco y nivelado. Transporta en posición vertical con la tapa bien presionada; no te sientes ni te pares sobre la caneca ni la golpees."
+    }
+  ]
+},
+
+727: { // CANECA 1 GALÓN
+  descripcionCompleta: "La caneca de 1 galón (≈3,78 L) está hecha para trabajo intenso: apta para alimentos y bebidas y también para insumos de limpieza, agrícolas e industriales, y también es útil en obra liviana para muestras, aditivos no corrosivos o agua. Fabricada en plástico de polietileno 100% virgen y grado alimenticio, es higiénica, no transfiere olor ni sabor y soporta el uso diario. La tapa roscada con sello de seguridad muestra si fue abierta por primera vez y evita derrames; el asa flexible permite llevarla llena con facilidad y verter sin perder el control. Su diseño bajo y estable permite apilar y exhibir de forma ordenada en estantes o perchas bajas. Versátil para aceites, jarabes, granos y harinas, así como detergentes diluidos o soluciones de proceso. Se limpia rápido y queda lista para el siguiente turno.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/candado.svg",
+      titulo: "Tapa sellada",
+      descripcion: "Cierre a prueba de fugas con sello de seguridad que deja evidencia de apertura. Mantiene el contenido protegido en traslado y almacenamiento y se abre/cierra con rapidez para dosificar o rellenar."
+    },
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Plástico resistente",
+      descripcion: "Fabricada en plástico PE 100% virgen, apto para contacto con alimentos según estándares FDA. No transfiere olor ni sabor; las paredes gruesas resisten golpes y el interior liso se limpia rápido entre usos."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Asa ergonómica",
+      descripcion: "Asa cómoda que da buen agarre incluso llena. Permite cargar con menos esfuerzo y verter con control, ideal para servir porciones precisas sin desperdiciar ni salpicar."
+    }
+  ],
+  
+  especificaciones: {
+    "Capacidad": "1 galón (≈ 3,78 L)",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Peso": "1 kg",
+    "Altura": "33 cm",
+    "Ancho": "32 cm",
+    "Capacidad total": "3780 cc",
+    "Sistema de cierre": "Tapa roscada con sello de seguridad",
     "Colores": "Blanco",
     "Unidades por caja": "20 unidades",
     "Código": "3372"
@@ -477,6 +550,74 @@ const informacionProductos = {
       icono: "img/icons/planta.svg",
       titulo: "Jardinería y plantas",
       descripcion: "Ideal para regar, trasladar agua o tierra, plantar y transportar flores frescas o recortes. La tapa a presión mantiene el contenido protegido."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza después de usar",
+      descripcion: "Lava con detergente neutro y esponja suave, enjuaga bien y deja secar boca abajo. Para olores, usa agua tibia con un poco de bicarbonato o cloro diluido."
+    },
+    {
+      titulo: "Químicos agresivos y altas temperaturas",
+      descripcion: "Evita solventes, hidrocarburos y ácidos/bases concentrados; pueden dañar el plástico. No superes 60 °C ni viertas líquidos hirviendo."
+    },
+    {
+      titulo: "Almacenamiento y manejo",
+      descripcion: "Guarda a la sombra, en lugar seco y nivelado. Transporta en posición vertical con la tapa bien presionada; no te sientes ni te pares sobre la caneca ni la golpees."
+    }
+  ]
+},
+
+733: { // ENVASE AMERICANO 1 LITRO
+  descripcionCompleta: "El Envase Americano de 1 litro es la opción bajita y rendidora para exhibir en perchas bajas y organizar producto en estantes comerciales sin perder visibilidad. Trae tapa roscada con precinto de seguridad (evidencia de apertura) y asa flexible para moverlo y dosificar sin reguero. Está fabricado en polietileno (PE) 100% virgen, grado alimenticio y compatible con norma FDA, así que es higiénico, no transfiere olor ni sabor y aguanta el trote diario en planta, bodega o punto de venta. Compacto, estable y fácil de lavar: funciona de una para alimentos, bebidas e insumos no corrosivos.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/candado.svg",
+      titulo: "Tapa a presión segura",
+      descripcion: "Cierre snap-on con sello periférico que evita fugas en traslado y estiba. Se abre y cierra rápido para agilizar despacho y mantener el contenido protegido."
+    },
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Plástico resistente",
+      descripcion: "Fabricada en plástico PE 100% virgen, apto para contacto con alimentos según estándares FDA. No transfiere olor ni sabor; las paredes gruesas resisten golpes y el interior liso se limpia rápido entre usos."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Manejo y apilado fácil",
+      descripcion: "Mango rígido para moverla llena con control y menor esfuerzo. Aro y base estables que permiten apilar de forma segura y optimizar espacio en bodega o camión."
+    }
+  ],
+  
+  especificaciones: {
+    "Capacidad": "1 litro",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Peso": "225 gr",
+    "Altura": "13 cm",
+    "Ancho": "11.5 cm",
+    "Capacidad total": "1000 cc",
+    "Sistema de cierre": "Tapa a presión",
+    "Colores": "Blanco",
+    "Unidades por caja": "255 unidades",
+    "Código": "3373"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/alimentos.svg",
+      titulo: "Alimentos y bebidas",
+      descripcion: "Ideal para aceites, jarabes, agua, jugos en proceso, miel, granos o polvos alimentarios. El PE grado alimenticio cuida la inocuidad y evita migraciones."
+    },
+    {
+      icono: "img/icons/limpieza.svg",
+      titulo: "Limpieza e industria ligera",
+      descripcion: "Perfecta para detergentes, jabones líquidos, desengrasantes y diluciones no corrosivas; la tapa con precinto ayuda a controlar inventarios y despachos."
+    },
+    {
+      icono: "img/icons/retail.svg",
+      titulo: "Retail y bodega",
+      descripcion: "Su perfil bajo mejora la exhibición en percha, facilita el frenteo y optimiza el espacio en estanterías y cajas de transporte."
     }
   ],
   
@@ -1104,21 +1245,38 @@ const productos = [
     nombre: "CANECA 5 GALONES",
     categoria: "Canecas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
-    descripcion: "Súper resistente con asa plástica de gran sujeción para facilidad de movimiento. Ideal para transporte de productos fríos o calientes"
+    descripcion: "Súper resistente con asa plástica de gran sujeción para facilidad de movimiento. Ideal para transporte de productos fríos o calientes",
+    codigo: "3372",
+    cantidadPorCaja: 20,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
+    ],
   },
   {
     id: 727,
     nombre: "CANECA 1 GALÓN",
     categoria: "Canecas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
-    descripcion: "Caneca metálica resistente ideal para almacenar pinturas y líquidos."
+    descripcion: "Caneca metálica resistente ideal para almacenar pinturas y líquidos.",
+    codigo: "3372",
+    cantidadPorCaja: 20,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
+    ],
   },
   {
     id: 733,
     nombre: "ENVASE AMERICANO 1 LITRO",
     categoria: "Canecas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
-    descripcion: "Envase práctico y resistente para almacenamiento de líquidos."
+    descripcion: "Envase práctico y resistente para almacenamiento de líquidos.",
+    cantidadPorCaja: 20,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
+    ],
   },
   {
     id: 109,
