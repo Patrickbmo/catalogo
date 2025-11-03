@@ -210,7 +210,11 @@ const plantillasBrochas = {
     ]
   }
 };
-
+// ==========================================
+// PLANTILLAS INDIVIDUALES
+// DE CADA PRODUCTO
+// 
+// ==========================================
 const informacionProductos = {
   // ===== BALDES =====
   76: { // BALDE 16 LITROS
@@ -1073,7 +1077,150 @@ const informacionProductos = {
       descripcion: "Reemplázalo cada 3–6 meses según la frecuencia de uso y el desgaste. Si notas que la fibra pierde forma, se abre o ya no limpia como antes, cámbialo antes para mantener buenos resultados."
     }
   ]
-}
+},
+115: { // CEPILLO FIBRA RIZADA
+  descripcionCompleta: "El cepillo fibra rizada Wilson está pensado para limpiar sin rayar. Su fibra rizada y flexible se adapta a la superficie, levanta la suciedad y permite restregar con suavidad en cerámica, baldosa, porcelanato, azulejo, pisos vinílicos y alfombrados. El taco trae rosca estándar tipo escoba para colocar cualquier palo y trabajar de pie, con control y menos esfuerzo. Ideal para casas, locales y edificios donde se necesita cuidado fino.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/suave.svg",
+      titulo: "Limpieza suave sin rayones",
+      descripcion: "Fibra rizada y flexible que cuida superficies delicadas y remueve polvo, lodo ligero y manchas. Ideal para cerámica brillante, porcelanato pulido y pisos vinílicos."
+    },
+    {
+      icono: "img/icons/pluma.svg",
+      titulo: "Base ligera y robusta",
+      descripcion: "Base de polímero rígido que mantiene la fibra estable y facilita maniobras en pasillos, esquinas y alrededor de muebles."
+    },
+    {
+      icono: "img/icons/angulo.svg",
+      titulo: "Rosca inclinada 60°",
+      descripcion: "Rosca a 60° que mejora el contacto con el piso, alcanza bordes y rincones con menos esfuerzo y cuida la postura al trabajar de pie."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Fibra rizada y flexible",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Largo": "28.5 cm",
+    "Altura": "8 cm",
+    "Ancho": "5.2 cm",
+    "Peso": "214 gr",
+    "Inclinación del cabezal": "60°",
+    colores: [
+      { nombre: "Amarillo", hex: "#e3f700", codigo: "13230" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13230"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/ceramica.svg",
+      titulo: "Cerámica y porcelanato pulido",
+      descripcion: "Para retirar polvo, tierra fina y marcas de pisada sin opacar el brillo."
+    },
+    {
+      icono: "img/icons/baldosa.svg",
+      titulo: "Baldosa y azulejo de baño/cocina",
+      descripcion: "Fregado suave con detergente para eliminar residuos de jabón o grasa sin rayar."
+    },
+    {
+      icono: "img/icons/alfombra.svg",
+      titulo: "Alfombrado y pisos vinílicos",
+      descripcion: "Cepillado liviano para levantar partículas y preparar antes del aspirado o trapeado."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Enjuaga y seca",
+      descripcion: "Tras el uso, lava con detergente suave, enjuaga y deja secar con la fibra hacia abajo."
+    },
+    {
+      titulo: "Evita químicos agresivos",
+      descripcion: "No uses solventes fuertes ni ácidos/bases concentradas que puedan dañar el taco o endurecer en exceso la fibra."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guarda a la sombra y en seco; evita dejar el cepillo apoyado sobre la fibra o sumergido por horas para no deformar las cerdas."
+    }
+  ]
+},
+
+116: { // CEPILLO LAVA AUTOS
+  descripcionCompleta: "El Cepillo Lava Autos Wilson limpia con suavidad real y sin rayar la pintura. Su fibra delgada y plumada se siente suave al tacto y cuida acabados automotrices, vidrios y otras superficies delicadas mientras levanta polvo y suciedad con facilidad. El mango con inclinación de 60 grados mejora el alcance en techos, parabrisas y zonas altas y ayuda a trabajar con una postura más cómoda y menos esfuerzo en la muñeca. Incorpora rosca estándar tipo escoba que se adapta a palos comunes de madera o metal para usarlo como te quede mejor.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/suave.svg",
+      titulo: "No raya la pintura",
+      descripcion: "Fibra delgada y plumada que limpia con suavidad real y levanta la suciedad sin dejar marcas ni microrayas. Protege acabados automotrices, vidrios y superficies delicadas, ideal para lavado frecuente sin maltratar."
+    },
+    {
+      icono: "img/icons/angulo.svg",
+      titulo: "Ángulo ergonómico de 60°",
+      descripcion: "Cabezal inclinado que mejora el contacto y el alcance en techos, parabrisas y zonas altas. Permite trabajar de pie con mejor postura, menos esfuerzo en muñeca y pasadas más parejas."
+    },
+    {
+      icono: "img/icons/pluma.svg",
+      titulo: "Cuerpo liviano con buen control",
+      descripcion: "Cuerpo de polímero rígido que mantiene la fibra firme y reduce la fatiga; se maniobra fácil en emblemas, molduras y curvas."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Delgado plumado y extra suave",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Largo": "28.5 cm",
+    "Altura": "14 cm",
+    "Ancho": "5 cm",
+    "Peso": "327 gr",
+    "Inclinación del cabezal": "60°",
+    colores: [
+      { nombre: "Amarillo", hex: "#FFD700", codigo: "53220" },
+      { nombre: "fibra", hex: "#5692d6ff", codigo: "53220" },
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53220"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/auto.svg",
+      titulo: "Vehículos",
+      descripcion: "Carrocería, techos, vidrios y rines pintados. Humedece primero para soltar polvo y arenilla, aplica espuma o shampoo para autos y desliza el cepillo con pasadas largas; enjuaga bien para un acabado sin marcas."
+    },
+    {
+      icono: "img/icons/casa.svg",
+      titulo: "Hogar y comercio",
+      descripcion: "Ideal para la limpieza de ventanas, paredes con estuco, bordes decorativos (cenefas), porcelanato brillante, acrílicos y cualquier otra superficie lisa y delicada."
+    },
+    {
+      icono: "img/icons/profesional.svg",
+      titulo: "Lavado profesional",
+      descripcion: "Perfecto para prelavado con espuma y enjuagues a bajo caudal. La inclinación del cabezal en 60° mejora el alcance en zonas altas y permite ritmos de trabajo constantes con menos esfuerzo y mayor control."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Enjuaga y sacude después de usar",
+      descripcion: "Pásalo bajo el grifo para retirar polvo, arenilla y espuma; dale unos golpecitos suaves para soltar residuos atrapados en la fibra y evitar rayas en el próximo lavado."
+    },
+    {
+      titulo: "Usa limpiadores suaves",
+      descripcion: "Trabaja con jabón para autos o jabón neutro. Evita solventes, desengrasantes fuertes y cloro concentrado, ya que pueden endurecer o deformar la fibra y opacar superficies delicadas."
+    },
+    {
+      titulo: "Seca a la sombra y guarda bien",
+      descripcion: "Déjalo escurrir y secar a la sombra; evita el sol directo prolongado. Guárdalo colgado o con la fibra hacia abajo para mantener la forma y prolongar su vida útil."
+    }
+  ]
+},
+
+
+
 
   
   // ... etc
@@ -1089,7 +1236,7 @@ const informacionProductos = {
 const productos = [
   // ===== BROCHAS PREMIER =====
   
-    {
+    {//PREMIER 1 PULGADA
     id: 54,
     nombre: "BROCHA PREMIER 1 PULGADA",
     categoria: "Brochas",
@@ -1116,7 +1263,7 @@ const productos = [
       "Código": "12320"
     }
   },
-  {
+  {//PREMIER 2 PULGADAS
     id: 56,
     nombre: "BROCHA PREMIER 2 PULGADAS",
     categoria: "Brochas",
@@ -1143,7 +1290,7 @@ const productos = [
       "Código": "12322"
     }
   },
-  {
+  {//PREMIER 2.5 PULGADAS
     id: 57,
     nombre: "BROCHA PREMIER 2,5 PULGADAS",
     categoria: "Brochas",
@@ -1170,7 +1317,7 @@ const productos = [
       "Código": "12323"
     }
   },
-  {
+  {//PREMIER 3 PULGADAS
     id: 58,
     nombre: "BROCHA PREMIER 3 PULGADAS",
     categoria: "Brochas",
@@ -1197,7 +1344,7 @@ const productos = [
       "Código": "12324"
     }
   },
-  {
+  {//PREMIER 4 PULGADAS
     id: 60,
     nombre: "BROCHA PREMIER 4 PULGADAS",
     categoria: "Brochas",
@@ -1224,7 +1371,7 @@ const productos = [
       "Código": "12324"
     }
   },
-  {
+  {//PREMIER 5 PULGADAS
     id: 61,
     nombre: "BROCHA PREMIER 5 PULGADAS",
     categoria: "Brochas",
@@ -1253,7 +1400,7 @@ const productos = [
   },
 
   // ===== BROCHAS PRIMA =====
-  {
+  {//PRIMA 1 PULGADA
     id: 62,
     nombre: "BROCHA PRIMA 1 PULGADA",
     categoria: "Brochas",
@@ -1281,7 +1428,7 @@ const productos = [
       "Código": "12420"
     }
   },
-  {
+  {//PRIMA 2 PULGADAS
     id: 63,
     nombre: "BROCHA PRIMA 2 PULGADAS",
     categoria: "Brochas",
@@ -1309,7 +1456,7 @@ const productos = [
       "Código": "12422"
     }
   },
-  {
+  {// PRIMA 2.5 PULGADAS
     id: 64,
     nombre: "BROCHA PRIMA 2,5 PULGADAS",
     categoria: "Brochas",
@@ -1337,7 +1484,7 @@ const productos = [
       "Código": "12427"
     }
   },
-  {
+  {//PRIMA 3 PULGADAS
     id: 65,
     nombre: "BROCHA PRIMA 3 PULGADAS",
     categoria: "Brochas",
@@ -1365,7 +1512,7 @@ const productos = [
       "Código": "12428"
     }
   },
-  {
+  {//PRIMA 4 PULGADAS
     id: 66,
     nombre: "BROCHA PRIMA 4 PULGADAS",
     categoria: "Brochas",
@@ -1393,7 +1540,7 @@ const productos = [
       "Código": "12425"
     }
   },
-  {
+  {//PRIMA 5 PULGADAS
     id: 68,
     nombre: "BROCHA PRIMA 5 PULGADAS",
     categoria: "Brochas",
@@ -1423,7 +1570,7 @@ const productos = [
   },
 
   // ===== BROCHAS FUTURA =====
-  {
+  { //FUTURA 1 PULGADA
     id: 69,
     nombre: "BROCHA FUTURA 1 PULGADA",
     categoria: "Brochas",
@@ -1451,7 +1598,7 @@ const productos = [
       "Código": "12219"
     }
   },
-  {
+  { //FUTURA 2 PULGADAS
     id: 70,
     nombre: "BROCHA FUTURA 2 PULGADAS",
     categoria: "Brochas",
@@ -1479,7 +1626,7 @@ const productos = [
       "Código": "12213"
     }
   },
-  {
+  { // FUTURA 3 PULGADAS
     id: 71,
     nombre: "BROCHA FUTURA 3 PULGADAS",
     categoria: "Brochas",
@@ -1507,7 +1654,7 @@ const productos = [
       "Código": "12220"
     }
   },
-  {
+  { // FUTURA 4 PULGADAS
     id: 72,
     nombre: "BROCHA FUTURA 4 PULGADAS",
     categoria: "Brochas",
@@ -1534,7 +1681,7 @@ const productos = [
       "Código": "12216"
     }
   },
-  {
+  { //FUTURA 2.5 PULGADAS
     id: 73,
     nombre: "BROCHA FUTURA 2,5 PULGADAS",
     categoria: "Brochas",
@@ -1563,7 +1710,7 @@ const productos = [
       "Código": "12222"
     }
   },
-  {
+  { //FUTURA 5 PULGADAS
     id: 75,
     nombre: "BROCHA FUTURA 5 PULGADAS",
     categoria: "Brochas",
@@ -1592,7 +1739,7 @@ const productos = [
       "Código": "12217"
     }
   },
-  {
+  { // FUTURA ANGULAR
   id: 121,
   nombre: "BROCHA FUTURA ANGULAR",
   categoria: "Brochas",
@@ -1620,7 +1767,7 @@ const productos = [
   }
 },
 
-  {
+  { // BALDE 16 LITROS
     id: 76,
     nombre: "BALDE 16 LITROS",
     categoria: "Baldes",
@@ -1635,7 +1782,7 @@ const productos = [
   ],
   },
 
-  {
+  { // BALDE 6 LITROS
     id: 77,
     nombre: "BALDE 6 LITROS",
     categoria: "Baldes",
@@ -1649,7 +1796,7 @@ const productos = [
     
   ],
   },
-  {
+  { // BALDE ESCURRIDOR
     id: 698,
     nombre: "BALDE ESCURRIDOR 16 LITROS",
     categoria: "Baldes",
@@ -1664,7 +1811,7 @@ const productos = [
   ],
 
   },
-  {
+  { //CANECA 5 GALONES
     id: 149,
     nombre: "CANECA 5 GALONES",
     categoria: "Canecas",
@@ -1677,7 +1824,7 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones-con-mededida.webp",
     ],
   },
-  {
+  { //CANECA 1 GALON
     id: 727,
     nombre: "CANECA 1 GALÓN",
     categoria: "Canecas",
@@ -1691,7 +1838,7 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon-con-tapa-separada.webp"
     ],
   },
-  {
+  { //ENVASE AMERICANO
     id: 733,
     nombre: "ENVASE AMERICANO 1 LITRO",
     categoria: "Canecas",
@@ -1704,7 +1851,7 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
     ],
   },
-  {
+  { //CEPILLO DE COCINA
     id: 109,
     nombre: "CEPILLO DE COCINA",
     categoria: "Cepillos",
@@ -1718,7 +1865,7 @@ const productos = [
     ],
     
   },
-  {
+  { //CEPILLO DE CONSTRUCIOON
     id: 110,
     nombre: "CEPILLO DE CONSTRUCCIÓN",
     categoria: "Cepillos",
@@ -1733,7 +1880,7 @@ const productos = [
     ],
     
   },
-  {
+  { //CEPILLO DE INODORO
     id: 111,
     nombre: "CEPILLO DE INODORO",
     categoria: "Cepillos",
@@ -1747,7 +1894,7 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-sin-etiqueta-scaled.webp"
     ],
   },
-  {
+  { //CEPILLO DE ROPA
     id: 112,
     nombre: "CEPILLO DE ROPA",
     categoria: "Cepillos",
@@ -1760,7 +1907,7 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-ropa-parado-con-etiqueta-fondo-blanco.webp",
     ],
   },
-  {
+  { //CEPILLO EXTRA DURO
     id: 113,
     nombre: "CEPILLO EXTRA DURO",
     categoria: "Cepillos",
@@ -1773,7 +1920,7 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-extra-duro-frente-fondo-blanco.webp",
     ],
   },
-  {
+  { //CEPILLO FIBRA RECTA
     id: 114,
     nombre: "CEPILLO FIBRA RECTA",
     categoria: "Cepillos",
@@ -1787,19 +1934,30 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-2-fondo-blanco.webp"
     ],
   },
-  {
+  { //CEPILLO FIBRA RIZADA
     id: 115,
     nombre: "CEPILLO FIBRA RIZADA",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-frente-fondo-blanco-1-scaled.webp",
-    descripcion: "Ideal para limpieza de aceras, patios, veredas, garajes. Mango con inclinación de 60° para facilitar la limpieza en pisos duros. Fibra rizada acabada flexible."
+    imagen: "img/productos/fibrarizada.webp",
+    descripcion: "Ideal para limpieza de aceras, patios, veredas, garajes. Mango con inclinación de 60° para facilitar la limpieza en pisos duros. Fibra rizada acabada flexible.",
+    codigo: "13230",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/fibrarizada.webp",
+    "img/productos/rizadalado.webp",
+    "img/productos/rizadaposterior.webp"
+    ],
   },
-  {
+  {//CEPILLO LAVA AUTOS
     id: 116,
     nombre: "CEPILLO LAVA AUTOS",
     categoria: "Cepillos",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-lava-autos-con-etiqueta.webp",
-    descripcion: "Ideal para lavar vehículos, vidrios, ventanas, estuco, cenefas gracias a su fibra delgada plumada extra suave, ideal para superficies extra delicadas, no raya."
+    
+    descripcion: "Ideal para lavar vehículos, vidrios, ventanas, estuco, cenefas gracias a su fibra delgada plumada extra suave, ideal para superficies extra delicadas, no raya.",
+    codigo:"53220",
+    cantidadPorCaja: 12,
+    
   },
   {
     id: 79,
