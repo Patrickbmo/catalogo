@@ -1108,7 +1108,8 @@ const informacionProductos = {
     "Peso": "214 gr",
     "Inclinación del cabezal": "60°",
     colores: [
-      { nombre: "Amarillo", hex: "#e3f700", codigo: "13230" }
+      { nombre: "Amarillo", hex: "#e3f700", codigo: "13230" },
+      { nombre: "Fibra", hex: "#ffffffff", codigo: "53202" }
     ],
     "Unidades por caja": "12 unidades",
     "Código": "13230"
@@ -1197,7 +1198,7 @@ const informacionProductos = {
       descripcion: "Ideal para la limpieza de ventanas, paredes con estuco, bordes decorativos (cenefas), porcelanato brillante, acrílicos y cualquier otra superficie lisa y delicada."
     },
     {
-      icono: "img/icons/profesional.svg",
+      icono: "img/icons/spray.svg",
       titulo: "Lavado profesional",
       descripcion: "Perfecto para prelavado con espuma y enjuagues a bajo caudal. La inclinación del cabezal en 60° mejora el alcance en zonas altas y permite ritmos de trabajo constantes con menos esfuerzo y mayor control."
     }
@@ -1938,14 +1939,14 @@ const productos = [
     id: 115,
     nombre: "CEPILLO FIBRA RIZADA",
     categoria: "Cepillos",
-    imagen: "img/productos/fibrarizada.webp",
+    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-fondo-blanco.jpg",
     descripcion: "Ideal para limpieza de aceras, patios, veredas, garajes. Mango con inclinación de 60° para facilitar la limpieza en pisos duros. Fibra rizada acabada flexible.",
     codigo: "13230",
     cantidadPorCaja: 12,
     imagenes: [
-    "img/productos/fibrarizada.webp",
-    "img/productos/rizadalado.webp",
-    "img/productos/rizadaposterior.webp"
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-fondo-blanco.jpg",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-frente-fondo-blanco-1-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-de-lado-fondo-blanco.webp"
     ],
   },
   {//CEPILLO LAVA AUTOS
@@ -1957,9 +1958,14 @@ const productos = [
     descripcion: "Ideal para lavar vehículos, vidrios, ventanas, estuco, cenefas gracias a su fibra delgada plumada extra suave, ideal para superficies extra delicadas, no raya.",
     codigo:"53220",
     cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-lava-autos-sin-etiqueta-con-muestra.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-lava-autos-con-etiqueta.webp",
+   
+    ],
     
   },
-  {
+  {//CESTO APILABLE
     id: 79,
     nombre: "CESTO APILABLE ROJA",
     categoria: "Cestos y tinas",
