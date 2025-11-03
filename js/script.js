@@ -383,6 +383,45 @@ document.addEventListener('DOMContentLoaded', () => {
     renderizarProductos(productos);
     actualizarContador(productos.length);
   }
+
+  /**
+ * Aplica filtros iniciales basados en parámetros de URL
+ */
+function aplicarFiltrosIniciales() {
+  const params = obtenerParametrosURL();
+  
+  // Aplicar filtro de categoría si existe
+  if (params.categoria) {
+    const checkbox = document.querySelector(`.filtro-categoria[value="${params.categoria}"]`);
+    if (checkbox) {
+      checkbox.checked = true;
+      
+      // Si es Brochas, mostrar filtros de tamaño
+      if (params.categoria === 'Brochas') {
+        toggleFiltrosTamanos(true);
+      }
+    }
+  }
+  
+  // Aplicar término de búsqueda si existe
+  if (params.search) {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+      searchInput.value = decodeURIComponent(params.search);
+    }
+  }
+  
+  // Aplicar los filtros
+  aplicarFiltros();
+  
+  // Scroll al catálogo (opcional, para mejor UX)
+  setTimeout(() => {
+    const catalogContainer = document.querySelector('.catalog-container');
+    if (catalogContainer) {
+      catalogContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);
+}
 });
 
 // Función global para ver detalle
