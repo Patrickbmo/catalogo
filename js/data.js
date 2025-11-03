@@ -36,19 +36,19 @@ const plantillasBrochas = {
     
     usos: [
       {
-        icono: "fa-home",
-        titulo: "Pintura de Interiores",
-        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
+        icono: "img/icons/interior.svg",
+        titulo: "Paredes y techos interiores",
+        descripcion: "Ideal para pintar paredes y techos con pintura látex/acrílica. Carga bastante, distribuye parejo y cubre en menos pasadas, dejando un acabado uniforme sin marcas ni chorreos visibles."
       },
       {
-        icono: "fa-bullseye",
-        titulo: "Trabajos de Precisión",
-        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
+        icono: "img/icons/muros.svg",
+        titulo: "Muros con textura y fachadas",
+        descripcion: "Rinde muy bien sobre superficies rugosas o semi-rugosas (estuco, bloque, revoque). Las cerdas cónicas “se meten” en la porosidad y mejoran la cobertura por carga."
       },
       {
-        icono: "fa-star",
-        titulo: "Acabados Profesionales",
-        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
+        icono: "img/icons/generales.svg",
+        titulo: "Trabajos generales y repintes en exterior",
+        descripcion: "Funciona excelente en puertas, muebles, barandas y rejas con esmalte o barniz. Nivela el trazo y deja una película lisa y continua con menos retoques."
       }
     ],
     
@@ -74,22 +74,22 @@ const plantillasBrochas = {
     
     caracteristicas: [
       {
-        icono: "fa-brush",
+        icono: "img/icons/CERDAS.svg",
         titulo: "Cerdas Premium",
         descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
       },
       {
-        icono: "fa-hand",
+        icono: "img/icons/MANGO.svg",
         titulo: "Mango Ergonómico",
         descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
       },
       {
-        icono: "fa-layer-group",
+        icono: "img/icons/uniforme.svg",
         titulo: "Distribución Uniforme",
         descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
       },
       {
-        icono: "fa-star",
+        icono: "img/icons/perfecto.svg",
         titulo: "Acabado Superior",
         descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
       }
@@ -147,22 +147,22 @@ const plantillasBrochas = {
       {
         icono: "img/icons/cerdas.svg",
         titulo: "Cerdas Premium",
-        descripcion: "Cerdas de alta calidad que retienen más pintura y permiten una aplicación uniforme sin dejar marcas."
+        descripcion: "La mezcla y el largo de los filamentos aumentan la carga de pintura y mejoran el nivelado del trazo para una aplicación pareja, bordes definidos y menos retoques.       "
       },
       {
-        icono: "fa-hand",
+        icono: "img/icons/mano.svg",
         titulo: "Mango Ergonómico",
-        descripcion: "Diseño ergonómico que se adapta perfectamente a la mano, reduciendo la fatiga durante el uso prolongado."
+        descripcion: "Su diseño se adapta a la mano, reduce la fatiga y brinda precisión en cortes, bordes y superficies amplias. Así mantienes un pulso estable y un acabado consistente durante toda la jornada."
       },
       {
-        icono: "fa-layer-group",
-        titulo: "Distribución Uniforme",
-        descripcion: "Sistema de distribución que permite una cobertura perfecta sin marcas ni imperfecciones."
+        icono: "img/icons/unistar.svg",
+        titulo: "Acabado Uniforme",
+        descripcion: "Diseñada para dejar un acabado uniforme, sin rayas ni marcas visibles, incluso en zonas amplias o de difícil acceso. Su buena carga y liberación de pintura ayuda a cubrir en menos pasadas."
       },
       {
-        icono: "fa-star",
-        titulo: "Acabado Superior",
-        descripcion: "Resultados profesionales con acabados lisos y duraderos en todo tipo de superficies."
+        icono: "img/icons/interior.svg",
+        titulo: "Para interior y exterior",
+        descripcion: "Rinde excelente con pintura al agua (látex/acrílica) y esmalte en muros lisos o con ligera textura, además de madera y metal, sin perder calidad de acabado."
       }
     ],
     
@@ -178,19 +178,19 @@ const plantillasBrochas = {
     
     usos: [
       {
-        icono: "fa-home",
-        titulo: "Pintura de Interiores",
-        descripcion: "Ideal para paredes, techos y superficies interiores con acabados profesionales."
+        icono: "img/icons/interior.svg",
+        titulo: "Paredes y techos interiores",
+        descripcion: "Ideal para pintar paredes y techos con pintura látex/acrílica. Carga bastante, distribuye parejo y cubre en menos pasadas, dejando un acabado uniforme sin marcas ni chorreos visibles."
       },
       {
-        icono: "fa-bullseye",
-        titulo: "Trabajos de Precisión",
-        descripcion: "Perfecta para detalles, bordes y áreas que requieren control preciso."
+        icono: "fimg/icons/puerta.svg",
+        titulo: "Para trabajos delicados",
+        descripcion: "Funciona muy bien con esmalte o barniz en superficies lisas o con ligera textura. Su corte recto permite trazos firmes y uniformes en caras planas."
       },
       {
-        icono: "fa-star",
-        titulo: "Acabados Profesionales",
-        descripcion: "Excelente para proyectos que demandan resultados de alta calidad."
+        icono: "img/icons/generales.svg",
+        titulo: "Rejas, barandas y mantenimiento general",
+        descripcion: "Útil para repintes, retoques y trabajos de obra doméstica. Sirve con selladores y esmaltes en metal o madera, ofreciendo buen rendimiento y facilidad de limpieza."
       }
     ],
     
@@ -253,12 +253,12 @@ const informacionProductos = {
         descripcion: "Su gran capacidad permite trabajar por más tiempo sin recargar, y el pico vertedor facilita vaciar baldes o mopas con precisión, evitando salpicaduras y derrames."
       },
       {
-        icono: "img/icons/riego.svg",
+        icono: "img/icons/jardineria.svg",
         titulo: "Jardinería y riego",
         descripcion: "Ideal para regar macetas y plantas en balcones, patios o jardines. Permite trasladar agua fácilmente a zonas de difícil acceso y mantener tus espacios verdes bien cuidados"
       },
       {
-        icono: "fa-star",
+        icono: "img/icons/shieldcheck.svg",
         titulo: "Manipulación de agua y alimentos",
         descripcion: "Gracias a su material grado alimenticio, sirve para lavar frutas/verduras o transportar hielo y agua en tareas domésticas."
       }
@@ -327,7 +327,7 @@ const informacionProductos = {
         descripcion: "Ideal para regar macetas y plantas en balcones, patios o jardines. Permite trasladar agua fácilmente a zonas de difícil acceso y mantener tus espacios verdes bien cuidados"
       },
       {
-        icono: "fa-star",
+        icono: "img/icons/shieldcheck.svg",
         titulo: "Manipulación de agua y alimentos",
         descripcion: "Gracias a su material grado alimenticio, sirve para lavar frutas/verduras o transportar hielo y agua en tareas domésticas."
       }
@@ -387,7 +387,7 @@ const informacionProductos = {
       { nombre: "Rojo", hex: "#dc3545", codigo: "13321" }
     ],
       "Unidades por caja": "12 unidades",
-      "Código": "13320"
+      "Código": "13320 - 13321"
     
     },
     usos: [
@@ -452,9 +452,11 @@ const informacionProductos = {
     "Ancho": "32 cm",
     "Capacidad total": "18925 cc",
     "Sistema de cierre": "Tapa a presión con sello perimetral anti fugas",
-    "Color" : "Blanco",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffffff", codigo: "3371" }
+    ],
     "Unidades por caja": "20 unidades",
-    "Código": "3372"
+    "Código": "3371"
   },
   
   usos: [
@@ -525,9 +527,11 @@ const informacionProductos = {
     "Ancho": "32 cm",
     "Capacidad total": "3780 cc",
     "Sistema de cierre": "Tapa roscada con sello de seguridad",
-    "Colores": "Blanco",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffffff", codigo: "3373" }
+    ],
     "Unidades por caja": "20 unidades",
-    "Código": "3372"
+    "Código": "3373"
   },
   
   usos: [
@@ -598,7 +602,9 @@ const informacionProductos = {
     "Ancho": "11.5 cm",
     "Capacidad total": "1000 cc",
     "Sistema de cierre": "Tapa a presión",
-    "Colores": "Blanco",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffffff", codigo: "53202" }
+    ],
     "Unidades por caja": "255 unidades",
     "Código": "3373"
   },
@@ -635,7 +641,440 @@ const informacionProductos = {
       descripcion: "Guarda a la sombra, en lugar seco y nivelado. Transporta en posición vertical con la tapa bien presionada; no te sientes ni te pares sobre la caneca ni la golpees."
     }
   ]
+},
+
+109: { // CEPILLO DE COCINA
+  descripcionCompleta: "El Cepillo de Cocina Wilson es el aliado perfecto para mantener tus alimentos y utensilios siempre limpios e higiénicos. Diseñado con fibra corta de dureza media, elimina fácilmente tierra, grasa y residuos sin dañar frutas, verduras ni superficies delicadas. Su mango ondulado y ergonómico se adapta naturalmente a la mano, ofreciendo un agarre firme incluso con agua y jabón, lo que permite fregar con comodidad y precisión. Fabricado en plástico ultrarresistente, combina ligereza, durabilidad y un diseño compacto que facilita su uso y almacenamiento. Ideal para el hogar, restaurantes o negocios que necesitan una limpieza rápida, eficiente y segura para contacto con alimentos.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/cerdas.svg",
+      titulo: "Limpia sin maltratar",
+      descripcion: "Fibra delgada de punta recta que elimina polvo y manchas ligeras sin soltar pelusa ni desgastar la prenda. Ideal para prelavado y telas delicadas."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Preciso y compacto",
+      descripcion: "Su tamaño permite entrar fácil en puños, cuellos, costuras y rincones como la entrepierna del jean o la suela de las zapatillas. Perfecto para detalles y zonas difíciles."
+    },
+    {
+      icono: "img/icons/memoria.svg",
+      titulo: "Fibra con memoria",
+      descripcion: "Las fibras vuelven a su posición original después de cada uso, conservando precisión y rendimiento constante."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Delgada y punta recta",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Peso": "109 gr",
+    "Altura": "4.3 cm",
+    "Ancho": "6 cm",
+    "Largo": "14.5 cm",
+    "Compatibilidad": "Apto con jabón de ropa, detergentes y quitamanchas no corrosivos",
+    colores: [
+      { nombre: "Mango", hex: "#99ff33", codigo: "53202" },
+      { nombre: "Fibra", hex: "#3f7707ff", codigo: "53202" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53202"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/frutas.svg",
+      titulo: "Limpieza de frutas y verduras",
+      descripcion: "Retira tierra y residuos de cáscaras firmes o delicadas sin quitar nutrientes ni maltratar la piel del alimento."
+    },
+    {
+      icono: "img/icons/utensilios.svg",
+      titulo: "Aseo de utensilios y superficies",
+      descripcion: "Apoyo para fregar tablas de picar, coladores, ollas, rejillas y fregaderos sin dejar rayones fuertes."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Después de usar, enjuaga y seca",
+      descripcion: "Quita el jabón, sacude el exceso de agua y deja secar cerdas abajo."
+    },
+    {
+      titulo: "Evita químicos agresivos",
+      descripcion: "No usar solventes fuertes ni cloro concentrado directo sobre el cepillo para prolongar la vida de la fibra."
+    },
+    {
+      titulo: "Guárdalo en lugar seco",
+      descripcion: "Lejos del sol directo y sin peso encima para que las cerdas no se deformen."
+    }
+  ]
+},
+
+113: { // CEPILLO EXTRA DURO
+  descripcionCompleta: "El Cepillo extra duro Wilson está diseñado para trabajo pesado en limpieza y preparación de superficies. Sus cerdas sintéticas muy gruesas, de punta recta, concentran la presión en cada pasada para desincrustar costra, mugre pegada, restos de pintura y sarro superficial en cemento, ladrillo, planchas metálicas, techos y parrillas. Es la alternativa segura al cepillo de alambre: no se oxida, no suelta filamentos metálicos y reduce el riesgo de rayones profundos en comparación con los alambres. El cuerpo presenta un mango ergonómico con ondulaciones que se ajusta a los dedos para aplicar fuerza con control y sin resbalar, incluso con guantes o manos húmedas. Resiste agua, detergentes y desengrasantes domésticos (no corrosivos), por lo que rinde tanto en obra y taller como en patios, bodegas y cocina exterior.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/sustituto.svg",
+      titulo: "Sustituto del cepillo metálico",
+      descripcion: "Sustituye al cepillo metálico con igual firmeza, sin alambres sueltos ni riesgo de rayones. Ideal para remover óxido o residuos difíciles con total seguridad."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Mango ergonómico antideslizante",
+      descripcion: "La base con canales para los dedos asegura agarre firme incluso con manos húmedas, reduciendo desliz y fatiga."
+    },
+    {
+      icono: "img/icons/dureza.svg",
+      titulo: "Dureza concentrada",
+      descripcion: "La fibra súper rígida concentra la presión para desprender salitre, mortero y grasa seca con menos pasadas. El corte recto estabiliza el contacto y entrega un frote uniforme en planos y bordes."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Muy gruesa y punta recta",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Peso": "127 gr",
+    "Altura": "4.5 cm",
+    "Ancho": "6 cm",
+    "Largo": "14.2 cm",
+    "Compatibilidad": "Apto con jabón de ropa, detergentes y quitamanchas no corrosivos",
+    colores: [
+      { nombre: "Mango", hex: "#ffffffff", codigo: "53290" },
+      { nombre: "Fibra", hex: "#3f7707ff", codigo: "53290" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53290"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/obra.svg",
+      titulo: "Obra y construcción",
+      descripcion: "Remueve hormigón, salitre y polvo de cemento en muros y pisos, dejando la superficie lista para preparar o sellar."
+    },
+    {
+      icono: "img/icons/manchas.svg",
+      titulo: "Remoción de manchas y hongos",
+      descripcion: "Remueve moho, algas y tierra compactada en exteriores. Funciona mejor con agua y limpiador doméstico; enjuaga para mantener la superficie limpia."
+    },
+    {
+      icono: "img/icons/parrilla.svg",
+      titulo: "Limpieza de parrillas y herramientas",
+      descripcion: "Quita grasa carbonizada en parrillas tibias (no al rojo vivo) y retira restos en palas, espátulas, carretillas y equipos de obra. Se enjuaga rápido y no absorbe olores."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza posterior",
+      descripcion: "Después de cada uso, lava el cepillo con agua limpia hasta que no queden restos, luego déjalo en su base para que drene el exceso y se seque correctamente."
+    },
+    {
+      titulo: "Químicos a evitar",
+      descripcion: "Evite el uso de solventes o productos químicos concentrados que puedan afectar el polietileno y alterar la flexibilidad de las cerdas."
+    },
+    {
+      titulo: "Almacenamiento",
+      descripcion: "Guarda en lugar seco y a la sombra. No lo dejes sumergido por horas para evitar deformaciones."
+    }
+  ]
+},
+
+112: { // CEPILLO DE ROPA
+  descripcionCompleta: "El cepillo de ropa Wilson está pensado para el lavado a mano de tus prendas del día a día y textiles del hogar. Su fibra delgada de punta recta levanta la mugre sin maltratar la tela, por lo que funciona muy bien en prendas de vestir, cobijas, sábanas, jeans y zapatillas. El cuerpo tiene ondulaciones para los dedos que mejoran el agarre incluso con las manos mojadas, dando control y presión pareja en cada pasada. Es ligero, duradero y fácil de enjuagar.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/cerdas.svg",
+      titulo: "Limpieza suave",
+      descripcion: "Fibra delgada con punta recta que quita polvo y manchas sin maltratar la tela ni soltar pelusa. Funciona muy bien para prelavado puntual y para cuidar telas finas o de uso diario."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Agarre cómodo",
+      descripcion: "Mango con canales que se ajusta a la mano y no se resbala, incluso húmedo. Te da mejor control al fregar y reduce el cansancio en trabajos más largos."
+    },
+    {
+      icono: "img/icons/dureza.svg",
+      titulo: "Compacto y preciso",
+      descripcion: "Llega con facilidad a puños, cuellos y costuras, y entra en rincones difíciles como la entrepierna del jean o la suela de la zapatilla. Permite limpiar detalles sin pasar de largo."
+    },
+    {
+      icono: "img/icons/jabon.svg",
+      titulo: "Higiénico y fácil lavado",
+      descripcion: "No guarda olores ni humedad y se enjuaga en segundos bajo el grifo. Seca rápido y queda listo para el siguiente uso sin acumular residuos."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Delgada y punta recta",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Peso": "117 gr",
+    "Altura": "4.4 cm",
+    "Ancho": "6 cm",
+    "Largo": "14 cm",
+    "Compatibilidad": "Apto con jabón de ropa, detergentes y quitamanchas no corrosivos",
+    colores: [
+      { nombre: "Mango", hex: "#2576e0ff", codigo: "5320" },
+      { nombre: "Fibra", hex: "#ffffffff", codigo: "5320" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "5320"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/ropa.svg",
+      titulo: "Lavado de prendas de vestir",
+      descripcion: "Ideal para jeans, chaquetas, camisas, vestidos y todo tipo de ropa del día a día. La fibra suave protege los tejidos mientras elimina manchas efectivamente."
+    },
+    {
+      icono: "img/icons/textiles.svg",
+      titulo: "Textiles del hogar",
+      descripcion: "Perfecto para lavar cobijas, sábanas, cortinas y manteles. Llega a todas las áreas sin desgastar las fibras."
+    },
+    {
+      icono: "img/icons/zapatos.svg",
+      titulo: "Calzado y accesorios",
+      descripcion: "Limpia zapatillas, sandalias y accesorios textiles con precisión, llegando a suelas y costuras difíciles."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Enjuaga después de cada uso",
+      descripcion: "Lava el cepillo con agua limpia para eliminar jabón y residuos. Sacude el exceso de agua y deja secar con las cerdas hacia abajo en un lugar ventilado."
+    },
+    {
+      titulo: "Evita productos químicos agresivos",
+      descripcion: "No uses solventes fuertes, cloro concentrado ni productos corrosivos que puedan dañar las cerdas de polietileno."
+    },
+    {
+      titulo: "Almacena en lugar seco",
+      descripcion: "Guarda el cepillo lejos de la luz solar directa y sin objetos pesados encima para mantener la forma de las cerdas y prolongar su vida útil."
+    }
+  ]
+},
+
+110: { // CEPILLO DE CONSTRUCCIÓN
+  descripcionCompleta: "El cepillo de construcción Wilson está hecho para trabajo pesado en patios, garajes, veredas y terrazas, con desempeño confiable a la intemperie. Sus cerdas sintéticas muy gruesas y de punta recta levantan polvo, arena y residuos de obra y además restregan costras y restos de cemento para dejar la superficie lista. El cabezal con inclinación de 60 grados mejora el contacto con el piso, alcanza bordes y rincones con menos esfuerzo y cuida la postura al trabajar de pie. Trae rosca estándar tipo escoba para acoplar la mayoría de palos, se enjuaga rápido y queda listo para el siguiente turno.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Resistencia extrema",
+      descripcion: "Fibra muy gruesa y rígida para barrer residuos pesados y restregar en superficies duras como cemento, adoquín, loseta o metal rugoso, dentro o fuera."
+    },
+    {
+      icono: "img/icons/recta.svg",
+      titulo: "Punta recta y presión",
+      descripcion: "La punta recta concentra la presión sobre la superficie para despegar barro seco, restos de mortero, pintura floja y suciedad adherida con trazos firmes."
+    },
+    {
+      icono: "img/icons/angulo.svg",
+      titulo: "Rosca inclinada 60°",
+      descripcion: "Rosca a 60° que mejora el contacto con el piso, alcanza bordes y rincones con menos esfuerzo y cuida la postura al trabajar de pie."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Muy gruesa y punta recta",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Largo": "28.5 cm",
+    "Altura": "8 cm",
+    "Ancho": "5.2 cm",
+    "Peso": "223 gr",
+    "Inclinación del cabezal": "60°",
+    colores: [
+      { nombre: "Mango", hex: "#ffffffff", codigo: "13240" },
+      { nombre: "Fibra", hex: "#178337ff", codigo: "13240" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13240"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/obra.svg",
+      titulo: "Obra y pos obra",
+      descripcion: "Retiro de polvo, arena, residuos de cemento y mortero en pisos de concreto, pasillos y bodegas."
+    },
+    {
+      icono: "img/icons/exteriores.svg",
+      titulo: "Mantenimiento de exteriores",
+      descripcion: "Barrido fuerte y restregado en patios, garajes, veredas y terrazas con agua y detergente."
+    },
+    {
+      icono: "img/icons/taller.svg",
+      titulo: "Talleres y parqueaderos",
+      descripcion: "Limpieza de manchas de grasa superficial, lodos y suciedad pesada en superficies rugosas."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Enjuague después de usar",
+      descripcion: "Lava el cepillo con agua a presión para eliminar cemento, arena y residuos. Sacude el exceso y deja secar al aire libre con las cerdas hacia abajo."
+    },
+    {
+      titulo: "Evita químicos corrosivos",
+      descripcion: "No uses ácidos fuertes, solventes o productos altamente corrosivos que puedan degradar el polietileno de las cerdas."
+    },
+    {
+      titulo: "Almacenamiento adecuado",
+      descripcion: "Guarda en posición vertical en lugar seco y ventilado. Verifica que la rosca esté limpia antes de guardar para facilitar el próximo ensamblaje."
+    }
+  ]
+},
+
+114: { // CEPILLO FIBRA RECTA
+  descripcionCompleta: "El Cepillo exterior fibra recta Wilson es el que necesitas para barrer y restregar en aceras, patios, veredas y garajes, todas esas superficies duras donde la suciedad se pega. Su fibra gruesa con punta recta levanta polvo, arena y lodo, y además permite fregado fuerte cuando hay manchas o barro seco. El taco incorpora rosca estándar tipo escoba para montar cualquier palo (madera o metálico) y trabajar de pie, con alcance y sin cansarte. Hecho para exterior: resiste agua, sol ocasional y detergentes domésticos no corrosivos.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/barrido.svg",
+      titulo: "Barrido y fregado",
+      descripcion: "Fibra gruesa de punta recta que arrastra arena, grava y residuos de obra; con presión, desprende barro seco, mortero y suciedad pegada. Rinde parejo en cemento, adoquín, loseta y metal rugoso."
+    },
+    {
+      icono: "img/icons/midshield.svg",
+      titulo: "Base resistente",
+      descripcion: "Base de polietileno rígido con buena estabilidad estructural que no se deforma con agua, detergentes ni golpes. Mantiene las cerdas alineadas y firmes pasada tras pasada, incluso en uso rudo."
+    },
+    {
+      icono: "img/icons/angulo.svg",
+      titulo: "Rosca inclinada 60°",
+      descripcion: "Rosca a 60° que mejora el contacto con el piso, alcanza bordes y rincones con menos esfuerzo y cuida la postura al trabajar de pie."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Gruesa acabada flexible con punta recta",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Largo": "28.5 cm",
+    "Altura": "8 cm",
+    "Ancho": "5.2 cm",
+    "Peso": "223 gr",
+    "Inclinación del cabezal": "60°",
+    "Compatibilidad": "Apto con detergentes y desengrasantes no corrosivos",
+    colores: [
+      { nombre: "cuerpo", hex: "#572153", codigo: "13235" },
+      { nombre: "Fibra", hex: "#db3086", codigo: "13235" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13235"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/zonas.svg",
+      titulo: "Zonas comunes y locales",
+      descripcion: "Mantenimiento de pasillos, terrazas y accesos en edificios, talleres y comercios."
+    },
+    {
+      icono: "img/icons/baldelim.svg",
+      titulo: "Mantenimiento de exteriores",
+      descripcion: "Barrido fuerte y restregado en patios, garajes, veredas y terrazas con agua y detergente."
+    },
+    {
+      icono: "img/icons/garaje.svg",
+      titulo: "Garajes y parqueaderos",
+      descripcion: "Limpieza de manchas de grasa superficial, lodos y suciedad pesada en superficies rugosas."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Enjuaga después de usar",
+      descripcion: "Retira arena y residuos con chorro de agua; sacude y deja secar con la fibra hacia abajo."
+    },
+    {
+      titulo: "Evita químicos agresivos",
+      descripcion: "No uses solventes fuertes ni ácidos/bases concentradas que puedan dañar el taco o endurecer en exceso la fibra."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guarda a la sombra y en seco; evita dejar el cepillo apoyado sobre la fibra o sumergido por horas para no deformar las cerdas."
+    }
+  ]
+},
+
+111: { // CEPILLO INODORO
+  descripcionCompleta: "El cepillo para inodoro Wilson está pensado para una limpieza profunda y cuidadosa del sanitario. Incorpora fibra rizada en alta densidad que se amolda al contorno interno, entra entre relieves y bordes y desprende residuos sin rayar la porcelana. Su mango largo, ergonómico y con flexibilidad ligera permite aplicar la presión exacta en las zonas críticas bajo el borde, en el sifón y en las curvas dando mayor alcance y control incluso en espacios estrechos. El pedestal escurridor sostiene el cepillo en posición vertical, facilita el goteo del exceso de agua y protege la fibra entre usos, manteniendo mejor higiene y reduciendo olores.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/cerdas.svg",
+      titulo: "Limpieza profunda y pareja",
+      descripcion: "Fibra rizada de alta densidad que se adapta al tazón, alcanza bordes y rincones y desprende residuos sin rayar, dejando la superficie lista para el enjuague."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Mango extra largo y ergonómico",
+      descripcion: "Empuñadura con ondas y ligera flexibilidad para aplicar presión con control. Mejor alcance bajo el borde y menos fatiga en la muñeca."
+    },
+    {
+      icono: "img/icons/higienico.svg",
+      titulo: "Pedestal higiénico",
+      descripcion: "Base estable que recoge el goteo y mantiene el cepillo separado del piso para un secado más limpio. Facilita guardarlo en su lugar, evita charcos y contribuye a prolongar la vida de la fibra."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Resistente para el día a día",
+      descripcion: "Soporta agua, detergentes y desinfectantes domésticos no corrosivos. Se enjuaga rápido, no guarda olores y queda listo para el siguiente uso."
+    }
+  ],
+  
+  especificaciones: {
+    "Tipo de fibra": "Rizada de alta densidad",
+    "Material": "Polietileno (PE) 100% virgen",
+    "Largo": "41 cm",
+    "Altura": "8.5 cm",
+    "Ancho": "17 cm",
+    "Peso": "250 gr",
+    "Incluye": "Pedestal escurridor",
+    colores: [
+      { nombre: "Cuerpo", hex: "#ffffffff", codigo: "13235" },
+      { nombre: "Fibra", hex: "#F97CAE", codigo: "13235" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13230"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/diario.svg",
+      titulo: "Limpieza diaria del inodoro",
+      descripcion: "Cepillado completo del tazón, bajo el borde y zona del sifón para mantener brillo e higiene."
+    },
+    {
+      icono: "img/icons/desinfectante.svg",
+      titulo: "Mantenimiento con desinfectante",
+      descripcion: "Usa tu limpiador habitual, distribúyelo bien y frota con movimientos uniformes y presión medida; repite el proceso hasta retirar por completo la mancha."
+    },
+    {
+      icono: "img/icons/banos.svg",
+      titulo: "Baños de hogar, oficina y comercio",
+      descripcion: "Conjunto práctico y resistente para uso frecuente en espacios con flujo de personas. Facilita la limpieza diaria, reduce malos olores al drenar mejor la fibra y se integra sin estorbar junto al inodoro, ideal para mantener el baño presentable todo el día."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Enjuaga y escurre",
+      descripcion: "Después de cada uso, enjuaga el cepillo bajo el grifo hasta quitar restos de suciedad y jabón. Colócalo en el pedestal para que drene el exceso de agua y se seque al aire, evitando malos olores y humedad."
+    },
+    {
+      titulo: "Desinfección periódica",
+      descripcion: "Una vez por semana (o según uso), sumérgelo 10–15 minutos en cloro diluido o vinagre, enjuaga bien y deja secar completamente. Así reduces gérmenes y prolongas la vida de la fibra."
+    },
+    {
+      titulo: "Renovación sugerida",
+      descripcion: "Reemplázalo cada 3–6 meses según la frecuencia de uso y el desgaste. Si notas que la fibra pierde forma, se abre o ya no limpia como antes, cámbialo antes para mantener buenos resultados."
+    }
+  ]
 }
+
   
   // ... etc
 };
@@ -662,8 +1101,7 @@ const productos = [
     cantidadPorCaja: 48,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-atras.webp"
     ],
     
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
@@ -691,8 +1129,7 @@ const productos = [
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -719,8 +1156,7 @@ const productos = [
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -747,8 +1183,7 @@ const productos = [
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -775,8 +1210,7 @@ const productos = [
     cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -803,8 +1237,7 @@ const productos = [
     cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -830,11 +1263,10 @@ const productos = [
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
     codigo: "12420",
-    cantidadPorCaja: 24,
+    cantidadPorCaja: 48,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -862,8 +1294,7 @@ const productos = [
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -891,8 +1322,7 @@ const productos = [
     cantidadPorCaja: 20,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -916,12 +1346,11 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
-    codigo: "BPM-03",
+    codigo: "14428",
     cantidadPorCaja: 20,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -945,12 +1374,11 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
-    codigo: "BPM-04",
+    codigo: "12425",
     cantidadPorCaja: 16,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -978,8 +1406,7 @@ const productos = [
     cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -1006,11 +1433,10 @@ const productos = [
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
     
     codigo: "12219",
-    cantidadPorCaja: 24,
+    cantidadPorCaja: 48,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-atras-1-scaled.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -1038,8 +1464,7 @@ const productos = [
     cantidadPorCaja: 24,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -1067,8 +1492,7 @@ const productos = [
     cantidadPorCaja: 20,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -1096,8 +1520,7 @@ const productos = [
     cantidadPorCaja: 16,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -1124,8 +1547,8 @@ const productos = [
     cantidadPorCaja: 20,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-atras.webp"
+      
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -1153,8 +1576,8 @@ const productos = [
     cantidadPorCaja: 12,
     imagenes: [
       "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp"
+      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Atras.webp"
+      
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -1181,8 +1604,8 @@ const productos = [
   cantidadPorCaja: 20,
   imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp"
+    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-atras.webp"
+    
   ],
   especificaciones: {
     "Medida": "2 pulgadas",
@@ -1207,8 +1630,8 @@ const productos = [
   cantidadPorCaja: 20,
   imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp"
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-de-lado-con-medida.webp"
+    
   ],
   },
 
@@ -1222,8 +1645,8 @@ const productos = [
   cantidadPorCaja: 12,
   imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp"
+    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-de-lado-con-medida.webp"
+    
   ],
   },
   {
@@ -1236,7 +1659,8 @@ const productos = [
   cantidadPorCaja: 12,
   imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-superior.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-lado-con-medidas.webp"
   ],
 
   },
@@ -1246,11 +1670,11 @@ const productos = [
     categoria: "Canecas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
     descripcion: "Súper resistente con asa plástica de gran sujeción para facilidad de movimiento. Ideal para transporte de productos fríos o calientes",
-    codigo: "3372",
-    cantidadPorCaja: 20,
+    codigo: "3371",
+    cantidadPorCaja: 200,
     imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones-con-mededida.webp",
     ],
   },
   {
@@ -1260,10 +1684,11 @@ const productos = [
     imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
     descripcion: "Caneca metálica resistente ideal para almacenar pinturas y líquidos.",
     codigo: "3372",
-    cantidadPorCaja: 20,
+    cantidadPorCaja: 200,
     imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon-con-medida.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon-con-tapa-separada.webp"
     ],
   },
   {
@@ -1272,7 +1697,8 @@ const productos = [
     categoria: "Canecas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
     descripcion: "Envase práctico y resistente para almacenamiento de líquidos.",
-    cantidadPorCaja: 20,
+    codigo: "3373",
+    cantidadPorCaja: 255,
     imagenes: [
     "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
     "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
@@ -1283,42 +1709,83 @@ const productos = [
     nombre: "CEPILLO DE COCINA",
     categoria: "Cepillos",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-cocina-de-lado.jpg",
-    descripcion: "Ideal para la limpieza en la cocina, frutas, verduras. Mango cómodo, liviano, diseño ergonómico para mejor sujeción. Evita el cansancio de la mano."
+    descripcion: "Ideal para la limpieza en la cocina, frutas, verduras. Mango cómodo, liviano, diseño ergonómico para mejor sujeción. Evita el cansancio de la mano.",
+    codigo: "5320",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-cocina-de-lado.jpg",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-cocina-acostado-fondo-blanco.jpg",
+    ],
+    
   },
   {
     id: 110,
     nombre: "CEPILLO DE CONSTRUCCIÓN",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-atras-fondo-blanco-scaled.webp",
-    descripcion: "Ideal para barrer y restregar superficies extremadamente duras como patios, garajes, veredas, terrazas. Puede ser utilizado en superficies que tengan residuos de cemento."
+    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-lateral-2-fondo-blanco-scaled.webp",
+    descripcion: "Ideal para barrer y restregar superficies extremadamente duras como patios, garajes, veredas, terrazas. Puede ser utilizado en superficies que tengan residuos de cemento.",
+    codigo: "13240",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-lateral-2-fondo-blanco-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-atras-fondo-atras-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-lateral-1-fondo-blanco-scaled.webp"
+    ],
+    
   },
   {
     id: 111,
-    nombre: "CEPILLO INODORO",
+    nombre: "CEPILLO DE INODORO",
     categoria: "Cepillos",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-principal-scaled.webp",
-    descripcion: "Cepillo ideal para limpieza de todo tipo de inodoro, mayor cantidad de fibra rizada que ayuda a un cepillado más profundo. Posee mango ergonómico largo de 40 cm."
+    descripcion: "Cepillo ideal para limpieza de todo tipo de inodoro, mayor cantidad de fibra rizada que ayuda a un cepillado más profundo. Posee mango ergonómico largo de 40 cm.",
+    codigo: "13230",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-principal-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-sueltos-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-sin-etiqueta-scaled.webp"
+    ],
   },
   {
     id: 112,
     nombre: "CEPILLO DE ROPA",
     categoria: "Cepillos",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-ropa-1.webp",
-    descripcion: "Ideal para prendas de vestir, jeans, chaquetas. Mango cómodo, liviano, diseño ergonómico para mejor sujeción. Evita el cansancio de la mano."
+    descripcion: "Ideal para prendas de vestir, jeans, chaquetas. Mango cómodo, liviano, diseño ergonómico para mejor sujeción. Evita el cansancio de la mano.",
+    codigo: "53202",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-ropa-1.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-ropa-parado-con-etiqueta-fondo-blanco.webp",
+    ],
   },
   {
     id: 113,
     nombre: "CEPILLO EXTRA DURO",
     categoria: "Cepillos",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-extra-duro-frente-fondo-blanco.webp",
-    descripcion: "Ideal para la limpieza de superficies rugosas como cemento, planchas metálicas, techos. Sirve para remoción de pintura o manchas de humedad. No se oxida."
+    descripcion: "Ideal para la limpieza de superficies rugosas como cemento, planchas metálicas, techos. Sirve para remoción de pintura o manchas de humedad. No se oxida.",
+    codigo: "53290",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-extra-duro-frente-fondo-blanco.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-extra-duro-frente-fondo-blanco.webp",
+    ],
   },
   {
     id: 114,
     nombre: "CEPILLO FIBRA RECTA",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-2-scaled.webp",
-    descripcion: "Ideal para limpieza de aceras, patios, veredas, garajes. Mango con inclinación de 60° para facilitar la limpieza en pisos duros. Fibra gruesa acabada flexible."
+    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-2-fondo-blanco.webp",
+    descripcion: "Ideal para limpieza de aceras, patios, veredas, garajes. Mango con inclinación de 60° para facilitar la limpieza en pisos duros. Fibra gruesa acabada flexible.",
+    codigo: "13235",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-3-fondo-blanco.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-1.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-2-fondo-blanco.webp"
+    ],
   },
   {
     id: 115,
