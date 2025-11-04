@@ -162,7 +162,7 @@
 }
 
 .badge-categoria {
-  background: #f0f0f0;
+  background: #ffffff;
   color: #d32f2f;
 }
 
@@ -868,8 +868,8 @@
   }
   
   .tab-btn.active {
-    color: #f0f0f0;
-    background: #E53E3E;
+    color: #ffffff;
+    background: #d32f2f;
   }
   
   /* Remover underline de desktop */
@@ -890,7 +890,7 @@
   
   .tab-btn.active::before {
     transform: rotate(180deg);
-    color: #f0f0f0;
+    color: #ffffff;
   }
   
   /* Cada panel aparece después de su botón */

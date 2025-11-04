@@ -625,13 +625,35 @@ function cargarProductosRelacionados(productoActual) {
 }
 
 function obtenerProductosRelacionados(productoActual) {
-  // ✅ SOLO productos de la misma categoría (excluyendo el actual)
-  const relacionados = productos.filter(p => 
-    p.id !== productoActual.id && 
-    p.categoria === productoActual.categoria
+  // Filtrar productos excluyendo el actual
+  let relacionados = productos.filter(p => p.id !== productoActual.id);
+  
+  // Prioridad 1: Misma categoría y marca (si es brocha)
+  if (productoActual.categoria === "Brochas" && productoActual.marca) {
+    const mismaMarca = relacionados.filter(
+      p => p.categoria === "Brochas" && p.marca === productoActual.marca
+    );
+    if (mismaMarca.length >= 4) return mismaMarca;
+    
+    // Complementar con otras brochas
+    const otrasBrochas = relacionados.filter(
+      p => p.categoria === "Brochas" && p.marca !== productoActual.marca
+    );
+    return [...mismaMarca, ...otrasBrochas];
+  }
+  
+  // Prioridad 2: Misma categoría
+  const mismaCategoria = relacionados.filter(
+    p => p.categoria === productoActual.categoria
+  );
+  if (mismaCategoria.length >= 4) return mismaCategoria;
+  
+  // Prioridad 3: Completar con productos aleatorios
+  const otros = relacionados.filter(
+    p => p.categoria !== productoActual.categoria
   );
   
-  return relacionados;
+  return [...mismaCategoria, ...otros];
 }
 
 function crearTarjetaProductoRelacionado(producto) {

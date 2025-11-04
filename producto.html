@@ -241,97 +241,53 @@
       </section>
 
       
+
       <!-- Tabs: Especificaciones / Usos / Cuidados -->
-<section class="producto-tabs-section">
-  
-  <!-- NUEVO: Cada tab-item contiene botón + panel juntos -->
-  <div class="tabs-container">
-    
-    <!-- Item 1: Especificaciones -->
-    <div class="tab-item">
-      <button class="tab-btn" data-tab="especificaciones">
-        Especificaciones
-      </button>
-      <div class="tab-panel" id="tab-especificaciones">
-        <h3>Especificaciones Técnicas</h3>
-        <div class="especificaciones-grid" id="especificacionesGrid">
-          <!-- Se generarán dinámicamente -->
+      <!-- RESPONSIVE: Horizontal en Desktop (>768px) | Vertical/Accordion en Mobile (≤768px) -->
+      <section class="producto-tabs-section">
+        
+        <!-- Header con botones de tabs -->
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="especificaciones">
+            Especificaciones
+          </button>
+          <button class="tab-btn" data-tab="usos">
+            Usos Recomendados
+          </button>
+          <button class="tab-btn" data-tab="cuidados">
+            Cuidados
+          </button>
         </div>
-      </div>
-    </div>
 
-    <!-- Item 2: Usos -->
-    <div class="tab-item">
-      <button class="tab-btn" data-tab="usos">
-        Usos Recomendados
-      </button>
-      <div class="tab-panel" id="tab-usos">
-        <h3>Usos Recomendados</h3>
-        <div class="usos-grid" id="usosGrid">
-          <!-- Se generarán dinámicamente -->
+        <!-- Contenido de los tabs -->
+        <div class="tabs-content">
+          
+          <!-- Panel 1: Especificaciones -->
+          <div class="tab-panel active" id="tab-especificaciones">
+            <h3>Especificaciones Técnicas</h3>
+            <div class="especificaciones-grid" id="especificacionesGrid">
+              <!-- Se generarán dinámicamente -->
+            </div>
+          </div>
+
+          <!-- Panel 2: Usos -->
+          <div class="tab-panel" id="tab-usos">
+            <h3>Usos Recomendados</h3>
+            <div class="usos-grid" id="usosGrid">
+              <!-- Se generarán dinámicamente -->
+            </div>
+          </div>
+
+          <!-- Panel 3: Cuidados -->
+          <div class="tab-panel" id="tab-cuidados">
+            <h3>Cuidados</h3>
+            <div class="cuidados-lista" id="cuidadosLista">
+              <!-- Se generarán dinámicamente -->
+            </div>
+          </div>
+
         </div>
-      </div>
-    </div>
-
-    <!-- Item 3: Cuidados -->
-    <div class="tab-item">
-      <button class="tab-btn" data-tab="cuidados">
-        Cuidados
-      </button>
-      <div class="tab-panel" id="tab-cuidados">
-        <h3>Cuidados</h3>
-        <div class="cuidados-lista" id="cuidadosLista">
-          <!-- Se generarán dinámicamente -->
-        </div>
-      <!-- Tabs: Especificaciones / Usos / Cuidados -->
-<!-- Tabs: Especificaciones / Usos / Cuidados -->
-<section class="producto-tabs-section">
-  
-  <!-- Header con botones (visible en desktop) -->
-  <div class="tabs-header">
-    <button class="tab-btn active" data-tab="especificaciones">
-      Especificaciones
-    </button>
-    <button class="tab-btn" data-tab="usos">
-      Usos Recomendados
-    </button>
-    <button class="tab-btn" data-tab="cuidados">
-      Cuidados
-    </button>
-  </div>
-
-  <!-- Content wrapper -->
-  <div class="tabs-content">
-    
-    <!-- Panel 1: Especificaciones -->
-    <div class="tab-panel active" id="tab-especificaciones">
-      <h3>Especificaciones Técnicas</h3>
-      <div class="especificaciones-grid" id="especificacionesGrid">
-        <!-- Se generarán dinámicamente -->
-      </div>
-    </div>
-
-    <!-- Panel 2: Usos -->
-    <div class="tab-panel" id="tab-usos">
-      <h3>Usos Recomendados</h3>
-      <div class="usos-grid" id="usosGrid">
-        <!-- Se generarán dinámicamente -->
-      </div>
-    </div>
-
-    <!-- Panel 3: Cuidados -->
-    <div class="tab-panel" id="tab-cuidados">
-      <h3>Cuidados</h3>
-      <div class="cuidados-lista" id="cuidadosLista">
-        <!-- Se generarán dinámicamente -->
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  
-</section>
+      </section>
 
     </div>
   </main>
