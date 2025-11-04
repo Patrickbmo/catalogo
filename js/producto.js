@@ -123,6 +123,7 @@ function inicializarPaginaProducto() {
   inicializarGaleria();
   inicializarTabs();
   inicializarBotones();
+  cargarProductosRelacionados(producto);
 }
 
 /**
@@ -134,10 +135,7 @@ function renderizarProducto(producto) {
     document.title = `${producto.nombre} - Wilson`;
     
     // ===== BREADCRUMB =====
-    const breadcrumb = document.getElementById('breadcrumb-product');
-    if (breadcrumb) {
-      breadcrumb.textContent = producto.nombre;
-    }
+    actualizarBreadcrumb(producto);
     
     // ===== INFORMACIÓN PRINCIPAL =====
     const nombreElement = document.getElementById('productoNombre');
@@ -584,3 +582,77 @@ document.addEventListener('DOMContentLoaded', () => {
     actualizarInfoUnidades();
   }
 });
+// ===== BREADCRUMB CORREGIDO =====
+function actualizarBreadcrumb(producto) {
+  // Actualizar texto de categoría
+  const breadcrumbCategoria = document.getElementById('breadcrumb-categoria');
+  if (breadcrumbCategoria) {
+    breadcrumbCategoria.textContent = producto.categoria;
+    // IMPORTANTE: Codificar la categoría para la URL
+    const categoriaURL = encodeURIComponent(producto.categoria);
+    breadcrumbCategoria.href = `catalogo.html?categoria=${categoriaURL}`;
+  }
+  
+  // Actualizar nombre del producto
+  const breadcrumbProduct = document.getElementById('breadcrumb-product');
+  if (breadcrumbProduct) {
+    breadcrumbProduct.textContent = producto.nombre;
+  }
+}
+
+// ===== PRODUCTOS RELACIONADOS =====
+function cargarProductosRelacionados(productoActual) {
+  const grid = document.getElementById('productosRelacionadosGrid');
+  if (!grid) return;
+  
+  // Obtener productos relacionados
+  let relacionados = obtenerProductosRelacionados(productoActual);
+  
+  // Limitar a 4 productos
+  relacionados = relacionados.slice(0, 4);
+  
+  if (relacionados.length === 0) {
+    grid.innerHTML = '<p class="no-relacionados">No hay productos relacionados disponibles</p>';
+    return;
+  }
+  
+  // Renderizar productos
+  grid.innerHTML = '';
+  relacionados.forEach(producto => {
+    const card = crearTarjetaProductoRelacionado(producto);
+    grid.appendChild(card);
+  });
+}
+
+function obtenerProductosRelacionados(productoActual) {
+  // ✅ SOLO productos de la misma categoría (excluyendo el actual)
+  const relacionados = productos.filter(p => 
+    p.id !== productoActual.id && 
+    p.categoria === productoActual.categoria
+  );
+  
+  return relacionados;
+}
+
+function crearTarjetaProductoRelacionado(producto) {
+  const card = document.createElement('div');
+  card.className = 'producto-relacionado-card';
+  card.onclick = () => {
+    window.location.href = `producto.html?id=${producto.id}`;
+  };
+  
+  card.innerHTML = `
+    <div class="relacionado-imagen">
+      <img src="${producto.imagen}" alt="${producto.nombre}">
+    </div>
+    <div class="relacionado-info">
+      <h4>${producto.nombre}</h4>
+      <span class="relacionado-categoria">${producto.categoria}</span>
+      ${producto.marca ? `<span class="relacionado-marca">${producto.marca}</span>` : ''}
+    </div>
+    <button class="btn-ver-relacionado">Ver Producto</button>
+  `;
+  
+  return card;
+}
+
