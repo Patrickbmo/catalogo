@@ -1220,9 +1220,676 @@ const informacionProductos = {
   ]
 },
 
+79: { // CESTO APILABLE ROJA
+  descripcionCompleta: "El cesto apilable Wilson es tu aliado para ordenar de una la casa, la bodega o el local. Hecho en polietileno (PE) 100% virgen, es súper resistente y ligero. Su diseño con ranuras de ventilación mantiene el contenido fresco y a la vista, y los broches de seguridad permiten colapsarlo cuando no lo usas para ahorrar espacio. Cuenta con patas de apoyo para apilar uno encima de otro de forma estable. Ideal para frutas, juguetes, productos de limpieza, despensa… lo que necesites tener a mano.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/apilable.svg",
+      titulo: "Apilable y estable",
+      descripcion: "Patas y encastres que calzan entre sí para armar columnas firmes sin deslizamientos. Organiza en altura, ahorra espacio y mueve los cestos con más seguridad."
+    },
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Plástico ultrarresistente",
+      descripcion: "Plástico grado premium, higiénico y ultrarresistente a golpes y uso diario. Se lava fácil, no absorbe olores y mantiene el color con el tiempo, perfecto para casa o negocio."
+    },
+    {
+      icono: "img/icons/ventilacion.svg",
+      titulo: "Ventilación y visibilidad",
+      descripcion: "Ranuras tipo rejilla que airean el contenido, ayudan a evitar humedad u olores y permiten ver de un vistazo lo que hay dentro sin destapar."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "41.5 cm",
+    "Ancho": "33 cm",
+    "Profundidad": "22 cm",
+    "Peso": "525 gr",
+    colores: [
+      { nombre: "Rojo", hex: "#dc3545", codigo: "13753" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13753"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/alimentos.svg",
+      titulo: "Despensa y cocina",
+      descripcion: "Mantén frutas, verduras, snacks y botellas en orden. Las ranuras dejan circular el aire para conservar mejor el contenido y ver todo de un vistazo. Puedes apilar varios cestos para separar por tipo y aprovechar el alto del mueble."
+    },
+    {
+      icono: "img/icons/lavanderia.svg",
+      titulo: "Lavandería y limpieza",
+      descripcion: "Organiza detergentes, suavizantes, paños, esponjas, pinzas y repuestos. Al apilar dos o más cestos, creas niveles por categoría y evitas mezclar húmedos con secos. El plástico ultrarresistente se lava fácil y no toma olor."
+    },
+    {
+      icono: "img/icons/Toys.svg",
+      titulo: "Dormitorio, sala y bodega",
+      descripcion: "Guarda juguetes, cuadernos, cables, herramientas livianas o stock de tienda. La estructura apilable ordena verticalmente y, al ser colapsible, se pliega en segundos cuando queda vacío para ahorrar espacio."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza fácil",
+      descripcion: "Lava el cesto con agua y detergente suave usando una esponja no abrasiva; enjuaga bien para quitar residuos y deja secar al aire. Si hubo derrames, pasa un paño húmedo y seca para evitar olores."
+    },
+    {
+      titulo: "Evita cargas extremas",
+      descripcion: "No te sientes ni apoyes peso puntual en bordes o esquinas. Si apilas varios cestos, reparte la carga de forma pareja y coloca los objetos más pesados en la base para mantener estabilidad."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guárdalo limpio y seco, a la sombra y lejos de fuentes de calor. Cuando no lo uses, pliégalo con los broches para proteger la estructura, evitar deformaciones y ahorrar espacio."
+    }
+  ]
+},
 
+80: { // CESTO APILABLE ROJA
+  descripcionCompleta: "El cesto apilable Wilson es tu aliado para ordenar de una la casa, la bodega o el local. Hecho en polietileno (PE) 100% virgen, es súper resistente y ligero. Su diseño con ranuras de ventilación mantiene el contenido fresco y a la vista, y los broches de seguridad permiten colapsarlo cuando no lo usas para ahorrar espacio. Cuenta con patas de apoyo para apilar uno encima de otro de forma estable. Ideal para frutas, juguetes, productos de limpieza, despensa… lo que necesites tener a mano.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/apilable.svg",
+      titulo: "Apilable y estable",
+      descripcion: "Patas y encastres que calzan entre sí para armar columnas firmes sin deslizamientos. Organiza en altura, ahorra espacio y mueve los cestos con más seguridad."
+    },
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Plástico ultrarresistente",
+      descripcion: "Plástico grado premium, higiénico y ultrarresistente a golpes y uso diario. Se lava fácil, no absorbe olores y mantiene el color con el tiempo, perfecto para casa o negocio."
+    },
+    {
+      icono: "img/icons/ventilacion.svg",
+      titulo: "Ventilación y visibilidad",
+      descripcion: "Ranuras tipo rejilla que airean el contenido, ayudan a evitar humedad u olores y permiten ver de un vistazo lo que hay dentro sin destapar."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "41.5 cm",
+    "Ancho": "33 cm",
+    "Profundidad": "22 cm",
+    "Peso": "525 gr",
+    colores: [
+      { nombre: "Rojo", hex: "#fa8a40ff", codigo: "13753" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13753"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/alimentos.svg",
+      titulo: "Despensa y cocina",
+      descripcion: "Mantén frutas, verduras, snacks y botellas en orden. Las ranuras dejan circular el aire para conservar mejor el contenido y ver todo de un vistazo. Puedes apilar varios cestos para separar por tipo y aprovechar el alto del mueble."
+    },
+    {
+      icono: "img/icons/lavanderia.svg",
+      titulo: "Lavandería y limpieza",
+      descripcion: "Organiza detergentes, suavizantes, paños, esponjas, pinzas y repuestos. Al apilar dos o más cestos, creas niveles por categoría y evitas mezclar húmedos con secos. El plástico ultrarresistente se lava fácil y no toma olor."
+    },
+    {
+      icono: "img/icons/Toys.svg",
+      titulo: "Dormitorio, sala y bodega",
+      descripcion: "Guarda juguetes, cuadernos, cables, herramientas livianas o stock de tienda. La estructura apilable ordena verticalmente y, al ser colapsible, se pliega en segundos cuando queda vacío para ahorrar espacio."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza fácil",
+      descripcion: "Lava el cesto con agua y detergente suave usando una esponja no abrasiva; enjuaga bien para quitar residuos y deja secar al aire. Si hubo derrames, pasa un paño húmedo y seca para evitar olores."
+    },
+    {
+      titulo: "Evita cargas extremas",
+      descripcion: "No te sientes ni apoyes peso puntual en bordes o esquinas. Si apilas varios cestos, reparte la carga de forma pareja y coloca los objetos más pesados en la base para mantener estabilidad."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guárdalo limpio y seco, a la sombra y lejos de fuentes de calor. Cuando no lo uses, pliégalo con los broches para proteger la estructura, evitar deformaciones y ahorrar espacio."
+    }
+  ]
+},
 
+82: { // CESTO DE BASURA PEQUEÑO
+  descripcionCompleta: "El cesto de basura pequeño Wilson es la solución compacta para baños, oficinas y dormitorios. Con 5 litros y tapa que oculta el contenido y reduce olores, mantiene los espacios limpios y discretos. Hecho en polietileno 100% virgen, es higiénico, fácil de lavar y mantiene su color. Su diseño ahorra espacio: cabe en rincones o bajo mesones sin estorbar. Además, ofrece apertura práctica, bordes redondeados para limpiar rápido, base estable y es ideal para bolsas pequeñas de residuos diarios.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Material resistente",
+      descripcion: "Plástico duradero que no absorbe olores, se limpia fácilmente con agua y detergente suave y mantiene su color por más tiempo con uso diario."
+    },
+    {
+      icono: "img/icons/compacto.svg",
+      titulo: "Compacto",
+      descripcion: "Cabe discretamente en rincones, bajo escritorios o junto al lavamanos sin estorbar. Perfecto para oficinas, baños o dormitorios con espacio limitado."
+    },
+    {
+      icono: "img/icons/tapa.svg",
+      titulo: "Tapa antiolores",
+      descripcion: "La tapa sella y oculta el contenido, ayudando a contener los olores. Mantiene el área limpia y discreta durante todo el día."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Polietileno (PE) 100% virgen",
+    "Capacidad": "5 litros",
+    "Altura": "25 cm",
+    "Diámetro": "20 cm",
+    "Peso": "280 gr",
+    "Incluye": "Tapa con cierre",
+    colores: [
+      { nombre: "Azul", hex: "#0066cc", codigo: "13390" }
+    ],
+    "Unidades por caja": "24 unidades",
+    "Código": "13390"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/banos.svg",
+      titulo: "Baños",
+      descripcion: "Ideal para residuos de papel higiénico, toallas sanitarias y productos de higiene personal. La tapa controla olores y mantiene la privacidad."
+    },
+    {
+      icono: "img/icons/office.svg",
+      titulo: "Oficinas y escritorios",
+      descripcion: "Perfecto para papeles, envases pequeños y residuos secos. Cabe bajo el escritorio o en esquinas sin ocupar espacio valioso."
+    },
+    {
+      icono: "img/icons/dormitorio.svg",
+      titulo: "Dormitorios",
+      descripcion: "Para desechos ligeros como pañuelos, envoltorios y papeles. Mantiene el cuarto ordenado sin abultar ni generar malos olores."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza regular",
+      descripcion: "Lava el cesto y la tapa con agua tibia y detergente suave. Usa una esponja no abrasiva, enjuaga bien y deja secar al aire para evitar acumulación de olores."
+    },
+    {
+      titulo: "Vacía con frecuencia",
+      descripcion: "No llenes más allá de la capacidad recomendada. Vacía regularmente para evitar desbordamientos, malos olores y facilitar el manejo de la bolsa."
+    },
+    {
+      titulo: "Usa bolsas apropiadas",
+      descripcion: "Utiliza bolsas pequeñas (5-8 litros) que se ajusten al borde sin sobresalir demasiado. Esto mantiene el cesto limpio y facilita el reemplazo de la bolsa."
+    }
+  ]
+},
+84: { // CESTO CUADRADO AZUL
+  descripcionCompleta: "El Cesto Cuadrado Wilson organiza dormitorios, roperos, libreros y cualquier ambiente del hogar o del negocio con un diseño cuadrado perforado que aprovecha mejor el espacio, ventila el contenido y permite verlo de un vistazo. Está fabricado en polietileno 100% virgen, grado alimenticio y conforme a estándares FDA, por lo que es higiénico, no toma olores y se limpia en minutos. Es liviano pero resistente, mantiene la forma con uso diario y se transporta con facilidad, ideal para ropa, despensa, juguetes o artículos de limpieza.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/espacio.svg",
+      titulo: "Aprovecha el espacio",
+      descripcion: "Su diseño cuadrado aprovecha cada centímetro. Calza perfectamente en estantes y esquinas, permitiendo alineaciones impecables. Multiplica tu volumen útil y ordena por niveles sin desperdiciar huecos."
+    },
+    {
+      icono: "img/icons/ventilacion.svg",
+      titulo: "Ventilación y vista rápida",
+      descripcion: "El diseño con ranuras laterales permite un flujo de aire constante, ideal para frutas o despensa. Además, te facilita una vista rápida del contenido, sin necesidad de mover o abrir."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Plástico ultrarresistente",
+      descripcion: "Hecho con polietileno (PE) 100% virgen de grado alimenticio. Es higiénico, fácil de lavar y no toma olores. Mantiene su forma, color y soporta el uso diario sin deformarse."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "28 cm",
+    "Ancho": "44 cm",
+    "Largo": "44 cm",
+    "Peso": "720 gr",
+    colores: [
+      { nombre: "Azul", hex: "#0066cc", codigo: "53571" }
+    ],
+    "Unidades por caja": "24 unidades",
+    "Código": "53571"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/lavadora.svg",
+      titulo: "Lavandería y dormitorio",
+      descripcion: "Clasifica ropa sucia/limpia, guarda cobijas o almohadas extras y transporta prendas entre cuartos."
+    },
+    {
+      icono: "img/icons/ropero.svg",
+      titulo: "Clósets y roperos",
+      descripcion: "Organiza carteras, accesorios, toallas, zapatos, y mantén todo ventilado y a la vista."
+    },
+    {
+      icono: "img/icons/sala.svg",
+      titulo: "Sala, estudio y comercio",
+      descripcion: "Ordena juguetes, libros, revistas, papelería o inventario liviano; ideal para estanterías y libreros."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza sencilla",
+      descripcion: "Lava con agua tibia y detergente suave usando paño no abrasivo. Enjuaga y seca al aire o con microfibra."
+    },
+    {
+      titulo: "Evita cargas puntuales extremas",
+      descripcion: "Distribuye el peso y no te sientes ni te apoyes en los bordes. Para objetos pesados, usa ambas asas."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guarda en lugar fresco y a la sombra, ya que el calor extremo puede afectar el polietileno. Cuando no lo uses, anida varios cestos para ahorrar espacio."
+    }
+  ]
+},
 
+85: { // CESTO RECTANGULAR MEDIANO
+  descripcionCompleta: "El cesto rectangular mediano Wilson es la canasta multiuso que te ayuda a poner en orden cualquier espacio: lavandería, clóset, despensa, oficina o local. Su formato rectangular con perforaciones ofrece buena capacidad, ventilación y visibilidad del contenido, para que encuentres todo de una. Está fabricado en polietileno (PE) 100% virgen, grado alimenticio (cumple FDA): es higiénico, no toma olor y se limpia facilito. Con bordes reforzados y asas integradas, lo llevas de un lado a otro sin que se deforme.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/espacio.svg",
+      titulo: "Aprovecha el espacio",
+      descripcion: "Formato rectangular que se ajusta al ras en estanterías y clósets. Permite anidar o apilar varias unidades, aprovechando cada centímetro y manteniendo tus zonas ordenadas por niveles."
+    },
+    {
+      icono: "img/icons/ventilacion.svg",
+      titulo: "Ventilación y vista rápida",
+      descripcion: "Perforaciones tipo rejilla que maximizan la circulación de aire, reduciendo humedad y olores. Su visibilidad facilita clasificar y encontrar rápidamente ropa, alimentos o productos sin destapar."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Plástico ultrarresistente",
+      descripcion: "Plástico duradero de fácil lavado que no absorbe olores y mantiene su color vibrante. Apto para contacto indirecto con alimentos, lo que lo hace ideal para despensa, bodegas y más."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "27 cm",
+    "Ancho": "15 cm",
+    "Largo": "27 cm",
+    "Peso": "172 gr",
+    colores: [
+      { nombre: "BLANCO", hex: "#ffffffff", codigo: "13560" }
+    ],
+    "Unidades por caja": "24 unidades",
+    "Código": "13560"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/lavadora.svg",
+      titulo: "Lavandería y dormitorio",
+      descripcion: "Clasifica ropa sucia/limpia, guarda cobijas o almohadas extras y transporta prendas entre cuartos."
+    },
+    {
+      icono: "img/icons/cocina.svg",
+      titulo: "Despensa y cocina",
+      descripcion: "Organiza frutas, verduras, snacks y botellas; la ventilación ayuda a mantener fresco el contenido."
+    },
+    {
+      icono: "img/icons/estante.svg",
+      titulo: "Bodega, oficina y comercio",
+      descripcion: "Ordena inventario liviano, papelería, juguetes o artículos de ferretería; ideal para estanterías, libreros o exhibición en perchas."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza sencilla",
+      descripcion: "Lava con agua y detergente suave usando un paño no abrasivo. Enjuaga y seca al aire."
+    },
+    {
+      titulo: "Evita cargas puntuales extremas",
+      descripcion: "No te sientes ni coloques peso concentrado; reparte la carga si llenas al máximo."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guarda en lugar seco y a la sombra, lejos de calor. Cuando no lo uses, anida varios para ahorrar espacio.."
+    }
+  ]
+},
+
+86: { // CESTO RECTANGULAR GRANDE
+  descripcionCompleta: "El cesto rectangular grande Wilson organiza cualquier espacio: lavandería, despensa, bodega, oficina o local. Su diseño rectangular perforado ofrece gran capacidad, ventilación y visibilidad del contenido, ideal para ropa, limpieza, inventario o materiales. Fabricado en PE 100% virgen, grado alimenticio (cumple FDA): higiénico, resistente y fácil de lavar; no absorbe olores y mantiene el color. Los bordes reforzados conservan la forma aun cargado y las asas integradas brindan agarre cómodo para moverlo sin deformarse. Además, permite apilar o anidar unidades del mismo modelo para optimizar el espacio.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/espacio.svg",
+      titulo: "Aprovecha el espacio",
+      descripcion: "Formato rectangular que se ajusta al ras en estanterías y clósets. Permite anidar o apilar varias unidades, aprovechando cada centímetro y manteniendo tus zonas ordenadas por niveles."
+    },
+    {
+      icono: "img/icons/ventilacion.svg",
+      titulo: "Ventilación y vista rápida",
+      descripcion: "Perforaciones tipo rejilla que maximizan la circulación de aire, reduciendo humedad y olores. Su visibilidad facilita clasificar y encontrar rápidamente ropa, alimentos o productos sin destapar."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Plástico ultrarresistente",
+      descripcion: "Plástico duradero de fácil lavado que no absorbe olores y mantiene su color vibrante. Apto para contacto indirecto con alimentos, lo que lo hace ideal para despensa, bodegas y más."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "18 cm",
+    "Ancho": "32 cm",
+    "Largo": "43.3 cm",
+    "Peso": "306 gr",
+    colores: [
+      { nombre: "Azul", hex: "#e70026", codigo: "53572" }
+    ],
+    "Unidades por caja": "24 unidades",
+    "Código": "53572"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/lavadora.svg",
+      titulo: "Lavandería y dormitorio",
+      descripcion: "Clasifica ropa sucia/limpia, guarda cobijas o almohadas extras y transporta prendas entre cuartos."
+    },
+    {
+      icono: "img/icons/ropero.svg",
+      titulo: "Clósets y roperos",
+      descripcion: "Organiza carteras, accesorios, toallas, zapatos, y mantén todo ventilado y a la vista."
+    },
+    {
+      icono: "img/icons/sala.svg",
+      titulo: "Sala, estudio y comercio",
+      descripcion: "Ordena juguetes, libros, revistas, papelería o inventario liviano; ideal para estanterías y libreros."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza sencilla",
+      descripcion: "Lava con agua y detergente suave usando un paño no abrasivo. Enjuaga y seca al aire."
+    },
+    {
+      titulo: "Evita cargas puntuales extremas",
+      descripcion: "No te sientes ni coloques peso concentrado; reparte la carga si llenas al máximo."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guarda en lugar seco y a la sombra, lejos de calor. Cuando no lo uses, anida varios para ahorrar espacio.."
+    }
+  ]
+},
+
+87: { // CESTO RECTANGULAR MEDIANO
+  descripcionCompleta: "El cesto rectangular mediano Wilson es la canasta multiuso que te ayuda a poner en orden cualquier espacio: lavandería, clóset, despensa, oficina o local. Su formato rectangular con perforaciones ofrece buena capacidad, ventilación y visibilidad del contenido, para que encuentres todo de una. Está fabricado en polietileno (PE) 100% virgen, grado alimenticio (cumple FDA): es higiénico, no toma olor y se limpia facilito. Con bordes reforzados y asas integradas, lo llevas de un lado a otro sin que se deforme.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/espacio.svg",
+      titulo: "Aprovecha el espacio",
+      descripcion: "Formato rectangular que se ajusta al ras en estanterías y clósets. Permite anidar o apilar varias unidades, aprovechando cada centímetro y manteniendo tus zonas ordenadas por niveles."
+    },
+    {
+      icono: "img/icons/ventilacion.svg",
+      titulo: "Ventilación y vista rápida",
+      descripcion: "Perforaciones tipo rejilla que maximizan la circulación de aire, reduciendo humedad y olores. Su visibilidad facilita clasificar y encontrar rápidamente ropa, alimentos o productos sin destapar."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Plástico ultrarresistente",
+      descripcion: "Plástico duradero de fácil lavado que no absorbe olores y mantiene su color vibrante. Apto para contacto indirecto con alimentos, lo que lo hace ideal para despensa, bodegas y más."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "27 cm",
+    "Ancho": "15 cm",
+    "Largo": "27 cm",
+    "Peso": "172 gr",
+    colores: [
+      { nombre: "BLANCO", hex: "#c90606ff", codigo: "13561" }
+    ],
+    "Unidades por caja": "24 unidades",
+    "Código": "13561"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/lavadora.svg",
+      titulo: "Lavandería y dormitorio",
+      descripcion: "Clasifica ropa sucia/limpia, guarda cobijas o almohadas extras y transporta prendas entre cuartos."
+    },
+    {
+      icono: "img/icons/cocina.svg",
+      titulo: "Despensa y cocina",
+      descripcion: "Organiza frutas, verduras, snacks y botellas; la ventilación ayuda a mantener fresco el contenido."
+    },
+    {
+      icono: "img/icons/estante.svg",
+      titulo: "Bodega, oficina y comercio",
+      descripcion: "Ordena inventario liviano, papelería, juguetes o artículos de ferretería; ideal para estanterías, libreros o exhibición en perchas."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza sencilla",
+      descripcion: "Lava con agua y detergente suave usando un paño no abrasivo. Enjuaga y seca al aire."
+    },
+    {
+      titulo: "Evita cargas puntuales extremas",
+      descripcion: "No te sientes ni coloques peso concentrado; reparte la carga si llenas al máximo."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guarda en lugar seco y a la sombra, lejos de calor. Cuando no lo uses, anida varios para ahorrar espacio.."
+    }
+  ]
+},
+
+105: { // ESCURRIDOR DE PLATOS
+  descripcionCompleta: "El escurridor de platos Wilson es tu aliado compacto para acomodar platos, vasos, tazas y cristalería mientras se escurren. Su diseño estable aprovecha el espacio del fregadero o la meseta, organiza por secciones y permite que el agua drene sin charcos. Ideal para cocinas pequeñas, suites, cafeterías o como segundo escurridor de apoyo.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/gota.svg",
+      titulo: "Drenaje eficiente",
+      descripcion: "Canales y aberturas que dirigen el agua lejos de la vajilla; patas elevadas que evitan estancamientos y mantienen seca la superficie de apoyo."
+    },
+    {
+      icono: "img/icons/cubiertos.svg",
+      titulo: "Porta-cubiertos integrado",
+      descripcion: "Compartimiento lateral con separaciones para cucharas, tenedores y cuchillos. Mantiene todo junto, seguro y a la mano para guardar más rápido."
+    },
+    {
+      icono: "img/icons/platos.svg",
+      titulo: "Soporte vertical",
+      descripcion: "Parrillas altas y firmes que sostienen platos grandes y pequeños en posición, maximizan el flujo de aire y aceleran el secado sin que las piezas se toquen."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Polietileno (PE) 100% virgen",
+    "Largo": "35.5 cm",
+    "Altura": "11.5 cm",
+    "Ancho": "32.2 cm",
+    "Peso": "591 gr",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffff", codigo: "13710" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13710"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/cocina.svg",
+      titulo: "Cocina del hogar",
+      descripcion: "Secado diario de la loza sin ocupar mucho espacio y con todo ordenadito."
+    },
+    {
+      icono: "img/icons/cafeteria.svg",
+      titulo: "Suites y oficinas",
+      descripcion: "Ideal para kitchenettes o áreas de café donde se lavan tazas y contenedores a lo largo del día."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza rápida",
+      descripcion: "Lava el escurridor con detergente suave y enjuaga; deja secar al aire."
+    },
+    {
+      titulo: "Evita calor extremo",
+      descripcion: "No lo acerques a fuentes directas de calor ni viertas agua hirviendo para conservar su forma."
+    },
+    {
+      titulo: "Mantén el drenaje libre",
+      descripcion: "Revisa que las ranuras no tengan residuos de comida para evitar malos olores."
+    }
+  ]
+},
+
+108: { // TINA RECTANGULAR 12 LITROS
+  descripcionCompleta: "La Tina Rectangular 12 L Wilson es práctica y resistente para limpieza y lavandería: traslada agua, ropa o utensilios sin reguero y su forma rectangular aprovecha rincones de lavaderos y duchas, permitiendo apoyarla al ras de la pared. El borde reforzado ofrece agarre cómodo al moverla llena y la base amplia y estable ayuda a prevenir vuelcos. Hecha en plástico (polietileno, PE) 100% virgen de grado alimenticio, es higiénica, durable y fácil de lavar; no retiene olores y su acabado liso cuida las manos y la ropa. Además, sirve para cargar y organizar objetos como cuadernos, herramientas, tornillos y materiales ligeros de construcción, manteniéndolos reunidos y fáciles de mover. Cuando no la uses, se apila con otras tinas para ahorrar espacio.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/espacio.svg",
+      titulo: "Ahorro real de espacio",
+      descripcion: "Diseño rectangular con base firme. Se apoya al ras de la pared o repisa, ocupando menos espacio que una tina redonda y sin 'bailar' al llenarse. Perfecta para lavaderos estrechos."
+    },
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Resistente y multiuso",
+      descripcion: "Plástico de grado alimenticio, higiénico y fácil de limpiar que resiste golpes, peso y uso continuo sin deformarse; no absorbe olores ni pierde color, perfecto para casa o negocio."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "18 cm",
+    "Ancho": "32.4 cm",
+    "Largo": "42 cm",
+    "Capacidad": "12 litros",
+    "Peso": "672 gr",
+    colores: [
+      { nombre: "Verde", hex: "#28a745", codigo: "13612" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13612"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/lavanderia.svg",
+      titulo: "Lavandería y remojo",
+      descripcion: "Perfecta para remojar ropa, transportar prendas húmedas o llevar agua para el lavado a mano. El acabado liso cuida las telas."
+    },
+    {
+      icono: "img/icons/limpieza.svg",
+      titulo: "Limpieza profunda",
+      descripcion: "Ideal para preparar soluciones de limpieza, trasladar agua y regar. La base rectangular facilita apoyarla en rincones y contra paredes."
+    },
+    {
+      icono: "img/icons/garaje.svg",
+      titulo: "Organización y transporte",
+      descripcion: "Sirve para cargar herramientas, tornillos, cuadernos o materiales ligeros de construcción, manteniéndolos reunidos y fáciles de mover."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Enjuaga después de usar",
+      descripcion: "Retira arena y residuos con chorro de agua; sacude y deja secar boca abajo para evitar acumulación de humedad."
+    },
+    {
+      titulo: "Evita químicos agresivos",
+      descripcion: "No uses solventes fuertes ni ácidos/bases concentrados que puedan dañar el plástico o alterar su resistencia."
+    },
+    {
+      titulo: "Almacenamiento correcto",
+      descripcion: "Guarda a la sombra y en seco. Apila varias tinas para ahorrar espacio, evitando peso excesivo que pueda deformarlas."
+    }
+  ]
+},
+
+2761: { // CESTO REDONDO GRANDE
+  descripcionCompleta: "El Cesto de Basura Grande Redondo Wilson es la opción práctica para baños, oficinas, dormitorios y áreas comunes. La tapa oculta el contenido y ayuda a controlar olores, manteniendo los espacios ordenados y presentables. Fabricado en polietileno (PE) 100% virgen, grado alimenticio, es higiénico, no toma olores y se limpia en minutos. Su diseño redondo con paredes acanaladas aporta rigidez y un look limpio que combina con cualquier ambiente.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/capacidad.svg",
+      titulo: "Gran capacidad",
+      descripcion: "Tamaño ideal y eficiente para hogares y oficinas con tráfico medio. Ofrece 22 litros de capacidad para clasificar basura, materiales o inventario sin tener que vaciarlo constantemente."
+    },
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Plástico resistente",
+      descripcion: "Fabricado en polietileno (PE) 100% virgen, grado alimenticio. Soporta uso diario sin deformarse, no toma olores y se limpia en minutos con agua y detergente doméstico."
+    },
+    {
+      icono: "img/icons/tapas.svg",
+      titulo: "Tapa y Diseño Amigable",
+      descripcion: "Tapa que oculta el contenido y ayuda a contener los olores. Cuerpo redondo con paredes acanaladas para mayor rigidez y un look limpio que combina en cualquier ambiente."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Altura": "39 cm",
+    "Ancho": "32.5 cm",
+    "Capacidad": "22 litros",
+    "Peso": "913 gr",
+    colores: [
+      { nombre: "Azul", hex: "#0066cc", codigo: "13581" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "13581"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/dormitorio.svg",
+      titulo: "Baños y dormitorios",
+      descripcion: "Desechos cotidianos, manteniendo el área discreta y ordenada."
+    },
+    {
+      icono: "img/icons/oficina.svg",
+      titulo: "Oficinas y salas de reunión",
+      descripcion: "Papelería y residuos secos sin ocupar demasiado espacio."
+    },
+    {
+      icono: "img/icons/garaje.svg",
+      titulo: "Áreas comunes y comercios",
+      descripcion: "Opción limpia y resistente para tráfico medio."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza rápida",
+      descripcion: "Lava con agua tibia y detergente suave; seca antes de volver a usar."
+    },
+    {
+      titulo: "Usa bolsa adecuada",
+      descripcion: "Coloca bolsas de 18-22 L para proteger el interior y facilitar el retiro de desechos."
+    },
+    {
+      titulo: "Almacenamiento",
+      descripcion: "Mantenlo a la sombra y en seco para conservar color y brillo."
+    }
+  ]
+},
   
   // ... etc
 };
@@ -1965,70 +2632,133 @@ const productos = [
     ],
     
   },
-  {//CESTO APILABLE
+  {//CESTO APILABLE ROJO
     id: 79,
     nombre: "CESTO APILABLE ROJA",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-apilable-rojo-principal-scaled.webp",
-    descripcion: "Diseño elegante rectangular tipo repisa, ideal para la organización en cualquier lugar del hogar."
+    descripcion: "Diseño elegante rectangular tipo repisa, ideal para la organización en cualquier lugar del hogar.",
+    codigo:"13753",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Dos-Cesto-apilable-rojo-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-apilable-rojo-principal-con-medidas.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-apilable-rojo-principal-scaled.webp"
+    ],
   },
-  {
+  {//CESTO APILABLE NARANJA
     id: 80,
     nombre: "CESTO APILABLE NARANJA",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-apilable-naranja-principal.webp",
-    descripcion: "Diseño elegante rectangular tipo repisa, ideal para la organización en cualquier lugar del hogar."
+    descripcion: "Diseño elegante rectangular tipo repisa, ideal para la organización en cualquier lugar del hogar.",
+    codigo:"13752",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-apilable-naranja-principal.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Dos-Cesto-apilable-naranja-principal.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-apilable-naranja-principal-medidas.webp"    
+    ],
   },
-  {
+  {//CESTO DE BASURA PEQUEÑO
     id: 82,
     nombre: "CESTO DE BASURA PEQUEÑO",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-principal.webp",
-    descripcion: "Diseño ergonómico y elegante, ideal para usos en baños, oficinas, cuartos, dormitorios. Cumple con las normas FDA para alimentos."
+    descripcion: "Diseño ergonómico y elegante, ideal para usos en baños, oficinas, cuartos, dormitorios. Cumple con las normas FDA para alimentos.",
+    codigo:"13390",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-principa-con-medida.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-principal.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-sin-tapa.webp"    
+    ],
   },
-  {
+  {//CESTO CUADRADO AZUL
     id: 84,
     nombre: "CESTO CUADRADO AZUL",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-1.webp",
-    descripcion: "Diseño elegante cuadrado con perforación, ideal para limpieza, habitaciones, cocina, roperos libreros u otros."
+    descripcion: "Diseño elegante cuadrado con perforación, ideal para limpieza, habitaciones, cocina, roperos libreros u otros.",
+    codigo:"53571",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-con-medidas.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-1.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-1.webp"    
+    ],
   },
-  {
+  {//CESTO RECTANGULAR MEDIANO BLANCO
     id: 85,
     nombre: "CESTO RECTANGULAR MEDIANO BLANCO",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-vertical.webp",
-    descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos."
+    descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos.",
+    codigo:"13560",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-de-lado-.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-vertical.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-horizontal-.webp"    
+    ],
   },
-  {
+  {//CESTO RECTANGULAR GRANDE
     id: 86,
     nombre: "CESTO RECTANGULAR GRANDE",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-scaled.webp",
-    descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos."
+    descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos.",
+    codigo:"53571",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-de-lado-con-medidas.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-horizontal-scaled.webp"    
+    ],
   },
-  {
+  {//CESTO RECTANGULAR MEDIANO ROJO
     id: 87,
-    nombre: "CESTO RECTANGULAR MEDIANO",
+    nombre: "CESTO RECTANGULAR MEDIANO ROJO",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-verticall.webp",
-    descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos."
+    descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos.",
+    codigo:"13561",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-verticall.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-laptop.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-principal.webp"    
+    ],
   },
-  {
+  {//ESCURRIDOR DE PLATOS
     id: 105,
     nombre: "ESCURRIDOR DE PLATOS",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-de-lado-2-scaled.jpg",
-    descripcion: "Diseño compacto y práctico súper resistente ideal para todo tipo de platos vasos, cristalería y variedad de utensilios de cocina."
+    descripcion: "Diseño compacto y práctico súper resistente ideal para todo tipo de platos vasos, cristalería y variedad de utensilios de cocina.",
+    codigo:"13710",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-frente-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-de-lado-scaled.jpg",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-de-lado-2-scaled.jpg"    
+    ],
   },
-  {
+  {//TINA RECTANGULAR 12 LITROS
     id: 108,
     nombre: "TINA RECTANGULAR 12 LITROS",
     categoria: "Cestos y tinas",
     imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-vertical-scaled.webp",
-    descripcion: "Diseño ergonómico elegante rectangular, ideal para la limpieza y multifuncional para el hogar, la cocina almacenar y transportar cualquier producto. Cumple con las normas FDA."
+    descripcion: "Diseño ergonómico elegante rectangular, ideal para la limpieza y multifuncional para el hogar, la cocina almacenar y transportar cualquier producto. Cumple con las normas FDA.",
+    codigo:"13710",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-vertical-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-lado-scaled.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-de-lado-etiqueta-scaled.webp"    
+    ],
   },
-  {
+  {//CESTO REDONDO GRANDE
     id: 2761,
     nombre: "CESTO REDONDO GRANDE",
     categoria: "Cestos y tinas",
