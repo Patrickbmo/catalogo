@@ -1890,6 +1890,225 @@ const informacionProductos = {
     }
   ]
 },
+
+140: { // ESPÁTULA 2 PULGADAS
+  descripcionCompleta: "La espátula plástica Wilson es tu aliada multiuso para preparar, reparar y rematar sin complicaciones. Su hoja plástica resistente y flexible elimina asperezas, raspa pintura suelta y aplica masilla o yeso para rellenar pequeños huecos y grietas sin maltratar la superficie. Es ligera, cómoda y fácil de lavar, ideal para mantenimiento del hogar, talleres y ferreterías. Además, en su versión de plástico grado alimenticio funciona perfecto en pastelería para extender, alisar y levantar mezclas sin rayar recipientes ni retener olores.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/flexibilidad.svg",
+      titulo: "Flexibilidad controlada",
+      descripcion: "El material plástico técnico ofrece el punto justo entre rigidez y elasticidad para alisar sin rayar la superficie. Su diseño con bordes biselados asegura un mejor acabado y menos marcas al extender masillas, selladores, o cremas uniformemente."
+    },
+    {
+      icono: "img/icons/versatilidad.svg",
+      titulo: "Versatilidad Multisuperficie",
+      descripcion: "Una herramienta para todo tipo de proyectos. Funciona perfectamente en pared, techo, madera, drywall y cualquier superficie masillada o imprimada. Ideal para múltiples usos y acabados finos."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Mango Ergonómico",
+      descripcion: "Diseño pensado para tu comodidad. Cuenta con un mango ergonómico que garantiza un agarre cómodo y seguro, permitiéndote trabajar por más tiempo con menos cansancio y mayor control."
+    },
+    {
+      icono: "img/icons/durable.svg",
+      titulo: "Liviana y Durable",
+      descripcion: "Fácil mantenimiento y alta durabilidad. El plástico premium es liviano, se lava en segundos y está listo para el siguiente uso. Resiste el trabajo continuo, manteniendo su forma y eficiencia."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Medida": "2 pulgadas",
+    "Altura": "8 cm",
+    "Ancho": "5 cm",
+    "Peso": "16 gr",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffff", codigo: "13801" }
+    ],
+    "Unidades por caja": "72 unidades",
+    "Código": "13801"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/preparacion.svg",
+      titulo: "Preparación de superficies",
+      descripcion: "Raspa pintura suelta, quita salitre superficial y asperezas antes de sellar o pintar."
+    },
+    {
+      icono: "img/icons/reparacion.svg",
+      titulo: "Relleno y reparación",
+      descripcion: "Aplica masilla en pasta o resanes para cubrir microfisuras, huecos de clavos y uniones de drywall."
+    },
+    {
+      icono: "img/icons/reposteria.svg",
+      titulo: "Repostería y cocina",
+      descripcion: "Alisa cremas y glasé sobre tortas, nivela rellenos, porciona masas blandas y levanta mezclas de bowls sin rayar. Ideal para extender chocolate atemperado, distribuir purés o cremas y limpiar superficies de trabajo sin absorber olores."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza inmediata",
+      descripcion: "Lava la espátula apenas termines, especialmente si usaste masillas o pinturas de secado rápido."
+    },
+    {
+      titulo: "Guárdalas planas",
+      descripcion: "Evita poner peso encima del filo para que no se deforme el borde biselado."
+    },
+    {
+      titulo: "Evita solventes fuertes",
+      descripcion: "No uses thinner o acetona de forma prolongada; podrían reblandecer el plástico. Usa agua y detergente o el limpiador recomendado por el fabricante de la masilla."
+    }
+  ]
+},
+
+141: { // ESPÁTULA 3 PULGADAS
+  descripcionCompleta: "La espátula plástica Wilson es tu aliada multiuso para preparar, reparar y rematar sin complicaciones. Su hoja plástica resistente y flexible elimina asperezas, raspa pintura suelta y aplica masilla o yeso para rellenar pequeños huecos y grietas sin maltratar la superficie. Es ligera, cómoda y fácil de lavar, ideal para mantenimiento del hogar, talleres y ferreterías. Además, en su versión de plástico grado alimenticio funciona perfecto en pastelería para extender, alisar y levantar mezclas sin rayar recipientes ni retener olores.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/flexibilidad.svg",
+      titulo: "Flexibilidad controlada",
+      descripcion: "El material plástico técnico ofrece el punto justo entre rigidez y elasticidad para alisar sin rayar la superficie. Su diseño con bordes biselados asegura un mejor acabado y menos marcas al extender masillas, selladores, o cremas uniformemente."
+    },
+    {
+      icono: "img/icons/versatilidad.svg",
+      titulo: "Versatilidad Multisuperficie",
+      descripcion: "Una herramienta para todo tipo de proyectos. Funciona perfectamente en pared, techo, madera, drywall y cualquier superficie masillada o imprimada. Ideal para múltiples usos y acabados finos."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Mango Ergonómico",
+      descripcion: "Diseño pensado para tu comodidad. Cuenta con un mango ergonómico que garantiza un agarre cómodo y seguro, permitiéndote trabajar por más tiempo con menos cansancio y mayor control."
+    },
+    {
+      icono: "img/icons/durable.svg",
+      titulo: "Liviana y Durable",
+      descripcion: "Fácil mantenimiento y alta durabilidad. El plástico premium es liviano, se lava en segundos y está listo para el siguiente uso. Resiste el trabajo continuo, manteniendo su forma y eficiencia."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Medida": "3 pulgadas",
+    "Altura": "8 cm",
+    "Ancho": "7.5 cm",
+    "Peso": "20 gr",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffff", codigo: "13802" }
+    ],
+    "Unidades por caja": "72 unidades",
+    "Código": "13802"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/preparacion.svg",
+      titulo: "Preparación de superficies",
+      descripcion: "Raspa pintura suelta, quita salitre superficial y asperezas antes de sellar o pintar."
+    },
+    {
+      icono: "img/icons/reparacion.svg",
+      titulo: "Relleno y reparación",
+      descripcion: "Aplica masilla en pasta o resanes para cubrir microfisuras, huecos de clavos y uniones de drywall."
+    },
+    {
+      icono: "img/icons/reposteria.svg",
+      titulo: "Repostería y cocina",
+      descripcion: "Alisa cremas y glasé sobre tortas, nivela rellenos, porciona masas blandas y levanta mezclas de bowls sin rayar. Ideal para extender chocolate atemperado, distribuir purés o cremas y limpiar superficies de trabajo sin absorber olores."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza inmediata",
+      descripcion: "Lava la espátula apenas termines, especialmente si usaste masillas o pinturas de secado rápido."
+    },
+    {
+      titulo: "Guárdalas planas",
+      descripcion: "Evita poner peso encima del filo para que no se deforme el borde biselado."
+    },
+    {
+      titulo: "Evita solventes fuertes",
+      descripcion: "No uses thinner o acetona de forma prolongada; podrían reblandecer el plástico. Usa agua y detergente o el limpiador recomendado por el fabricante de la masilla."
+    }
+  ]
+},
+
+142: { // ESPÁTULA 4 PULGADAS
+  descripcionCompleta: "La espátula plástica Wilson es tu aliada multiuso para preparar, reparar y rematar sin complicaciones. Su hoja plástica resistente y flexible elimina asperezas, raspa pintura suelta y aplica masilla o yeso para rellenar pequeños huecos y grietas sin maltratar la superficie. Es ligera, cómoda y fácil de lavar, ideal para mantenimiento del hogar, talleres y ferreterías. Además, en su versión de plástico grado alimenticio funciona perfecto en pastelería para extender, alisar y levantar mezclas sin rayar recipientes ni retener olores.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/flexibilidad.svg",
+      titulo: "Flexibilidad controlada",
+      descripcion: "El material plástico técnico ofrece el punto justo entre rigidez y elasticidad para alisar sin rayar la superficie. Su diseño con bordes biselados asegura un mejor acabado y menos marcas al extender masillas, selladores, o cremas uniformemente."
+    },
+    {
+      icono: "img/icons/versatilidad.svg",
+      titulo: "Versatilidad Multisuperficie",
+      descripcion: "Una herramienta para todo tipo de proyectos. Funciona perfectamente en pared, techo, madera, drywall y cualquier superficie masillada o imprimada. Ideal para múltiples usos y acabados finos."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Mango Ergonómico",
+      descripcion: "Diseño pensado para tu comodidad. Cuenta con un mango ergonómico que garantiza un agarre cómodo y seguro, permitiéndote trabajar por más tiempo con menos cansancio y mayor control."
+    },
+    {
+      icono: "img/icons/durable.svg",
+      titulo: "Liviana y Durable",
+      descripcion: "Fácil mantenimiento y alta durabilidad. El plástico premium es liviano, se lava en segundos y está listo para el siguiente uso. Resiste el trabajo continuo, manteniendo su forma y eficiencia."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Medida": "4 pulgadas",
+    "Altura": "8 cm",
+    "Ancho": "10 cm",
+    "Peso": "24 gr",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffff", codigo: "13803" }
+    ],
+    "Unidades por caja": "48 unidades",
+    "Código": "13803"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/preparacion.svg",
+      titulo: "Preparación de superficies",
+      descripcion: "Raspa pintura suelta, quita salitre superficial y asperezas antes de sellar o pintar."
+    },
+    {
+      icono: "img/icons/reparacion.svg",
+      titulo: "Relleno y reparación",
+      descripcion: "Aplica masilla en pasta o resanes para cubrir microfisuras, huecos de clavos y uniones de drywall."
+    },
+    {
+      icono: "img/icons/reposteria.svg",
+      titulo: "Repostería y cocina",
+      descripcion: "Alisa cremas y glasé sobre tortas, nivela rellenos, porciona masas blandas y levanta mezclas de bowls sin rayar. Ideal para extender chocolate atemperado, distribuir purés o cremas y limpiar superficies de trabajo sin absorber olores."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza inmediata",
+      descripcion: "Lava la espátula apenas termines, especialmente si usaste masillas o pinturas de secado rápido."
+    },
+    {
+      titulo: "Guárdalas planas",
+      descripcion: "Evita poner peso encima del filo para que no se deforme el borde biselado."
+    },
+    {
+      titulo: "Evita solventes fuertes",
+      descripcion: "No uses thinner o acetona de forma prolongada; podrían reblandecer el plástico. Usa agua y detergente o el limpiador recomendado por el fabricante de la masilla."
+    }
+  ]
+},
   
   // ... etc
 };
@@ -2806,7 +3025,14 @@ const productos = [
   categoria: "Espátulas",  // ← AGREGADA TILDE
   tamano: "2 pulgadas",
   imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas.webp",
-  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
+  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería.",
+  codigo:"13801",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas-con-medidas.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas.webp"
+       
+    ],
 },
 {
   id: 141,
@@ -2814,7 +3040,14 @@ const productos = [
   categoria: "Espátulas",  // ← AGREGADA TILDE
   tamano: "3 pulgadas",
   imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
-  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
+  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería.",
+  codigo:"13802",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas-con-medidas.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp"
+    
+    ],
 },
 {
   id: 142,
@@ -2822,7 +3055,13 @@ const productos = [
   categoria: "Espátulas",  // ← AGREGADA TILDE
   tamano: "4 pulgadas",
   imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
-  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería."
+  descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería.",
+  codigo:"13803",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
+    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp" 
+    ],
 },
   {
     id: 151,
