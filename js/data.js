@@ -2109,7 +2109,1017 @@ const informacionProductos = {
     }
   ]
 },
+
+151: { // RECOGEDOR CON ESCOBILLA
+  descripcionCompleta: "El set Recogedor + Escobilla Wilson es la solución práctica para limpiezas rápidas y efectivas en cualquier ambiente. La pala cuenta con un borde recto que se apoya por completo sobre el piso para recoger hasta el polvo fino, mientras la escobilla con fibras delgadas y punta suave levanta migas, cabello y residuos sin rayar muebles, pisos delicados ni superficies lisas. Ligero, resistente y ergonómico, el conjunto se guarda fácilmente: la escobilla encaja sobre la pala y el mango con ojal permite colgarlo para mantenerlo siempre a mano y seco. Ideal para el hogar, oficinas, locales y espacios donde la limpieza diaria debe ser rápida y práctica.",
   
+  caracteristicas: [
+    {
+      icono: "img/icons/CERDAS.svg",
+      titulo: "Recolección Eficiente",
+      descripcion: "Borde frontal que sella al piso, capturando el polvo sin dejar rastros. Su boca ancha y cubeta profunda permiten juntar más suciedad por pasada, optimizando el tiempo de limpieza."
+    },
+    {
+      icono: "img/icons/suave.svg",
+      titulo: "Escobilla Suave",
+      descripcion: "Diseñada con fibra delgada y punta suave, ideal para cuidar las superficies finas, zócalos y rincones. La escobilla limpia con delicadeza pero efectividad, sin rayar ni maltratar pisos delicados."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Agarre Cómodo",
+      descripcion: "Mangos ergonómicos para trabajar sin cansancio. Tanto la pala como la escobilla tienen un agarre cómodo y seguro. Además, la pala incluye una textura lateral antideslizante para un control total durante la recolección."
+    },
+    {
+      icono: "img/icons/guardar.svg",
+      titulo: "Fácil de Guardar",
+      descripcion: "Diseño inteligente que optimiza el espacio. Ambas piezas cuentan con un ojal integrado para colgar y secar fácilmente. Su diseño permite apilar varias unidades para un almacenamiento compacto y ordenado."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Largo": "34.2 cm",
+    "Altura": "7 cm",
+    "Ancho": "21.5 cm",
+    "Peso": "184 gr",
+    colores: [
+      { nombre: "Blanco", hex: "#ffffff", codigo: "53270" }
+    ],
+    "Unidades por caja": "6 unidades",
+    "Código": "53270"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/interiores.svg",
+      titulo: "Interiores y Muebles",
+      descripcion: "Ideal para pisos delicados y superficies elevadas. Úsalo para la recolección inmediata de polvo, pelusas y cabellos en salas, dormitorios y comedor. Su cepillo suave es perfecto para limpiar muebles de madera o superficies lacadas sin riesgo de rayones."
+    },
+    {
+      icono: "img/icons/oficina.svg",
+      titulo: "Oficina y Comercios",
+      descripcion: "Limpieza profesional al instante en áreas de tráfico. Funciona perfectamente en pasillos, escritorios y áreas de atención al público. Su diseño eficiente garantiza una recolección rápida y discreta de desechos pequeños en entornos profesionales."
+    },
+    {
+      icono: "img/icons/cocina.svg",
+      titulo: "Cocina y Comedor",
+      descripcion: "Especializado en residuos finos sin maltratar el suelo. Recoge migas, azúcar, harinas o residuos secos con precisión. El cepillo suave es seguro para pisos de cocina y azulejos, y la pala sella al piso para que nada se escape."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza fácil",
+      descripcion: "Lava con agua y detergente suave, enjuaga y deja secar al aire."
+    },
+    {
+      titulo: "Evita químicos fuertes",
+      descripcion: "No uses solventes agresivos que puedan opacar el plástico."
+    },
+    {
+      titulo: "Guárdala colgada",
+      descripcion: "Usa el ojal para mantener el borde recto y libre de peso."
+    }
+  ]
+},
+150: { // RECOGEDOR PREMIER DE MANO
+  descripcionCompleta: "El recogedor premier de mano Wilson es tu aliado para limpiar pisos, mesas, encimeras, estantes y cualquier superficie plana. Su boca ancha y borde recto hacen buen contacto para capturar incluso el polvo fino, mientras la cubeta profunda retiene residuos sólidos y hasta líquidos sin derrames. Fabricado en polietileno 100% virgen, es resistente, liviano, higiénico y fácil de lavar. Incluye ojal en el mango para colgarlo y tenerlo siempre a mano.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/shield.svg",
+      titulo: "Material Premium y Durabilidad",
+      descripcion: "Fabricada en Polietileno 100% virgen, la pala es resistente, liviana e higiénica. Sus paredes dan una firmeza excepcional, evitan deformaciones por peso."
+    },
+    {
+      icono: "img/icons/capacidad.svg",
+      titulo: "Capacidad y Seguridad",
+      descripcion: "Cuerpo profundo que retiene todo tipo de residuos. No solo recoge polvo y sólidos, sino que su cubeta evita derrames accidentales de líquidos. Ideal para limpiar derrames en mesones o en el piso."
+    },
+    {
+      icono: "img/icons/mano.svg",
+      titulo: "Diseño Ergonómico",
+      descripcion: "Mango ergonómico para un agarre cómodo y seguro. Permite trabajar más tiempo con menos cansancio. Además, incluye un práctico orificio para colgar y secar, facilitando el almacenamiento y la higiene."
+    },
+    {
+      icono: "img/icons/recoleccion.svg",
+      titulo: "Recolección Impecable",
+      descripcion: "Borde frontal rígido para un contacto parejo con cualquier superficie. Garantiza que no se escape ni el polvo fino, ni migas, ni residuos al barrer. Su diseño evita dejar rastros o huecos al limpiar."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Plástico polietileno (PE) 100% virgen",
+    "Largo": "36.2 cm",
+    "Altura": "8 cm",
+    "Ancho": "28.5 cm",
+    "Peso": "113 gr",
+    colores: [
+      { nombre: "Azul", hex: "#0066cc", codigo: "53327" },
+      { nombre: "Rojo", hex: "#dc3545", codigo: "53326" }
+    ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53327 / 53326"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/casa.svg",
+      titulo: "Limpieza Doméstica y Oficina",
+      descripcion: "Perfecta para el mantenimiento diario en interiores. Úsala para la recolección inmediata de polvo, pelusas, migas, cabellos y pequeños derrames en pisos, mesones o alfombras de bajo perfil, manteniendo tu hogar y oficina siempre impecables."
+    },
+    {
+      icono: "img/icons/oficina.svg",
+      titulo: "Comercios y Aulas",
+      descripcion: "La aliada esencial para tiendas, cafeterías y salones de clase. Su diseño eficiente permite la limpieza al instante de residuos de clientes o estudiantes en áreas de tráfico medio, funcionando de manera ideal junto a cualquier escoba estándar."
+    },
+    {
+      icono: "img/icons/reparacion.svg",
+      titulo: "Exteriores y Zonas de Trabajo",
+      descripcion: "Ideal para ambientes más exigentes, como garajes, talleres y patios techados. Junta arena, tierra, hojas y restos de manera efectiva y segura, gracias a su borde de contacto total y cuerpo profundo que evitan derrames."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza fácil",
+      descripcion: "Lava con agua y detergente suave, enjuaga y deja secar al aire."
+    },
+    {
+      titulo: "Evita químicos fuertes",
+      descripcion: "No uses solventes agresivos que puedan opacar el plástico."
+    },
+    {
+      titulo: "Guárdala colgada",
+      descripcion: "Usa el ojal para mantener el borde recto y libre de peso."
+    }
+  ]
+},
+  
+  // ===== TRAPEADORES =====
+  
+  144: { // TRAPEADOR GRANDOTE
+    descripcionCompleta: "El trapeador grandote Wilson rinde de verdad cuando hay que dejar el piso limpio y sin pelusa. Sus hilos 100% algodón, súper absorbentes, con tratamiento antibacterial y biodegradables capturan agua y suciedad en porcelanato, cerámica, mármol y cocinas sin dejar marcas. El moño extra grande cubre más área por pasada para terminar antes, y el cabezal con rosca estándar se acopla al palo común de escoba para empezar de inmediato. Resistente y fácil de lavar, ofrece una limpieza rápida y eficiente; por ser algodón natural, puede desprender mínimas fibras en las primeras pasadas sin afectar su alto poder de absorción.",
+    
+    caracteristicas: [
+      {
+        icono: "img/icons/CERDAS.svg",
+        titulo: "Súper Absorbente",
+        descripcion: "Fibras 100% Algodón con máxima capacidad de retención. Toman más agua que otros materiales, lo que permite trabajar mejor con soluciones de limpieza y acelera el secado de los pisos para una limpieza eficiente."
+      },
+      {
+        icono: "img/icons/mayor-rendimiento.svg",
+        titulo: "Mayor Rendimiento",
+        descripcion: "Cabezal voluminoso que cubre más superficie. Optimiza el tiempo de trapeado y reduce las idas y venidas. El algodón es ideal para pisos finos, logrando un acabado sin rayas en zonas de alto brillo."
+      },
+      {
+        icono: "img/icons/higiene-cuidado.svg",
+        titulo: "Higiene y Cuidado",
+        descripcion: "Producto 100% Biodegradable con tratamiento especial. La fibra tiene un tratamiento higiénico que ayuda a mantener el cabezal fresco por más tiempo."
+      }
+    ],
+    
+    especificaciones: {
+      "Material": "100% algodón antibacterial",
+      "Largo": "28 cm",
+      "Peso": "200 gr",
+      "Tamaño trensado": "0.5 cm",
+      "Tipo de rosca": "Universal (estándar)",
+      "Unidades por caja":"12 unidades",
+      "codigo":"53411",
+      colores: [
+        { nombre: "Azul", hex: "#ffffffff", codigo: "" }
+      ]
+    },
+      
+    
+    usos: [
+      {
+        icono: "img/icons/pisos-alto-brillo.svg",
+        titulo: "Pisos de Alto Brillo",
+        descripcion: "Ideal para el trapeado de superficies finas como porcelanato, mármol, cerámica y granito. Sus hilos de algodón grueso son súper absorbentes, capturando el agua y la suciedad para un acabado brillante e impecable, sin rayas ni velos."
+      },
+      {
+        icono: "img/icons/alta-absorcion.svg",
+        titulo: "Zonas de Alta Absorción",
+        descripcion: "Perfecto para cocinas, baños y cualquier área propensa a derrames. Su gran capacidad de retención lo hace esencial donde se requiere alta absorción de líquidos, agua sucia o soluciones de limpieza, dejando el piso seco más rápido."
+      },
+      {
+        icono: "img/icons/areas-amplias.svg",
+        titulo: "Áreas Amplias y Terrazas",
+        descripcion: "Diseñado para el máximo rendimiento en grandes extensiones. Gracias a su formato Jumbo, es la herramienta ideal para salas, pasillos, salones y terrazas. Cubre más superficie en menos tiempo, optimizando el esfuerzo en el trapeado."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza Post-Uso",
+        descripcion: "Enjuaga el moño después de cada uso con agua y detergente suave. Es esencial escurrirlo bien para eliminar todo el exceso de humedad, la suciedad atrapada y los residuos de solución limpiadora."
+      },
+      {
+        titulo: "Secado y Almacenamiento",
+        descripcion: "Sécalo siempre al aire en un lugar bien ventilado. Evita guardarlo húmedo para prevenir la formación de malos olores y moho, lo cual es vital para prolongar la vida útil de la fibra de algodón grueso."
+      },
+      {
+        titulo: "Desinfección Responsable",
+        descripcion: "Si aplicas desinfectantes, dilúyelos estrictamente según las indicaciones de la etiqueta. Después de desinfectar, asegúrate de enjuagar abundantemente la fibra para remover cualquier residuo químico que pueda dañarla."
+      }
+    ]
+  },
+
+  145: { // TRAPEADOR JUMBO
+    descripcionCompleta: "El trapeador jumbo Wilson está listo para la rutina diaria exigente: cubre más área por pasada, absorbe a montón y deja los pisos limpios y sin pelusa en menos tiempo. Su cabezal extra grande con fibras 100% algodón y tratamiento antibacterial ayuda a controlar olores y mantener la higiene, rindiendo de maravilla en baños, cocinas, terrazas, porcelanato, cerámica, mármol y baldosas. Se enjuaga fácil, es biodegradable y el cabezal con rosca estándar se acopla al palo común de escoba para empezar de inmediato. Resistente y práctico, es perfecto para uso diario en casa, oficina o local, con resultados parejos y un secado sin marcas.",
+    
+    caracteristicas: [
+      {
+        icono: "img/icons/super-absorbente.svg",
+        titulo: "Súper Absorbente",
+        descripcion: "Fibras 100% Algodón con máxima capacidad de retención. Toman más agua que otros materiales, lo que permite trabajar mejor con soluciones de limpieza y acelera el secado de los pisos para una limpieza eficiente."
+      },
+      {
+        icono: "img/icons/mayor-rendimiento.svg",
+        titulo: "Mayor Rendimiento",
+        descripcion: "Cabezal voluminoso que cubre más superficie. Optimiza el tiempo de trapeado y reduce las idas y venidas. El algodón es ideal para pisos finos, logrando un acabado sin rayas en zonas de alto brillo."
+      },
+      {
+        icono: "img/icons/higiene-cuidado.svg",
+        titulo: "Higiene y Cuidado",
+        descripcion: "Producto 100% Biodegradable con tratamiento especial. La fibra tiene un tratamiento higiénico que ayuda a mantener el cabezal fresco por más tiempo."
+      }
+    ],
+    
+    especificaciones: {
+      "Material": "100% algodón antibacterial",
+      "Tipo de fibra": "Hilos súper absorbentes",
+      "Tratamiento": "Antibacterial y biodegradable",
+      "Tipo de rosca": "Universal (estándar)",
+      "Largo": "23cm",
+      "Peso": "257gr",
+      "Tamaño de trensado": "0.5cm",
+      "Unidades por caja": "12 unidades",
+      "Código": "13421",
+      colores: [
+        { nombre: "Fibra", hex: "#ffffffff", codigo: "13421" }
+      ]
+    },
+    
+    usos: [
+      {
+        icono: "img/icons/pisos-alto-brillo.svg",
+        titulo: "Limpieza diaria en el hogar",
+        descripcion: "Perfecto para mantener cocinas, baños y pasillos siempre limpios. Su algodón súper absorbente elimina agua, polvo y residuos sin dejar marcas ni pelusa."
+      },
+      {
+        icono: "img/icons/oficina.svg",
+        titulo: "Mantenimiento en oficinas y locales",
+        descripcion: "Rinde en grandes superficies de porcelanato, cerámica o mármol, dejando un acabado seco y uniforme en menos pasadas. Ideal para rutinas de limpieza frecuente."
+      },
+      {
+        icono: "img/icons/lavado-profundo.svg",
+        titulo: "Tareas de lavado profundo",
+        descripcion: "Absorbe líquidos y suciedad acumulada en pisos brillantes o rugosos. Su tratamiento antibacterial mantiene frescura e higiene durante el uso continuo."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza sencilla",
+        descripcion: "Lava con agua tibia y detergente suave usando paño no abrasivo. Enjuaga y seca al aire o con microfibra."
+      },
+      {
+        titulo: "Evita cargas puntuales extremas",
+        descripcion: "Distribuye el peso y no te sientes ni te apoyes en los bordes. Para objetos pesados, usa ambas asas."
+      },
+      {
+        titulo: "Almacenamiento correcto",
+        descripcion: "Guarda en lugar fresco y a la sombra, ya que el calor extremo puede afectar el polietileno. Cuando no lo uses, anida varios cestos para ahorrar espacio."
+      }
+    ]
+  },
+
+  147: { // TRAPEADOR ULTRA JUMBO
+    descripcionCompleta: "La Trapeador Ultra Jumbo Wilson es tu campeona para limpiezas a fondo: cabezal extra grande con fibras 100% algodón que ofrece súper absorción, control antibacterial y un acabado parejo sin pelusa ni marcas. Rinde de maravilla en baños, cocinas y terrazas, y en cerámica, mármol, baldosas y porcelanato, dejando los pisos limpios y secos en menos pasadas. Resiste uso diario, se lava fácil y, por ser algodón natural, es biodegradable. Diseñada para trabajar con tu palo de rosca estándar, es la aliada ideal en casa, negocio u oficina cuando necesitas cobertura extra y resultados visibles en tiempo récord.",
+    
+    caracteristicas: [
+      {
+        icono: "img/icons/super-absorbente.svg",
+        titulo: "Súper Absorbente",
+        descripcion: "Fibras 100% Algodón con máxima capacidad de retención. Toman más agua que otros materiales, lo que permite trabajar mejor con soluciones de limpieza y acelera el secado de los pisos para una limpieza eficiente."
+      },
+      {
+        icono: "img/icons/mayor-rendimiento.svg",
+        titulo: "Mayor Rendimiento",
+        descripcion: "Cabezal voluminoso que cubre más superficie. Optimiza el tiempo de trapeado y reduce las idas y venidas. El algodón es ideal para pisos finos, logrando un acabado sin rayas en zonas de alto brillo."
+      },
+      {
+        icono: "img/icons/higiene-cuidado.svg",
+        titulo: "Higiene y Cuidado",
+        descripcion: "Producto 100% Biodegradable con tratamiento especial. La fibra tiene un tratamiento higiénico que ayuda a mantener el cabezal fresco por más tiempo."
+      }
+    ],
+    
+    especificaciones: {
+      "Material": "100% algodón antibacterial",
+      "Tipo de rosca": "Universal (estándar)",
+      "Largo": "23cm",
+      "Peso": "257gr",
+      "Tamaño de trensado": "0.5cm",
+      "Unidades por caja": "12 unidades",
+      "Código": "53431",
+      colores: [
+        { nombre: "Fibra", hex: "#ffffffff", codigo: "53431" }
+      ]
+    
+    },
+    
+    usos: [
+      {
+        icono: "img/icons/pisos-alto-brillo.svg",
+        titulo: "Pisos de Alto Brillo",
+        descripcion: "Ideal para el trapeado de superficies finas como porcelanato, mármol, cerámica y granito. Sus hilos de algodón grueso son súper absorbentes, capturando el agua y la suciedad para un acabado brillante e impecable, sin rayas ni velos."
+      },
+      {
+        icono: "img/icons/alta-absorcion.svg",
+        titulo: "Zonas de Alta Absorción",
+        descripcion: "Perfecto para cocinas, baños y cualquier área propensa a derrames. Su gran capacidad de retención lo hace esencial donde se requiere alta absorción de líquidos, agua sucia o soluciones de limpieza, dejando el piso seco más rápido."
+      },
+      {
+        icono: "img/icons/areas-amplias.svg",
+        titulo: "Áreas Amplias y Terrazas",
+        descripcion: "Diseñado para el máximo rendimiento en grandes extensiones. Gracias a su formato Jumbo, es la herramienta ideal para salas, pasillos, salones y terrazas. Cubre más superficie en menos tiempo, optimizando el esfuerzo en el trapeado."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza Post-Uso",
+        descripcion: "Enjuaga el moño después de cada uso con agua y detergente suave. Es esencial escurrirlo bien para eliminar todo el exceso de humedad, la suciedad atrapada y los residuos de solución limpiadora."
+      },
+      {
+        titulo: "Secado y Almacenamiento",
+        descripcion: "Sécalo siempre al aire en un lugar bien ventilado. Evita guardarlo húmedo para prevenir la formación de malos olores y moho, lo cual es vital para prolongar la vida útil de la fibra de algodón grueso."
+      },
+      {
+        titulo: "Desinfección Responsable",
+        descripcion: "Si aplicas desinfectantes, dilúyelos estrictamente según las indicaciones de la etiqueta. Después de desinfectar, asegúrate de enjuagar abundantemente la fibra para remover cualquier residuo químico que pueda dañarla."
+      }
+    ]
+  },
+
+  153: { // TRAPEADOR SUPERFIBRA (MICROFIBRA)
+    descripcionCompleta: "El trapeador de microfibra Wilson deja el piso seco, brillante y sin marcas en menos pasadas. Sus filamentos ultrafinos de poliéster generan carga electrostática: atraen y atrapan polvo y pelusas para limpiar en seco sin agua ni químicos, y en húmedo absorben hasta 8 veces su peso para un secado rápido y uniforme. Es antibacterial e hipoalergénico, no levanta polvo, no suelta pelusa y es resistente al moho. Ideal para tablón, parquet, madera sellada, azulejos, baldosas y porcelanato, cuida el acabado y deja brillo parejo. Se enjuaga fácil, seca rápido y rinde en la rutina diaria de casa, oficina o local, ayudando a eliminar hasta el 99% de bacterias.",
+    
+    caracteristicas: [
+      {
+        icono: "img/icons/electrostatica.svg",
+        titulo: "Tecnología Electroestática",
+        descripcion: "Los filamentos ultrafinos de poliéster generan una carga electrostática. Esto permite limpiar en seco al atraer y atrapar el polvo y las pelusas sin usar agua ni químicos."
+      },
+      
+      {
+        icono: "img/icons/higiene-cuidado.svg",
+        titulo: "Máxima Higiene y Cuidado",
+        descripcion: "Antibacterial e hipoalergénico. Ayuda a eliminar hasta el 99% de las bacterias. No levanta polvo, no suelta pelusas y es resistente al moho, garantizando un ambiente más sano y seguro en casa u oficina."
+      },
+      {
+        icono: "img/icons/super-absorcion.svg",
+        titulo: "Súper Absorción",
+        descripcion: "Absorbe hasta 8 veces su peso en agua. Esta capacidad garantiza un secado rápido y uniforme, dejando el piso seco, brillante y sin marcas en menos pasadas. Se enjuaga fácil y está listo para el siguiente uso."
+      },
+      {
+        icono: "img/icons/cuida-pisos.svg",
+        titulo: "Amable con tus Pisos",
+        descripcion: "Cuida el acabado en todo tipo de superficies delicadas. Ideal para tablón, parquet, madera sellada, azulejos, baldosas y porcelanato, ya que limpia sin rayar, dejando el brillo parejo y sin dejar huellas."
+      }
+    ],
+    
+    especificaciones: {
+      "Material": "100% algodón antibacterial",
+      "Tipo de rosca": "Universal (estándar)",
+      "Largo": "23cm",
+      "Peso": "257gr",
+      "Tamaño de trensado": "0.5cm",
+      "Unidades por caja": "12 unidades",
+      "Código": "53431",
+      colores: [
+        { nombre: "Fibra", hex: "#ffffffff", codigo: "53451" }
+      ]
+    },
+    
+    usos: [
+      {
+        icono: "img/icons/limpieza-seca.svg",
+        titulo: "Limpieza Seca y Desinfección",
+        descripcion: "Ideal para la limpieza diaria sin agua ni químicos. Gracias a su carga electroestática, atrae y atrapa el polvo, las pelusas y gérmenes al limpiar en seco. En húmedo, es perfecto para desinfectar, ayudando a eliminar hasta el 99% de bacterias."
+      },
+      {
+        icono: "img/icons/cuida-pisos.svg",
+        titulo: "Pisos Delicados y de Alto Brillo",
+        descripcion: "Apto para todas las superficies que requieren cuidado y brillo parejo. Úsalo con confianza en tablón, parquet, madera sellada, azulejos, baldosas y porcelanato, ya que limpia sin rayar, dejando el piso seco, brillante y sin marcas."
+      },
+      {
+        icono: "img/icons/limpieza.svg",
+        titulo: "Rutina Diaria en Casa y Oficina",
+        descripcion: "Perfecto para la rutina diaria de cualquier ambiente. Rinde eficazmente en casa, oficinas y locales. Su secado rápido y sus propiedades hipoalergénicas lo hacen esencial en áreas de alto tráfico donde se requiere una limpieza ágil y saludable."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Enjuague y Secado Rápido",
+        descripcion: "Enjuaga el trapeador inmediatamente después de usar para liberar la suciedad y las bacterias atrapadas. Escúrrelo bien y déjalo secar al aire en un lugar ventilado. Su rápida capacidad de secado previene la formación de moho y prolonga su frescura."
+      },
+      {
+        titulo: "Protección de la Fibra",
+        descripcion: "Evita el contacto con suavizantes de tela y cloro puro (lejía). Estos químicos pueden obstruir los filamentos ultrafinos de poliéster y anular la capacidad de absorción y la carga electroestática, reduciendo su eficacia de limpieza."
+      },
+      {
+        titulo: "Almacenamiento correcto",
+        descripcion: "Guarda el trapeador colgado o en un lugar seco y libre de humedad. Nunca lo dejes apoyado en el piso o guardado mientras esté húmedo. Esto asegura que la fibra mantenga su forma y se conserve su propiedad antibacterial por más tiempo."
+      }
+    ]
+  },
+
+
+  152: { // TRAPEADOR INDUSTRIAL
+    descripcionCompleta: "El trapeador industrial Wilson está hecho para el ritmo exigente de todos los días. Combina fibras largas de algodón con tratamiento antibacterial y filamentos de poliamida para lograr máxima absorción, alta resistencia y mayor durabilidad. Limpia rápido, no suelta pelusa y soporta múltiples lavadas sin perder cuerpo ni rendimiento, ideal para uso profesional en faenas continuas. Rinde de maravilla en mármol, cerámicas, baldosas, porcelanato y terrazas, así como en pisos de hogar y trabajo, dejando un acabado parejo y sin marcas. Ligera, robusta y estable, permite cubrir más superficie con menos pasadas y mantiene la higiene gracias a su mezcla de fibras pensada para tareas intensivas en casa, negocio o planta.",
+    
+    caracteristicas: [
+      {
+        icono: "img/icons/shield.svg",
+        titulo: "Resistencia Industrial",
+        descripcion: "Fibras largas de algodón y poliamida para tareas intensivas. Su mezcla híbrida garantiza alta resistencia y durabilidad. Soporta múltiples lavadas sin perder cuerpo ni rendimiento, ideal para uso profesional."
+      },
+      {
+        icono: "img/icons/super-absorcion.svg",
+        titulo: "Máxima Absorción",
+        descripcion: "Logra una limpieza rápida y eficiente en menos pasadas. La fibra híbrida ofrece máxima absorción para levantar suciedad y agua. Deja un acabado parejo en pisos de alto brillo sin marcas."
+      },
+      {
+        icono: "img/icons/higiene-antibacterial.svg",
+        titulo: "Higiene Antibacterial",
+        descripcion: "Mantiene la higiene con su tratamiento antibacterial. La mopa limpia sin soltar pelusa y es compatible con mármol, cerámicas, baldosas y terrazas, cuidando el piso en cada pasada."
+      }
+    ],
+    
+    especificaciones: {
+      "Material": "100% algodón antibacterial",
+      "Tipo de rosca": "Universal (estándar)",
+      "Largo": "23cm",
+      "Peso": "257gr",
+      "Tamaño de trensado": "0.5cm",
+      "Unidades por caja": "12 unidades",
+      "Código": "534",
+      colores: [
+        { nombre: "Fibra", hex: "#ffffffff", codigo: "53470" }
+      ]
+    },
+    
+    usos: [
+      {
+        icono: "img/icons/alto-rendimiento.svg",
+        titulo: "Limpieza de Alto Rendimiento",
+        descripcion: "Diseñado para la eficiencia en grandes áreas y el ahorro de tiempo. Su diseño robusto y estable permite cubrir más superficie con menos pasadas, maximizando el rendimiento en pasillos, salones y pisos de tráfico continuo."
+      },
+      {
+        icono: "img/icons/uso-profesional.svg",
+        titulo: "Uso Profesional Intensivo",
+        descripcion: "Ideal para el ritmo exigente de negocios, plantas y faenas continuas. Su mezcla de algodón y poliamida ofrece alta resistencia y durabilidad, limpiando rápidamente sin perder cuerpo ni rendimiento tras múltiples usos y lavadas."
+      },
+      {
+        icono: "img/icons/pisos-duros.svg",
+        titulo: "Pisos Duros y Terrazas",
+        descripcion: "Rinde de maravilla en superficies industriales y del hogar. Limpia con un acabado parejo y sin marcas en mármol, cerámicas, baldosas, porcelanato y terrazas. Además, su tratamiento antibacterial mantiene la higiene en cada uso."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza Post-Uso",
+        descripcion: "Enjuaga el trapeador inmediatamente después de su uso intensivo con agua y detergente suave. Es crucial escurrirlo firmemente para eliminar por completo la suciedad, agua y residuos de soluciones de limpieza, preservando su capacidad de absorción."
+      },
+      {
+        titulo: "Prohibición de Máquinas",
+        descripcion: "No laves ni seques el trapeador en máquina. El lavado agresivo en lavadora y el calor de la secadora pueden debilitar la mezcla de algodón y poliamida, acortando su vida útil y haciendo que pierda cuerpo y rendimiento."
+      },
+      {
+        titulo: "Secado y Almacenamiento",
+        descripcion: "Seca siempre el trapeador al aire en un lugar bien ventilado. Es crucial no guardarlo húmedo. El secado al aire mantiene la frescura de la fibra y protege su estructura, lo cual es vital para su resistencia."
+      },
+      {
+        titulo: "Protección Química",
+        descripcion: "Evita el uso de cloro (lejía) o químicos fuertes no diluidos. Estos productos pueden dañar las fibras híbridas y anular el tratamiento antibacterial. Si requieres desinfectar, utiliza productos diluidos y enjuaga a fondo."
+      }
+    ]
+  },
+
+  146: { // TRAPEADOR MICROFIBRA NARANJA
+    descripcionCompleta: "El trapeador de microfibra Wilson deja el piso seco, brillante y sin marcas en menos pasadas. Sus filamentos ultrafinos de poliéster generan carga electrostática: atraen y atrapan polvo y pelusas para limpiar en seco sin agua ni químicos, y en húmedo absorben hasta 8 veces su peso para un secado rápido y uniforme. Es antibacterial e hipoalergénico, no levanta polvo, no suelta pelusa y es resistente al moho. Ideal para tablón, parquet, madera sellada, azulejos, baldosas y porcelanato, cuida el acabado y deja brillo parejo. Se enjuaga fácil, seca rápido y rinde en la rutina diaria de casa, oficina o local, ayudando a eliminar hasta el 99% de bacterias.",
+    
+    caracteristicas: [
+      {
+        icono: "img/icons/electrostatica.svg",
+        titulo: "Tecnología Electroestática",
+        descripcion: "Los filamentos ultrafinos de poliéster generan una carga electrostática. Esto permite limpiar en seco al atraer y atrapar el polvo y las pelusas sin usar agua ni químicos."
+      },
+      {
+        icono: "img/icons/higiene-cuidado.svg",
+        titulo: "Máxima Higiene y Cuidado",
+        descripcion: "Antibacterial e hipoalergénico. Ayuda a eliminar hasta el 99% de las bacterias. No levanta polvo, no suelta pelusas y es resistente al moho, garantizando un ambiente más sano y seguro en casa u oficina."
+      },
+      {
+        icono: "img/icons/super-absorcion.svg",
+        titulo: "Súper Absorción",
+        descripcion: "Absorbe hasta 8 veces su peso en agua. Esta capacidad garantiza un secado rápido y uniforme, dejando el piso seco, brillante y sin marcas en menos pasadas. Se enjuaga fácil y está listo para el siguiente uso."
+      },
+      {
+        icono: "img/icons/cuida-pisos.svg",
+        titulo: "Amable con tus Pisos",
+        descripcion: "Cuida el acabado en todo tipo de superficies delicadas. Ideal para tablón, parquet, madera sellada, azulejos, baldosas y porcelanato, ya que limpia sin rayar, dejando el brillo parejo y sin dejar huellas."
+      }
+    ],
+    
+    especificaciones: {
+      "Material": "100% algodón antibacterial",
+      "Tipo de rosca": "Universal (estándar)",
+      "Largo": "24cm",
+      "Peso": "150 gr",
+      "Tamaño de trensado": "0.5cm",
+      "Unidades por caja": "12 unidades",
+      "Código": "534",
+      colores: [
+        { nombre: "Fibra", hex: "#fdc50cff", codigo: "53461" }
+      ]
+    },
+    
+    usos: [
+      {
+        icono: "img/icons/limpieza-seca.svg",
+        titulo: "Limpieza Seca y Desinfección",
+        descripcion: "Ideal para la limpieza diaria sin agua ni químicos. Gracias a su carga electroestática, atrae y atrapa el polvo, las pelusas y gérmenes al limpiar en seco. En húmedo, es perfecto para desinfectar, ayudando a eliminar hasta el 99% de bacterias."
+      },
+      {
+        icono: "img/icons/pisos-alto-brillo.svg",
+        titulo: "Pisos Delicados y de Alto Brillo",
+        descripcion: "Apto para todas las superficies que requieren cuidado y brillo parejo. Úsalo con confianza en tablón, parquet, madera sellada, azulejos, baldosas y porcelanato, ya que limpia sin rayar, dejando el piso seco, brillante y sin marcas."
+      },
+      {
+        icono: "img/icons/limpieza.svg",
+        titulo: "Rutina Diaria en Casa y Oficina",
+        descripcion: "Perfecto para la rutina diaria de cualquier ambiente. Rinde eficazmente en casa, oficinas y locales. Su secado rápido y sus propiedades hipoalergénicas lo hacen esencial en áreas de alto tráfico donde se requiere una limpieza ágil y saludable."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Enjuague y Secado Rápido",
+        descripcion: "Enjuaga el trapeador inmediatamente después de usar para liberar la suciedad y las bacterias atrapadas. Escúrrelo bien y déjalo secar al aire en un lugar ventilado. Su rápida capacidad de secado previene la formación de moho y prolonga su frescura."
+      },
+      {
+        titulo: "Protección de la Fibra",
+        descripcion: "Evita el contacto con suavizantes de tela y cloro puro (lejía). Estos químicos pueden obstruir los filamentos ultrafinos de poliéster y anular la capacidad de absorción y la carga electroestática, reduciendo su eficacia de limpieza."
+      },
+      {
+        titulo: "Almacenamiento correcto",
+        descripcion: "Guarda el trapeador colgado o en un lugar seco y libre de humedad. Nunca lo dejes apoyado en el piso o guardado mientras esté húmedo. Esto asegura que la fibra mantenga su forma y se conserve su propiedad antibacterial por más tiempo."
+      }
+    ]
+  },
+
+  143: { // TRAPEADOR FIBRA MÁGICA
+    descripcionCompleta: "El trapeador fibra mágica Wilson es tu mejor aliada para dejar los pisos limpios y secos en menos pasadas. Su fibra súper absorbente e hipoalergénica retiene más agua que los trapeadores de algodón y no deja marcas ni huellas al secar. Funciona de maravilla en parquet, tablón, madera, azulejos y pisos flotantes, cuidando el acabado mientras remueve polvo y suciedad con facilidad. Fabricada en poliamida y polipropileno, combina durabilidad con un desempeño impecable: no suelta pelusa, se lava rapidísimo y absorbe hasta 10 veces su propio peso en agua, ideal para la limpieza diaria y para recoger derrames sin esfuerzo. Ligera, resistente y de secado rápido, rinde más y deja tus ambientes impecables en tiempo récord.",
+    
+    caracteristicas: [
+      {
+        icono: "img/icons/secado-rapido.svg",
+        titulo: "Secado Rápido",
+        descripcion: "La microfibra de alta absorción distribuye la humedad uniformemente para que el piso quede parejo y seco rápidamente. Esto previene la formación de molestas marcas de agua al trapear, logrando un acabado impecable."
+      },
+      {
+        icono: "img/icons/mayor-rendimiento.svg",
+        titulo: "Durabilidad Superior",
+        descripcion: "Rinde mucho más que las mopas tradicionales de algodón. La microfibra no se endurece con el uso, no suelta pelusas y mantiene su eficacia jornada tras jornada, ofreciendo una larga vida útil."
+      },
+      {
+        icono: "img/icons/higiene-cuidado.svg",
+        titulo: "Higiene y Cuidado",
+        descripcion: "Material hipoalergénico perfecto para el hogar y la oficina. No irrita las manos y no levanta polvo al trapear. Además, es increíblemente fácil de enjuagar, liberando la suciedad con poca agua para quedar lista inmediatamente."
+      }
+    ],
+    
+    especificaciones: {
+      "Material": "100% algodón antibacterial",
+      "Tipo de rosca": "Universal (estándar)",
+      "Largo": "24cm",
+      "Peso": "150 gr",
+      "Tamaño de trensado": "0.5cm",
+      "Unidades por caja": "12 unidades",
+      "Código": "534",
+      colores: [
+        { nombre: "Fibra", hex: "#0069ab", codigo: "13451" }
+      ]
+    },
+    
+    usos: [
+      {
+        icono: "img/icons/secado-rapido.svg",
+        titulo: "Limpieza y Secado Diario",
+        descripcion: "Ideal para el mantenimiento constante de pisos finos. Úsala para retirar la humedad y el polvo sin opacar el brillo natural del parquet, porcelanato, mármol o cerámica. Su microfibra de alta calidad garantiza un secado rápido y uniforme."
+      },
+      {
+        icono: "img/icons/derrames.svg",
+        titulo: "Recolección de Derrames",
+        descripcion: "Solución inmediata para líquidos accidentales. Gracias a su alta capacidad de absorción, la mopa maneja líquidos, jugos o derrames en segundos. Esto facilita una limpieza rápida y efectiva sin dejar rastros de agua."
+      },
+      {
+        icono: "img/icons/negocio.svg",
+        titulo: "Mantenimiento en Comercios",
+        descripcion: "Perfecta para pasillos, salas y ambientes de alto tráfico. Su capacidad de secar rápido y sin dejar marcas es indispensable en oficinas, locales comerciales y áreas de atención al público donde se necesita una limpieza ágil y profesional."
+      }
+    ],
+    
+    cuidados: [
+      {
+        titulo: "Limpieza Post-Uso",
+        descripcion: "Enjuaga la microfibra después de cada uso con agua y un poquito de detergente suave. Exprime el exceso de agua y déjala secar completamente al aire. Esto asegura la liberación total de la suciedad y la mantiene lista para el siguiente uso."
+      },
+      {
+        titulo: "Evita Químicos Fuertes",
+        descripcion: "Protege la fibra para maximizar su durabilidad. Es crucial evitar el uso de cloro (lejía) o suavizantes fuertes, ya que estos químicos pueden romper o acortar significativamente la vida útil de la microfibra."
+      },
+      {
+        titulo: "Almacenamiento Ventilado",
+        descripcion: "Guárdala colgada o en un lugar seco y bien ventilado. Asegúrate de que no quede húmeda ni aplastada. Un almacenamiento adecuado previene la formación de malos olores y conserva la capacidad de absorción de la microfibra."
+      }
+    ]
+  },
+
+  154 : { // PALO DE ESCOBA
+    descripcionCompleta: "El palo de escoba Wilson es el complemento ideal para tus herramientas de limpieza. Fabricado en metal laminado, con forro protector color gris, combina ligereza y resistencia para el uso diario. Su rosca estándar tipo escoba se adapta a la mayoría de cepillos, escobas y trapeadores del mercado, garantizando un acople firme y seguro. Además, incluye ojal en el extremo superior para colgarlo y mantener todo ordenado al finalizar la limpieza.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/CERDAS.svg",
+      titulo: "Compatibilidad Universal",
+      descripcion: "Se acopla fácilmente y con seguridad a escobas, cepillos, trapeadores y otros accesorios. Máxima utilidad con herramientas de limpieza Wilson y de otras marcas."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Agarre Firme y Duradero",
+      descripcion: "Tubo metálico laminado: rígido, ligero y de larga vida útil. El forro protector externo mejora el agarre y protege el metal contra la corrosión."
+    },
+    {
+      icono: "img/icons/ergonomico.svg",
+      titulo: "Mango Ergonómico",
+      descripcion: "Con 120 cm de longitud, permite barrer o trapear manteniendo una postura cómoda y ergonómica. Reduce la necesidad de encorvarse, minimizando el esfuerzo en la espalda y muñecas para un trabajo de limpieza más eficiente."
+    },
+    {
+      icono: "img/icons/almacenamiento.svg",
+      titulo: "Almacenamiento Sencillo",
+      descripcion: "Diseño que optimiza el espacio. Cuenta con un ojal integrado para guardarlo verticalmente en ganchos o estantes, ahorrando espacio en el cuarto de servicio."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Metal laminado",
+    "Largo": "120cm",
+    "Peso": "200gr",
+    colores: [
+        { nombre: "Palo", hex: "#7e7f80ff", codigo: "13451" }
+      ],
+    "Unidades por caja": "100 unidades",
+    "Códigos": "13753/13752"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/casa.svg",
+      titulo: "Aseo del hogar y oficina",
+      descripcion: "Acóplalo a escobas o cepillos para barrer pisos cerámicos, cemento o madera sellada."
+    },
+    {
+      icono: "img/icons/limpieza.svg",
+      titulo: "Limpieza húmeda",
+      descripcion: "Úsalo con trapeadores/mopas para lavado y mantenimiento de áreas amplias."
+    },
+    {
+      icono: "img/icons/exterior.svg",
+      titulo: "Mantenimiento en exteriores",
+      descripcion: "Perfecto con cepillos de construcción o exteriores para patios, veredas y garajes."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Mantener seco",
+      descripcion: "Si el bastón se moja, sécalo completamente antes de guardarlo para proteger el metal y prolongar su vida útil."
+    },
+    {
+      titulo: "Almacenamiento Óptimo",
+      descripcion: "Utiliza el ojal integrado para guardarlo colgado verticalmente. Esto previene golpes, evita torceduras del tubo y optimiza el espacio de almacenamiento."
+    },
+    {
+      titulo: "Evita maltrato",
+      descripcion: "No lo uses como palanca ni lo sometas a impactos fuertes; revisa periódicamente la rosca para asegurar buen ajuste."
+    }
+  ]
+  },
+
+  117 : { // ESCOBA DE INTERIORES
+    
+    
+  descripcionCompleta: "La escoba Wilson interiores es tu aliada para el barrido fino en casa u oficina. Rinde en parquet, cerámica, mármol y baldosas, levantando polvo y pelusas sin rayar. Su fibra delgada con punta plumada atrapa partículas en cada pasada para un acabado parejo y silencioso. El taco con rosca universal se acopla de inmediato a palos de madera o metálicos, ofreciendo mejor alcance y control. Ligera y cómoda para uso diario, mantiene su desempeño por hasta 300 mil barridas, cuidando el acabado de tus pisos por más tiempo.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/CERDAS.svg",
+      titulo: "Amable con tus Pisos",
+      descripcion: "Limpieza profunda sin riesgo de marcas o rayones. La dureza de las cerdas está calibrada para limpiar sin comprometer ni marcar superficies brillantes o delicadas como porcelanato, madera sellada o pisos cerámicos."
+    },
+    {
+      icono: "img/icons/durable.svg",
+      titulo: "Durabilidad Extrema",
+      descripcion: "300,000 Barridas de Poder. La fibra gruesa soporta fricción extrema y desintegra suciedad pesada, lodo y mugre en superficies ásperas, manteniendo la forma y resistencia por años."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Base Rígida y Duradera",
+      descripcion: "Base de polímero resistente que garantiza estabilidad. Este cuerpo rígido mantiene la fibra firme y perfectamente alineada durante el barrido. El diseño duradero asegura una larga vida útil y un roce silencioso."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Fibras medianamente suaves y plumadas",
+    "Altura": "28cm",
+    "Ancho": "44cm",
+    "Largo": "44cm",
+    "Peso": "337gr",
+    colores: [
+        { nombre: "filamento", hex: "#d4fa2bff", codigo: "53104" },
+        { nombre: "soporte", hex: "#136dc2ff", codigo: "53104" }
+      ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53104"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/pisos-alto-brillo.svg",
+      titulo: "Pisos de Madera Delicados",
+      descripcion: "Ideal para el barrido diario sin comprometer el brillo. Úsala con confianza en parquet, pisos de madera y superficies lacadas. Su fibra suave limpia eficazmente polvo y cabellos sin rayar ni opacar el acabado natural o el sello de la madera."
+    },
+    {
+      icono: "img/icons/baldosas.svg",
+      titulo: "Pisos Duros y Brillantes",
+      descripcion: "Eficiencia en cerámica, mármol y baldosas. La fibra plumada y de dureza suave-media retira rápidamente polvo fino, pelusa y cabello. Su diseño permite lograr una limpieza impecable con menos pasadas."
+    },
+    {
+      icono: "img/icons/alto-transito.svg",
+      titulo: "Ambientes de Alto Tránsito",
+      descripcion: "Perfecta para cualquier ambiente interior, desde el hogar hasta el comercio. Es la herramienta ideal para mantener limpias salas, cuartos, pasillos, oficinas y locales con alto tránsito, gracias a su barrido silencioso y eficaz."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza Diaria y Profunda",
+      descripcion: "Sacude la fibra inmediatamente después de usar para liberar polvo fino, cabellos y residuos atrapados. Lava la escoba ocasionalmente con agua tibia y detergente suave, y luego enjuaga. Esto asegura que la fibra se mantenga siempre limpia y con su máxima capacidad de recolección."
+    },
+    {
+      titulo: "Secado y Protección",
+      descripcion: "Tras lavarla, déjala secar con la fibra siempre hacia abajo para proteger su forma. Evita el contacto con químicos agresivos y calor extremo (como el sol directo), ya que pueden deformar el taco o endurecer las cerdas."
+    },
+    {
+      titulo: "Almacenamiento Correcto",
+      descripcion: "Guárdala colgada utilizando el ojal, o sin aplicar peso sobre la fibra. Esto es esencial para que las cerdas se mantengan rectas y alineadas, conservando su forma original y la eficiencia de barrido por más tiempo."
+    }
+  ]
+
+
+  },
+
+  118 : {// ESCOBA DE EXTERIORES
+    
+  // INFORMACIÓN DETALLADA
+  descripcionCompleta: "La escoba Wilson de exteriores está diseñada para trabajo pesado y uso frecuente al aire libre. Barre y restriega con solvencia en patios, garajes, veredas, adoquines y pisos asfálticos o de textura rugosa. Su fibra gruesa con punta dura desincrusta tierra, arena, hojas, barro seco y residuos pegados con pocas pasadas, manteniendo un barrido estable incluso en superficies irregulares. El taco reforzado con rosca universal se acopla de inmediato a palos comunes de madera o metálicos para un manejo firme y mayor alcance. Resistente y confiable, rinde en seco o con agua y detergente doméstico, ideal para casa, condominio, taller o local, con durabilidad de hasta 300 mil barridas manteniendo su desempeño.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/durable.svg",
+      titulo: "Durabilidad Extrema",
+      descripcion: "300,000 Barridas de Poder. La fibra gruesa soporta fricción extrema y desintegra suciedad pesada, lodo y mugre en superficies ásperas, manteniendo la forma y resistencia por años."
+    },
+    {
+      icono: "img/icons/eficiencia-exterior.svg",
+      titulo: "Eficiencia en Exteriores",
+      descripcion: "Diseñada para terrenos difíciles. Ofrece un rendimiento superior en superficies rugosas como cemento, adoquín y asfalto. Es la herramienta confiable para barrer suciedad pesada, barro seco y residuos difíciles en patios y veredas."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Base Rígida y Duradera",
+      descripcion: "Base de polímero resistente que garantiza estabilidad. Este cuerpo rígido mantiene la fibra firme y perfectamente alineada durante el barrido. El diseño duradero asegura una larga vida útil y un roce silencioso."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Fibras medianamente suaves y plumadas",
+    "Altura": "28cm",
+    "Ancho": "44cm",
+    "Largo": "44cm",
+    "Peso": "337gr",
+    colores: [
+        { nombre: "Soporte", hex: "#d4fa2bff", codigo: "53103" },
+        { nombre: "Filamento", hex: "#3e0555ff", codigo: "53103" }
+      ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53103"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/patios-veredas.svg",
+      titulo: "Patios y Veredas",
+      descripcion: "Ideal para el mantenimiento constante de exteriores residenciales. Utilízala para el barrido eficiente de tierra, arena, hojas y residuos de obra ligera en patios, veredas y entradas. Su fibra gruesa y resistente asegura una recolección completa."
+    },
+    {
+      icono: "img/icons/terrenos.svg",
+      titulo: "Terrenos Irregulares",
+      descripcion: "Potencia de restregado en adoquines, cemento rugoso y pisos asfálticos. La rigidez de las cerdas permite fregar juntas y texturas, ayudando a levantar lodo seco, musgo ligero o polvo compactado que una escoba suave no logra desalojar."
+    },
+    {
+      icono: "img/icons/talleres.svg",
+      titulo: "Talleres y Bodegas",
+      descripcion: "Herramienta esencial para áreas de trabajo y alto tráfico. Perfecta para la limpieza profunda y robusta en talleres, bodegas y zonas industriales. Alcanza la suciedad difícil donde una escoba de interior no tiene la fuerza necesaria."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Sacude la fibra",
+      descripcion: "Sacude la fibra enérgicamente luego de cada uso para soltar la tierra, piedras pequeñas y residuos gruesos atrapados. Esto es crucial para mantener la rigidez y eficiencia de las cerdas en cada barrido."
+    },
+    {
+      titulo: "Lavado Ocasional",
+      descripcion: "Lava la escoba cuando sea necesario con agua y detergente suave. Después de enjuagar por completo, déjala secar con la fibra hacia abajo y al aire. Asegúrate de que el taco y las cerdas estén secos antes de guardarla."
+    },
+    {
+      titulo: "Almacenamiento Correcto",
+      descripcion: "Guárdala colgada utilizando el ojal, o asegúrate de que esté sin peso sobre la fibra. Esto es esencial para que las cerdas gruesas no se doblen ni se deformen, manteniendo la firmeza y el poder de restregado por más tiempo."
+    }
+  ]
+
+  },
+
+  119 : {// ESCOBA MULTIUSOS
+
+  descripcionCompleta: "La escoba Wilson multiuso es la clásica que rinde todos los días en madera, parquet, cerámica, mármol y baldosa. Su fibra de dureza media con punta plumada atrapa polvo fino, cabellos y pelusas en cada pasada sin rayar ni maltratar el acabado, dejando el piso limpio y parejo con menos esfuerzo. El taco con rosca estándar tipo escoba se acopla de inmediato a palos comunes de madera o metálicos para un manejo cómodo y buen alcance. Ligera y resistente, funciona igual de bien en el hogar, oficinas y locales, ideal para barridos frecuentes y resultados consistentes, con durabilidad de hasta 300,000 barridas manteniendo su desempeño.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/barrido-eficiente.svg",
+      titulo: "Barrido Eficiente",
+      descripcion: "La fibra plumada, con una dureza media-suave, atrapa eficazmente el polvo fino, pelusas y cabello en cada pasada. Su diseño garantiza un barrido fluido y completo, ideal para el mantenimiento diario en salas, dormitorios y oficinas."
+    },
+    {
+      icono: "img/icons/pisos-alto-brillo.svg",
+      titulo: "Cuidado de Superficies",
+      descripcion: "Suavidad que protege y da brillo a tus pisos. La fibra tiene la dureza justa para barrer diariamente sin rayar ni maltratar superficies delicadas como cerámica, madera sellada o porcelanato."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Base Rígida y Duradera",
+      descripcion: "Base de polímero resistente que garantiza estabilidad. Este cuerpo rígido mantiene la fibra firme y perfectamente alineada durante el barrido. El diseño duradero asegura una larga vida útil y un roce silencioso."
+    },
+    {
+      icono: "img/icons/durable.svg",
+      titulo: "Durabilidad Extrema",
+      descripcion: "Garantía de durabilidad extrema: hasta 300,000 barridas sin perder su forma. Su base es rígida y liviana, lo que garantiza que la fibra se mantenga siempre alineada y reduce la vibración, asegurando un uso estable y cómodo por años."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Fibras medianamente suaves y plumadas",
+    "Altura": "13 cm",
+    "Ancho": "5 cm",
+    "Largo": "28.5 cm",
+    "Peso": "310 gr",
+    colores: [
+        { nombre: "Soporte", hex: "#d4fa2bff", codigo: "53102" },
+        { nombre: "Filamento", hex: "#3e0555ff", codigo: "53102" }
+      ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53102"
+  
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/casa.svg",
+      titulo: "Hogar y oficina",
+      descripcion: "Ideal para barridos diarios en pisos de madera, cerámica, porcelanato, mármol y parquet. Su fibra de dureza media con punta plumada levanta polvo, cabellos y pelusas sin rayar, dejando un acabado limpio en menos pasadas."
+    },
+    {
+      icono: "img/icons/patios.svg",
+      titulo: "Patios y exteriores cubiertos",
+      descripcion: "Funciona muy bien en terrazas, pasillos o balcones donde se acumulan polvo, hojas y tierra ligera. Su estructura firme y fibras flexibles permiten barrer al aire libre sin perder suavidad ni control."
+    },
+    {
+      icono: "img/icons/negocios.svg",
+      titulo: "Comercios y áreas comunes",
+      descripcion: "Perfecta para mantener entradas, pasillos o locales impecables. Su barrido es parejo, atrapando residuos finos sin levantar polvo ni maltratar superficies delicadas o brillantes."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza Diaria",
+      descripcion: "Sacude la fibra después de cada uso para liberar el polvo atrapado, el cabello y las partículas grandes. Esto mantiene la escoba eficiente para el siguiente barrido."
+    },
+    {
+      titulo: "Mantenimiento Profundo",
+      descripcion: "Lava la escoba ocasionalmente con agua tibia y detergente suave. Después de enjuagar, déjala secar con la fibra hacia abajo para proteger la forma de las cerdas y prolongar su vida útil."
+    },
+    {
+      titulo: "Almacenamiento Correcto",
+      descripcion: "Guarda la escoba colgada (usando el ojal) o con la fibra libre. Evita apoyarla directamente sobre las cerdas para mantenerlas rectas por más tiempo y conservar la eficiencia del barrido."
+    }
+  ]
+  },
+
+  120: {// escoba pisos delicados
+    descripcionCompleta: "La escoba para pisos delicados Wilson barre sin rayar superficies finas como piso flotante, porcelanato, tablón y madera. Su fibra delgada con punta suave y plumada atrapa polvo fino, pelusas y cabellos en cada pasada para un resultado parejo. Incorpora banda protectora plástica que evita golpes y marcas en zócalos y muebles. Con rosca estándar tipo escoba, se acopla a palos de madera o metálicos; es ligera y práctica para uso frecuente en hogar u oficina.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/barrido-eficiente.svg",
+      titulo: "Barrido Suave",
+      descripcion: "Diseñada con puntas plumadas que levantan el polvo fino sin dejar micro-rayas en superficies delicadas. La alta densidad de fibra retiene eficazmente pelusas, cabello y partículas pequeñas, siendo ideal para hogares con mascotas."
+    },
+    {
+      icono: "img/icons/durable.svg",
+      titulo: "Durabilidad Extrema",
+      descripcion: "Garantía de durabilidad extrema: hasta 300,000 barridas sin perder su forma. Su base es rígida y liviana, lo que garantiza que la fibra se mantenga siempre alineada y reduce la vibración, asegurando un uso estable y cómodo por años."
+    },
+    {
+      icono: "img/icons/resistente.svg",
+      titulo: "Base Rígida y Duradera",
+      descripcion: "Base de polímero resistente que garantiza estabilidad. Este cuerpo rígido mantiene la fibra firme y perfectamente alineada durante el barrido. El diseño duradero asegura una larga vida útil y un roce silencioso."
+    },
+    {
+      icono: "img/icons/pisos-alto-brillo.svg",
+      titulo: "Cuidado de Superficies",
+      descripcion: "Suavidad que protege y da brillo a tus pisos. La fibra tiene la dureza justa para barrer diariamente sin rayar ni maltratar superficies delicadas como cerámica, madera sellada o porcelanato."
+    }
+  ],
+  
+  especificaciones: {
+    "Material": "Fibras medianamente suaves y plumadas",
+    "Altura": "13 cm",
+    "Ancho": "5 cm",
+    "Largo": "28.5 cm",
+    "Peso": "371 gr",
+    colores: [
+        { nombre: "Base", hex: "#5a1097ff", codigo: "53101" },
+        { nombre: "Filamento", hex: "#d35630ff", codigo: "53101" }
+      ],
+    "Unidades por caja": "12 unidades",
+    "Código": "53101"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/pisos-alto-brillo.svg",
+      titulo: "Pisos Finos y Brillantes",
+      descripcion: "Ideal para pisos flotantes, tablón, madera fina o porcelanato. Úsala en el barrido diario para retirar polvo, ceniza, cabello y pelusas sin rayar ni opacar el brillo. Su fibra suave garantiza un acabado impecable en superficies delicadas."
+    },
+    {
+      icono: "img/icons/casa.svg",
+      titulo: "Hogar con Muebles Delicados",
+      descripcion: "Perfecta para dormitorios, salas de estar y áreas de alto valor. Su banda plástica protectora perimetral amortigua el contacto, evitando marcas y daños al rozar zócalos o patas de muebles delicados durante la limpieza."
+    },
+    {
+      icono: "img/icons/polvo-cabello.svg",
+      titulo: "Limpieza de Polvo y Cabello",
+      descripcion: "Especializada en el retiro de partículas finas. La alta densidad de las cerdas y su suavidad permiten levantar eficazmente el polvo, cabellos y pelusas que otras escobas dejan atrás. Ideal para hogares con mascotas y personas alérgicas."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza Diaria",
+      descripcion: "Sacude la fibra después de cada uso para liberar el polvo atrapado, el cabello y las partículas grandes. Esto mantiene la escoba eficiente para el siguiente barrido."
+    },
+    {
+      titulo: "Mantenimiento Profundo",
+      descripcion: "Lava la escoba ocasionalmente con agua tibia y detergente suave. Después de enjuagar, déjala secar con la fibra hacia abajo para proteger la forma de las cerdas y prolongar su vida útil."
+    },
+    {
+      titulo: "Almacenamiento Correcto",
+      descripcion: "Guarda la escoba colgada (usando el ojal) o con la fibra libre. Evita apoyarla directamente sobre las cerdas para mantenerlas rectas por más tiempo y conservar la eficiencia del barrido."
+    }
+  ]
+  }
+
   // ... etc
 };
 
@@ -2129,13 +3139,13 @@ const productos = [
     categoria: "Brochas",
     marca: "Premier",
     tamano: "1 pulgada",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Premier-1-pulgada-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     codigo: "12320",
     cantidadPorCaja: 48,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-1-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Premier-1-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Premier-1-pulgada-atras.webp"
     ],
     
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
@@ -2156,14 +3166,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Premier",
     tamano: "2 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
+    imagen: "img/productos/brochas/Brocha-premiere-2-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
     codigo: "12322",
     cantidadPorCaja: 24,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-premiere-2-atras.webp"
+      "img/productos/brochas/Brocha-premiere-2-frente.webp",
+      "img/productos/brochas/Brocha-premiere-2-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2183,14 +3193,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Premier",
     tamano: "2.5 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Premier-2.5-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
     codigo: "12323",
     cantidadPorCaja: 24,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-atras.webp"
+      "img/productos/brochas/Brocha-Premier-2.5-frente.webp",
+      "img/productos/brochas/Brocha-Premier-2.5-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2210,14 +3220,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Premier",
     tamano: "3 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Premier-3-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
     codigo: "12324",
     cantidadPorCaja: 24,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-atras.webp"
+      "img/productos/brochas/Brocha-Premier-3-frente.webp",
+      "img/productos/brochas/Brocha-Premier-3-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2237,14 +3247,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Premier",
     tamano: "4 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Premier-4-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
     codigo: "12325",
     cantidadPorCaja: 12,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-atras.webp"
+      "img/productos/brochas/Brocha-Premier-4-frente.webp",
+      "img/productos/brochas/Brocha-Premier-4-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2264,14 +3274,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Premier",
     tamano: "5 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Premier-5-frente.webp",
     descripcion: "Ideal para todo tipo de uso con un acabado perfecto, rápido y poco esfuerzo, gracias a que retiene una gran cantidad de pintura. Para el pintor resulta ECONÓMICA por su larga vida útil.",
     
     codigo: "12326",
     cantidadPorCaja: 12,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-5-atras.webp"
+      "img/productos/brochas/Brocha-Premier-5-frente.webp",
+      "img/productos/brochas/Brocha-Premier-5-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2293,14 +3303,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Prima",
     tamano: "1 pulgada",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Prima-1-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
     codigo: "12420",
     cantidadPorCaja: 48,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-1-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Prima-1-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Prima-1-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2321,14 +3331,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Prima",
     tamano: "2 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Prima-2-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
     codigo: "12422",
     cantidadPorCaja: 24,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Prima-2-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Prima-2-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2349,14 +3359,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Prima",
     tamano: "2.5 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Prima-2-1.2-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
     codigo: "12427",
     cantidadPorCaja: 20,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Prima-2-1.2-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Prima-2-1.2-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2377,14 +3387,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Prima",
     tamano: "3 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Prima-3-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
     codigo: "14428",
     cantidadPorCaja: 20,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Prima-3-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Prima-3-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2405,14 +3415,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Prima",
     tamano: "4 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Prima-4-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
     codigo: "12425",
     cantidadPorCaja: 16,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Prima-4-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Prima-4-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2433,14 +3443,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Prima",
     tamano: "5 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Prima-5-pulgada-frente.webp",
     descripcion: "Brocha ideal para un acabado delicado, uniforme y fino. Sirve para la aplicación de lacas, tintes y pinturas no muy espesas.",
     
     codigo: "12426",
     cantidadPorCaja: 12,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-5-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Prima-5-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Prima-5-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2463,14 +3473,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Futura",
     tamano: "1 pulgada",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Futura-1-pulgada-frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
     
     codigo: "12219",
     cantidadPorCaja: 48,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-1-pulgada-atras-1-scaled.webp"
+      "img/productos/brochas/Brocha-Futura-1-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Futura-1-pulgada-atras-1-scaled.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2491,14 +3501,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Futura",
     tamano: "2 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Futura-2-pulgada-frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
     
     codigo: "12213",
     cantidadPorCaja: 24,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Futura-2-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Futura-2-pulgada-atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2519,14 +3529,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Futura",
     tamano: "3 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
+    imagen: "img/productos/brochas/Brocha-Futura-3-Frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
     
     codigo: "12220",
     cantidadPorCaja: 20,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Atras.webp"
+      "img/productos/brochas/Brocha-Futura-3-Frente.webp",
+      "img/productos/brochas/Brocha-Futura-3-Atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2547,14 +3557,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Futura",
     tamano: "4 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
+    imagen: "img/productos/brochas/Brocha-Futura-4-Frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
     
     codigo: "12216",
     cantidadPorCaja: 16,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Atras.webp"
+      "img/productos/brochas/Brocha-Futura-4-Frente.webp",
+      "img/productos/brochas/Brocha-Futura-4-Atras.webp"
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
@@ -2574,14 +3584,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Futura",
     tamano: "2.5 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
+    imagen: "img/productos/brochas/Brocha-Futura-2.5-pulgada-frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
     
     codigo: "12222",
     cantidadPorCaja: 20,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-atras.webp"
+      "img/productos/brochas/Brocha-Futura-2.5-pulgada-frente.webp",
+      "img/productos/brochas/Brocha-Futura-2.5-pulgada-atras.webp"
       
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
@@ -2603,14 +3613,14 @@ const productos = [
     categoria: "Brochas",
     marca: "Futura",
     tamano: "5 pulgadas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
+    imagen: "img/productos/brochas/Brocha-Futura-5-Frente.webp",
     descripcion: "Es perfecta para pintar metales, maderas, paredes y superficies rugosas. Las puntas horquilladas dejan un acabado liso, nivelado. Recoge y mantiene muy bien la pintura.",
     
     codigo: "12217",
     cantidadPorCaja: 12,
     imagenes: [
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Frente.webp",
-      "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-5-Atras.webp"
+      "img/productos/brochas/Brocha-Futura-5-Frente.webp",
+      "img/productos/brochas/Brocha-Futura-5-Atras.webp"
       
     ],
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
@@ -2632,13 +3642,13 @@ const productos = [
   categoria: "Brochas",
   marca: "Futura",
   tamano: "Angular",  // ← AGREGAR ESTA LÍNEA
-  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
+  imagen: "img/productos/brochas/Brocha-angular-delante.webp",
   descripcion: "Es la brocha hecha para los recortes finos donde una brocha recta no llega con la misma precisión...",
   codigo: "BFT-ANG",
   cantidadPorCaja: 20,
   imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-delante.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-angular-atras.webp"
+    "img/productos/brochas/Brocha-angular-delante.webp",
+    "img/productos/brochas/Brocha-angular-atras.webp"
     
   ],
   especificaciones: {
@@ -2658,13 +3668,13 @@ const productos = [
     id: 76,
     nombre: "BALDE 16 LITROS",
     categoria: "Baldes",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp",
+    imagen: "img/productos/baldes/Balde-16-litros-frente-1.webp",
     descripcion: "Diseño ergonómico con agarradera de metal resistente, ideal para trabajos de limpieza. Cumple con las normas FDA para alimentos.",
     codigo: "13355",
   cantidadPorCaja: 20,
   imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-frente-1.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-16-litros-de-lado-con-medida.webp"
+    "img/productos/baldes/Balde-16-litros-frente-1.webp",
+    "img/productos/baldes/Balde-16-litros-de-lado-con-medida.webp"
     
   ],
   },
@@ -2673,13 +3683,13 @@ const productos = [
     id: 77,
     nombre: "BALDE 6 LITROS",
     categoria: "Baldes",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
+    imagen: "img/productos/baldes/Balde-flor-de-liz-6-litros-frente.webp",
     descripcion: "Diseño ergonómico, polietileno resistente con hojas de maple y agarradera de metal resistente. Cumple con las normas FDA para alimentos.",
     codigo: "13361-13362",
   cantidadPorCaja: 12,
   imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-frente.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Balde-flor-de-liz-6-litros-de-lado-con-medida.webp"
+    "img/productos/baldes/Balde-flor-de-liz-6-litros-frente.webp",
+    "img/productos/baldes/Balde-flor-de-liz-6-litros-de-lado-con-medida.webp"
     
   ],
   },
@@ -2687,14 +3697,14 @@ const productos = [
     id: 698,
     nombre: "BALDE ESCURRIDOR 16 LITROS",
     categoria: "Baldes",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
+    imagen: "img/productos/baldes/Balde-escurridor-16-litros-frente.webp",
     descripcion: "Balde ultraresistente con escurridor y agarradera que facilita la tarea del hogar",
     codigo: "13320 - 13321",
   cantidadPorCaja: 12,
   imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-frente.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-superior.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/11/Balde-escurridor-16-litros-lado-con-medidas.webp"
+    "img/productos/baldes/Balde-escurridor-16-litros-frente.webp",
+    "img/productos/baldes/Balde-escurridor-16-litros-superior.webp",
+    "img/productos/baldes/Balde-escurridor-16-litros-lado-con-medidas.webp"
   ],
 
   },
@@ -2702,53 +3712,53 @@ const productos = [
     id: 149,
     nombre: "CANECA 5 GALONES",
     categoria: "Canecas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
+    imagen: "img/productos/canecas/Caneca-5-galones.webp",
     descripcion: "Súper resistente con asa plástica de gran sujeción para facilidad de movimiento. Ideal para transporte de productos fríos o calientes",
     codigo: "3371",
     cantidadPorCaja: 200,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Caneca-5-galones-con-mededida.webp",
+    "img/productos/canecas/Caneca-5-galones.webp",
+    "img/productos/canecas/Caneca-5-galones-con-mededida.webp",
     ],
   },
   { //CANECA 1 GALON
     id: 727,
     nombre: "CANECA 1 GALÓN",
     categoria: "Canecas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
+    imagen: "img/productos/canecas/Caneca-1-galon.webp",
     descripcion: "Caneca metálica resistente ideal para almacenar pinturas y líquidos.",
     codigo: "3372",
     cantidadPorCaja: 200,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon-con-medida.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/11/Caneca-1-galon-con-tapa-separada.webp"
+    "img/productos/canecas/Caneca-1-galon.webp",
+    "img/productos/canecas/Caneca-1-galon-con-medida.webp",
+    "img/productos/canecas/Caneca-1-galon-con-tapa-separada.webp"
     ],
   },
   { //ENVASE AMERICANO
     id: 733,
     nombre: "ENVASE AMERICANO 1 LITRO",
     categoria: "Canecas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
+    imagen: "img/productos/canecas/Envase-americano-1-litro-2.webp",
     descripcion: "Envase práctico y resistente para almacenamiento de líquidos.",
     codigo: "3373",
     cantidadPorCaja: 255,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/11/Envase-americano-1-litro-2.webp",
+    "img/productos/canecas/Envase-americano-1-litro-2.webp",
+    "img/productos/canecas/Envase-americano-1-litro-2.webp",
     ],
   },
   { //CEPILLO DE COCINA
     id: 109,
     nombre: "CEPILLO DE COCINA",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-cocina-de-lado.jpg",
+    imagen: "img/productos/cepillos/Cepillo-de-cocina-de-lado.jpg",
     descripcion: "Ideal para la limpieza en la cocina, frutas, verduras. Mango cómodo, liviano, diseño ergonómico para mejor sujeción. Evita el cansancio de la mano.",
     codigo: "5320",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-cocina-de-lado.jpg",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-cocina-acostado-fondo-blanco.jpg",
+    "img/productos/cepillos/Cepillo-de-cocina-de-lado.jpg",
+    "img/productos/cepillos/Cepillo-de-cocina-acostado-fondo-blanco.jpg",
     ],
     
   },
@@ -2756,14 +3766,14 @@ const productos = [
     id: 110,
     nombre: "CEPILLO DE CONSTRUCCIÓN",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-lateral-2-fondo-blanco-scaled.webp",
+    imagen: "img/productos/cepillos/Cepillo-de-construccion-lateral-2-fondo-blanco-scaled.webp",
     descripcion: "Ideal para barrer y restregar superficies extremadamente duras como patios, garajes, veredas, terrazas. Puede ser utilizado en superficies que tengan residuos de cemento.",
     codigo: "13240",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-lateral-2-fondo-blanco-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-atras-fondo-atras-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-construccion-lateral-1-fondo-blanco-scaled.webp"
+    "img/productos/cepillos/Cepillo-de-construccion-lateral-2-fondo-blanco-scaled.webp",
+    "img/productos/cepillos/Cepillo-de-construccion-atras-fondo-atras-scaled.webp",
+    "img/productos/cepillos/Cepillo-de-construccion-lateral-1-fondo-blanco-scaled.webp"
     ],
     
   },
@@ -2771,82 +3781,82 @@ const productos = [
     id: 111,
     nombre: "CEPILLO DE INODORO",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-principal-scaled.webp",
+    imagen: "img/productos/cepillos/Cepillo-inodoro-principal-scaled.webp",
     descripcion: "Cepillo ideal para limpieza de todo tipo de inodoro, mayor cantidad de fibra rizada que ayuda a un cepillado más profundo. Posee mango ergonómico largo de 40 cm.",
     codigo: "13230",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-principal-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-sueltos-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-inodoro-sin-etiqueta-scaled.webp"
+    "img/productos/cepillos/Cepillo-inodoro-principal-scaled.webp",
+    "img/productos/cepillos/Cepillo-inodoro-sueltos-scaled.webp",
+    "img/productos/cepillos/Cepillo-inodoro-sin-etiqueta-scaled.webp"
     ],
   },
   { //CEPILLO DE ROPA
     id: 112,
     nombre: "CEPILLO DE ROPA",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-ropa-1.webp",
+    imagen: "img/productos/cepillos/Cepillo-de-ropa-1.webp",
     descripcion: "Ideal para prendas de vestir, jeans, chaquetas. Mango cómodo, liviano, diseño ergonómico para mejor sujeción. Evita el cansancio de la mano.",
     codigo: "53202",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-ropa-1.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-ropa-parado-con-etiqueta-fondo-blanco.webp",
+    "img/productos/cepillos/Cepillo-de-ropa-1.webp",
+    "img/productos/cepillos/Cepillo-de-ropa-parado-con-etiqueta-fondo-blanco.webp",
     ],
   },
   { //CEPILLO EXTRA DURO
     id: 113,
     nombre: "CEPILLO EXTRA DURO",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-extra-duro-frente-fondo-blanco.webp",
+    imagen: "img/productos/cepillos/Cepillo-extra-duro-frente-fondo-blanco.webp",
     descripcion: "Ideal para la limpieza de superficies rugosas como cemento, planchas metálicas, techos. Sirve para remoción de pintura o manchas de humedad. No se oxida.",
     codigo: "53290",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-extra-duro-frente-fondo-blanco.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-extra-duro-frente-fondo-blanco.webp",
+    "img/productos/cepillos/Cepillo-extra-duro-frente-fondo-blanco.webp",
+    "img/productos/cepillos/Cepillo-extra-duro-frente-fondo-blanco.webp",
     ],
   },
   { //CEPILLO FIBRA RECTA
     id: 114,
     nombre: "CEPILLO FIBRA RECTA",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-2-fondo-blanco.webp",
+    imagen: "img/productos/cepillos/Cepillo-de-exteriores-2-fondo-blanco.webp",
     descripcion: "Ideal para limpieza de aceras, patios, veredas, garajes. Mango con inclinación de 60° para facilitar la limpieza en pisos duros. Fibra gruesa acabada flexible.",
     codigo: "13235",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-3-fondo-blanco.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-1.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-de-exteriores-2-fondo-blanco.webp"
+    "img/productos/cepillos/Cepillo-de-exteriores-3-fondo-blanco.webp",
+    "img/productos/cepillos/Cepillo-de-exteriores-1.webp",
+    "img/productos/cepillos/Cepillo-de-exteriores-2-fondo-blanco.webp"
     ],
   },
   { //CEPILLO FIBRA RIZADA
     id: 115,
     nombre: "CEPILLO FIBRA RIZADA",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-fondo-blanco.jpg",
+    imagen: "img/productos/cepillos/Cepillo-exteriores-fibra-rizada-fondo-blanco.jpg",
     descripcion: "Ideal para limpieza de aceras, patios, veredas, garajes. Mango con inclinación de 60° para facilitar la limpieza en pisos duros. Fibra rizada acabada flexible.",
     codigo: "13230",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-fondo-blanco.jpg",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-frente-fondo-blanco-1-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-exteriores-fibra-rizada-de-lado-fondo-blanco.webp"
+    "img/productos/cepillos/Cepillo-exteriores-fibra-rizada-fondo-blanco.jpg",
+    "img/productos/cepillos/Cepillo-exteriores-fibra-rizada-frente-fondo-blanco-1-scaled.webp",
+    "img/productos/cepillos/Cepillo-exteriores-fibra-rizada-de-lado-fondo-blanco.webp"
     ],
   },
   {//CEPILLO LAVA AUTOS
     id: 116,
     nombre: "CEPILLO LAVA AUTOS",
     categoria: "Cepillos",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-lava-autos-con-etiqueta.webp",
+    imagen: "img/productos/cepillos/Cepillo-lava-autos-con-etiqueta.webp",
     
     descripcion: "Ideal para lavar vehículos, vidrios, ventanas, estuco, cenefas gracias a su fibra delgada plumada extra suave, ideal para superficies extra delicadas, no raya.",
     codigo:"53220",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-lava-autos-sin-etiqueta-con-muestra.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cepillo-lava-autos-con-etiqueta.webp",
+    "img/productos/cepillos/Cepillo-lava-autos-sin-etiqueta-con-muestra.webp",
+    "img/productos/cepillos/Cepillo-lava-autos-con-etiqueta.webp",
    
     ],
     
@@ -2883,173 +3893,215 @@ const productos = [
     id: 82,
     nombre: "CESTO DE BASURA PEQUEÑO",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-principal.webp",
+    imagen: "img/productos/cestos/Cesto-de-basura-pequeno-principal.webp",
     descripcion: "Diseño ergonómico y elegante, ideal para usos en baños, oficinas, cuartos, dormitorios. Cumple con las normas FDA para alimentos.",
     codigo:"13390",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-principa-con-medida.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-principal.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-de-basura-pequeno-sin-tapa.webp"    
+    "img/productos/cestos/Cesto-de-basura-pequeno-principa-con-medida.webp",
+    "img/productos/cestos/Cesto-de-basura-pequeno-principal.webp",
+    "img/productos/cestos/Cesto-de-basura-pequeno-sin-tapa.webp"    
     ],
   },
   {//CESTO CUADRADO AZUL
     id: 84,
     nombre: "CESTO CUADRADO AZUL",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-1.webp",
+    imagen: "img/productos/cestos/Cesto-cuadrado-azul-1.webp",
     descripcion: "Diseño elegante cuadrado con perforación, ideal para limpieza, habitaciones, cocina, roperos libreros u otros.",
     codigo:"53571",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-con-medidas.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-1.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-cuadrado-azul-1.webp"    
+    "img/productos/cestos/Cesto-cuadrado-azul-con-medidas.webp",
+    "img/productos/cestos/Cesto-cuadrado-azul-1.webp",
+    "img/productos/cestos/Cesto-cuadrado-azul-1.webp"    
     ],
   },
   {//CESTO RECTANGULAR MEDIANO BLANCO
     id: 85,
     nombre: "CESTO RECTANGULAR MEDIANO BLANCO",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-vertical.webp",
+    imagen: "img/productos/cestos/Cesto-restangular-mediano-vertical.webp",
     descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos.",
     codigo:"13560",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-de-lado-.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-vertical.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-restangular-mediano-horizontal-.webp"    
+    "img/productos/cestos/Cesto-restangular-mediano-de-lado-.webp",
+    "img/productos/cestos/Cesto-restangular-mediano-vertical.webp",
+    "img/productos/cestos/Cesto-restangular-mediano-horizontal-.webp"    
     ],
   },
   {//CESTO RECTANGULAR GRANDE
     id: 86,
     nombre: "CESTO RECTANGULAR GRANDE",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-scaled.webp",
+    imagen: "img/productos/cestos/Cesto-rectangular-grande-rojo-scaled.webp",
     descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos.",
     codigo:"53571",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-de-lado-con-medidas.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rectangular-grande-rojo-horizontal-scaled.webp"    
+    "img/productos/cestos/Cesto-rectangular-grande-rojo-scaled.webp",
+    "img/productos/cestos/Cesto-rectangular-grande-rojo-de-lado-con-medidas.webp",
+    "img/productos/cestos/Cesto-rectangular-grande-rojo-horizontal-scaled.webp"    
     ],
   },
   {//CESTO RECTANGULAR MEDIANO ROJO
     id: 87,
     nombre: "CESTO RECTANGULAR MEDIANO ROJO",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-verticall.webp",
+    imagen: "img/productos/cestos/Cesto-rentangular-mediano-rojo-verticall.webp",
     descripcion: "Diseño elegante rectangular con perforación, ideal para la organización en cualquier lugar. Cumple con las normas FDA para alimentos.",
     codigo:"13561",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-verticall.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-laptop.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Cesto-rentangular-mediano-rojo-principal.webp"    
+    "img/productos/cestos/Cesto-rentangular-mediano-rojo-verticall.webp",
+    "img/productos/cestos/Cesto-rentangular-mediano-rojo-laptop.webp",
+    "img/productos/cestos/Cesto-rentangular-mediano-rojo-principal.webp"    
     ],
   },
   {//ESCURRIDOR DE PLATOS
     id: 105,
     nombre: "ESCURRIDOR DE PLATOS",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-de-lado-2-scaled.jpg",
+    imagen: "img/productos/cestos/Escurridor-de-platos-de-lado-2-scaled.jpg",
     descripcion: "Diseño compacto y práctico súper resistente ideal para todo tipo de platos vasos, cristalería y variedad de utensilios de cocina.",
     codigo:"13710",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-frente-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-de-lado-scaled.jpg",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Escurridor-de-platos-de-lado-2-scaled.jpg"    
+    "img/productos/cestos/Escurridor-de-platos-frente-scaled.webp",
+    "img/productos/cestos/Escurridor-de-platos-de-lado-scaled.jpg",
+    "img/productos/cestos/Escurridor-de-platos-de-lado-2-scaled.jpg"    
     ],
   },
   {//TINA RECTANGULAR 12 LITROS
     id: 108,
     nombre: "TINA RECTANGULAR 12 LITROS",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-vertical-scaled.webp",
+    imagen: "img/productos/cestos/Tina-rectangular-verde-vertical-scaled.webp",
     descripcion: "Diseño ergonómico elegante rectangular, ideal para la limpieza y multifuncional para el hogar, la cocina almacenar y transportar cualquier producto. Cumple con las normas FDA.",
     codigo:"13710",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-vertical-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-lado-scaled.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Tina-rectangular-verde-de-lado-etiqueta-scaled.webp"    
+    "img/productos/cestos/Tina-rectangular-verde-vertical-scaled.webp",
+    "img/productos/cestos/Tina-rectangular-verde-lado-scaled.webp",
+    "img/productos/cestos/Tina-rectangular-verde-de-lado-etiqueta-scaled.webp"    
     ],
   },
   {//CESTO REDONDO GRANDE
     id: 2761,
     nombre: "CESTO REDONDO GRANDE",
     categoria: "Cestos y tinas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2025/09/Cesto-redondo-grande-frente-scaled.webp",
-    descripcion: "Cesto redondo de gran capacidad, ideal para almacenamiento y organización en el hogar."
+    imagen: "img/productos/cestos/Cesto-redondo-grande-frente-scaled.webp",
+    descripcion: "Cesto redondo de gran capacidad, ideal para almacenamiento y organización en el hogar.",
+    codigo:"13581",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/cestos/Cesto-redondo-grande-frente-scaled.webp",
+    "img/productos/cestos/Cesto-redondo-grande-frente-con-medidas.webp",
+    "img/productos/cestos/Cesto-redondo-con-tapa-fuera-scaled.webp"    
+    ],
   },
-  {
+  {//ESCOBA DE INTERIORES
     id: 117,
     nombre: "ESCOBA DE INTERIORES",
     categoria: "Escobas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Escoba-interior-con-etiqueta.webp",
-    descripcion: "Ideal para parquet y cerámicas, fibra medianamente suaves plumadas, ideal para proteger sus pisos de rayones. 300.000 barridas."
+    imagen: "img/productos/escobas/Escoba-interior-con-etiqueta.webp",
+    descripcion: "Ideal para parquet y cerámicas, fibra medianamente suaves plumadas, ideal para proteger sus pisos de rayones. 300.000 barridas.",
+    codigo: "53104",
+  cantidadPorCaja: 12,
+  imagenes: [
+    "img/productos/escobas/Escoba-interior-con-etiqueta.webp",
+    "img/productos/escobas/Escoba-interior-sin-etiqueta.webp",
+    "img/productos/escobas/Escoba-interior-sin-etiqueta-con-muestra.webp"
+  ],
   },
-  {
+  {// ESCOBA DE EXTERIORES
     id: 118,
     nombre: "ESCOBA EXTERIORES",
     categoria: "Escobas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Escoba-exterior-foto-con-etiqueta.webp",
-    descripcion: "Ideal para la limpieza de patios, garajes, veredas, adoquines, gracias a su fibra gruesa acabada en punta dura. 300.000 barridas."
+    imagen: "img/productos/escobas/Escoba-exterior-foto-con-etiqueta.webp",
+    descripcion: "Ideal para la limpieza de patios, garajes, veredas, adoquines, gracias a su fibra gruesa acabada en punta dura. 300.000 barridas.",
+    codigo: "53103",
+  cantidadPorCaja: 12,
+  imagenes: [
+    "img/productos/escobas/Escoba-exterior-foto-con-etiqueta.webp",
+    "img/productos/escobas/Escoba-exterior-sin-etiqueta.webp",
+    "img/productos/escobas/Escoba-exterior-sin-etiqueta-con-muestra.webp"
+  ],
   },
-  {
+  { //ESCOBA MULTIUSOS
     id: 119,
     nombre: "ESCOBA MULTIUSO",
     categoria: "Escobas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Escoba-multiusos-foto-con-etiqueta.webp",
-    descripcion: "Ideal para limpieza de pisos de madera, parquet, cerámica, mármol gracias a su fibra medianamente suaves plumadas. 300.000 barridas."
+    imagen: "img/productos/escobas/Escoba-multiusos-foto-con-etiqueta.webp",
+    descripcion: "Ideal para limpieza de pisos de madera, parquet, cerámica, mármol gracias a su fibra medianamente suaves plumadas. 300.000 barridas.",
+    codigo: "53102",
+  cantidadPorCaja: 12,
+  imagenes: [
+    "img/productos/escobas/Escoba-multiusos-foto-con-etiqueta.webp",
+    "img/productos/escobas/Escoba-multiusos-sin-etiqueta.webp",
+    "img/productos/escobas/Escoba-multiusos-sin-etiqueta-con-muestra.webp"
+  ],
   },
-  {
+  {// PISOS DELICADOS
     id: 120,
     nombre: "ESCOBA PISOS DELICADOS",
     categoria: "Escobas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Escoba-pisos-delicados-con-etiqueta.webp",
-    descripcion: "Ideal para pisos delicados, fibra muy suave plumada, ideal para porcelanato y piso flotante. Protege sus pisos de rayones. 300.000 barridas."
+    imagen: "img/productos/escobas/Escoba-pisos-delicados-con-etiqueta.webp",
+    descripcion: "Ideal para pisos delicados, fibra muy suave plumada, ideal para porcelanato y piso flotante. Protege sus pisos de rayones. 300.000 barridas.",
+    codigo: "53101",
+  cantidadPorCaja: 12,
+  imagenes: [
+    "img/productos/escobas/Escoba-pisos-delicados-con-etiqueta.webp",
+    "img/productos/escobas/Escoba-pisos-delicados-sin-etiqueta.webp",
+    "img/productos/escobas/Escoba-pisos-delicados-sin-etiqueta-con-muestra.webp"
+  ],
+
   },
-  {
+  {//PALO DE ESCOBA
     id: 154,
     nombre: "PALO DE ESCOBA",
     categoria: "Escobas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Palo-escoba-completa.webp",
-    descripcion: "Mango multiuso para escobas, trapeadores y cepillos. Fabricado con metal laminado en 29 micras con forro en color gris."
+    imagen: "img/productos/escobas/Palo-escoba-completa.webp",
+  descripcion: "Palo de escoba de metal laminado de 120cm con forro protector gris. Rosca universal compatible con escobas, cepillos y trapeadores.",
+  codigo: "13753/13752",
+  cantidadPorCaja: 100,
+  imagenes: [
+    "img/productos/escobas/Palo-escoba-completa.webp",
+    "img/productos/escobas/Palo-escoba-completa-con-medida.webp"
+  ],
   },
-  {
+  {//ESPATULA 2 PULGADAS
   id: 140,
   nombre: "ESPÁTULA 2 PULGADAS",
   categoria: "Espátulas",  // ← AGREGADA TILDE
   tamano: "2 pulgadas",
-  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas.webp",
+  imagen: "img/productos/espatulas/Espatula-2-pulgadas.webp",
   descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería.",
   codigo:"13801",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas-con-medidas.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-2-pulgadas.webp"
+    "img/productos/espatulas/Espatula-2-pulgadas-con-medidas.webp",
+    "img/productos/espatulas/Espatula-2-pulgadas.webp"
        
     ],
 },
-{
+{// ESPATULA 3 PULGADAS
   id: 141,
   nombre: "ESPÁTULA 3 PULGADAS",
   categoria: "Espátulas",  // ← AGREGADA TILDE
   tamano: "3 pulgadas",
-  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp",
+  imagen: "img/productos/espatulas/Espatula-3-pulgadas.webp",
   descripcion: "Las Espátulas Wilson son hechas con plástico resistente ideal para tapar irregularidades, aplicar pasta o yeso, para tapar huecos o fallas, para pastelería.",
   codigo:"13802",
     cantidadPorCaja: 12,
     imagenes: [
-    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas-con-medidas.webp",
-    "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp"
+    "img/productos/espatulas/Espatula-3-pulgadas-con-medidas.webp",
+    "img/productos/espatulas/Espatula-3-pulgadas.webp"
     
     ],
 },
-{
+{//ESPATULA 4 PULGADAS
   id: 142,
   nombre: "ESPÁTULA 4 PULGADAS",
   categoria: "Espátulas",  // ← AGREGADA TILDE
@@ -3063,68 +4115,127 @@ const productos = [
     "https://servidinamica.com/wp-content/uploads/2024/10/Espatula-3-pulgadas.webp" 
     ],
 },
-  {
+  {//RECOGEDOR CON ESCOBILLA
     id: 151,
     nombre: "RECOGEDOR CON ESCOBILLA",
     categoria: "Recogedores",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Recogedor-con-escobilla-principal-fondo-blanco-scaled.webp",
-    descripcion: "Diseño ergonómico, para recoger suciedad, polvo y residuos sólidos o líquidos."
+    imagen: "img/productos/recogedores/Recogedor-con-escobilla-principal-fondo-blanco-scaled.webp",
+    descripcion: "Diseño ergonómico, para recoger suciedad, polvo y residuos sólidos o líquidos.",
+    codigo:"53270",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/recogedores/Recogedor-con-escobilla-principal-fondo-blanco-scaled.webp",
+    "img/productos/recogedores/Recogedor-con-ecobilla-parada.webp"
+    ],
   },
-  {
+  {//TRAPEADOR GRANDOTE
     id: 144,
     nombre: "TRAPEADOR GRANDOTE",
     categoria: "Trapeadores",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Trapeador-grandote-sin-funda-scaled.webp",
-    descripcion: "Mopas de 100% algodón de alta duración y absorción, fácil de usar y de lavar, biodegradable. Base ultraresistente."
+    imagen: "img/productos/trapeadores/Trapeador-grandote-sin-funda-scaled.webp",
+    descripcion: "Mopas de 100% algodón de alta duración y absorción, fácil de usar y de lavar, biodegradable. Base ultraresistente.",
+    codigo:"13581",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/trapeadores/Trapeador-grandote-sin-funda-scaled.webp",
+    "img/productos/trapeadores/Trapeador-grandote-funda-scaled.webp"   
+    ],
   },
-  {
+  {//TRAPEADOR JUMBO
     id: 145,
     nombre: "TRAPEADOR JUMBO",
     categoria: "Trapeadores",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Trapeador-Jumbo-scaled.webp",
-    descripcion: "Mopas de 100% algodón de alta duración y absorción, fácil de usar y de lavar, biodegradable. Base ultrarresistente."
+    imagen: "img/productos/trapeadores/Trapeador-Jumbo-scaled.webp",
+    descripcion: "Mopas de 100% algodón de alta duración y absorción, fácil de usar y de lavar, biodegradable. Base ultrarresistente.",
+    codigo:"13421",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/trapeadores/Trapeador-grandote-sin-funda-scaled.webp",
+    "img/productos/trapeadores//Trapeador-Jumbo-etiqueta-scaled.webp"   
+    ],
+
+
+    
   },
-  {
+  {//TRAPEADOR INDUSTRIAL
     id: 152,
     nombre: "TRAPEADOR INDUSTRIAL",
     categoria: "Trapeadores",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Trapeador-industrial-scaled.webp",
-    descripcion: "Mopa industrial, sus fibras de algodón y poliamida, mayor resistencia y duración, para todo tipo de superficie."
+    imagen: "img/productos/trapeadores/Trapeador-industrial-scaled.webp",
+    descripcion: "Mopa industrial, sus fibras de algodón y poliamida, mayor resistencia y duración, para todo tipo de superficie.",
+    codigo:"53470",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/trapeadores/Trapeador-industrial-scaled.webp",
+       
+    ],
+    
   },
-  {
+  {//FIBRA MAGICA
     id: 143,
     nombre: "TRAPEADOR FIBRA MÁGICA",
-    categoria: "Ofertas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Trapeador-fibramagica-fondo-blanco.webp",
-    descripcion: "Mopa de microfibra en tiras, atrae y atrapa las partículas de polvo, para todo tipo de superficie. No deja pelusas."
+    categoria: "Trapeadores",
+    imagen: "img/productos/trapeadores/Trapeador-fibramagica-fondo-blanco.webp",
+    descripcion: "Mopa de microfibra en tiras, atrae y atrapa las partículas de polvo, para todo tipo de superficie. No deja pelusas.",
+    codigo:"53451",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/trapeadores/Trapeador-fibramagica-fondo-blanco.webp",
+    ],
   },
-  {
+  {// fibra naranja
     id: 146,
     nombre: "TRAPEADOR MICROFIBRA NARANJA",
-    categoria: "Ofertas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Trapeador-microfibra-naranja-sin-funda-scaled.webp",
-    descripcion: "Mopa 100% filamentos de poliéster, atrapa las pelusas y los gérmenes, es muy eficaz en seco o con agua, para limpiar todo tipo de superficie. No deja pelusas."
+    categoria: "Trapeadores",
+    imagen: "img/productos/trapeadores/Trapeador-microfibra-naranja-sin-funda-scaled.webp",
+    descripcion: "Mopa 100% filamentos de poliéster, atrapa las pelusas y los gérmenes, es muy eficaz en seco o con agua, para limpiar todo tipo de superficie. No deja pelusas.",
+    codigo:"53461",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/trapeadores/Trapeador-microfibra-naranja-sin-funda-scaled.webp",
+    "img/productos/trapeadores/Trapeador-microfibra-naranja-etiqueta-scaled.webp",
+       
+    ],
   },
-  {
+  {//trapador ultra jumbo
     id: 147,
     nombre: "TRAPEADOR ULTRA JUMBO",
-    categoria: "Ofertas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Trapeador-Ultra-Jumbo--scaled.webp",
-    descripcion: "Mopas de 100% algodón de alta duración y absorción, fácil de usar y de lavar, biodegradable. Base ultraresistente."
+    categoria: "Trapeadores",
+    imagen: "img/productos/trapeadores/Trapeador-Ultra-Jumbo--scaled.webp",
+    descripcion: "Mopas de 100% algodón de alta duración y absorción, fácil de usar y de lavar, biodegradable. Base ultraresistente.",
+    codigo:"53431",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/trapeadores/Trapeador-Ultra-Jumbo--scaled.webp",
+    "img/productos/trapeadores//Trapeador-Ultra-Jumbo-etiqueta-scaled.webp"   
+    ],
   },
-  {
-  id: 150,
-  nombre: "RECOGEDOR PREMIER DE MANO",
-  categorias: ["Recogedores", "Ofertas"],  // ← Array en lugar de string
-  imagen: "https://servidinamica.com/wp-content/uploads/2024/10/pala-recogedora-de-mano.webp",
-  descripcion: "Diseño ergonómico, para recoger suciedad, polvo y residuos sólidos o líquidos."
-},
-  {
+  {//RECOGEDOR PREMIUM
+    id: 150,
+    nombre: "RECOGEDOR PREMIER DE MANO",
+    categoria: "Recogedores",
+    imagen: "img/productos/recogedores/Recogedor-premium-acostado.webp",
+    descripcion: "Diseño ergonómico, para recoger suciedad, polvo y residuos sólidos o líquidos.",
+    codigo:"53327",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/recogedores/Recogedor-premium-acostado.webp",
+    "img/productos/recogedores/Recogedor-premium-parado.webp"
+    ],
+    
+
+  },
+  {//TRAPEADOR SUPERFIBRA BLANCO
     id: 153,
     nombre: "TRAPEADOR SUPERFIBRA BLANCO",
-    categoria: "Ofertas",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Trapeador-microfibra-blanca-scaled.webp",
-    descripcion: "Mopa industrial, sus fibras de algodón mayor resistencia para todo tipo de superficie."
+    categoria: "Trapeadores",
+    imagen: "img/productos/trapeadores/Trapeador-microfibra-blanca-scaled.webp",
+    descripcion: "Mopa industrial, sus fibras de algodón mayor resistencia para todo tipo de superficie.",
+    codigo:"53451",
+    cantidadPorCaja: 12,
+    imagenes: [
+    "img/productos/trapeadores/Trapeador-microfibra-blanca-scaled.webp",
+    ],
   },
   {
     id: 509,
@@ -3191,27 +4302,27 @@ const lineasData = {
   premier: {
     titulo: 'Brocha Premier',
     imagenes: [
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-4-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-2.5-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Premier-3-frente.webp'
+      'img/productos/brochas/Brocha-Premier-4-frente.webp',
+      'img/productos/brochas/Brocha-Premier-2.5-frente.webp',
+      'img/productos/brochas/Brocha-Premier-3-frente.webp'
     ],
     url: 'catalogo.html?categoria=Brochas&marca=Premier'
   },
   futura: {
     titulo: 'Brocha Futura',
     imagenes: [
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-4-Frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-2.5-pulgada-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Futura-3-Frente.webp'
+      'img/productos/brochas/Brocha-Futura-4-Frente.webp',
+      'img/productos/brochas/Brocha-Futura-2.5-pulgada-frente.webp',
+      'img/productos/brochas/Brocha-Futura-3-Frente.webp'
     ],
     url: 'catalogo.html?categoria=Brochas&marca=Futura'
   },
   prima: {
     titulo: 'Brocha Prima',
     imagenes: [
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-4-pulgada-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-2-1.2-pulgada-frente.webp',
-      'https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Prima-3-pulgada-frente.webp'
+      'img/productos/brochas/Brocha-Prima-4-pulgada-frente.webp',
+      'img/productos/brochas/Brocha-Prima-2-1.2-pulgada-frente.webp',
+      'img/productos/brochas/Brocha-Prima-3-pulgada-frente.webp'
     ],
     url: 'catalogo.html?categoria=Brochas&marca=Prima'
   }
