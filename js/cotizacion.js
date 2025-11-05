@@ -1,12 +1,14 @@
 // ==========================================
 // SISTEMA DE COTIZACIÓN WILSON
-// Gestiona la cotización de productos y envío por WhatsApp
+// Gestiona la cotización de productos y envío por WhatsApp y Email
 // ==========================================
 
 class SistemaCotizacion {
   constructor() {
     this.STORAGE_KEY = 'wilson_cotizacion';
     this.WHATSAPP_NUMBER = '593996020665'; // Número de WhatsApp de Wilson
+    this.EMAIL_PEDIDOS = 'pedidos@servidinamica.com'; // Email de destino
+    this.WEB3FORMS_KEY = '3b9e8526-e2b6-4b8a-ac5f-675a7e23b5c0'; // Clave de Web3Forms
     this.cotizacion = this.cargarCotizacion();
     this.inicializar();
   }
@@ -160,10 +162,160 @@ class SistemaCotizacion {
     window.open(url, '_blank');
     
     // Tracking opcional
-    this.registrarEvento('cotizacion_enviada', {
+    this.registrarEvento('cotizacion_enviada_whatsapp', {
       productos: this.cotizacion.length,
       cajas: this.obtenerTotal().cajas
     });
+  }
+
+  // ===== EMAIL =====
+
+  abrirModalPedido() {
+    if (this.cotizacion.length === 0) {
+      this.mostrarNotificacion('Agrega productos a tu cotización primero', 'warning');
+      return;
+    }
+
+    const modal = document.getElementById('modalPedidoCorreo');
+    if (modal) {
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      
+      // Limpiar formulario
+      const form = document.getElementById('formPedidoCorreo');
+      if (form) form.reset();
+      
+      // Ocultar mensajes
+      const mensajeExito = document.getElementById('mensajePedidoExito');
+      const mensajeError = document.getElementById('mensajePedidoError');
+      if (mensajeExito) mensajeExito.style.display = 'none';
+      if (mensajeError) mensajeError.style.display = 'none';
+    }
+  }
+
+  cerrarModalPedido() {
+    const modal = document.getElementById('modalPedidoCorreo');
+    if (modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  }
+
+  generarMensajeEmail(datosCliente) {
+    let mensaje = `NUEVO PEDIDO - PLÁSTICOS Y BROCHAS WILSON\n\n`;
+    mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    mensaje += `DATOS DEL CLIENTE\n`;
+    mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+    mensaje += `Nombre: ${datosCliente.nombre} ${datosCliente.apellido}\n`;
+    mensaje += `Teléfono: ${datosCliente.telefono}\n`;
+    mensaje += `Email: ${datosCliente.email}\n\n`;
+    
+    mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    mensaje += `DETALLE DEL PEDIDO\n`;
+    mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+
+    this.cotizacion.forEach((item, index) => {
+      mensaje += `${index + 1}. ${item.nombre}\n`;
+      mensaje += `   • Código: ${item.codigo}\n`;
+      mensaje += `   • Marca: ${item.marca || 'N/A'}\n`;
+      mensaje += `   • Categoría: ${item.categoria}\n`;
+      mensaje += `   • Cantidad: ${item.cantidadCajas} ${item.cantidadCajas === 1 ? 'caja' : 'cajas'}`;
+      
+      if (typeof item.cantidadPorCaja === 'number') {
+        const unidadesTotales = item.cantidadPorCaja * item.cantidadCajas;
+        mensaje += ` (${item.cantidadPorCaja} x ${item.cantidadCajas} = ${unidadesTotales} unidades)`;
+      }
+      
+      mensaje += '\n\n';
+    });
+
+    const totales = this.obtenerTotal();
+    mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    mensaje += `RESUMEN DEL PEDIDO\n`;
+    mensaje += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
+    mensaje += `Total de productos diferentes: ${totales.productos}\n`;
+    mensaje += `Total de cajas: ${totales.cajas}\n`;
+    
+    if (totales.unidades > 0) {
+      mensaje += `Total de unidades: ${totales.unidades}\n`;
+    }
+    
+    mensaje += `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    mensaje += `\nPedido generado desde: ${window.location.href}\n`;
+    mensaje += `Fecha: ${new Date().toLocaleString('es-EC')}\n`;
+
+    return mensaje;
+  }
+
+  async enviarPorEmail(datosCliente) {
+    const submitBtn = document.querySelector('.btn-enviar-pedido');
+    const mensajeExito = document.getElementById('mensajePedidoExito');
+    const mensajeError = document.getElementById('mensajePedidoError');
+    
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+    
+    if (mensajeExito) mensajeExito.style.display = 'none';
+    if (mensajeError) mensajeError.style.display = 'none';
+
+    try {
+      const mensaje = this.generarMensajeEmail(datosCliente);
+      
+      // Preparar datos para Web3Forms
+      const formData = new FormData();
+      formData.append('access_key', this.WEB3FORMS_KEY);
+      formData.append('subject', `Nuevo Pedido Wilson - ${datosCliente.nombre} ${datosCliente.apellido}`);
+      formData.append('from_name', 'Sistema de Cotización Wilson');
+      formData.append('nombre', datosCliente.nombre);
+      formData.append('apellido', datosCliente.apellido);
+      formData.append('telefono', datosCliente.telefono);
+      formData.append('email', datosCliente.email);
+      formData.append('pedido', mensaje);
+      
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        if (mensajeExito) {
+          mensajeExito.style.display = 'block';
+          mensajeExito.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+        
+        this.mostrarNotificacion('¡Pedido enviado exitosamente!', 'success');
+        
+        // Registrar evento
+        this.registrarEvento('cotizacion_enviada_email', {
+          productos: this.cotizacion.length,
+          cajas: this.obtenerTotal().cajas
+        });
+        
+        // Cerrar modal después de 2 segundos
+        setTimeout(() => {
+          this.cerrarModalPedido();
+          // Opcional: vaciar cotización
+          // this.cotizacion = [];
+          // this.guardarCotizacion();
+        }, 2000);
+        
+      } else {
+        throw new Error('Error en el envío');
+      }
+    } catch (error) {
+      console.error('Error al enviar pedido:', error);
+      if (mensajeError) {
+        mensajeError.style.display = 'block';
+        mensajeError.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+      this.mostrarNotificacion('Error al enviar el pedido', 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar Pedido';
+    }
   }
 
   // ===== UI Y NOTIFICACIONES =====
@@ -171,6 +323,7 @@ class SistemaCotizacion {
   inicializar() {
     this.crearBotonFlotante();
     this.crearModal();
+    this.crearModalPedido();
     this.actualizarUI();
   }
 
@@ -242,7 +395,11 @@ class SistemaCotizacion {
             </button>
             <button class="btn-enviar-whatsapp" onclick="sistemaCotizacion.enviarPorWhatsApp()">
               <i class="fab fa-whatsapp"></i>
-              Enviar por WhatsApp
+              WhatsApp
+            </button>
+            <button class="btn-enviar-correo" onclick="sistemaCotizacion.abrirModalPedido()">
+              <i class="fas fa-envelope"></i>
+              Correo
             </button>
           </div>
         </div>
@@ -255,6 +412,87 @@ class SistemaCotizacion {
     modal.querySelector('.btn-cerrar-modal').addEventListener('click', () => this.cerrarModal());
     modal.addEventListener('click', (e) => {
       if (e.target === modal) this.cerrarModal();
+    });
+  }
+
+  crearModalPedido() {
+    // Verificar si ya existe
+    if (document.getElementById('modalPedidoCorreo')) return;
+
+    const modalPedido = document.createElement('div');
+    modalPedido.id = 'modalPedidoCorreo';
+    modalPedido.className = 'modal-pedido-correo';
+    modalPedido.innerHTML = `
+      <div class="modal-pedido-content">
+        <button class="btn-cerrar-pedido" aria-label="Cerrar">
+          <i class="fas fa-times"></i>
+        </button>
+        
+        <h3>
+          <i class="fas fa-envelope"></i>
+          Enviar Pedido por Correo
+        </h3>
+        <p class="modal-pedido-subtitle">Completa tus datos para recibir la cotización</p>
+        
+        <form id="formPedidoCorreo">
+          <div class="form-pedido-group">
+            <label for="pedidoNombre">Nombre *</label>
+            <input type="text" id="pedidoNombre" name="nombre" required placeholder="Tu nombre">
+          </div>
+
+          <div class="form-pedido-group">
+            <label for="pedidoApellido">Apellido *</label>
+            <input type="text" id="pedidoApellido" name="apellido" required placeholder="Tu apellido">
+          </div>
+
+          <div class="form-pedido-group">
+            <label for="pedidoTelefono">Teléfono *</label>
+            <input type="tel" id="pedidoTelefono" name="telefono" required placeholder="0999999999">
+          </div>
+
+          <div class="form-pedido-group">
+            <label for="pedidoEmail">Correo Electrónico *</label>
+            <input type="email" id="pedidoEmail" name="email" required placeholder="tu@correo.com">
+          </div>
+
+          <button type="submit" class="btn-enviar-pedido">
+            <i class="fas fa-paper-plane"></i>
+            Enviar Pedido
+          </button>
+
+          <div id="mensajePedidoExito" class="mensaje-pedido exito">
+            ✅ ¡Pedido enviado exitosamente! Nos contactaremos contigo pronto.
+          </div>
+
+          <div id="mensajePedidoError" class="mensaje-pedido error">
+            ❌ Error al enviar el pedido. Por favor intenta nuevamente.
+          </div>
+        </form>
+      </div>
+    `;
+
+    document.body.appendChild(modalPedido);
+
+    // Event listeners
+    const btnCerrar = modalPedido.querySelector('.btn-cerrar-pedido');
+    btnCerrar.addEventListener('click', () => this.cerrarModalPedido());
+
+    modalPedido.addEventListener('click', (e) => {
+      if (e.target === modalPedido) this.cerrarModalPedido();
+    });
+
+    const form = document.getElementById('formPedidoCorreo');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const datosCliente = {
+        nombre: document.getElementById('pedidoNombre').value,
+        apellido: document.getElementById('pedidoApellido').value,
+        telefono: document.getElementById('pedidoTelefono').value,
+        email: document.getElementById('pedidoEmail').value
+      };
+      
+      this.enviarPorEmail(datosCliente);
     });
   }
 
