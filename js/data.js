@@ -3118,6 +3118,76 @@ const informacionProductos = {
       descripcion: "Guarda la escoba colgada (usando el ojal) o con la fibra libre. Evita apoyarla directamente sobre las cerdas para mantenerlas rectas por más tiempo y conservar la eficiencia del barrido."
     }
   ]
+  },
+
+  509 : {// HOGAR 1 PULGADA
+
+    descripcionCompleta: "La Brocha hogar Wilson es la opción práctica y económica para todo tipo de trabajos domésticos, manualidades y retoques de pintura. Su diseño delgado permite llegar fácilmente a marcos de puertas, ventanas y zonas reducidas sin esfuerzo. Fabricada con mango plástico resistente y filamentos suaves de buena carga, distribuye la pintura de forma uniforme sin dejar rayas. Ideal para quienes buscan un acabado prolijo con bajo consumo de pintura.",
+  
+  caracteristicas: [
+    {
+      icono: "img/icons/ahorro.svg",
+      titulo: "Económica y funcional",
+      descripcion: "Diseñada para ofrecer buen rendimiento a bajo costo. Es la opción ideal para proyectos rápidos en casa, trabajos menores, retoques o manualidades. Su durabilidad garantiza que puedas usarla en múltiples ocasiones."
+    },
+    {
+      icono: "img/icons/brcha_Corte_recto.svg",
+      titulo: "Filamentos suaves y parejos",
+      descripcion: "Filamentos sintéticos suaves que distribuyen la pintura de manera uniforme. Esto asegura un acabado limpio y profesional en cada pasada sin dejar marcas visibles. "
+    },
+    {
+      icono: "img/icons/dureza.svg",
+      titulo: "Aplicación Versátil y Precisa",
+      descripcion: "Su corte recto permite una alta precisión en los detalles. Además, se adapta a la aplicación de distintos tipos de pintura, haciendo el trabajo más fácil y eficiente."
+    },
+    
+  ],
+  
+  especificaciones: {
+    "Medida": "1 pulgada",
+      "Largo de filamentos visto":  "45 mm",
+      "Grosor": "10 mm",
+      "Material de Cerdas": "Poliéster",
+      "Tipo de virola": "Acero estañado",
+      "Tipo de Recubrimiento": "Todo tipo de pintura",
+      "Tipo de Pegamento": "Epoxi",
+      "Superficies compatibles": "Todo tipo de superficies",
+      "Unidades por caja": "48 unidades",
+      "Código": "12410"
+  },
+  
+  usos: [
+    {
+      icono: "img/icons/mantenimiento.svg",
+      titulo: "Mantenimiento del Hogar",
+      descripcion: "Perfecta para trabajos menores y retoques en paredes, techos y muebles pequeños. Es la herramienta ideal para mantener el hogar impecable, cubriendo áreas desgastadas o aplicando pintura de manera eficiente en superficies limitadas."
+    },
+    {
+      icono: "img/icons/manualidades.svg",
+      titulo: "Manualidades y Decoración",
+      descripcion: "Excelente para trabajos finos, artesanías, decoración y proyectos creativos. Su suavidad y precisión la hacen ideal para pintar sobre madera, yeso, cartón y otras superficies, asegurando un acabado prolijo en todos tus diseños."
+    },
+    {
+      icono: "img/icons/precision.svg",
+      titulo: "Precisión en Marcos y Bordes",
+      descripcion: "Su formato delgado permite pintar con facilidad zonas difíciles, marcos y molduras. Es indispensable para retoques rápidos y lograr acabados limpios y precisos en esquinas, bordes de ventanas y puertas, donde una brocha grande no puede llegar."
+    }
+  ],
+  
+  cuidados: [
+    {
+      titulo: "Limpieza Después del Uso",
+      descripcion: "Limpie inmediatamente después de usar con agua tibia y jabón suave. Para pinturas al óleo, use solvente apropiado.."
+    },
+    {
+      titulo: "Secado correcto",
+      descripcion: "Peine los filamentos para alinearlos, elimine el exceso de agua/solvente y deje secar en posición vertical (cerdas hacia abajo o colgada) en un lugar ventilado"
+    },
+    {
+      titulo: "Mantener la forma",
+      descripcion: "Después de limpiar, acomode las cerdas con los dedos o peine de brocha para conservar el perfil y logra bordes definidos en el siguiente uso"
+    }
+  ]
   }
 
   // ... etc
@@ -3151,7 +3221,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "1 pulgada",
-      "Largo de filamentos":  "45 mm",
+      "Largo de filamentos visto":  "45 mm",
       "Grosor": "10 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3178,7 +3248,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "2 pulgadas",
-      "Largo de filamentos":  "55 mm",
+      "Largo de filamentos visto":  "55 mm",
       "Grosor": "11 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3205,7 +3275,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "2,5 pulgadas",
-      "Largo de filamentos":  "60 mm",
+      "Largo de filamentos visto":  "60 mm",
       "Grosor": "11 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3232,7 +3302,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "3 pulgadas",
-      "Largo de filamentos":  "60 mm",
+      "Largo de filamentos visto":  "60 mm",
       "Grosor": "13 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3259,7 +3329,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
+      "Largo de filamentos visto":  "65 mm",
       "Grosor": "13 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3286,7 +3356,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
+      "Largo de filamentos visto":  "65 mm",
       "Grosor": "18 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3315,7 +3385,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "1 pulgada",
-      "Largo de filamentos":  "45 mm",
+      "Largo de filamentos visto":  "45 mm",
       "Grosor": "10 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3343,7 +3413,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "2 pulgadas",
-      "Largo de filamentos":  "55 mm",
+      "Largo de filamentos visto":  "55 mm",
       "Grosor": "10 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3371,7 +3441,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "2.5 pulgadas",
-      "Largo de filamentos":  "60 mm",
+      "Largo de filamentos visto":  "60 mm",
       "Grosor": "11 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3399,7 +3469,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "3 pulgadas",
-      "Largo de filamentos":  "60 mm",
+      "Largo de filamentos visto":  "60 mm",
       "Grosor": "11 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3427,7 +3497,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
+      "Largo de filamentos visto":  "65 mm",
       "Grosor": "11 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3455,7 +3525,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "5 pulgadas",
-      "Largo de filamentos":  "65 mm",
+      "Largo de filamentos visto":  "65 mm",
       "Grosor": "17 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3485,7 +3555,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "1 pulgadas",
-      "Largo de filamentos":  "45 mm",
+      "Largo de filamentos visto":  "45 mm",
       "Grosor": "10 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3513,7 +3583,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "2 pulgadas",
-      "Largo de filamentos":  "55 mm",
+      "Largo de filamentos visto":  "55 mm",
       "Grosor": "11 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3541,7 +3611,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "3 pulgadas",
-      "Largo de filamentos":  "60 mm",
+      "Largo de filamentos visto":  "60 mm",
       "Grosor": "12 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3569,7 +3639,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "4 pulgadas",
-      "Largo de filamentos":  "65 mm",
+      "Largo de filamentos visto":  "65 mm",
       "Grosor": "15 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3597,7 +3667,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "2,5 pulgadass",
-      "Largo de filamentos":  "60 mm",
+      "Largo de filamentos visto":  "60 mm",
       "Grosor": "11 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3626,7 +3696,7 @@ const productos = [
     // ===== ESPECIFICACIONES ACTUALIZADAS =====
     especificaciones: {
       "Medida": "5 pulgadas",
-      "Largo de filamentos":  "65 mm",
+      "Largo de filamentos visto":  "65 mm",
       "Grosor": "17 mm",
       "Material de Cerdas": "Poliéster",
       "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -3653,7 +3723,7 @@ const productos = [
   ],
   especificaciones: {
     "Medida": "2 pulgadas",
-    "Largo de filamentos": "65 mm",
+    "Largo de filamentos visto": "65 mm",
     "Grosor": "13 mm",
     "Material de Cerdas": "Poliéster",
     "Tipo de Recubrimiento": "Todo tipo de pintura",
@@ -4242,8 +4312,14 @@ const productos = [
     nombre: "BROCHA HOGAR 1 PULGADA",
     categoria: "Ofertas",
     tamano: "1 pulgada",
-    imagen: "https://servidinamica.com/wp-content/uploads/2024/10/Brocha-Hogar-frente-4-pulgadas.webp",
-    descripcion: "Es la brocha más ECONÓMICA, orientado tanto al mercado HAZLO TÚ MISMO, como también para pintores profesionales que requieren una brocha más delgada para espacios reducidos."
+    imagen: "img/productos/ofertas/Brocha-Hogar-frente-1-pulgadas.webp",
+    descripcion: "Es la brocha más ECONÓMICA, orientado tanto al mercado HAZLO TÚ MISMO, como también para pintores profesionales que requieren una brocha más delgada para espacios reducidos.",
+    codigo:"1241",
+    cantidadPorCaja: 48,
+    imagenes: [
+    "img/productos/ofertas/Brocha-Hogar-frente-1-pulgadas.webp",
+    "img/productos/ofertas/Brocha-Hogar-atras-1-pulgada.webp"
+    ],
   },
   {
     id: 512,
